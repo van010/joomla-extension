@@ -1,3 +1,0 @@
-﻿1,ACYM_NAME,text,,1,,"0",1,"{""error_message"":"""",""error_message_invalid"":"""",""size"":"""",""rows"":"""",""columns"":"""",""format"":"""",""custom_text"":"""",""css_class"":"""",""authorized_content"":{""0"":""all"",""regex"":""""}}",1,1,1,1,1,all,acym_name,
-2,ACYM_EMAIL,text,,1,,1,2,"{""error_message"":"""",""error_message_invalid"":"""",""size"":"""",""rows"":"""",""columns"":"""",""format"":"""",""custom_text"":"""",""css_class"":"""",""authorized_content"":{""0"":""all"",""regex"":""""}}",1,1,1,1,1,all,acym_email,
-3,ACYM_LANGUAGE,language,,1,,1,3,[],1,1,"0",1,"0",all,acym_language,
