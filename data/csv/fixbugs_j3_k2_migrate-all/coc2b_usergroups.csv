@@ -1,0 +1,16 @@
+﻿1,"0",1,32,Public
+2,1,8,29,Registered
+3,2,9,16,Author
+4,3,10,13,Editor
+5,4,11,12,Publisher
+6,1,4,7,Manager
+7,6,5,6,Administrator
+8,1,30,31,Super Users
+9,1,2,3,Guest
+10,3,14,15,Freelancer
+11,2,21,28,Weekender
+12,11,22,27,Cicloviaggiatore
+13,12,23,26,Esploratore
+14,13,24,25,Giramondo
+15,2,17,18,E-book
+16,2,19,20,E-book Ferrovie

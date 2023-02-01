@@ -1,0 +1,2047 @@
+﻿1,usersubscription,1,1,1,1,1,1,1,1,"0",1,Spirito libero - FREE,free,"<p>Sei uno <strong>spirito libero</strong>! Per te niente limiti e niente costi!</p>
+<p>Potrai sempre gratuitamente:</p>
+<ul class=""zebra"">
+<li><strong>scaricare le tracce GPS</strong> degli itinerari;</li>
+<li><strong>pubblicare i tuoi diari</strong> di viaggio, racconti e consigli;</li>
+<li><strong>utilizzare il forum</strong> di Life in Travel per chiedere consigli e trovare amici cicloviaggiatori;</li>
+<li><strong>ricevere la newsletter</strong> di Life in Travel;</li>
+<li><strong>acquistare separatamente</strong> i nostri prodotti (e-book, gadget, magazine...)</li>
+</ul>",1,[AUTOMATIC],[PREFIX_TEXT] [ITEM_NAME][VALIDITY_IF_NOT_AUTORECURRING],[PREFIX_TEXT] [ITEM_ALIAS][VALIDITY_IF_NOT_AUTORECURRING],"","0.00000","0000-00-00 00:00:00","01-01","0000-00-00 00:00:00","0000-00-00 00:00:00","0000-00-00 00:00:00","0001-00-00 00:00:00","0000-00-00 00:00:00",9999-99-99 99:99:99,1,"0","0",2,"0","0","-9999.00000","0000-00-00 00:00:00","01-01",1,118|*|204|*|208|*|209|*|181,2,2,1,3,"0","<p>Per aggiornare il tuo abbonamento, puoi accedere al tuo profilo utente in qualsiasi momento.</p>
+<p style=""text-align: right;""><a href=""https://www.lifeintravel.it"" class=""btn btn-primary"">Torna al sito</a></p>","","[USERNAME], il tuo abbonamento [PLAN_NAME] è attivo","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [name]</p>
+<p style=""max-width: 600px; text-align:center;"">
+grazie per esserti registrato/a su [sitename].</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Hai attivato il piano di abbonamento [PLAN_NAME]</p>
+<p style=""max-width: 600px; text-align:center;"">Dovresti aver già ricevuto una mail per attivare il tuo account con i seguenti dati di accesso:<br />
+<br />
+Nome utente: <strong>[USERNAME]</strong><br />
+Password: <strong>quella inserita al momento della registrazione</strong>
+<br /><br />
+Per aggiornare il tuo abbonamento, puoi <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login&Itemid=2975"">accedere al tuo profilo utente</a> in qualsiasi momento.<br />
+Per qualsiasi dubbio, contattaci utilizzando <a href=""https://www.lifeintravel.it/life-in-travel.html"">questo modulo</a><br /><br />
+Buone pedalate,<br />
+Leo, Vero, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","0",1,1,"0",1,index.php?option=com_comprofiler&view=userprofile&Itemid=331,"",rounded,cbreg_turquoise_3,3,1002,"0","","","","","","","0",=,"","",2|*|4|*|3,R|*|X|*|C|*|I,"0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","","","","0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","0","","","{""cbacy_lists_activation"":""2"",""cbacy_remove_activation"":""1"",""cbacy_lists_deactivation"":"""",""cbacy_remove_deactivation"":""0"",""url_path_activation"":"""",""url_path_renewal"":"""",""url_path_deactivation"":"""",""url_path_expiration"":"""",""cpaycbsqlactions_type1"":""0"",""cpaycbsqlactions_activation1"":"""",""cpaycbsqlactions_renew1"":"""",""cpaycbsqlactions_expiry1"":"""",""cpaycbsqlactions_deactivation1"":"""",""cpaycbsqlactions_type2"":""0"",""cpaycbsqlactions_activation2"":"""",""cpaycbsqlactions_renew2"":"""",""cpaycbsqlactions_expiry2"":"""",""cpaycbsqlactions_deactivation2"":"""",""cpaycbsqlactions_type3"":""0"",""cpaycbsqlactions_activation3"":"""",""cpaycbsqlactions_renew3"":"""",""cpaycbsqlactions_expiry3"":"""",""cpaycbsqlactions_deactivation3"":"""",""cpaycbsqlactions_type4"":""0"",""cpaycbsqlactions_activation4"":"""",""cpaycbsqlactions_renew4"":"""",""cpaycbsqlactions_expiry4"":"""",""cpaycbsqlactions_deactivation4"":"""",""cpaycbsqlactions_type5"":""0"",""cpaycbsqlactions_activation5"":"""",""cpaycbsqlactions_renew5"":"""",""cpaycbsqlactions_expiry5"":"""",""cpaycbsqlactions_deactivation5"":"""",""postafpro_affiliate"":"""",""postafpro_campaign"":"""",""postafpro_channel"":"""",""postafpro_commission"":"""",""postafpro_currency"":"""",""postafpro_status"":""A"",""postafpro_update"":""0"",""postafpro_renewal"":""0"",""cbemail_name_activation"":"""",""cbemail_address_activation"":"""",""cbemail_to_activation"":"""",""cbemail_cc_activation"":"""",""cbemail_bcc_activation"":"""",""cbemail_sub_activation"":"""",""cbemail_msg_activation"":"""",""cbemail_atch_activation"":"""",""cbemail_type_activation"":""0"",""cbemail_name_pendingfirst"":"""",""cbemail_address_pendingfirst"":"""",""cbemail_to_pendingfirst"":"""",""cbemail_cc_pendingfirst"":"""",""cbemail_bcc_pendingfirst"":"""",""cbemail_sub_pendingfirst"":"""",""cbemail_msg_pendingfirst"":"""",""cbemail_atch_pendingfirst"":"""",""cbemail_type_pendingfirst"":""0"",""cbemail_name_renewal"":"""",""cbemail_address_renewal"":"""",""cbemail_to_renewal"":"""",""cbemail_cc_renewal"":"""",""cbemail_bcc_renewal"":"""",""cbemail_sub_renewal"":"""",""cbemail_msg_renewal"":"""",""cbemail_atch_renewal"":"""",""cbemail_type_renewal"":""0"",""cbemail_name_pendingrenewal"":"""",""cbemail_address_pendingrenewal"":"""",""cbemail_to_pendingrenewal"":"""",""cbemail_cc_pendingrenewal"":"""",""cbemail_bcc_pendingrenewal"":"""",""cbemail_sub_pendingrenewal"":"""",""cbemail_msg_pendingrenewal"":"""",""cbemail_atch_pendingrenewal"":"""",""cbemail_type_pendingrenewal"":""0"",""cbemail_name_autorenewal"":"""",""cbemail_address_autorenewal"":"""",""cbemail_to_autorenewal"":"""",""cbemail_cc_autorenewal"":"""",""cbemail_bcc_autorenewal"":"""",""cbemail_sub_autorenewal"":"""",""cbemail_msg_autorenewal"":"""",""cbemail_atch_autorenewal"":"""",""cbemail_type_autorenewal"":""0"",""cbemail_name_expired"":"""",""cbemail_address_expired"":"""",""cbemail_to_expired"":"""",""cbemail_cc_expired"":"""",""cbemail_bcc_expired"":"""",""cbemail_sub_expired"":"""",""cbemail_msg_expired"":"""",""cbemail_atch_expired"":"""",""cbemail_type_expired"":""0"",""cbemail_name_deactivation"":"""",""cbemail_address_deactivation"":"""",""cbemail_to_deactivation"":"""",""cbemail_cc_deactivation"":"""",""cbemail_bcc_deactivation"":"""",""cbemail_sub_deactivation"":"""",""cbemail_msg_deactivation"":"""",""cbemail_atch_deactivation"":"""",""cbemail_type_deactivation"":""0"",""cbfields_fieldid1"":"""",""cbfields_fieldid2"":"""",""cbfields_fieldid3"":"""",""cbfields_fieldid4"":"""",""cbfields_fieldid5"":"""",""cbfields_fieldid6"":"""",""cbfields_fieldid7"":"""",""cbfields_fieldid8"":"""",""cbfields_fieldid9"":"""",""cbfields_fieldid10"":"""",""familyplans_share"":""0"",""cpaycontent_categories_list"":""1"",""cpaycontent_components"":"""",""cpaycontent_modules"":"""",""cpaycontent_urls"":"""",""planimage_image"":""cicloturista.png"",""planimage_image_path"":""\/images\/subscription"",""folderaccess_msg"":""Restricted - Please Login"",""folderaccess_path1"":"""",""folderaccess_path2"":"""",""folderaccess_path3"":"""",""folderaccess_path4"":"""",""folderaccess_path5"":""""}","{""template_rounded_icon"":""yellow"",""tax_taxing_date"":""0""}"
+2,usersubscription,1,1,1,1,1,1,1,1,"0",1,Weekender,weekender,"<p>Sei uno di quelli con <strong>il ritmo lento nel sangue</strong>!&nbsp;</p>
+<p>Per te che apprezzi il nostro lavoro:</p>
+<ul class=""zebra"">
+<li class=""dropdown show""><a class=""dropdown-toggle"" role=""button"" id=""dropdownMenuLink"" data-toggle=""dropdown"" aria-haspopup=""true"" aria-expanded=""false"">bonus del piano precedente</a>
+<div class=""dropdown-menu"" aria-labelledby=""dropdownMenuLink""><a class=""dropdown-item""><strong>scaricare le tracce GPS</strong> degli itinerari;</a> <a class=""dropdown-item""><strong>pubblicare i tuoi diari</strong> di viaggio, racconti e consigli;</a> <a class=""dropdown-item""><strong>utilizzare il forum</strong> di Life in Travel;</a> <a class=""dropdown-item"">ricevere la <strong>newsletter di Life in Travel</strong>;</a></div>
+</li>
+<li>la <strong>navigazione del sito AdFree</strong>: niente pubblicità, solo contenuti;</li>
+<li>l'<b>e-book</b><em>&nbsp;""Viaggiare in bici, che figata!""</em> con tanti suggerimenti utili;</li>
+<li>l'<strong>e-book</strong> ""<em>Vecchie ferrovie in bicicletta - vol. 1</em>"" con 33 itinerari sulle ex ferrovie ciclabili in Italia;</li>
+<li>il <strong>tuo nome</strong> nella pagina dei ringraziamenti.</li>
+</ul>","0",[AUTOMATIC],[PREFIX_TEXT] [ITEM_NAME][VALIDITY_IF_NOT_AUTORECURRING],[PREFIX_TEXT] [ITEM_ALIAS][VALIDITY_IF_NOT_AUTORECURRING],"","29.00000","0001-00-00 00:00:00","01-01","0000-00-00 00:00:00","0000-00-00 00:00:00","0000-00-00 00:00:00","0000-06-00 00:00:00","0000-00-00 00:00:00","0000-00-07 00:00:00",1,1,"0",2,"0","0","-9999.00000","0000-00-00 00:00:00","01-01","0",117|*|181,1,2,1,11,"0","<p>Ancora un colpo di pedale e potrai:</p>
+<ul class=""check"">
+<li>ottenere tutti i riconoscimenti del piano <strong>Spirito Libero - FREE</strong></li>
+<li><em>pedalare</em> sul sito senza pubblicità</li>
+<li>scaricare l'e-book&nbsp;<em>""Viaggiare in bici, che figata!""</em></li>
+<li>scaricare l'e-book ""<em>Vecchie ferrovie in bicicletta - vol. 1</em>""</li>
+<li>leggere il&nbsp;<em>tuo nome</em>&nbsp;nella pagina dei ringraziamenti</li>
+</ul>
+<p>A breve riceverai un'email con le istruzioni per <strong>diventare un Lifeintraveler</strong> (controlla anche la casella spam).</p>
+<p>Per aggiornare il tuo abbonamento, puoi accedere al tuo <a href=""index.php?option=com_comprofiler&amp;view=userprofile&amp;Itemid=331&amp;lang=it"" title=""Il tuo profilo"">profilo utente</a> in qualsiasi momento.</p>
+<p style=""text-align: right;""><a href=""https://www.lifeintravel.it"" class=""btn btn-primary"">Torna al sito</a></p>","<p>Grazie per la registrazione e il supporto.</p>
+<p>A breve riceverai una email (controlla anche la casella spam) con le<strong> istruzioni per il pagamento</strong> prima di poter:</p>
+<ul class=""check"">
+<li>ottenere tutti i riconoscimenti del piano&nbsp;<strong>Spirito Libero - FREE</strong></li>
+<li><em>pedalare</em> sul sito senza pubblicità</li>
+<li>scaricare l'e-book <em>""Viaggiare in bici, che figata!""</em></li>
+<li>scaricare l'e-book ""<em>Vecchie ferrovie in bicicletta - vol. 1</em>""</li>
+<li>leggere il&nbsp;<em>tuo nome</em>&nbsp;nella pagina dei ringraziamenti</li>
+</ul>
+<p>Per aggiornare il tuo abbonamento, puoi accedere al tuo <a href=""index.php?option=com_comprofiler&amp;view=userprofile&amp;Itemid=331&amp;lang=it"" title=""Accedi al profilo"">profilo utente</a> in qualsiasi momento.</p>
+<p style=""text-align: right;""><a href=""https://www.lifeintravel.it"" class=""btn btn-primary"">Torna al sito</a></p>","[USERNAME], ora sei [PLAN_NAME] davvero","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto; max-width: 600px;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">grazie per aver acquistato il piano di abbonamento [PLAN_NAME]</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai effettuato una nuova registrazione, dovresti aver già ricevuto una mail per attivare il tuo account con i seguenti dati di accesso:<br />
+<br />
+Nome utente: <strong>[USERNAME]</strong><br />
+Password: <strong>quella inserita al momento della registrazione</strong>
+</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai già un account attivo, effettua il <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login"">login</a> e potrai accedere ai seguenti <strong>contenuti esclusivi</strong>:</p>
+<ul class=""check"">
+<li style=""max-width: 500px;""><em>pedalare</em> sul sito <strong>senza pubblicità per un anno</strong></li>
+<li style=""max-width: 500px;"">scaricare <a href=""https://www.lifeintravel.it/index.php?option=com_phocadownload&view=category&download=1057&id=17&Itemid=260"">a questo link</a> <strong>l'ebook di 160 pagine</strong> <em>""Viaggiare in bici, che figata!""</em>, con tanti suggerimenti e consigli utili</li>
+<li style=""max-width: 500px;"">scaricare <a href=""https://www.lifeintravel.it/index.php?option=com_phocadownload&view=category&download=1203&id=17&Itemid=260"">a questo link</a> <strong>l'ebook di 240 pagine</strong><em>""Vecchie ferrovie in bici""</em> (a partire dal 15 Marzo 2022)</li>
+<li style=""max-width: 500px;""><stong>il tuo nome</strong> nella pagina dei ringraziamenti.</li></ul>
+<p style=""max-width: 600px; text-align: center;"">Per aggiornare il tuo abbonamento, puoi <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login&Itemid=2975"">accedere al tuo profilo</a> in qualsiasi momento.</p>
+<p style=""max-width: 600px; text-align: center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate!<br />
+Leo, Vero, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], un ultimo colpo di pedale per diventare [PLAN_NAME] davvero","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+grazie per aver appena iniziato le tue pedalate con [sitename].</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Hai attivato il piano di abbonamento [PLAN_NAME] ma non abbiamo ancora ricevuto il pagamento.</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai scelto la modalità di pagamento con bonifico bancario ti ricordiamo che queste sono le coordinate su cui dovrai versare [PLAN_REGISTRATION_PRICE] (Se hai inserito un coupon di sconto la cifra da versare è quella indicata in fase di checkout):</p>
+<p style=""max-widht: 600px; text-align:center;"">
+<strong>Intestato a: Libes SRL<br/>
+IBAN: IT60O0306953530100000002865<br/>
+BIC/SWIFT: BCITITMM<br/>
+Banca Intesa San Paolo</strong>
+</p>
+<p style=""max-width: 600px; text-align:center;"">Quando avrai effettuato il pagamento, riceverai una mail di conferma. Se non la ricevi entro qualche giorno potremmo essere in viaggio in zone remote e per questo non aver attivato il tuo piano. 
+<br /><br /><br />
+Se vuoi accelerare il processo di attivazione o per qualsiasi altro dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], sei [PLAN_NAME] per un altro anno","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+è bello vedere che <em>pedalerai</em> con noi  per un altro anno.</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Il tuo abbonamento [PLAN_NAME] è stato rinnovato e potrai:</p>
+<ul class=""check"" style=""max-width: 600px;"">
+<li><em>pedalare</em> sul sito <strong>senza pubblicità</strong> fino al [SUBSCRIPTION_EXPIRY_DATE]</li>
+<li>scaricare <a href=""https://www.lifeintravel.it/index.php?option=com_phocadownload&view=category&download=1057&id=17&Itemid=260"">a questo link</a> gli aggiornamenti dell'<strong>ebook di 160 pagine</strong> <em>""Viaggiare in bici, che figata!""</em>, con tanti suggerimenti e consigli utili.</li>
+<li>scaricare <a hre=""https://www.lifeintravel.it/index.php?option=com_phocadownload&view=category&download=1203&id=17&Itemid=260"">a questo link</a> <strong>l'ebook di 240 pagine</strong><em>""Vecchie ferrovie in bici""</em> (a partire dal 15 Marzo 2022)</li>
+</ul>
+<p style=""max-width: 600px;"">Per aggiornare il tuo abbonamento, puoi <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login&Itemid=2975"">accedere al tuo profilo</a> in qualsiasi momento.</p>
+
+<p>
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], un ultimo colpo di pedale per continuare ad essere [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+è bello vedere che <em>pedalerai</em> con noi per un altro anno.</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Siamo in attesa del pagamento per il rinnovo del tuo abbonamento [PLAN_NAME]</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai scelto la modalità di pagamento con bonifico bancario ti ricordiamo che queste sono le coordinate su cui dovrai versare [PLAN_REGISTRATION_PRICE] (Se hai inserito un coupon di sconto la cifra da versare è quella indicata in fase di checkout):</p>
+<p style=""max-widht: 600px; text-align:center;"">
+<strong>Intestato a: Libes SRL<br/>
+IBAN: IT60O0306953530100000002865<br/>
+BIC/SWIFT: BCITITMM<br/>
+Banca Intesa San Paolo</strong>
+</p>
+<p style=""max-widht: 600px; text-align:center;""><br /><br />
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], sei [PLAN_NAME] per un altro anno","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+è bello vedere che <em>pedalerai</em> con noi per un altro anno.</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Il tuo abbonamento [PLAN_NAME] è stato rinnovato e potrai <em>navigare</em> sul sito <strong>senza pubblicità</strong> fino al [SUBSCRIPTION_EXPIRY_DATE]
+<br /><br /><br />
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], il tuo abbonamento [PLAN_NAME] è scaduto","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+ci spiace che quest'anno non <em>pedalerai</em> più con noi di [sitename].</p>
+<p style=""max-width: 600px; text-align:center;"">Il tuo abbonamento [PLAN_NAME] è scaduto ma potrai continuare ad accedere al sito con le tue credenziali, scaricare le tracce GPS, inviare racconti di viaggio e partecipare al forum.</p>
+<p style=""max-width: 600px; text-align:center;"">Se desideri rimuovere nuovamente la pubblicità non ti resta che accedere al tuo profilo ed effettuare l'upgrade dell'abbonamento</p>
+<br /><br /><br />
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], il tuo abbonamento [PLAN_NAME] è stato annullato","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">
+ci spiace che tu abbia deciso di annullare il tuo abbonamento [PLAN_NAME]</p>
+<p style=""max-width: 600px; text-align:center;"">ma ti auguriamo comunque un sacco di belle pedalate e viaggi in giro per il mondo.</p>
+<p style=""max-width: 600px; text-align:center;"">Ci piacerebbe sapere perché hai deciso di disdire il tuo abbonamento o se hai avuto qualsiasi problema, quindi non esitare a contattarci all'indirizzo email info@lifeintravel.it</p>
+<p style=""max-width: 600px; text-align:center;"">Se invece vuoi riattivare un abbonamento su [sitename] non ti resta che <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login&Itemid=2975"">accedere al tuo profilo</a> sul sito ed effettuare l'upgrade!
+<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","0",2,1,"0",1,/index.php?option=com_comprofiler&view=userdetails&Itemid=612,"",rounded,cbreg_turquoise_3,3,1,"0","","","","","","","0",=,"","","","","0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","","","","0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","0","","","{""cbacy_lists_activation"":""12"",""cbacy_remove_activation"":""1"",""cbacy_lists_deactivation"":""12"",""cbacy_remove_deactivation"":""1"",""url_path_activation"":"""",""url_path_renewal"":"""",""url_path_deactivation"":"""",""url_path_expiration"":"""",""cpaycbsqlactions_type1"":""0"",""cpaycbsqlactions_activation1"":"""",""cpaycbsqlactions_renew1"":"""",""cpaycbsqlactions_expiry1"":"""",""cpaycbsqlactions_deactivation1"":"""",""cpaycbsqlactions_type2"":""0"",""cpaycbsqlactions_activation2"":"""",""cpaycbsqlactions_renew2"":"""",""cpaycbsqlactions_expiry2"":"""",""cpaycbsqlactions_deactivation2"":"""",""cpaycbsqlactions_type3"":""0"",""cpaycbsqlactions_activation3"":"""",""cpaycbsqlactions_renew3"":"""",""cpaycbsqlactions_expiry3"":"""",""cpaycbsqlactions_deactivation3"":"""",""cpaycbsqlactions_type4"":""0"",""cpaycbsqlactions_activation4"":"""",""cpaycbsqlactions_renew4"":"""",""cpaycbsqlactions_expiry4"":"""",""cpaycbsqlactions_deactivation4"":"""",""cpaycbsqlactions_type5"":""0"",""cpaycbsqlactions_activation5"":"""",""cpaycbsqlactions_renew5"":"""",""cpaycbsqlactions_expiry5"":"""",""cpaycbsqlactions_deactivation5"":"""",""postafpro_affiliate"":"""",""postafpro_campaign"":"""",""postafpro_channel"":"""",""postafpro_commission"":"""",""postafpro_currency"":"""",""postafpro_status"":""A"",""postafpro_update"":""0"",""postafpro_renewal"":""0"",""cbemail_name_activation"":"""",""cbemail_address_activation"":"""",""cbemail_to_activation"":"""",""cbemail_cc_activation"":"""",""cbemail_bcc_activation"":"""",""cbemail_sub_activation"":"""",""cbemail_msg_activation"":"""",""cbemail_atch_activation"":"""",""cbemail_type_activation"":""0"",""cbemail_name_pendingfirst"":"""",""cbemail_address_pendingfirst"":"""",""cbemail_to_pendingfirst"":"""",""cbemail_cc_pendingfirst"":"""",""cbemail_bcc_pendingfirst"":"""",""cbemail_sub_pendingfirst"":"""",""cbemail_msg_pendingfirst"":"""",""cbemail_atch_pendingfirst"":"""",""cbemail_type_pendingfirst"":""0"",""cbemail_name_renewal"":"""",""cbemail_address_renewal"":"""",""cbemail_to_renewal"":"""",""cbemail_cc_renewal"":"""",""cbemail_bcc_renewal"":"""",""cbemail_sub_renewal"":"""",""cbemail_msg_renewal"":"""",""cbemail_atch_renewal"":"""",""cbemail_type_renewal"":""0"",""cbemail_name_pendingrenewal"":"""",""cbemail_address_pendingrenewal"":"""",""cbemail_to_pendingrenewal"":"""",""cbemail_cc_pendingrenewal"":"""",""cbemail_bcc_pendingrenewal"":"""",""cbemail_sub_pendingrenewal"":"""",""cbemail_msg_pendingrenewal"":"""",""cbemail_atch_pendingrenewal"":"""",""cbemail_type_pendingrenewal"":""0"",""cbemail_name_autorenewal"":"""",""cbemail_address_autorenewal"":"""",""cbemail_to_autorenewal"":"""",""cbemail_cc_autorenewal"":"""",""cbemail_bcc_autorenewal"":"""",""cbemail_sub_autorenewal"":"""",""cbemail_msg_autorenewal"":"""",""cbemail_atch_autorenewal"":"""",""cbemail_type_autorenewal"":""0"",""cbemail_name_expired"":"""",""cbemail_address_expired"":"""",""cbemail_to_expired"":"""",""cbemail_cc_expired"":"""",""cbemail_bcc_expired"":"""",""cbemail_sub_expired"":"""",""cbemail_msg_expired"":"""",""cbemail_atch_expired"":"""",""cbemail_type_expired"":""0"",""cbemail_name_deactivation"":"""",""cbemail_address_deactivation"":"""",""cbemail_to_deactivation"":"""",""cbemail_cc_deactivation"":"""",""cbemail_bcc_deactivation"":"""",""cbemail_sub_deactivation"":"""",""cbemail_msg_deactivation"":"""",""cbemail_atch_deactivation"":"""",""cbemail_type_deactivation"":""0"",""cbfields_fieldid1"":"""",""cbfields_fieldid2"":"""",""cbfields_fieldid3"":"""",""cbfields_fieldid4"":"""",""cbfields_fieldid5"":"""",""cbfields_fieldid6"":"""",""cbfields_fieldid7"":"""",""cbfields_fieldid8"":"""",""cbfields_fieldid9"":"""",""cbfields_fieldid10"":"""",""familyplans_share"":""0"",""cpaycontent_categories_list"":""1"",""cpaycontent_components"":"""",""cpaycontent_modules"":"""",""cpaycontent_urls"":"""",""planimage_image"":""cicloviaggiatore.png"",""planimage_image_path"":""\/images\/subscription"",""folderaccess_msg"":""Restricted - Please Login"",""folderaccess_path1"":"""",""folderaccess_path2"":"""",""folderaccess_path3"":"""",""folderaccess_path4"":"""",""folderaccess_path5"":""""}","{""template_rounded_icon"":""green""}"
+3,usersubscription,1,1,1,1,1,1,1,1,"0",1,Esploratore,esploratore,"<p>Sei uno di quelli che <strong>non scenderebbe mai di sella</strong>!&nbsp;</p>
+<p>Per te che apprezzi il nostro lavoro:</p>
+<ul class=""zebra"">
+<li class=""dropdown show""><a class=""dropdown-toggle"" role=""button"" id=""dropdownMenuLink"" data-toggle=""dropdown"" aria-haspopup=""true"" aria-expanded=""false"">bonus del piano precedente</a>
+<div class=""dropdown-menu"" aria-labelledby=""dropdownMenuLink""><a class=""dropdown-item""><strong>scaricare le tracce GPS</strong> degli itinerari;</a> <a class=""dropdown-item""><strong>pubblicare i tuoi diari</strong> di viaggio, racconti e consigli;</a> <a class=""dropdown-item""><strong>utilizzare il forum</strong> di Life in Travel;</a> <a class=""dropdown-item"">ricevere la <strong>newsletter di Life in Travel</strong>;</a> <a class=""dropdown-item"">la <strong>navigazione del sito AdFree</strong>;</a> <a class=""dropdown-item"">l'<strong>e-book</strong><em>&nbsp;""Viaggiare in bici, che figata!""</em>; l'<strong>e-book</strong><em>&nbsp;""Vecchie ferrovie in bicicletta - vol. 1""</em> con 33 percorsi ciclabili su ex ferrovie in Italia;</a><a class=""dropdown-item"">il <strong>tuo nome</strong> nella pagina dei ringraziamenti;</a> <a class=""dropdown-item""><strong>B.E.E.R. - botta e risposta</strong>;</a> <a class=""dropdown-item"">il super <strong>gadget Life in Travel</strong>.</a></div>
+</li>
+<li>i 2 volumi illustrati <strong>Ritorno a Occidente&nbsp;</strong> dedicato alle avventure del viaggio tra Georgia e Turchia;</li>
+<li>l'accesso a<strong> contenuti esclusivi </strong>pubblicati ogni mese solo per te.</li>
+</ul>","0",[AUTOMATIC],[PREFIX_TEXT] [ITEM_NAME][VALIDITY_IF_NOT_AUTORECURRING],[PREFIX_TEXT] [ITEM_ALIAS][VALIDITY_IF_NOT_AUTORECURRING],"","99.00000","0001-00-00 00:00:00","01-01","0000-00-00 00:00:00","0000-00-00 00:00:00","0000-00-00 00:00:00","0000-06-00 00:00:00","0000-00-00 00:00:00","0000-00-07 00:00:00",1,1,"0",2,"0","0","-9999.00000","0000-00-00 00:00:00","01-01","0",117|*|115,1,2,1,13,"0","<p>Ancora un colpo di pedale e potrai:</p>
+<ul class=""check"">
+<li><em>pedalare</em> sul sito<strong> senza pubblicità</strong>,</li>
+<li><strong>scaricare l'e-book</strong><em>""Viaggiare in bici, che figata!"",</em></li>
+<li><strong>scaricare l'e-book</strong> ""<em>Vecchie ferrovie in bicicletta - vol. 1</em>"",</li>
+<li><strong>accedere alla sezione <em>B.E.E.R.</em></strong> del sito con botta e risposta su temi di interesse generale del<strong> nostro team</strong>,</li>
+<li>guardare tutti i<strong> contenuti esclusivi dedicati&nbsp;</strong>ai cicloesploratori come te.</li>
+</ul>
+<p>A breve riceverai un'e-mail con le istruzioni per <strong>diventare un Lifeintraveler</strong> (controlla anche la casella spam).</p>
+<p>Inoltre, se hai inserito correttamente il tuo indirizzo, riceverai presto:</p>
+<ul class=""check"">
+<li>le <strong>super-mega calze da bici Life in Travel,</strong></li>
+<li>i <strong>prossimi due numeri in uscita del <em>magazine semestrale</em>&nbsp;Impronte</strong> <strong>- Storie a pedali</strong> dedicato alle avventure in bici.</li>
+</ul>
+<p>Per aggiornare il tuo abbonamento, puoi accedere al tuo <a href=""index.php?option=com_comprofiler&amp;view=userprofile&amp;Itemid=331&amp;lang=it"" title=""Il tuo profilo"">profilo utente</a> in qualsiasi momento.</p>
+<p style=""text-align: right;""><a href=""https://www.lifeintravel.it"" class=""btn btn-primary"">Torna al sito</a></p>","<p>Grazie per la registrazione e il supporto.</p>
+<p>A breve riceverai una email (controlla anche la casella spam) con le<strong>&nbsp;istruzioni per il pagamento</strong>&nbsp;prima di poter:</p>
+<ul class=""check"">
+<li><em>pedalare</em>&nbsp;sul sito senza pubblicità,</li>
+<li>scaricare l'e-book&nbsp;<em>""Viaggiare in bici, che figata!"",</em></li>
+<li>scaricare l'e-book ""Vecchie ferrovie in bicicletta - vol. 1"",</li>
+<li>accedere alla sezione <em>B.E.E.R.</em> del sito,</li>
+<li>guardare tutti i <strong>contenuti esclusivi</strong></li>
+<li>ricevere <strong>le calze Life in Travel</strong> e i prossimi due numeri del <strong>magazine Impronte</strong>.</li>
+</ul>
+<p>Per aggiornare il tuo abbonamento, puoi accedere al tuo <a href=""index.php?option=com_comprofiler&amp;view=userprofile&amp;Itemid=331&amp;lang=it"" title=""Il tuo profilo"">profilo utente</a> in qualsiasi momento.</p>
+<p style=""text-align: right;""><a href=""https://www.lifeintravel.it"" class=""btn btn-primary"">Torna al sito</a></p>","[USERNAME], ora sei [PLAN_NAME] davvero","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">grazie per aver acquistato il piano di abbonamento [PLAN_NAME]</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai effettuato una nuova registrazione, dovresti aver già ricevuto una mail per attivare il tuo account con i seguenti dati di accesso:<br />
+<br />
+Nome utente: <strong>[USERNAME]</strong><br />
+Password: <strong>quella inserita al momento della registrazione</strong>
+</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai già un account attivo, effettua il <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login"">login</a> e potrai accedere ai seguenti <strong>contenuti esclusivi</strong> tra cui:</p>
+<ul class=""check"">
+<li style=""max-width: 500px;""><em>pedalare</em> sul sito <strong>senza pubblicità per un anno</strong></li>
+<li style=""max-width: 500px;"">scaricare <a href=""https://www.lifeintravel.it/index.php?option=com_phocadownload&view=category&download=1057&id=17&Itemid=260"">a questo link</a> <strong>l'ebook di 160 pagine</strong> <em>""Viaggiare in bici, che figata!""</em>, con tanti suggerimenti e consigli utili</li>
+<li style=""max-width: 500px;"">scaricare <strong>l'ebook di 240 pagine</strong><em>""Vecchie ferrovie in bici""</em> (a partire dal 15 Marzo 2022)</li>
+<li style=""max-width: 500px;""><stong>il tuo nome</strong> nella pagina dei ringraziamenti.</li>
+<li style=""max-width: 500px;"">accedere alla sezione B.E.E.R. del sito e leggere il botta e risposta del team di Life in Travel</li>
+<li style=""max-width: 500px;"">ricevere il <strong>super gadget Life in Travel 2022</strong> </li>
+<li>ricevere i prossimi due numeri della <strong>rivista da collezione Impronte</strong> dedicata ai viaggi in bici</li></ul>
+<p style=""max-width: 600px; text-align:center;"">Per aggiornare il tuo abbonamento, puoi <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login&Itemid=2975"">accedere al tuo profilo</a> in qualsiasi momento.</p>
+<p style=""max-width: 600px; text-align:center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate!<br />
+Leo, Vero, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], un ultimo colpo di pedale per diventare [PLAN_NAME] davvero","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+grazie per aver effettuato la registrazione su [sitename].</p>
+<p style=""font-size:18px; max-width: 600px; text-align:center;"">Hai attivato il piano di abbonamento [PLAN_NAME] ma non abbiamo ancora ricevuto il pagamento.</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai scelto la modalità di pagamento con <strong>bonifico bancario</strong> ti ricordiamo che queste sono le coordinate su cui dovrai versare [PLAN_REGISTRATION_PRICE] (Se hai inserito un coupon di sconto la cifra da versare è quella indicata in fase di checkout):</p>
+<p style=""max-widht: 600px; text-align:center;"">
+<strong>Intestato a: Libes SRL<br/>
+IBAN: IT60O0306953530100000002865<br/>
+BIC/SWIFT: BCITITMM<br/>
+Banca Intesa San Paolo</strong>
+</p>
+<p style=""max-width: 600px; text-align:center;"">Quando avrai effettuato il pagamento, dovresti ricevere una mail di conferma. Se non la ricevi entro qualche giorno potremmo essere in viaggio in zone remote e per questo non aver attivato il tuo piano. 
+<br /><br /><br />
+Se vuoi accelerare il processo di attivazione o per qualsiasi altro dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Vero, Leo, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], sei [PLAN_NAME] per un altro anno","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+è bello vedere che <em>pedalerai</em> con noi per un altro anno.</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Il tuo abbonamento [PLAN_NAME] è stato rinnovato e potrai:</p>
+
+<ul class=""check"">
+<li style=""max-width: 500px;""><em>pedalare</em> sul sito <strong>senza pubblicità</strong> fino al [SUBSCRIPTION_EXPIRY_DATE]</li>
+<li style=""max-width: 500px;"">scaricare <a href=""https://www.lifeintravel.it/index.php?option=com_phocadownload&view=category&download=1057&id=17&Itemid=260"">a questo link</a> gli aggiornamenti dell'<strong>ebook di 160 pagine</strong> <em>""Viaggiare in bici, che figata!""</em>, con tanti suggerimenti e consigli utili.</li>
+<li style=""max-width: 500px;"">scaricare <strong>l'ebook di 240 pagine</strong><em>""Vecchie ferrovie in bici""</em> (a partire dal 15 Marzo 2022)</li>
+<li style=""max-width: 500px;""><stong>il tuo nome</strong> nella pagina dei ringraziamenti.</li>
+<li style=""max-width: 500px;"">accedere alla sezione B.E.E.R. del sito e leggere il botta e risposta del team di Life in Travel</li>
+<li style=""max-width: 500px;"">ricevere il <strong>super gadget Life in Travel 2022</strong> </li>
+<li>ricevere i prossimi due numeri della <strong>rivista da collezione Impronte</strong> dedicata ai viaggi in bici</li></ul>
+<p style=""max-width: 600px; text-align:center;"">Per aggiornare il tuo abbonamento, puoi <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login&Itemid=2975"">accedere al tuo profilo</a> in qualsiasi momento.</p>
+<p style=""max-width: 600px; text-align:center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br />
+Buone pedalate,<br />
+Vero, Leo, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], un ultimo colpo di pedale per continuare ad essere [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+è bello vedere che <em>pedalerai</em> con noi per un altro anno.</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Siamo in attesa del pagamento per il rinnovo del tuo abbonamento [PLAN_NAME] per poter <em>pedalare</em> ancora con noi</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai scelto la modalità di pagamento con bonifico bancario ti ricordiamo che queste sono le coordinate su cui dovrai versare [PLAN_REGISTRATION_PRICE] (Se hai inserito un coupon di sconto la cifra da versare è quella indicata in fase di checkout):
+<p style=""max-widht: 600px; text-align:center;"">
+<strong>Intestato a: Libes SRL<br/>
+IBAN: IT60O0306953530100000002865<br/>
+BIC/SWIFT: BCITITMM<br/>
+Banca Intesa San Paolo</strong>
+</p>
+<p style=""max-width: 600px; text-align:center;""><br /><br />
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Vero, Leo, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], sei [PLAN_NAME] per un altro anno","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+è bello vedere che <em>pedalerai</em> con noi per un altro anno.</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Il tuo abbonamento [PLAN_NAME] è stato rinnovato e potrai:<ul class=""check"" >
+<li style=""max-width: 500px;""><em>pedalare</em> sul sito <strong>senza pubblicità</strong> fino al [SUBSCRIPTION_EXPIRY_DATE]</li>
+<li style=""max-width: 500px;"">scaricare <a href=""https://www.lifeintravel.it/index.php?option=com_phocadownload&view=category&download=1057&id=17&Itemid=260"">a questo link</a> gli aggiornamenti dell'<strong>ebook di 160 pagine</strong> <em>""Viaggiare in bici, che figata!""</em>, con tanti suggerimenti e consigli utili.</li>
+<li style=""max-width: 500px;"">scaricare <strong>l'ebook di 240 pagine</strong><em>""Vecchie ferrovie in bici""</em> (a partire dal 15 Marzo 2022)</li>
+<li>ricevere i prossimi due numeri della <strong>rivista da collezione Impronte</strong> dedicata ai viaggi in bici</li></ul>
+<li style=""max-width: 500px;"">leggere altri articoli della sezione <strong>B.E.E.R.</strong> del sito</li
+<li style=""max-width: 500px;"">continuare a guardare i <strong>contenuti esclusivi del F.A.M.E.</strong> presenti sul sito</li>
+<li style=""max-width: 500px;"">ricevere inoltre <strong>un nuovo gadget 2022</strong> [sitename]</li>
+<li>ricevere due nuovi numeri della <strong>rivista da collezione Impronte</strong></li>
+</ul>
+<p style=""max-width: 600px; text-align:center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], il tuo abbonamento [PLAN_NAME] è scaduto","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""font-size: 20px; max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+ci spiace che quest'anno non pedalerai più con noi di [sitename].</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Il tuo abbonamento [PLAN_NAME] è scaduto</p>
+<p style=""max-width: 600px; text-align:center;"">ma potrai continuare ad accedere al sito con le tue credenziali, scaricare le tracce GPS, inviare racconti di viaggio e partecipare al forum.</p>
+<p style=""max-width: 600px; text-align:center;"">Se desideri riattivare il tuo abbonamento, non ti resta che <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=userprofile&Itemid=331"">accedere al tuo profilo</a> ed effettuare l'upgrade</p>
+<p style=""max-width: 600px; text-align:center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], il tuo abbonamento [PLAN_NAME]  è stato annullato","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">
+ci spiace che tu abbia deciso di annullare il tuo abbonamento [PLAN_NAME]</p>
+<p style=""max-width: 600px; text-align:center;"">ma ti auguriamo comunque un sacco di belle pedalate e viaggi in giro per il mondo.</p>
+<p style=""max-width: 600px; text-align:center;"">Ci piacerebbe sapere perché hai deciso di disdire il tuo abbonamento o se hai avuto qualsiasi problema, quindi non esitare a contattarci all'indirizzo email info@lifeintravel.it</p>
+<p style=""max-width: 600px; text-align:center;"">Se invece vuoi riattivare un abbonamento non ti resta che <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login&Itemid=2975"">accedere al tuo profilo</a> sul sito ed effettuare l'upgrade!
+<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","0",4,1,"0",1,index.php?option=com_comprofiler&view=userprofile&Itemid=331,"",rounded,cbreg_turquoise_3,3,1002,"0","","","","","","","0",=,"","","",|*|A,"0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","","","","0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","0","","","{""cbacy_lists_activation"":""10"",""cbacy_remove_activation"":""1"",""cbacy_lists_deactivation"":""10"",""cbacy_remove_deactivation"":""1"",""url_path_activation"":"""",""url_path_renewal"":"""",""url_path_deactivation"":"""",""url_path_expiration"":"""",""cpaycbsqlactions_type1"":""0"",""cpaycbsqlactions_activation1"":"""",""cpaycbsqlactions_renew1"":"""",""cpaycbsqlactions_expiry1"":"""",""cpaycbsqlactions_deactivation1"":"""",""cpaycbsqlactions_type2"":""0"",""cpaycbsqlactions_activation2"":"""",""cpaycbsqlactions_renew2"":"""",""cpaycbsqlactions_expiry2"":"""",""cpaycbsqlactions_deactivation2"":"""",""cpaycbsqlactions_type3"":""0"",""cpaycbsqlactions_activation3"":"""",""cpaycbsqlactions_renew3"":"""",""cpaycbsqlactions_expiry3"":"""",""cpaycbsqlactions_deactivation3"":"""",""cpaycbsqlactions_type4"":""0"",""cpaycbsqlactions_activation4"":"""",""cpaycbsqlactions_renew4"":"""",""cpaycbsqlactions_expiry4"":"""",""cpaycbsqlactions_deactivation4"":"""",""cpaycbsqlactions_type5"":""0"",""cpaycbsqlactions_activation5"":"""",""cpaycbsqlactions_renew5"":"""",""cpaycbsqlactions_expiry5"":"""",""cpaycbsqlactions_deactivation5"":"""",""postafpro_affiliate"":"""",""postafpro_campaign"":"""",""postafpro_channel"":"""",""postafpro_commission"":"""",""postafpro_currency"":"""",""postafpro_status"":""A"",""postafpro_update"":""0"",""postafpro_renewal"":""0"",""cbemail_name_activation"":"""",""cbemail_address_activation"":"""",""cbemail_to_activation"":"""",""cbemail_cc_activation"":"""",""cbemail_bcc_activation"":"""",""cbemail_sub_activation"":"""",""cbemail_msg_activation"":"""",""cbemail_atch_activation"":"""",""cbemail_type_activation"":""0"",""cbemail_name_pendingfirst"":"""",""cbemail_address_pendingfirst"":"""",""cbemail_to_pendingfirst"":"""",""cbemail_cc_pendingfirst"":"""",""cbemail_bcc_pendingfirst"":"""",""cbemail_sub_pendingfirst"":"""",""cbemail_msg_pendingfirst"":"""",""cbemail_atch_pendingfirst"":"""",""cbemail_type_pendingfirst"":""0"",""cbemail_name_renewal"":"""",""cbemail_address_renewal"":"""",""cbemail_to_renewal"":"""",""cbemail_cc_renewal"":"""",""cbemail_bcc_renewal"":"""",""cbemail_sub_renewal"":"""",""cbemail_msg_renewal"":"""",""cbemail_atch_renewal"":"""",""cbemail_type_renewal"":""0"",""cbemail_name_pendingrenewal"":"""",""cbemail_address_pendingrenewal"":"""",""cbemail_to_pendingrenewal"":"""",""cbemail_cc_pendingrenewal"":"""",""cbemail_bcc_pendingrenewal"":"""",""cbemail_sub_pendingrenewal"":"""",""cbemail_msg_pendingrenewal"":"""",""cbemail_atch_pendingrenewal"":"""",""cbemail_type_pendingrenewal"":""0"",""cbemail_name_autorenewal"":"""",""cbemail_address_autorenewal"":"""",""cbemail_to_autorenewal"":"""",""cbemail_cc_autorenewal"":"""",""cbemail_bcc_autorenewal"":"""",""cbemail_sub_autorenewal"":"""",""cbemail_msg_autorenewal"":"""",""cbemail_atch_autorenewal"":"""",""cbemail_type_autorenewal"":""0"",""cbemail_name_expired"":"""",""cbemail_address_expired"":"""",""cbemail_to_expired"":"""",""cbemail_cc_expired"":"""",""cbemail_bcc_expired"":"""",""cbemail_sub_expired"":"""",""cbemail_msg_expired"":"""",""cbemail_atch_expired"":"""",""cbemail_type_expired"":""0"",""cbemail_name_deactivation"":"""",""cbemail_address_deactivation"":"""",""cbemail_to_deactivation"":"""",""cbemail_cc_deactivation"":"""",""cbemail_bcc_deactivation"":"""",""cbemail_sub_deactivation"":"""",""cbemail_msg_deactivation"":"""",""cbemail_atch_deactivation"":"""",""cbemail_type_deactivation"":""0"",""cbfields_fieldid1"":"""",""cbfields_fieldid2"":"""",""cbfields_fieldid3"":"""",""cbfields_fieldid4"":"""",""cbfields_fieldid5"":"""",""cbfields_fieldid6"":"""",""cbfields_fieldid7"":"""",""cbfields_fieldid8"":"""",""cbfields_fieldid9"":"""",""cbfields_fieldid10"":"""",""familyplans_share"":""0"",""cpaycontent_categories_list"":""1"",""cpaycontent_components"":"""",""cpaycontent_modules"":"""",""cpaycontent_urls"":""option=com_jak2filter&Itemid=7297\r\n\r\n"",""planimage_image"":""giramondo.png"",""planimage_image_path"":""\/images\/subscription"",""folderaccess_msg"":""Restricted - Please Login"",""folderaccess_path1"":"""",""folderaccess_path2"":"""",""folderaccess_path3"":"""",""folderaccess_path4"":"""",""folderaccess_path5"":""""}","{""template_rounded_icon"":""red"",""tax_taxing_date"":""1""}"
+4,usersubscription,1,1,1,1,1,1,1,1,"0",1,Cicloviaggiatore,cicloviaggiatore,"<p>Sei uno di quelli che <strong>in bici andrebbe in capo al mondo</strong>!&nbsp;</p>
+<p>Per te che apprezzi il nostro lavoro:</p>
+<ul class=""zebra"">
+<li class=""dropdown show""><a class=""dropdown-toggle"" role=""button"" id=""dropdownMenuLink"" data-toggle=""dropdown"" aria-haspopup=""true"" aria-expanded=""false"">bonus del piano precedente</a>
+<div class=""dropdown-menu"" aria-labelledby=""dropdownMenuLink""><a class=""dropdown-item""><strong>scaricare le tracce GPS</strong> degli itinerari;</a> <a class=""dropdown-item""><strong>pubblicare i tuoi diari</strong> di viaggio, racconti e consigli;</a> <a class=""dropdown-item""><strong>utilizzare il forum</strong> di Life in Travel per chiedere consigli e trovare amici cicloviaggiatori;</a> <a class=""dropdown-item"">ricevere la <strong>newsletter di Life in Travel</strong>;</a> <a class=""dropdown-item"">la <strong>navigazione del sito AdFree</strong>: niente pubblicità, solo contenuti;</a> <a class=""dropdown-item"">l'<strong>e-book</strong><em>&nbsp;""Viaggiare in bici, che figata!""</em> con tanti suggerimenti utili;</a> <a class=""dropdown-item"">l'<strong>e-book</strong><em>&nbsp;""Vecchie ferrovie in bicicletta - vol. 1""</em> con 33 percorsi ciclabili su ex ferrovie in Italia; </a><a class=""dropdown-item"">il <strong>tuo nome</strong> nella pagina dei ringraziamenti.</a></div>
+</li>
+<li><strong>B.E.E.R. - Botta Ed (Esaustiva) Risposta</strong>: la sezione di contenuti esclusivi con botta e risposta su temi di interesse generale (itinerari famosi, comparative, prodotti, consigli...);</li>
+<li>il super <strong>gadget firmato Life in Travel</strong> in omaggio.</li>
+</ul>","0",[AUTOMATIC],[PREFIX_TEXT] [ITEM_NAME][VALIDITY_IF_NOT_AUTORECURRING],[PREFIX_TEXT] [ITEM_ALIAS][VALIDITY_IF_NOT_AUTORECURRING],"","49.00000","0001-00-00 00:00:00","01-01","0000-00-00 00:00:00","0000-00-00 00:00:00","0000-00-00 00:00:00","0000-06-00 00:00:00","0000-00-00 00:00:00","0000-00-07 00:00:00",1,1,"0",2,"0","0","-9999.00000","0000-00-00 00:00:00","01-01","0",117,1,2,1,12,"0","<p>Ancora un colpo di pedale e potrai:</p>
+<ul class=""check"">
+<li><em>pedalare</em> sul sito <strong>senza pubblicità</strong>,</li>
+<li><strong>scaricare l'e-book&nbsp;</strong><em>""Viaggiare in bici, che figata!"",</em></li>
+<li><strong>scaricare l'e-book</strong> ""<em>Vecchie ferrovie in bicicletta - vol. 1</em>"",</li>
+<li>accedere alla sezione&nbsp;<em>B.E.E.R.</em> del sito <strong>leggendo i vari botta e risposta del nostro team.</strong></li>
+</ul>
+<p>A breve riceverai un'email con le istruzioni per&nbsp;<strong>diventare un Lifeintraveler</strong> (controlla anche la casella spam).</p>
+<p>Inoltre, se hai inserito correttamente il tuo indirizzo, riceverai presto</p>
+<ul class=""check"">
+<li>le <em>fighissime calze da bici Life in Travel</em>.&nbsp;</li>
+</ul>
+<p>Per aggiornare il tuo abbonamento, puoi accedere al tuo <a href=""index.php?option=com_comprofiler&amp;view=userprofile&amp;Itemid=331&amp;lang=it"" title=""Il tuo profilo"">profilo utente</a> in qualsiasi momento.</p>
+<p style=""text-align: right;""><a href=""https://www.lifeintravel.it"" class=""btn btn-primary"">Torna al sito</a></p>","<p>Grazie per la registrazione e il supporto.</p>
+<p>Riceverai a breve una email (controlla anche la casella spam) con le<strong>&nbsp;istruzioni per il pagamento</strong>&nbsp;prima di poter:</p>
+<ul>
+<li><em>pedalare</em>&nbsp;sul sito <strong>senza pubblicità</strong>,</li>
+<li><strong>scaricare l'e-book</strong> <em style=""font-family: inherit; font-size: 1rem; caret-color: auto;"">""Viaggiare in bici, che figata!"",</em></li>
+<li><strong>scaricare l'e-book</strong> ""<em>Vecchie ferrovie in bicicletta - vol. 1</em>"",</li>
+<li>accedere alla sezione&nbsp;<em>B.E.E.R.</em> del sito <strong>leggendo i vari botta e risposta del nostro team</strong>,</li>
+<li>ricevere <strong>le fighissime calze da bici Life in Travel.</strong></li>
+</ul>
+<p>Per aggiornare il tuo abbonamento, puoi accedere al tuo <a href=""index.php?option=com_comprofiler&amp;view=userprofile&amp;Itemid=331&amp;lang=it"" title=""Il tuo profilo"">profilo utente</a> in qualsiasi momento.</p>
+<p style=""text-align: right;""><a href=""https://www.lifeintravel.it"" class=""btn btn-primary"">Torna al sito</a></p>","[USERNAME], ora sei [PLAN_NAME] davvero","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">grazie per aver acquistato il piano di abbonamento [PLAN_NAME]</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai effettuato una nuova registrazione, dovresti aver già ricevuto una mail per attivare il tuo account con i seguenti dati di accesso:<br />
+<br />
+Nome utente: <strong>[USERNAME]</strong><br />
+Password: <strong>quella inserita al momento della registrazione</strong>
+</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai già un account attivo, effettua il <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login"">login</a> e potrai accedere ai seguenti <strong>contenuti esclusivi</strong> tra cui:</p>
+<ul class=""check"">
+<li style=""max-width: 500px;""><em>pedalare</em> sul sito <strong>senza pubblicità per un anno</strong></li>
+<li style=""max-width: 500px;"">scaricare <a href=""https://www.lifeintravel.it/index.php?option=com_phocadownload&view=category&download=1057&id=17&Itemid=260"">a questo link</a> <strong>l'ebook di 160 pagine</strong> <em>""Viaggiare in bici, che figata!""</em>, con tanti suggerimenti e consigli utili</li>
+<li style=""max-width: 500px;"">scaricare <strong>l'ebook di 240 pagine</strong><em>""Vecchie ferrovie in bici""</em> (a partire dal 15 Marzo 2022)</li>
+<li style=""max-width: 500px;""><strong>il tuo nome</strong> nella pagina dei ringraziamenti.</li style=""max-width: 500px;"">
+<li>accedere alla sezione B.E.E.R. del sito e leggere gli articoli dedicati</li>
+<li style=""max-width: 500px;"">ricevere le <strong>super calze da bici Life in Travel</strong> </li></ul>
+<p style=""max-width: 600px; text-align:center;"">Per aggiornare il tuo abbonamento, puoi <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login&Itemid=2975"">accedere al tuo profilo</a> in qualsiasi momento.</p>
+<p style=""max-width: 600px; text-align:center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate!<br />
+Vero, Leo, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], un ultimo colpo di pedale per diventare [PLAN_NAME] davvero","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+grazie per esserti registrato/a su [sitename].</p>
+<p style=""font-size:18px; max-width: 600px; text-align:center;"">Hai attivato il piano di abbonamento [PLAN_NAME] ma non abbiamo ancora ricevuto il pagamento.</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai scelto la modalità di pagamento con <strong>bonifico bancario</strong> ti ricordiamo che queste sono le coordinate su cui dovrai versare [PLAN_REGISTRATION_PRICE] (Se hai inserito un coupon di sconto la cifra da versare è quella indicata in fase di checkout):</p>
+<p style=""max-widht: 600px; text-align:center;"">
+<strong>Intestato a: Libes SRL<br/>
+IBAN: IT60O0306953530100000002865<br/>
+BIC/SWIFT: BCITITMM<br/>
+Banca Intesa San Paolo</strong>
+</p>
+<p style=""max-width: 600px; text-align:center;"">Quando avrai effettuato il pagamento, dovresti ricevere una mail di conferma. Se non la ricevi entro qualche giorno potremmo essere in viaggio in zone remote e per questo non aver attivato il tuo piano. 
+<br /><br /><br />
+Se vuoi accelerare il processo di attivazione o per qualsiasi altro dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Vero, Leo, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], sei [PLAN_NAME] per un altro anno","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+è bello vedere che <em>pedalerai</em> con noi per un altro anno.</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Il tuo abbonamento [PLAN_NAME] è stato rinnovato e potrai:</p>
+
+<ul class=""check"">
+<li style=""max-width: 500px;""><em>pedalare</em> sul sito <strong>senza pubblicità</strong> fino al [SUBSCRIPTION_EXPIRY_DATE]</li>
+<li style=""max-width: 500px;"">scaricare <a href=""https://www.lifeintravel.it/index.php?option=com_phocadownload&view=category&download=1057&id=17&Itemid=260"">a questo link</a> gli aggiornamenti dell'<strong>ebook di 160 pagine</strong> <em>""Viaggiare in bici, che figata!""</em>, con tanti suggerimenti e consigli utili.</li>
+<li style=""max-width: 500px;"">scaricare <strong>l'ebook di 240 pagine</strong><em>""Vecchie ferrovie in bicicletta - vol. 1""</em> (a partire dal 15 Marzo 2022)</li>
+<li style=""max-width: 500px;"">navigare nella sezione <strong>B.E.E.R.</strong> del sito, con tanti contenuti esclusivi</li>
+<li style=""max-width: 500px;"">ricevere il <strong>gadget 2022</strong> a breve!</li>
+</ul>
+<p style=""max-width: 600px; text-align: center;"">Per aggiornare il tuo abbonamento, puoi <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login&Itemid=2975"">accedere al tuo profilo</a> in qualsiasi momento.</p>
+<p style=""max-width: 600px; text-align: center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br />
+Buone pedalate,<br />
+Vero, Leo, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], un ultimo colpo di pedale per continuare ad essere [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+è bello vedere che <em>pedalerai</em> con noi per un altro anno.</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Siamo in attesa del pagamento per il rinnovo del tuo abbonamento [PLAN_NAME] per poter <em>pedalare</em> ancora con noi</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai scelto la modalità di pagamento con bonifico bancario ti ricordiamo che queste sono le coordinate su cui dovrai versare [PLAN_REGISTRATION_PRICE] (Se hai inserito un coupon di sconto la cifra da versare è quella indicata in fase di checkout):
+<p style=""max-widht: 600px; text-align:center;"">
+<strong>Intestato a: Libes SRL<br/>
+IBAN: IT60O0306953530100000002865<br/>
+BIC/SWIFT: BCITITMM<br/>
+Banca Intesa San Paolo</strong>
+</p>
+<p style=""max-width: 600px; text-align:center;""><br /><br />
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], sei [PLAN_NAME] per un altro anno","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+è bello vedere che <em>pedalerai</em> con noi per un altro anno.</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Il tuo abbonamento [PLAN_NAME] è stato rinnovato e potrai:<ul class=""check"" >
+<li style=""max-width: 500px;""><em>pedalare</em> sul sito <strong>senza pubblicità</strong> fino al [SUBSCRIPTION_EXPIRY_DATE]</li>
+<li style=""max-width: 500px;"">scaricare <a href=""https://www.lifeintravel.it/index.php?option=com_phocadownload&view=category&download=1057&id=17&Itemid=260"">a questo link</a> gli aggiornamenti dell'<strong>ebook di 160 pagine</strong></li> 
+<li style=""max-width: 500px;"">scaricare <strong>l'ebook di 240 pagine</strong><em>""Vecchie ferrovie in bicicletta - vol. 1""</em> (a partire dal 15 Marzo 2022)</li>
+<li style=""max-width: 500px;"">navigare nella sezione <strong>B.E.E.R.</strong> del sito, con tanti contenuti esclusivi</li>
+<li style=""max-width: 500px;"">ricevere il <strong>gadget 2022</strong> a breve!</li>
+</ul>
+<p style=""max-width: 600px; text-align:center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Vero, Leo, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], il tuo abbonamento [PLAN_NAME] è scaduto","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""font-size: 20px; max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+ci spiace che quest'anno non pedalerai più con noi di [sitename].</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Il tuo abbonamento [PLAN_NAME] è scaduto</p>
+<p style=""max-width: 600px; text-align:center;"">ma potrai continuare ad accedere al sito con le tue credenziali, scaricare le tracce GPS, inviare racconti di viaggio e partecipare al forum.</p>
+<p style=""max-width: 600px; text-align:center;"">Se desideri riattivare il tuo abbonamento, non ti resta che <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=userprofile&Itemid=331"">accedere al tuo profilo</a> ed effettuare l'upgrade</p>
+<p style=""max-width: 600px; text-align:center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Vero, Leo, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], il tuo abbonamento [PLAN_NAME] è stato annullato","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">
+ci spiace che tu abbia deciso di annullare il tuo abbonamento [PLAN_NAME]</p>
+<p style=""max-width: 600px; text-align:center;"">ma ti auguriamo comunque un sacco di belle pedalate e viaggi in giro per il mondo.</p>
+<p style=""max-width: 600px; text-align:center;"">Ci piacerebbe sapere perché hai deciso di disdire il tuo abbonamento o se hai avuto qualsiasi problema, quindi non esitare a contattarci all'indirizzo email info@lifeintravel.it</p>
+<p style=""max-width: 600px; text-align:center;"">Se invece vuoi riattivare un abbonamento non ti resta che <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login&Itemid=2975"">accedere al tuo profilo</a> sul sito ed effettuare l'upgrade!
+<br /><br />
+Buone pedalate,<br />
+Vero, Leo, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","0",3,1,"0",1,index.php?option=com_comprofiler&view=userprofile&Itemid=331,"",rounded,cbreg_turquoise_3,3,1002,"0","","","","","","","0",=,"","","","","0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","","","","0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","0","","","{""cbacy_lists_activation"":""11"",""cbacy_remove_activation"":""1"",""cbacy_lists_deactivation"":""11"",""cbacy_remove_deactivation"":""1"",""url_path_activation"":"""",""url_path_renewal"":"""",""url_path_deactivation"":"""",""url_path_expiration"":"""",""cpaycbsqlactions_type1"":""0"",""cpaycbsqlactions_activation1"":"""",""cpaycbsqlactions_renew1"":"""",""cpaycbsqlactions_expiry1"":"""",""cpaycbsqlactions_deactivation1"":"""",""cpaycbsqlactions_type2"":""0"",""cpaycbsqlactions_activation2"":"""",""cpaycbsqlactions_renew2"":"""",""cpaycbsqlactions_expiry2"":"""",""cpaycbsqlactions_deactivation2"":"""",""cpaycbsqlactions_type3"":""0"",""cpaycbsqlactions_activation3"":"""",""cpaycbsqlactions_renew3"":"""",""cpaycbsqlactions_expiry3"":"""",""cpaycbsqlactions_deactivation3"":"""",""cpaycbsqlactions_type4"":""0"",""cpaycbsqlactions_activation4"":"""",""cpaycbsqlactions_renew4"":"""",""cpaycbsqlactions_expiry4"":"""",""cpaycbsqlactions_deactivation4"":"""",""cpaycbsqlactions_type5"":""0"",""cpaycbsqlactions_activation5"":"""",""cpaycbsqlactions_renew5"":"""",""cpaycbsqlactions_expiry5"":"""",""cpaycbsqlactions_deactivation5"":"""",""postafpro_affiliate"":"""",""postafpro_campaign"":"""",""postafpro_channel"":"""",""postafpro_commission"":"""",""postafpro_currency"":"""",""postafpro_status"":""A"",""postafpro_update"":""0"",""postafpro_renewal"":""0"",""cbemail_name_activation"":"""",""cbemail_address_activation"":"""",""cbemail_to_activation"":"""",""cbemail_cc_activation"":"""",""cbemail_bcc_activation"":"""",""cbemail_sub_activation"":"""",""cbemail_msg_activation"":"""",""cbemail_atch_activation"":"""",""cbemail_type_activation"":""0"",""cbemail_name_pendingfirst"":"""",""cbemail_address_pendingfirst"":"""",""cbemail_to_pendingfirst"":"""",""cbemail_cc_pendingfirst"":"""",""cbemail_bcc_pendingfirst"":"""",""cbemail_sub_pendingfirst"":"""",""cbemail_msg_pendingfirst"":"""",""cbemail_atch_pendingfirst"":"""",""cbemail_type_pendingfirst"":""0"",""cbemail_name_renewal"":"""",""cbemail_address_renewal"":"""",""cbemail_to_renewal"":"""",""cbemail_cc_renewal"":"""",""cbemail_bcc_renewal"":"""",""cbemail_sub_renewal"":"""",""cbemail_msg_renewal"":"""",""cbemail_atch_renewal"":"""",""cbemail_type_renewal"":""0"",""cbemail_name_pendingrenewal"":"""",""cbemail_address_pendingrenewal"":"""",""cbemail_to_pendingrenewal"":"""",""cbemail_cc_pendingrenewal"":"""",""cbemail_bcc_pendingrenewal"":"""",""cbemail_sub_pendingrenewal"":"""",""cbemail_msg_pendingrenewal"":"""",""cbemail_atch_pendingrenewal"":"""",""cbemail_type_pendingrenewal"":""0"",""cbemail_name_autorenewal"":"""",""cbemail_address_autorenewal"":"""",""cbemail_to_autorenewal"":"""",""cbemail_cc_autorenewal"":"""",""cbemail_bcc_autorenewal"":"""",""cbemail_sub_autorenewal"":"""",""cbemail_msg_autorenewal"":"""",""cbemail_atch_autorenewal"":"""",""cbemail_type_autorenewal"":""0"",""cbemail_name_expired"":"""",""cbemail_address_expired"":"""",""cbemail_to_expired"":"""",""cbemail_cc_expired"":"""",""cbemail_bcc_expired"":"""",""cbemail_sub_expired"":"""",""cbemail_msg_expired"":"""",""cbemail_atch_expired"":"""",""cbemail_type_expired"":""0"",""cbemail_name_deactivation"":"""",""cbemail_address_deactivation"":"""",""cbemail_to_deactivation"":"""",""cbemail_cc_deactivation"":"""",""cbemail_bcc_deactivation"":"""",""cbemail_sub_deactivation"":"""",""cbemail_msg_deactivation"":"""",""cbemail_atch_deactivation"":"""",""cbemail_type_deactivation"":""0"",""cbfields_fieldid1"":"""",""cbfields_fieldid2"":"""",""cbfields_fieldid3"":"""",""cbfields_fieldid4"":"""",""cbfields_fieldid5"":"""",""cbfields_fieldid6"":"""",""cbfields_fieldid7"":"""",""cbfields_fieldid8"":"""",""cbfields_fieldid9"":"""",""cbfields_fieldid10"":"""",""familyplans_share"":""0"",""cpaycontent_categories_list"":""1"",""cpaycontent_components"":"""",""cpaycontent_modules"":"""",""cpaycontent_urls"":"""",""planimage_image"":""cicloesploratore.png"",""planimage_image_path"":""\/images\/subscription"",""folderaccess_msg"":""Restricted - Please Login"",""folderaccess_path1"":"""",""folderaccess_path2"":"""",""folderaccess_path3"":"""",""folderaccess_path4"":"""",""folderaccess_path5"":""""}","{""template_rounded_icon"":""blue"",""tax_taxing_date"":""1""}"
+6,merchandise,"0",1,1,1,1,1,1,1,"0",1,Cappellino Life in Travel,cappellino,"<p>Il super cappellino di Life in Travel firmato <em>Biciclista</em>, con la grafica dedicata a Nala e a chi ama l'avventura in bici nella natura selvaggia!</p>
+<p><em>Be wild, ride free!</em></p>","0",[AUTOMATIC],[PREFIX_TEXT] [ITEM_NAME],[PREFIX_TEXT] [ITEM_ALIAS],"","25.00000","","01-01","","","","","","",1,"0","0","0","0","0",,"","01-01","0",118,2,2,1,"0",1,<p>Grazie per aver acquistato il cappellino Life in Travel. Riceverai via mail indicazioni sulla spedizione!</p>,<p>Grazie per aver acquistato il cappellino Life in Travel. Riceverai via mail indicazioni per il pagamento</p>,"[USERNAME], ecco il tuo [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto; max-width: 600px;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">grazie per aver acquistato il [PLAN_NAME]</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai effettuato una nuova registrazione sul sito, dovresti aver già ricevuto una mail per attivare il tuo account con i seguenti dati di accesso:<br />
+<br />
+Nome utente: <strong>[USERNAME]</strong><br />
+Password: <strong>quella inserita al momento della registrazione</strong>
+</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai inserito correttamente il tuo indirizzo non dovrai fare altro che avere pazienza e attendere qualche giorno per poterlo indossare</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se invece non hai ancora inserito l'indirizzo assicurati di farlo il prima possibile:</p>
+<p style=""text-align:center;""><a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=userdetails&Itemid=612"" style=""text-decoration: none; background-color: #28a745; border-color: #327742; color: #fff; display: inline-block; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem;  line-height: 1.5; border-radius: .25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;"">Aggiorna il tuo indirizzo</a>
+</p>
+
+<p style=""max-width: 600px; text-align: center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate!<br />
+Leo, Vero, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], un ultimo colpo di pedale per il tuo [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+grazie per aver appena iniziato le tue pedalate con [sitename].</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Hai richiesto di acquistare 
+ il [PLAN_NAME] ma non abbiamo ancora ricevuto il pagamento.</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai scelto la modalità di pagamento con bonifico bancario ti ricordiamo che queste sono le coordinate su cui dovrai versare [PLAN_REGISTRATION_PRICE] (Se hai inserito un coupon di sconto la cifra da versare è quella indicata in fase di checkout):</p>
+<p style=""max-widht: 600px; text-align:center;"">
+<strong>Intestato a: Libes SRL<br/>
+IBAN: IT60O0306953530100000002865<br/>
+BIC/SWIFT: BCITITMM<br/>
+Banca Intesa San Paolo</strong>
+</p>
+<p style=""max-width: 600px; text-align:center;"">Quando avrai effettuato il pagamento, riceverai una mail di conferma. Se non la ricevi entro qualche giorno potremmo essere in viaggio in zone remote e per questo non aver attivato il tuo piano. 
+<br /><br /><br />
+Se vuoi accelerare il processo di invio del tuo nuovo [PLAN_NAME] o per qualsiasi altro dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","0",8,"0","0",1,"","","","",3,1002,1,1,|*|4|*|3,"","","","","0",=,"",1,1|*|2,|*|A,"0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","","","","0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","0","","","{""cbacy_lists_activation"":"""",""cbacy_remove_activation"":""1"",""cbacy_lists_deactivation"":"""",""cbacy_remove_deactivation"":""0"",""url_path_activation"":"""",""url_path_renewal"":"""",""url_path_deactivation"":"""",""url_path_expiration"":"""",""cpaycbsqlactions_type1"":""0"",""cpaycbsqlactions_activation1"":"""",""cpaycbsqlactions_renew1"":"""",""cpaycbsqlactions_expiry1"":"""",""cpaycbsqlactions_deactivation1"":"""",""cpaycbsqlactions_type2"":""0"",""cpaycbsqlactions_activation2"":"""",""cpaycbsqlactions_renew2"":"""",""cpaycbsqlactions_expiry2"":"""",""cpaycbsqlactions_deactivation2"":"""",""cpaycbsqlactions_type3"":""0"",""cpaycbsqlactions_activation3"":"""",""cpaycbsqlactions_renew3"":"""",""cpaycbsqlactions_expiry3"":"""",""cpaycbsqlactions_deactivation3"":"""",""cpaycbsqlactions_type4"":""0"",""cpaycbsqlactions_activation4"":"""",""cpaycbsqlactions_renew4"":"""",""cpaycbsqlactions_expiry4"":"""",""cpaycbsqlactions_deactivation4"":"""",""cpaycbsqlactions_type5"":""0"",""cpaycbsqlactions_activation5"":"""",""cpaycbsqlactions_renew5"":"""",""cpaycbsqlactions_expiry5"":"""",""cpaycbsqlactions_deactivation5"":"""",""postafpro_affiliate"":"""",""postafpro_campaign"":"""",""postafpro_channel"":"""",""postafpro_commission"":"""",""postafpro_currency"":"""",""postafpro_status"":""A"",""postafpro_update"":""0"",""postafpro_renewal"":""0"",""cbemail_name_activation"":"""",""cbemail_address_activation"":"""",""cbemail_to_activation"":"""",""cbemail_cc_activation"":"""",""cbemail_bcc_activation"":"""",""cbemail_sub_activation"":"""",""cbemail_msg_activation"":"""",""cbemail_atch_activation"":"""",""cbemail_type_activation"":""0"",""cbemail_name_pendingfirst"":"""",""cbemail_address_pendingfirst"":"""",""cbemail_to_pendingfirst"":"""",""cbemail_cc_pendingfirst"":"""",""cbemail_bcc_pendingfirst"":"""",""cbemail_sub_pendingfirst"":"""",""cbemail_msg_pendingfirst"":"""",""cbemail_atch_pendingfirst"":"""",""cbemail_type_pendingfirst"":""0"",""cbemail_name_renewal"":"""",""cbemail_address_renewal"":"""",""cbemail_to_renewal"":"""",""cbemail_cc_renewal"":"""",""cbemail_bcc_renewal"":"""",""cbemail_sub_renewal"":"""",""cbemail_msg_renewal"":"""",""cbemail_atch_renewal"":"""",""cbemail_type_renewal"":""0"",""cbemail_name_pendingrenewal"":"""",""cbemail_address_pendingrenewal"":"""",""cbemail_to_pendingrenewal"":"""",""cbemail_cc_pendingrenewal"":"""",""cbemail_bcc_pendingrenewal"":"""",""cbemail_sub_pendingrenewal"":"""",""cbemail_msg_pendingrenewal"":"""",""cbemail_atch_pendingrenewal"":"""",""cbemail_type_pendingrenewal"":""0"",""cbemail_name_autorenewal"":"""",""cbemail_address_autorenewal"":"""",""cbemail_to_autorenewal"":"""",""cbemail_cc_autorenewal"":"""",""cbemail_bcc_autorenewal"":"""",""cbemail_sub_autorenewal"":"""",""cbemail_msg_autorenewal"":"""",""cbemail_atch_autorenewal"":"""",""cbemail_type_autorenewal"":""0"",""cbemail_name_expired"":"""",""cbemail_address_expired"":"""",""cbemail_to_expired"":"""",""cbemail_cc_expired"":"""",""cbemail_bcc_expired"":"""",""cbemail_sub_expired"":"""",""cbemail_msg_expired"":"""",""cbemail_atch_expired"":"""",""cbemail_type_expired"":""0"",""cbemail_name_deactivation"":"""",""cbemail_address_deactivation"":"""",""cbemail_to_deactivation"":"""",""cbemail_cc_deactivation"":"""",""cbemail_bcc_deactivation"":"""",""cbemail_sub_deactivation"":"""",""cbemail_msg_deactivation"":"""",""cbemail_atch_deactivation"":"""",""cbemail_type_deactivation"":""0"",""cbfields_fieldid1"":"""",""cbfields_fieldid2"":"""",""cbfields_fieldid3"":"""",""cbfields_fieldid4"":"""",""cbfields_fieldid5"":"""",""cbfields_fieldid6"":"""",""cbfields_fieldid7"":"""",""cbfields_fieldid8"":"""",""cbfields_fieldid9"":"""",""cbfields_fieldid10"":"""",""cpaycontent_categories_list"":""1"",""cpaycontent_components"":"""",""cpaycontent_modules"":"""",""cpaycontent_urls"":"""",""planimage_image"":""-1"",""planimage_image_path"":""\/images\/stories"",""folderaccess_msg"":""Restricted - Please Login"",""folderaccess_path1"":"""",""folderaccess_path2"":"""",""folderaccess_path3"":"""",""folderaccess_path4"":"""",""folderaccess_path5"":""""}","{""tax_taxing_date"":""1""}"
+7,merchandise,1,1,1,1,1,1,1,1,"0",1,E-book Viaggiare in bici,ebook,"<p>L'E-book <strong>Viaggiare in bici, che figata!</strong></p>
+<p>160 pagine di informazioni, immagini e consigli per viaggiare in bicicletta e iniziare ad amare il cicloturismo!</p>","0",[AUTOMATIC],[PREFIX_TEXT] [ITEM_NAME],[PREFIX_TEXT] [ITEM_ALIAS],"","15.00000","","01-01","","","","","","",1,"0","0","0","0","0",,"","01-01","0",118|*|181,2,2,1,"0",1,"<p>Grazie per aver acquistato l'Ebook <em>""Viaggiare in bici, che figata!""</em>. Riceverai via mail indicazioni per scaricare il file!</p>","<p>Grazie per aver acquistato l'Ebook <em>""Viaggiare in bici, che figata!""</em>. Riceverai via mail indicazioni per il pagamento!</p>","[USERNAME], ecco il tuo [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto; max-width: 600px;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">grazie per aver acquistato l'[PLAN_NAME]</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai effettuato una nuova registrazione, dovresti aver già ricevuto una mail per attivare il tuo account con i seguenti dati di accesso:<br />
+<br />
+Nome utente: <strong>[USERNAME]</strong><br />
+Password: <strong>quella inserita al momento della registrazione</strong>
+</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai già un account attivo, effettua il <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login"">login</a> e potrai  scaricare <strong>l'ebook di 160 pagine</strong> <em>""Viaggiare in bici, che figata!""</em>, con tanti suggerimenti e consigli utili</p>
+<p style=""text-align: center;""><a href=""https://www.lifeintravel.it/index.php?option=com_phocadownload&view=category&download=1057&id=17&Itemid=260"" style=""text-decoration: none; background-color: #28a745; border-color: #327742; color: #fff; display: inline-block; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem;  line-height: 1.5; border-radius: .25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;"">Scarica l'ebook</a></p>
+
+<p style=""max-width: 600px; text-align: center;"">Per aggiornare il tuo abbonamento, puoi <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login&Itemid=2975"">accedere al tuo profilo</a> in qualsiasi momento.</p>
+<p style=""max-width: 600px; text-align: center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate!<br />
+Leo, Vero, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], un ultimo colpo di pedale per il tuo [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+grazie per aver appena iniziato le tue pedalate con [sitename].</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Hai richiesto di acquistare l'[PLAN_NAME] ma non abbiamo ancora ricevuto il pagamento.</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai scelto la modalità di pagamento con bonifico bancario ti ricordiamo che queste sono le coordinate su cui dovrai versare [PLAN_REGISTRATION_PRICE] (Se hai inserito un coupon di sconto la cifra da versare è quella indicata in fase di checkout):</p>
+<p style=""max-widht: 600px; text-align:center;"">
+<strong>Intestato a: Libes SRL<br/>
+IBAN: IT60O0306953530100000002865<br/>
+BIC/SWIFT: BCITITMM<br/>
+Banca Intesa San Paolo</strong>
+</p>
+<p style=""max-width: 600px; text-align:center;"">Quando avrai effettuato il pagamento, riceverai una mail di conferma con il link per scaricare il libro. Se non la ricevi entro qualche giorno potremmo essere in viaggio in zone remote e per questo non aver attivato il tuo piano. 
+<br /><br /><br />
+Se vuoi accelerare il processo di attivazione o per qualsiasi altro dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Vero, Leo, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","0",6,"0","0",1,"","","","",2,1005,1,1,|*|4|*|3,"","","","","0",=,"",1,1,A,"0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","",or,2|*|4|*|3,R|*|X|*|C|*|I,"0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","0","","","{""cbacy_lists_activation"":"""",""cbacy_remove_activation"":""1"",""cbacy_lists_deactivation"":"""",""cbacy_remove_deactivation"":""0"",""url_path_activation"":"""",""url_path_renewal"":"""",""url_path_deactivation"":"""",""url_path_expiration"":"""",""cpaycbsqlactions_type1"":""0"",""cpaycbsqlactions_activation1"":"""",""cpaycbsqlactions_renew1"":"""",""cpaycbsqlactions_expiry1"":"""",""cpaycbsqlactions_deactivation1"":"""",""cpaycbsqlactions_type2"":""0"",""cpaycbsqlactions_activation2"":"""",""cpaycbsqlactions_renew2"":"""",""cpaycbsqlactions_expiry2"":"""",""cpaycbsqlactions_deactivation2"":"""",""cpaycbsqlactions_type3"":""0"",""cpaycbsqlactions_activation3"":"""",""cpaycbsqlactions_renew3"":"""",""cpaycbsqlactions_expiry3"":"""",""cpaycbsqlactions_deactivation3"":"""",""cpaycbsqlactions_type4"":""0"",""cpaycbsqlactions_activation4"":"""",""cpaycbsqlactions_renew4"":"""",""cpaycbsqlactions_expiry4"":"""",""cpaycbsqlactions_deactivation4"":"""",""cpaycbsqlactions_type5"":""0"",""cpaycbsqlactions_activation5"":"""",""cpaycbsqlactions_renew5"":"""",""cpaycbsqlactions_expiry5"":"""",""cpaycbsqlactions_deactivation5"":"""",""postafpro_affiliate"":"""",""postafpro_campaign"":"""",""postafpro_channel"":"""",""postafpro_commission"":"""",""postafpro_currency"":"""",""postafpro_status"":""A"",""postafpro_update"":""0"",""postafpro_renewal"":""0"",""cbemail_name_activation"":"""",""cbemail_address_activation"":"""",""cbemail_to_activation"":"""",""cbemail_cc_activation"":"""",""cbemail_bcc_activation"":"""",""cbemail_sub_activation"":"""",""cbemail_msg_activation"":"""",""cbemail_atch_activation"":"""",""cbemail_type_activation"":""0"",""cbemail_name_pendingfirst"":"""",""cbemail_address_pendingfirst"":"""",""cbemail_to_pendingfirst"":"""",""cbemail_cc_pendingfirst"":"""",""cbemail_bcc_pendingfirst"":"""",""cbemail_sub_pendingfirst"":"""",""cbemail_msg_pendingfirst"":"""",""cbemail_atch_pendingfirst"":"""",""cbemail_type_pendingfirst"":""0"",""cbemail_name_renewal"":"""",""cbemail_address_renewal"":"""",""cbemail_to_renewal"":"""",""cbemail_cc_renewal"":"""",""cbemail_bcc_renewal"":"""",""cbemail_sub_renewal"":"""",""cbemail_msg_renewal"":"""",""cbemail_atch_renewal"":"""",""cbemail_type_renewal"":""0"",""cbemail_name_pendingrenewal"":"""",""cbemail_address_pendingrenewal"":"""",""cbemail_to_pendingrenewal"":"""",""cbemail_cc_pendingrenewal"":"""",""cbemail_bcc_pendingrenewal"":"""",""cbemail_sub_pendingrenewal"":"""",""cbemail_msg_pendingrenewal"":"""",""cbemail_atch_pendingrenewal"":"""",""cbemail_type_pendingrenewal"":""0"",""cbemail_name_autorenewal"":"""",""cbemail_address_autorenewal"":"""",""cbemail_to_autorenewal"":"""",""cbemail_cc_autorenewal"":"""",""cbemail_bcc_autorenewal"":"""",""cbemail_sub_autorenewal"":"""",""cbemail_msg_autorenewal"":"""",""cbemail_atch_autorenewal"":"""",""cbemail_type_autorenewal"":""0"",""cbemail_name_expired"":"""",""cbemail_address_expired"":"""",""cbemail_to_expired"":"""",""cbemail_cc_expired"":"""",""cbemail_bcc_expired"":"""",""cbemail_sub_expired"":"""",""cbemail_msg_expired"":"""",""cbemail_atch_expired"":"""",""cbemail_type_expired"":""0"",""cbemail_name_deactivation"":"""",""cbemail_address_deactivation"":"""",""cbemail_to_deactivation"":"""",""cbemail_cc_deactivation"":"""",""cbemail_bcc_deactivation"":"""",""cbemail_sub_deactivation"":"""",""cbemail_msg_deactivation"":"""",""cbemail_atch_deactivation"":"""",""cbemail_type_deactivation"":""0"",""cbfields_fieldid1"":"""",""cbfields_fieldid2"":"""",""cbfields_fieldid3"":"""",""cbfields_fieldid4"":"""",""cbfields_fieldid5"":"""",""cbfields_fieldid6"":"""",""cbfields_fieldid7"":"""",""cbfields_fieldid8"":"""",""cbfields_fieldid9"":"""",""cbfields_fieldid10"":"""",""cpaycontent_categories_list"":""1"",""cpaycontent_components"":"""",""cpaycontent_modules"":"""",""cpaycontent_urls"":"""",""planimage_image"":""-1"",""planimage_image_path"":""\/images\/stories"",""folderaccess_msg"":""Restricted - Please Login"",""folderaccess_path1"":"""",""folderaccess_path2"":"""",""folderaccess_path3"":"""",""folderaccess_path4"":"""",""folderaccess_path5"":""""}","{""tax_taxing_date"":""1""}"
+9,merchandise,"0",1,1,1,1,1,1,1,"0",1,Magazine Impronte,magazine,"<p>Abbonamento annuale (2 numeri) al <strong>magazine da collezione Impronte</strong>&nbsp;dedicato ai viaggi in bici e al bikepacking</p>
+<p>Racconti di viaggiatori, fotografie esclusive, contenuti inediti: IL magazine del cicloviaggiatore.</p>","0",[AUTOMATIC],[PREFIX_TEXT] [ITEM_NAME],[PREFIX_TEXT] [ITEM_ALIAS],"","69.00000","","01-01","","","","","","",1,"0","0","0","0","0",,"","01-01","0",118,2,2,1,"0","0",<p>Grazie per aver acquistato l'abbonamento annuale al <strong>magazine Impronte</strong>. Riceverai via mail informazioni relative alla prossima spedizione!</p>,<p>Grazie per aver acquistato l'abbonamento annuale al <strong>magazine Impronte</strong>. Riceverai via mail informazioni per il pagamento.</p>,"[USERNAME], ecco il tuo [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto; max-width: 600px;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">grazie per aver acquistato il tuo abbonamento annuale al<br /> <strong>[PLAN_NAME]</strong></p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai effettuato una nuova registrazione, dovresti aver già ricevuto una mail per attivare il tuo account con i seguenti dati di accesso:<br />
+<br />
+Nome utente: <strong>[USERNAME]</strong><br />
+Password: <strong>quella inserita al momento della registrazione</strong>
+</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai inserito correttamente il tuo indirizzo non dovrai fare altro che avere pazienza e attendere la prossima uscita del magazine semestrale. Sul sito trovi maggiori informazioni.</p>
+<p style=""max-width: 600px; text-align:center;"">Se invece non hai ancora inserito l'indirizzo assicurati di farlo il prima possibile:</p>
+<p style=""text-align:center;""><a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=userdetails&Itemid=612"" style=""text-decoration: none; background-color: #28a745; border-color: #327742; color: #fff; display: inline-block; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem;  line-height: 1.5; border-radius: .25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;"">Aggiorna il tuo indirizzo</a></p>
+
+
+<p style=""max-width: 600px; text-align:center;"">Se hai già un account attivo, effettua il <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login"">login</a> e potrai  aggiornare il tuo abbonamento e i tuoi dati in qualsiasi momento.</p>
+<p style=""max-width: 600px; text-align: center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate!<br />
+Leo, Vero, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], un ultimo colpo di pedale per il tuo [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+grazie per aver appena iniziato le tue pedalate con [sitename].</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Hai richiesto di acquistare 
+ l'abbonamento annuale al [PLAN_NAME] ma non abbiamo ancora ricevuto il pagamento.</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai scelto la modalità di pagamento con bonifico bancario ti ricordiamo che queste sono le coordinate su cui dovrai versare [PLAN_REGISTRATION_PRICE] (Se hai inserito un coupon di sconto la cifra da versare è quella indicata in fase di checkout):</p>
+<p style=""max-widht: 600px; text-align:center;"">
+<strong>Intestato a: Libes SRL<br/>
+IBAN: IT60O0306953530100000002865<br/>
+BIC/SWIFT: BCITITMM<br/>
+Banca Intesa San Paolo</strong>
+</p>
+<p style=""max-width: 600px; text-align:center;"">Quando avrai effettuato il pagamento, riceverai una mail di conferma. Se non la ricevi entro qualche giorno potremmo essere in viaggio in zone remote e per questo non aver attivato il tuo piano. 
+<br /><br /><br />
+Se vuoi accelerare il processo di invio del tuo nuovo [PLAN_NAME] o per qualsiasi altro dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","0",9,"0","0",1,"","","","",3,1002,1,1,"","","","","","0",=,"",not,3,|*|A,"0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","","","","0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","0","","","{""cbacy_lists_activation"":"""",""cbacy_remove_activation"":""1"",""cbacy_lists_deactivation"":"""",""cbacy_remove_deactivation"":""0"",""url_path_activation"":"""",""url_path_renewal"":"""",""url_path_deactivation"":"""",""url_path_expiration"":"""",""cpaycbsqlactions_type1"":""0"",""cpaycbsqlactions_activation1"":"""",""cpaycbsqlactions_renew1"":"""",""cpaycbsqlactions_expiry1"":"""",""cpaycbsqlactions_deactivation1"":"""",""cpaycbsqlactions_type2"":""0"",""cpaycbsqlactions_activation2"":"""",""cpaycbsqlactions_renew2"":"""",""cpaycbsqlactions_expiry2"":"""",""cpaycbsqlactions_deactivation2"":"""",""cpaycbsqlactions_type3"":""0"",""cpaycbsqlactions_activation3"":"""",""cpaycbsqlactions_renew3"":"""",""cpaycbsqlactions_expiry3"":"""",""cpaycbsqlactions_deactivation3"":"""",""cpaycbsqlactions_type4"":""0"",""cpaycbsqlactions_activation4"":"""",""cpaycbsqlactions_renew4"":"""",""cpaycbsqlactions_expiry4"":"""",""cpaycbsqlactions_deactivation4"":"""",""cpaycbsqlactions_type5"":""0"",""cpaycbsqlactions_activation5"":"""",""cpaycbsqlactions_renew5"":"""",""cpaycbsqlactions_expiry5"":"""",""cpaycbsqlactions_deactivation5"":"""",""postafpro_affiliate"":"""",""postafpro_campaign"":"""",""postafpro_channel"":"""",""postafpro_commission"":"""",""postafpro_currency"":"""",""postafpro_status"":""A"",""postafpro_update"":""0"",""postafpro_renewal"":""0"",""cbemail_name_activation"":"""",""cbemail_address_activation"":"""",""cbemail_to_activation"":"""",""cbemail_cc_activation"":"""",""cbemail_bcc_activation"":"""",""cbemail_sub_activation"":"""",""cbemail_msg_activation"":"""",""cbemail_atch_activation"":"""",""cbemail_type_activation"":""0"",""cbemail_name_pendingfirst"":"""",""cbemail_address_pendingfirst"":"""",""cbemail_to_pendingfirst"":"""",""cbemail_cc_pendingfirst"":"""",""cbemail_bcc_pendingfirst"":"""",""cbemail_sub_pendingfirst"":"""",""cbemail_msg_pendingfirst"":"""",""cbemail_atch_pendingfirst"":"""",""cbemail_type_pendingfirst"":""0"",""cbemail_name_renewal"":"""",""cbemail_address_renewal"":"""",""cbemail_to_renewal"":"""",""cbemail_cc_renewal"":"""",""cbemail_bcc_renewal"":"""",""cbemail_sub_renewal"":"""",""cbemail_msg_renewal"":"""",""cbemail_atch_renewal"":"""",""cbemail_type_renewal"":""0"",""cbemail_name_pendingrenewal"":"""",""cbemail_address_pendingrenewal"":"""",""cbemail_to_pendingrenewal"":"""",""cbemail_cc_pendingrenewal"":"""",""cbemail_bcc_pendingrenewal"":"""",""cbemail_sub_pendingrenewal"":"""",""cbemail_msg_pendingrenewal"":"""",""cbemail_atch_pendingrenewal"":"""",""cbemail_type_pendingrenewal"":""0"",""cbemail_name_autorenewal"":"""",""cbemail_address_autorenewal"":"""",""cbemail_to_autorenewal"":"""",""cbemail_cc_autorenewal"":"""",""cbemail_bcc_autorenewal"":"""",""cbemail_sub_autorenewal"":"""",""cbemail_msg_autorenewal"":"""",""cbemail_atch_autorenewal"":"""",""cbemail_type_autorenewal"":""0"",""cbemail_name_expired"":"""",""cbemail_address_expired"":"""",""cbemail_to_expired"":"""",""cbemail_cc_expired"":"""",""cbemail_bcc_expired"":"""",""cbemail_sub_expired"":"""",""cbemail_msg_expired"":"""",""cbemail_atch_expired"":"""",""cbemail_type_expired"":""0"",""cbemail_name_deactivation"":"""",""cbemail_address_deactivation"":"""",""cbemail_to_deactivation"":"""",""cbemail_cc_deactivation"":"""",""cbemail_bcc_deactivation"":"""",""cbemail_sub_deactivation"":"""",""cbemail_msg_deactivation"":"""",""cbemail_atch_deactivation"":"""",""cbemail_type_deactivation"":""0"",""cbfields_fieldid1"":"""",""cbfields_fieldid2"":"""",""cbfields_fieldid3"":"""",""cbfields_fieldid4"":"""",""cbfields_fieldid5"":"""",""cbfields_fieldid6"":"""",""cbfields_fieldid7"":"""",""cbfields_fieldid8"":"""",""cbfields_fieldid9"":"""",""cbfields_fieldid10"":"""",""cpaycontent_categories_list"":""1"",""cpaycontent_components"":"""",""cpaycontent_modules"":"""",""cpaycontent_urls"":"""",""planimage_image"":""-1"",""planimage_image_path"":""\/images\/stories"",""folderaccess_msg"":""Restricted - Please Login"",""folderaccess_path1"":"""",""folderaccess_path2"":"""",""folderaccess_path3"":"""",""folderaccess_path4"":"""",""folderaccess_path5"":""""}","{""tax_taxing_date"":""1""}"
+10,merchandise,1,1,1,1,1,1,1,1,"0",1,E-book Vecchie Ferrovie,ebook-ferrovie,"<p>L'E-book <strong>Vecchie Ferrovie in bicicletta!</strong></p>
+<p>Il primo volume con 33 itinerari dalle alpi alle isole. Consigli, mappa, tante foto e la descrizione dei percorsi in più di 250 pagine tutte da pedalare!</p>","0",[AUTOMATIC],[PREFIX_TEXT] [ITEM_NAME],[PREFIX_TEXT] [ITEM_ALIAS],"","16.00000","","01-01","","","","","","",1,"0","0","0","0","0",,"","01-01","0",118|*|181,2,2,1,"0",1,"<p>Grazie per aver acquistato l'Ebook <em>""Vecchie ferrovie in bicicletta. 33 itinerari dalle Alpi alle Isole""</em>. Riceverai via mail indicazioni per scaricare il file!</p>","<p>Grazie per aver acquistato l'Ebook <em>""Vecchie ferrovie in bicicletta. 33 itinerari dalle Alpi alle Isole""</em>. Riceverai via mail indicazioni per il pagamento</p>","[USERNAME], ecco il tuo [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto; max-width: 600px;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">grazie per aver acquistato l'[PLAN_NAME]</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai effettuato una nuova registrazione, dovresti aver già ricevuto una mail per attivare il tuo account con i seguenti dati di accesso:<br />
+<br />
+Nome utente: <strong>[USERNAME]</strong><br />
+Password: <strong>quella inserita al momento della registrazione</strong>
+</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai già un account attivo, effettua il <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login"">login</a> e potrai  scaricare <strong>l'ebook di 260 pagine</strong> <em>""Vecchie ferrovie in bicicletta""</em>, con tanti itinerari tutti da pedalare</p>
+<p style=""text-align: center;""><a href=""https://www.lifeintravel.it/index.php?option=com_phocadownload&view=category&download=1203&id=17&Itemid=260"" style=""text-decoration: none; background-color: #28a745; border-color: #327742; color: #fff; display: inline-block; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem;  line-height: 1.5; border-radius: .25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;"">Scarica l'ebook</a></p>
+
+<p style=""max-width: 600px; text-align: center;"">Per aggiornare il tuo abbonamento, puoi <a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=login&Itemid=2975"">accedere al tuo profilo</a> in qualsiasi momento.</p>
+<p style=""max-width: 600px; text-align: center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate!<br />
+Leo, Vero, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], un ultimo colpo di pedale per il tuo [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+grazie per aver appena iniziato le tue pedalate con [sitename].</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Hai richiesto di acquistare l'[PLAN_NAME] ma non abbiamo ancora ricevuto il pagamento.</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai scelto la modalità di pagamento con bonifico bancario ti ricordiamo che queste sono le coordinate su cui dovrai versare [PLAN_REGISTRATION_PRICE] (Se hai inserito un coupon di sconto la cifra da versare è quella indicata in fase di checkout):</p>
+<p style=""max-widht: 600px; text-align:center;"">
+<strong>Intestato a: Libes SRL<br/>
+IBAN: IT60O0306953530100000002865<br/>
+BIC/SWIFT: BCITITMM<br/>
+Banca Intesa San Paolo</strong>
+</p>
+<p style=""max-width: 600px; text-align:center;"">Quando avrai effettuato il pagamento, riceverai una mail di conferma con il link per scaricare il libro. Se non la ricevi entro qualche giorno potremmo essere in viaggio in zone remote e per questo non aver attivato il tuo piano. 
+<br /><br /><br />
+Se vuoi accelerare il processo di attivazione o per qualsiasi altro dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Vero, Leo, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","0",5,"0","0",1,"","","","",2,1005,1,1,|*|4|*|3,"","","","","0",=,"",1,1,A,1,"0","0","0","0","0","","","","","0","0","","","0","","","","","0","",or,2|*|4|*|3,R|*|X|*|C|*|I,"0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","0","","","{""cbacy_lists_activation"":"""",""cbacy_remove_activation"":""1"",""cbacy_lists_deactivation"":"""",""cbacy_remove_deactivation"":""0"",""url_path_activation"":"""",""url_path_renewal"":"""",""url_path_deactivation"":"""",""url_path_expiration"":"""",""cpaycbsqlactions_type1"":""0"",""cpaycbsqlactions_activation1"":"""",""cpaycbsqlactions_renew1"":"""",""cpaycbsqlactions_expiry1"":"""",""cpaycbsqlactions_deactivation1"":"""",""cpaycbsqlactions_type2"":""0"",""cpaycbsqlactions_activation2"":"""",""cpaycbsqlactions_renew2"":"""",""cpaycbsqlactions_expiry2"":"""",""cpaycbsqlactions_deactivation2"":"""",""cpaycbsqlactions_type3"":""0"",""cpaycbsqlactions_activation3"":"""",""cpaycbsqlactions_renew3"":"""",""cpaycbsqlactions_expiry3"":"""",""cpaycbsqlactions_deactivation3"":"""",""cpaycbsqlactions_type4"":""0"",""cpaycbsqlactions_activation4"":"""",""cpaycbsqlactions_renew4"":"""",""cpaycbsqlactions_expiry4"":"""",""cpaycbsqlactions_deactivation4"":"""",""cpaycbsqlactions_type5"":""0"",""cpaycbsqlactions_activation5"":"""",""cpaycbsqlactions_renew5"":"""",""cpaycbsqlactions_expiry5"":"""",""cpaycbsqlactions_deactivation5"":"""",""postafpro_affiliate"":"""",""postafpro_campaign"":"""",""postafpro_channel"":"""",""postafpro_commission"":"""",""postafpro_currency"":"""",""postafpro_status"":""A"",""postafpro_update"":""0"",""postafpro_renewal"":""0"",""cbemail_name_activation"":"""",""cbemail_address_activation"":"""",""cbemail_to_activation"":"""",""cbemail_cc_activation"":"""",""cbemail_bcc_activation"":"""",""cbemail_sub_activation"":"""",""cbemail_msg_activation"":"""",""cbemail_atch_activation"":"""",""cbemail_type_activation"":""0"",""cbemail_name_pendingfirst"":"""",""cbemail_address_pendingfirst"":"""",""cbemail_to_pendingfirst"":"""",""cbemail_cc_pendingfirst"":"""",""cbemail_bcc_pendingfirst"":"""",""cbemail_sub_pendingfirst"":"""",""cbemail_msg_pendingfirst"":"""",""cbemail_atch_pendingfirst"":"""",""cbemail_type_pendingfirst"":""0"",""cbemail_name_renewal"":"""",""cbemail_address_renewal"":"""",""cbemail_to_renewal"":"""",""cbemail_cc_renewal"":"""",""cbemail_bcc_renewal"":"""",""cbemail_sub_renewal"":"""",""cbemail_msg_renewal"":"""",""cbemail_atch_renewal"":"""",""cbemail_type_renewal"":""0"",""cbemail_name_pendingrenewal"":"""",""cbemail_address_pendingrenewal"":"""",""cbemail_to_pendingrenewal"":"""",""cbemail_cc_pendingrenewal"":"""",""cbemail_bcc_pendingrenewal"":"""",""cbemail_sub_pendingrenewal"":"""",""cbemail_msg_pendingrenewal"":"""",""cbemail_atch_pendingrenewal"":"""",""cbemail_type_pendingrenewal"":""0"",""cbemail_name_autorenewal"":"""",""cbemail_address_autorenewal"":"""",""cbemail_to_autorenewal"":"""",""cbemail_cc_autorenewal"":"""",""cbemail_bcc_autorenewal"":"""",""cbemail_sub_autorenewal"":"""",""cbemail_msg_autorenewal"":"""",""cbemail_atch_autorenewal"":"""",""cbemail_type_autorenewal"":""0"",""cbemail_name_expired"":"""",""cbemail_address_expired"":"""",""cbemail_to_expired"":"""",""cbemail_cc_expired"":"""",""cbemail_bcc_expired"":"""",""cbemail_sub_expired"":"""",""cbemail_msg_expired"":"""",""cbemail_atch_expired"":"""",""cbemail_type_expired"":""0"",""cbemail_name_deactivation"":"""",""cbemail_address_deactivation"":"""",""cbemail_to_deactivation"":"""",""cbemail_cc_deactivation"":"""",""cbemail_bcc_deactivation"":"""",""cbemail_sub_deactivation"":"""",""cbemail_msg_deactivation"":"""",""cbemail_atch_deactivation"":"""",""cbemail_type_deactivation"":""0"",""cbfields_fieldid1"":"""",""cbfields_fieldid2"":"""",""cbfields_fieldid3"":"""",""cbfields_fieldid4"":"""",""cbfields_fieldid5"":"""",""cbfields_fieldid6"":"""",""cbfields_fieldid7"":"""",""cbfields_fieldid8"":"""",""cbfields_fieldid9"":"""",""cbfields_fieldid10"":"""",""cpaycontent_categories_list"":""1"",""cpaycontent_components"":"""",""cpaycontent_modules"":"""",""cpaycontent_urls"":"""",""planimage_image"":""-1"",""planimage_image_path"":""\/images\/stories"",""folderaccess_msg"":""Restricted - Please Login"",""folderaccess_path1"":"""",""folderaccess_path2"":"""",""folderaccess_path3"":"""",""folderaccess_path4"":"""",""folderaccess_path5"":""""}","{""tax_taxing_date"":""1""}"
+11,merchandise,"0",1,1,1,1,1,1,1,"0",1,Calze Life in Travel,calze,"<p>Il super cappellino di Life in Travel firmato <em>Biciclista</em>, con la grafica dedicata a Nala e a chi ama l'avventura in bici nella natura selvaggia!</p>
+<p><em>Be wild, ride free!</em></p>","0",[AUTOMATIC],[PREFIX_TEXT] [ITEM_NAME],[PREFIX_TEXT] [ITEM_ALIAS],"","20.00000","","01-01","","","","","","",1,"0","0","0","0","0",,"","01-01","0",118|*|181,2,2,1,"0",1,<p>Grazie per aver acquistato il cappellino Life in Travel. Riceverai via mail indicazioni sulla spedizione!</p>,<p>Grazie per aver acquistato il cappellino Life in Travel. Riceverai via mail indicazioni per il pagamento</p>,"[USERNAME], ecco il tuo [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto; max-width: 600px;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">grazie per aver acquistato il [PLAN_NAME]</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai effettuato una nuova registrazione sul sito, dovresti aver già ricevuto una mail per attivare il tuo account con i seguenti dati di accesso:<br />
+<br />
+Nome utente: <strong>[USERNAME]</strong><br />
+Password: <strong>quella inserita al momento della registrazione</strong>
+</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se hai inserito correttamente il tuo indirizzo non dovrai fare altro che avere pazienza e attendere qualche giorno per poterlo indossare</p>
+
+<p style=""max-width: 600px; text-align:center;"">Se invece non hai ancora inserito l'indirizzo assicurati di farlo il prima possibile:</p>
+<p style=""text-align:center;""><a href=""https://www.lifeintravel.it/index.php?option=com_comprofiler&view=userdetails&Itemid=612"" style=""text-decoration: none; background-color: #28a745; border-color: #327742; color: #fff; display: inline-block; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem;  line-height: 1.5; border-radius: .25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;"">Aggiorna il tuo indirizzo</a>
+</p>
+
+<p style=""max-width: 600px; text-align: center;"">
+Per qualsiasi dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate!<br />
+Leo, Vero, Davide, Fra<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","[USERNAME], un ultimo colpo di pedale per il tuo [PLAN_NAME]","<!-- BODY -->
+<table class=""body-wrap"">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td class=""container"">
+<div class=""content"">
+<table>
+<tbody>
+<tr style=""line-height: 0px;"">
+<td style=""line-height: 0px;""><a href=""https://www.lifeintravel.it""><img src=""https://www.lifeintravel.it/images/newsletter/modelli/lifeintravel-logo-lungo-343x123.png"" alt=""Life in Travel"" style=""display: block; margin-left: auto; margin-right: auto;text-align:center;"" /></a></td>
+</tr>
+<tr>
+<td>
+<p style=""max-width: 600px; text-align:center;"">Ciao [username]</p>
+<p style=""max-width: 600px; text-align:center;"">
+grazie per aver appena iniziato le tue pedalate con [sitename].</p>
+<p style=""font-size: 18px; max-width: 600px; text-align:center;"">Hai richiesto di acquistare 
+ il [PLAN_NAME] ma non abbiamo ancora ricevuto il pagamento.</p>
+<p style=""max-width: 600px; text-align:center;"">Se hai scelto la modalità di pagamento con bonifico bancario ti ricordiamo che queste sono le coordinate su cui dovrai versare [PLAN_REGISTRATION_PRICE] (Se hai inserito un coupon di sconto la cifra da versare è quella indicata in fase di checkout):</p>
+<p style=""max-widht: 600px; text-align:center;"">
+<strong>Intestato a: Libes SRL<br/>
+IBAN: IT60O0306953530100000002865<br/>
+BIC/SWIFT: BCITITMM<br/>
+Banca Intesa San Paolo</strong>
+</p>
+<p style=""max-width: 600px; text-align:center;"">Quando avrai effettuato il pagamento, riceverai una mail di conferma. Se non la ricevi entro qualche giorno potremmo essere in viaggio in zone remote e per questo non aver attivato il tuo piano. 
+<br /><br /><br />
+Se vuoi accelerare il processo di invio del tuo nuovo [PLAN_NAME] o per qualsiasi altro dubbio, contattaci all'indirizzo email info@lifeintravel.it<br /><br />
+Buone pedalate,<br />
+Leo, Vero, Fra, Davide<br />
+e tutto il team di lifeintravel.it<br />
+</p>
+<!-- social & contact -->
+<table style=""background-color: #ebebeb;"">
+<tbody>
+<tr>
+<td><!--- column 1 -->
+<table class=""column"" style=""width: 600px; height: 172px;"">
+<tbody>
+<tr>
+<td>
+<h4 class="""" style=""text-align: center;"">Seguici sui social</h4>
+<p ><a href=""https://www.facebook.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #3B5998!important;"">Facebook</a> <a href=""https://twitter.com/lifeintravelita"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #1daced!important;"">Twitter</a> <a href=""https://goo.gl/zaFUfs"" style=""padding: 3px 7px; font-size:12px; margin-bottom:10px; text-decoration:none; color: #FFF; font-weight:bold; display:block; text-align:center; background-color: #DB4A39!important;"">Youtube</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /column 1 --> <span class=""clear""></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /social & contact --></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- /BODY -->",1,"","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","","","0","","","","0",7,"0","0",1,"","","","",3,1002,1,1,|*|4|*|3,"","","","","0",=,"",1,1|*|2,|*|A,"0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","","","","0","0","0","0","0","0","","","","","0","0","","","0","","","","","0","","0","","","{""cbacy_lists_activation"":"""",""cbacy_remove_activation"":""1"",""cbacy_lists_deactivation"":"""",""cbacy_remove_deactivation"":""0"",""url_path_activation"":"""",""url_path_renewal"":"""",""url_path_deactivation"":"""",""url_path_expiration"":"""",""cpaycbsqlactions_type1"":""0"",""cpaycbsqlactions_activation1"":"""",""cpaycbsqlactions_renew1"":"""",""cpaycbsqlactions_expiry1"":"""",""cpaycbsqlactions_deactivation1"":"""",""cpaycbsqlactions_type2"":""0"",""cpaycbsqlactions_activation2"":"""",""cpaycbsqlactions_renew2"":"""",""cpaycbsqlactions_expiry2"":"""",""cpaycbsqlactions_deactivation2"":"""",""cpaycbsqlactions_type3"":""0"",""cpaycbsqlactions_activation3"":"""",""cpaycbsqlactions_renew3"":"""",""cpaycbsqlactions_expiry3"":"""",""cpaycbsqlactions_deactivation3"":"""",""cpaycbsqlactions_type4"":""0"",""cpaycbsqlactions_activation4"":"""",""cpaycbsqlactions_renew4"":"""",""cpaycbsqlactions_expiry4"":"""",""cpaycbsqlactions_deactivation4"":"""",""cpaycbsqlactions_type5"":""0"",""cpaycbsqlactions_activation5"":"""",""cpaycbsqlactions_renew5"":"""",""cpaycbsqlactions_expiry5"":"""",""cpaycbsqlactions_deactivation5"":"""",""postafpro_affiliate"":"""",""postafpro_campaign"":"""",""postafpro_channel"":"""",""postafpro_commission"":"""",""postafpro_currency"":"""",""postafpro_status"":""A"",""postafpro_update"":""0"",""postafpro_renewal"":""0"",""cbemail_name_activation"":"""",""cbemail_address_activation"":"""",""cbemail_to_activation"":"""",""cbemail_cc_activation"":"""",""cbemail_bcc_activation"":"""",""cbemail_sub_activation"":"""",""cbemail_msg_activation"":"""",""cbemail_atch_activation"":"""",""cbemail_type_activation"":""0"",""cbemail_name_pendingfirst"":"""",""cbemail_address_pendingfirst"":"""",""cbemail_to_pendingfirst"":"""",""cbemail_cc_pendingfirst"":"""",""cbemail_bcc_pendingfirst"":"""",""cbemail_sub_pendingfirst"":"""",""cbemail_msg_pendingfirst"":"""",""cbemail_atch_pendingfirst"":"""",""cbemail_type_pendingfirst"":""0"",""cbemail_name_renewal"":"""",""cbemail_address_renewal"":"""",""cbemail_to_renewal"":"""",""cbemail_cc_renewal"":"""",""cbemail_bcc_renewal"":"""",""cbemail_sub_renewal"":"""",""cbemail_msg_renewal"":"""",""cbemail_atch_renewal"":"""",""cbemail_type_renewal"":""0"",""cbemail_name_pendingrenewal"":"""",""cbemail_address_pendingrenewal"":"""",""cbemail_to_pendingrenewal"":"""",""cbemail_cc_pendingrenewal"":"""",""cbemail_bcc_pendingrenewal"":"""",""cbemail_sub_pendingrenewal"":"""",""cbemail_msg_pendingrenewal"":"""",""cbemail_atch_pendingrenewal"":"""",""cbemail_type_pendingrenewal"":""0"",""cbemail_name_autorenewal"":"""",""cbemail_address_autorenewal"":"""",""cbemail_to_autorenewal"":"""",""cbemail_cc_autorenewal"":"""",""cbemail_bcc_autorenewal"":"""",""cbemail_sub_autorenewal"":"""",""cbemail_msg_autorenewal"":"""",""cbemail_atch_autorenewal"":"""",""cbemail_type_autorenewal"":""0"",""cbemail_name_expired"":"""",""cbemail_address_expired"":"""",""cbemail_to_expired"":"""",""cbemail_cc_expired"":"""",""cbemail_bcc_expired"":"""",""cbemail_sub_expired"":"""",""cbemail_msg_expired"":"""",""cbemail_atch_expired"":"""",""cbemail_type_expired"":""0"",""cbemail_name_deactivation"":"""",""cbemail_address_deactivation"":"""",""cbemail_to_deactivation"":"""",""cbemail_cc_deactivation"":"""",""cbemail_bcc_deactivation"":"""",""cbemail_sub_deactivation"":"""",""cbemail_msg_deactivation"":"""",""cbemail_atch_deactivation"":"""",""cbemail_type_deactivation"":""0"",""cbfields_fieldid1"":"""",""cbfields_fieldid2"":"""",""cbfields_fieldid3"":"""",""cbfields_fieldid4"":"""",""cbfields_fieldid5"":"""",""cbfields_fieldid6"":"""",""cbfields_fieldid7"":"""",""cbfields_fieldid8"":"""",""cbfields_fieldid9"":"""",""cbfields_fieldid10"":"""",""cpaycontent_categories_list"":""1"",""cpaycontent_components"":"""",""cpaycontent_modules"":"""",""cpaycontent_urls"":"""",""planimage_image"":""-1"",""planimage_image_path"":""\/images\/stories"",""folderaccess_msg"":""Restricted - Please Login"",""folderaccess_path1"":"""",""folderaccess_path2"":"""",""folderaccess_path3"":"""",""folderaccess_path4"":"""",""folderaccess_path5"":""""}","{""tax_taxing_date"":""1""}"

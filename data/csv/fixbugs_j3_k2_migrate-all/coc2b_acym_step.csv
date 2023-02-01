@@ -1,0 +1,8 @@
+﻿1,ACYM_ADMIN_USER_CREATE,"{""user_creation"":[""""],""type_trigger"":""user""}",1,,
+2,ACYM_ADMIN_USER_CREATE,"{""user_modification"":[""""],""type_trigger"":""user""}",2,,
+3,Send notification on user creation,"{""user_creation"":[""""],""type_trigger"":""user""}",3,,
+4,Send notification on user modification,"{""user_modification"":[""""],""type_trigger"":""user""}",4,,
+5,Send notification on user creation,"{""user_creation"":[""""],""type_trigger"":""user""}",5,,
+6,Send notification on user modification,"{""user_modification"":[""""],""type_trigger"":""user""}",6,,
+7,Send notification on user creation,"{""user_creation"":[""""],""type_trigger"":""user""}",7,,
+8,Send notification on user modification,"{""user_modification"":[""""],""type_trigger"":""user""}",8,,

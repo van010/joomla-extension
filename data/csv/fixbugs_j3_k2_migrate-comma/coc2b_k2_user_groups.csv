@@ -1,0 +1,3 @@
+﻿id,name,permissions
+1,Autori,"{""comment"":""0"",""frontEdit"":""1"",""add"":""1"",""editOwn"":""1"",""editAll"":""0"",""publish"":""0"",""editPublished"":""1"",""categories"":[""47"",""77"",""202"",""75"",""74"",""44"",""93""],""inheritance"":""1""}"
+2,Site owner,"{""comment"":""0"",""frontEdit"":""1"",""add"":""1"",""editOwn"":""1"",""editAll"":""1"",""publish"":""1"",""editPublished"":""1"",""inheritance"":""1"",""categories"":""all""}"
