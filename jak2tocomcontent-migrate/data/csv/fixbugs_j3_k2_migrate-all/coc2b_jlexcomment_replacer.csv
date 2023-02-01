@@ -1,6 +1,0 @@
-﻿2,Image,/https?:\/\/[^ ]+?(?:\.jpg|\.png|\.gif)/m,"<a href=""$0"" target=""_blank"">$0</a>
-<img src=""$0"" class=""jcm-img-preview"" />",1,62,2020-02-07 08:36:53,1
-3,Vimeo,"/(?:https?:\/\/)?(?:www\.)?(?:player\.)?vimeo\.com\/(?:[a-z]*\/)*([0-9]{6,11})/mi","<a href=""$0"">$0</a>
-<iframe src=""https://player.vimeo.com/video/$1?color=1e6e75&byline=0&portrait=0&badge=0"" width=""640"" height=""360"" frameborder=""0"" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",1,62,2020-02-07 08:36:53,1
-4,Youtube,/(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([A-z0-9\-\_]+)/m,"<div class=""jcm-player"" data-source=""yt""><div class=""jcm-player-main"" data-embed=""https://www.youtube.com/embed/$1?autoplay=1"" data-image=""https://img.youtube.com/vi/$1/hqdefault.jpg""></div><a href=""$0"" class=""jcm-player-title"" target=""_blank"">$0</a>",1,62,2020-02-07 08:36:53,1
-8,Quote,/\[quote(?:.*?)\](((?R)|.)*?)\[\/quote\]/,<blockquote>$1</blockquote>,"1,2,8",62,2020-02-13 00:42:28,1
