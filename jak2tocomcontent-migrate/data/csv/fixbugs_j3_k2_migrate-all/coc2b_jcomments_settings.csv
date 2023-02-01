@@ -1,0 +1,213 @@
+﻿"","",enable_username_check,1
+"","",username_maxlength,20
+"","",forbidden_names,"administrator,moderator"
+"","",author_name,2
+"","",author_email,2
+"","",author_homepage,1
+"","",comment_maxlength,1000
+"","",comment_minlength,"0"
+"","",word_maxlength,50
+"","",link_maxlength,50
+"","",flood_time,30
+"","",enable_notification,1
+"","",notification_email,administrator@lifeintravel.it
+"","",template,nts_jc_simpl
+"","",template_view,tree
+"","",enable_smilies,1
+"","",comments_per_page,10
+"","",comments_page_limit,15
+"","",comments_pagination,both
+"","",comments_list_order,DESC
+"","",comments_tree_order,"0"
+"","",show_commentlength,1
+"","",enable_nested_quotes,1
+"","",enable_rss,"0"
+"","",censor_replace_word,[censored]
+"","",show_policy,"1,9,2"
+"","",enable_captcha,"1,9"
+"","",floodprotection,"1,9,2,3,4"
+"","",enable_comment_length_check,"1,9,2"
+"","",autopublish,"1,9,6,7,2,3,4,5,8"
+"","",autolinkurls,"6,7,2,3,4,5,8"
+"","",enable_subscribe,"1,9,6,7,2,3,4,5,8"
+"","",enable_gravatar,"1,9,6,7,2,3,4,5,8"
+"","",can_comment,"1,9,6,7,2,3,4,5,8"
+"","",can_reply,"1,9,6,7,2,3,4,5,8"
+"","",can_view_homepage,"6,7,2,3,4,5,8"
+"","",can_publish,"6,7,5,8"
+"","",can_publish_for_my_object,""
+"","",can_view_email,"6,7,8"
+"","",can_edit,"6,7,8"
+"","",can_edit_own,"6,7,2,3,4,5,8"
+"","",can_edit_for_my_object,""
+"","",can_delete,"6,7,8"
+"","",can_delete_own,"6,7,8"
+"","",can_delete_for_my_object,""
+"","",can_report,"6,7,2,3,4,5,8"
+"","",message_banned,""
+"","",can_ban,"7,8"
+"","",can_vote,"1,9,6,7,2,3,4,5,8"
+"","",max_comments_per_object,"0"
+"","",can_view_ip,"7,8"
+"","",enable_bbcode_b,"1,9,6,7,2,3,4,5,8"
+"","",captcha_engine,kcaptcha
+"","",enable_bbcode_i,"1,9,6,7,2,3,4,5,8"
+"","",form_position,1
+"","",enable_bbcode_u,"1,9,6,7,2,3,4,5,8"
+"","",enable_bbcode_s,"1,9,6,7,2,3,4,5,8"
+"","",reports_before_unpublish,"0"
+"","",enable_bbcode_url,"9,6,7,2,3,4,5,8"
+"","",reports_per_comment,"0"
+"","",enable_bbcode_img,"1,9,6,7,2,3,4,5,8"
+"","",enable_reports,1
+"","",enable_bbcode_list,"1,9,6,7,2,3,4,5,8"
+"","",enable_bbcode_hide,"6,7,2,3,4,5,8"
+"","",enable_bbcode_quote,"1,9,6,7,2,3,4,5,8"
+"","",load_cached_comments,1
+"","",enable_bbcode_code,"2,3,4,5,6,7,8"
+"","",enable_categories,""
+"","",emailprotection,"1,9"
+"","",enable_comment_maxlength_check,""
+"","",enable_autocensor,"1,9"
+"","",badwords,""
+"","",smilies,":D	laugh.gif
+:lol:	lol.gif
+:-)	smile.gif
+;-)	wink.gif
+8)	cool.gif
+:-|	normal.gif
+:-*	whistling.gif
+:oops:	redface.gif
+:sad:	sad.gif
+:cry:	cry.gif
+:o	surprised.gif
+:-?	confused.gif
+:-x	sick.gif
+:eek:	shocked.gif
+:zzz	sleeping.gif
+:P	tongue.gif
+:roll:	rolleyes.gif
+:sigh:	unsure.gif"
+"","",enable_plugins,1
+"","",form_show,1
+"","",display_author,username
+"","",enable_voting,1
+"","",merge_time,"0"
+"","",message_policy_post,""
+"","",message_policy_whocancomment,Non hai i diritti sufficienti per pubblicare un commento
+"","",message_locked,I commenti sono al momento disabilitati per questo contenuto
+"","",comment_title,1
+"","",enable_custom_bbcode,"0"
+"","",enable_geshi,"0"
+"","",enable_quick_moderation,1
+"","",notification_type,1
+"","",delete_mode,"0"
+"","",enable_blacklist,"0"
+"","",smilies_path,/components/com_jcomments/images/smilies/
+"","",feed_limit,100
+"","",report_reason_required,1
+"",en-GB,enable_rss,"0"
+"",en-GB,feed_limit,"0"
+"",en-GB,enable_plugins,1
+"",en-GB,load_cached_comments,1
+"",en-GB,delete_mode,"0"
+"",en-GB,enable_notification,1
+"",en-GB,notification_email,info@lifeintravel.it
+"",en-GB,enable_quick_moderation,1
+"",en-GB,enable_reports,1
+"",en-GB,reports_per_comment,"0"
+"",en-GB,reports_before_unpublish,"0"
+"",en-GB,report_reason_required,1
+"",en-GB,template,nts_jc_simpl
+"",en-GB,enable_smilies,1
+"",en-GB,enable_custom_bbcode,"0"
+"",en-GB,enable_voting,"0"
+"",en-GB,display_author,name
+"",en-GB,template_view,tree
+"",en-GB,comments_tree_order,"0"
+"",en-GB,comments_list_order,DESC
+"",en-GB,comments_per_page,""
+"",en-GB,comments_page_limit,""
+"",en-GB,comments_pagination,top
+"",en-GB,form_show,1
+"",en-GB,form_position,"0"
+"",en-GB,author_name,2
+"",en-GB,author_email,2
+"",en-GB,author_homepage,"0"
+"",en-GB,comment_title,1
+"",en-GB,show_commentlength,1
+"",en-GB,captcha_engine,recaptcha
+"",en-GB,username_maxlength,"0"
+"",en-GB,comment_minlength,"0"
+"",en-GB,comment_maxlength,"0"
+"",en-GB,word_maxlength,"0"
+"",en-GB,link_maxlength,"0"
+"",en-GB,flood_time,"0"
+"",en-GB,enable_nested_quotes,"0"
+"",en-GB,merge_time,"0"
+"",en-GB,max_comments_per_object,"0"
+"",en-GB,enable_username_check,1
+"",en-GB,enable_blacklist,"0"
+"",en-GB,forbidden_names,""
+"",en-GB,badwords,""
+"",en-GB,censor_replace_word,[censored]
+"",en-GB,message_policy_post,""
+"",en-GB,message_policy_whocancomment,""
+"",en-GB,message_locked,""
+"",en-GB,message_banned,""
+"",en-GB,can_comment,"1,9,6,7,2,3,8"
+"",en-GB,can_reply,"1,9,6,7,2,3,8"
+"",en-GB,autopublish,"6,7,2,3,8"
+"",en-GB,enable_captcha,"1,9"
+"",en-GB,floodprotection,"1,9,6"
+"",en-GB,enable_comment_length_check,""
+"",en-GB,enable_subscribe,"1,9,6,7,2,3,8"
+"",en-GB,enable_bbcode_b,"1,9,6,7,2,3,8"
+"",en-GB,enable_bbcode_i,"1,9,6,7,2,3,8"
+"",en-GB,enable_bbcode_u,"1,9,6,7,2,3,8"
+"",en-GB,enable_bbcode_s,"1,9,6,7,2,3,8"
+"",en-GB,enable_bbcode_url,"6,7,8"
+"",en-GB,enable_bbcode_img,"1,9,6,7,2,3,8"
+"",en-GB,enable_bbcode_list,"1,9,6,7,2,3,8"
+"",en-GB,enable_bbcode_hide,8
+"",en-GB,enable_bbcode_quote,"1,6,7,2,3,8"
+"",en-GB,can_edit,8
+"",en-GB,can_edit_own,"7,2,3,8"
+"",en-GB,can_edit_for_my_object,"7,8"
+"",en-GB,can_publish,"7,8"
+"",en-GB,can_publish_for_my_object,"7,8"
+"",en-GB,can_delete,8
+"",en-GB,can_delete_own,"7,2,3,8"
+"",en-GB,can_delete_for_my_object,8
+"",en-GB,autolinkurls,"7,8"
+"",en-GB,emailprotection,"6,7,2,3,8"
+"",en-GB,enable_gravatar,"1,6,7,2,3,8"
+"",en-GB,can_view_email,"7,8"
+"",en-GB,can_view_homepage,"6,7,2,3,8"
+"",en-GB,can_view_ip,8
+"",en-GB,can_vote,"1,9,6,7,2,3,8"
+"",en-GB,can_report,"9,6,7,2,3,8"
+"",en-GB,can_ban,"7,8"
+"",en-GB,enable_categories,*
+"",en-GB,notification_type,1
+"",en-GB,show_policy,""
+"",en-GB,enable_autocensor,""
+"",en-GB,smilies,":D	laugh.gif
+:lol:	lol.gif
+:-)	smile.gif
+;-)	wink.gif
+8)	cool.gif
+:-|	normal.gif
+:-*	whistling.gif
+:oops:	redface.gif
+:sad:	sad.gif
+:cry:	cry.gif
+:o	surprised.gif
+:-?	confused.gif
+:-x	sick.gif
+:eek:	shocked.gif
+:zzz	sleeping.gif
+:P	tongue.gif
+:roll:	rolleyes.gif
+:sigh:	unsure.gif"
+"",en-GB,smilies_path,/components/com_jcomments/images/smilies/

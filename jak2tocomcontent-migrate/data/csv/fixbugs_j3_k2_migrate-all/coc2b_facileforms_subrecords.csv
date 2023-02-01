@@ -1,0 +1,680 @@
+﻿47,6,97,Nome,bfQuickMode2880762,Text,Prova
+48,6,98,Cognome,bfQuickMode9229721,Text,Prova
+49,6,99,Email,bfQuickMode8584497,Text,corraleo@yahoo.it
+50,6,100,Numero di Telefono,bfQuickMode3945746,Text,3319421063
+51,6,128,Numero di partecipanti,bfQuickMode2975631,Select List,value2
+52,6,133,Parteciperò,bfQuickMode5861677,Radio Group,sabato-domenica
+53,6,105,Note aggiuntive,bfQuickMode7103686,Textarea,3gffd
+54,7,97,Nome,bfQuickMode2880762,Text,Carlo 
+55,7,98,Cognome,bfQuickMode9229721,Text,Bruno 
+56,7,99,Email,bfQuickMode8584497,Text,carlo_bruno@alice.it
+57,7,100,Numero di Telefono,bfQuickMode3945746,Text,3357746735
+58,7,128,Numero di partecipanti,bfQuickMode2975631,Select List,value1
+59,7,133,Parteciperò,bfQuickMode5861677,Radio Group,venerdì-dpmenica
+60,8,1,Nome,bfQuickMode2880762,Text,amedeo franco
+61,8,2,Cognome,bfQuickMode9229721,Text,palmieri
+62,8,3,Email,bfQuickMode8584497,Text,palmieri21@libero.it
+63,8,4,Via/Piazza,bfQuickMode3945746,Text,castellamonte 60/1
+64,8,5,Città/Paese/Località,bfQuickMode3486476,Text,banchette
+65,8,6,Provincia,bfQuickMode9844682,Text,torino
+66,8,7,CAP,bfQuickMode9644238,Text,10010
+67,8,8,Numero di copie acquistate,bfQuickMode3097509,Select List,value1
+68,8,10,Metodo di pagamento,bfQuickMode4841021,Radio Group,bonifico
+69,8,9,Note aggiuntive,bfQuickMode7103686,Textarea,se è possibile pagare in contrassegno
+70,9,1,Nome,bfQuickMode2880762,Text,piero
+71,9,2,Cognome,bfQuickMode9229721,Text,perosino
+72,9,3,Email,bfQuickMode8584497,Text,ppiero@teletu.it
+73,9,4,Via/Piazza,bfQuickMode3945746,Text,strada Ciri 19
+74,9,5,Città/Paese/Località,bfQuickMode3486476,Text,Tigliole
+75,9,6,Provincia,bfQuickMode9844682,Text,Asti
+76,9,7,CAP,bfQuickMode9644238,Text,14016
+77,9,8,Numero di copie acquistate,bfQuickMode3097509,Select List,value1
+78,9,10,Metodo di pagamento,bfQuickMode4841021,Radio Group,paypal
+79,9,9,Note aggiuntive,bfQuickMode7103686,Textarea,"Ciao!
+>:-)"
+80,10,1,Nome,bfQuickMode2880762,Text,roberto
+81,10,2,Cognome,bfQuickMode9229721,Text,giorgi
+82,10,3,Email,bfQuickMode8584497,Text,frisco4@libero.it
+83,10,4,Via/Piazza,bfQuickMode3945746,Text,Montemaggiore 13
+84,10,5,Città/Paese/Località,bfQuickMode3486476,Text,Monte San Pietro
+85,10,6,Provincia,bfQuickMode9844682,Text,Bologna
+86,10,7,CAP,bfQuickMode9644238,Text,40050
+87,10,8,Numero di copie acquistate,bfQuickMode3097509,Select List,value1
+88,10,10,Metodo di pagamento,bfQuickMode4841021,Radio Group,paypal
+89,11,1,Nome,bfQuickMode2880762,Text,Gisella
+90,11,2,Cognome,bfQuickMode9229721,Text,Parente
+91,11,3,Email,bfQuickMode8584497,Text,parentegisella@gmail.com
+92,11,4,Via/Piazza,bfQuickMode3945746,Text,Via De Nicola 5/A
+93,11,5,Città/Paese/Località,bfQuickMode3486476,Text,San Giuliano Milanese
+94,11,6,Provincia,bfQuickMode9844682,Text,milano
+95,11,7,CAP,bfQuickMode9644238,Text,20098
+96,11,8,Numero di copie acquistate,bfQuickMode3097509,Select List,value1
+97,11,10,Metodo di pagamento,bfQuickMode4841021,Radio Group,paypal
+98,12,1,Nome,bfQuickMode2880762,Text,Armando
+99,12,2,Cognome,bfQuickMode9229721,Text,Golzio
+100,12,3,Email,bfQuickMode8584497,Text,golzioarmando@gmail.com
+101,12,4,Via/Piazza,bfQuickMode3945746,Text,Via B.Galliari n. 187
+102,12,5,Città/Paese/Località,bfQuickMode3486476,Text,ANDORNO MICCA
+103,12,6,Provincia,bfQuickMode9844682,Text,BIELLA
+104,12,7,CAP,bfQuickMode9644238,Text,13811
+105,12,8,Numero di copie acquistate,bfQuickMode3097509,Select List,value1
+106,12,10,Metodo di pagamento,bfQuickMode4841021,Radio Group,paypal
+107,13,1,Nome,bfQuickMode2880762,Text,Armando 
+108,13,2,Cognome,bfQuickMode9229721,Text,Golzio 
+109,13,3,Email,bfQuickMode8584497,Text,golziioarmando@gmail.com
+110,13,4,Via/Piazza,bfQuickMode3945746,Text,Via B.Galliari n. 187
+111,13,5,Città/Paese/Località,bfQuickMode3486476,Text,ANDORNO MICCA
+112,13,6,Provincia,bfQuickMode9844682,Text,BI
+113,13,7,CAP,bfQuickMode9644238,Text,13811
+114,13,8,Numero di copie acquistate,bfQuickMode3097509,Select List,value1
+115,13,10,Metodo di pagamento,bfQuickMode4841021,Radio Group,paypal
+116,14,1,Nome,bfQuickMode2880762,Text,Armando
+117,14,2,Cognome,bfQuickMode9229721,Text,Golzio
+118,14,3,Email,bfQuickMode8584497,Text,golzioarmando@gmail.com
+119,14,4,Via/Piazza,bfQuickMode3945746,Text,via B.Galliari
+120,14,5,Città/Paese/Località,bfQuickMode3486476,Text,ANDORNO MICCA
+121,14,6,Provincia,bfQuickMode9844682,Text,BI
+122,14,7,CAP,bfQuickMode9644238,Text,13811
+123,14,8,Numero di copie acquistate,bfQuickMode3097509,Select List,value1
+124,14,10,Metodo di pagamento,bfQuickMode4841021,Radio Group,paypal
+125,15,1,Nome,bfQuickMode2880762,Text,Iana
+126,15,2,Cognome,bfQuickMode9229721,Text,Postu
+127,15,3,Email,bfQuickMode8584497,Text,ianapost@hotmail.com
+128,15,4,Via/Piazza,bfQuickMode3945746,Text,L.Famigli 1
+129,15,5,Città/Paese/Località,bfQuickMode3486476,Text,Spilamberto
+130,15,6,Provincia,bfQuickMode9844682,Text,Modena
+131,15,7,CAP,bfQuickMode9644238,Text,41057
+132,15,8,Numero di copie acquistate,bfQuickMode3097509,Select List,value1
+133,15,10,Metodo di pagamento,bfQuickMode4841021,Radio Group,paypal
+134,16,181,Nome,bfQuickMode2880762,Text,Leo
+135,16,180,Cognome,bfQuickMode9229721,Text,Corra
+136,16,179,Email,bfQuickMode8584497,Text,corraleo@yahoo.it
+137,16,177,Via/Piazza,bfQuickMode3945746,Text,Valnigra
+138,16,178,Città/Paese/Località,bfQuickMode3486476,Text,TN
+139,16,176,Provincia,bfQuickMode9844682,Text,TN
+140,16,174,CAP,bfQuickMode9644238,Text,24060
+141,16,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+142,16,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,giubbino
+143,16,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,XS
+144,16,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,nessuno
+145,16,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,XS
+146,16,196,Taglia Giubbino Invernale,bfQuickMode6127837,Checkbox Group,M
+147,16,182,Note aggiuntive,bfQuickMode7103686,Textarea,"Una maglia r
+grazie"
+148,17,181,Nome,bfQuickMode2880762,Text,Veronica
+149,17,180,Cognome,bfQuickMode9229721,Text,Rizzoli
+150,17,179,Email,bfQuickMode8584497,Text,saltavero@gmail.com
+151,17,177,Via/Piazza,bfQuickMode3945746,Text,IV Novembre 32
+152,17,178,Città/Paese/Località,bfQuickMode3486476,Text,Riva di Solto
+153,17,176,Provincia,bfQuickMode9844682,Text,Bergamo
+154,17,174,CAP,bfQuickMode9644238,Text,24060
+155,17,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+156,17,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+157,17,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,S
+158,17,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,S
+159,17,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,M
+160,17,182,Note aggiuntive,bfQuickMode7103686,Textarea,"2 maglie estive S
+1 salopette estiva S
+1 salopette estiva M"
+161,18,181,Nome,bfQuickMode2880762,Text,Mario
+162,18,180,Cognome,bfQuickMode9229721,Text,Guerri
+163,18,179,Email,bfQuickMode8584497,Text,m.guerri@guerri.it
+164,18,177,Via/Piazza,bfQuickMode3945746,Text,Via variante di cancelliera snc
+165,18,178,Città/Paese/Località,bfQuickMode3486476,Text,Ariccia
+166,18,176,Provincia,bfQuickMode9844682,Text,Roma
+167,18,174,CAP,bfQuickMode9644238,Text,"00072"
+168,18,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+169,18,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+170,18,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,L
+171,18,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,L
+172,19,181,Nome,bfQuickMode2880762,Text,Daniele
+173,19,180,Cognome,bfQuickMode9229721,Text,Boerci
+174,19,179,Email,bfQuickMode8584497,Text,dboerci@gmail.com
+175,19,177,Via/Piazza,bfQuickMode3945746,Text,"Via Papa Giovanni Paolo II,24/a"
+176,19,178,Città/Paese/Località,bfQuickMode3486476,Text,San Giuliano Milanese
+177,19,176,Provincia,bfQuickMode9844682,Text,Milano
+178,19,174,CAP,bfQuickMode9644238,Text,20098
+179,19,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+180,19,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+181,19,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,giubbino
+182,19,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,XXL
+183,19,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,XXL
+184,19,196,Taglia Giubbino Invernale,bfQuickMode6127837,Checkbox Group,XXL
+185,20,181,Nome,bfQuickMode2880762,Text,Jason
+186,20,180,Cognome,bfQuickMode9229721,Text,Dal Mas
+187,20,179,Email,bfQuickMode8584497,Text,jasondm85@gmail.com
+188,20,205,Telefono,bfQuickMode5612981,Text,3477627146
+189,20,177,Via/Piazza,bfQuickMode3945746,Text,"Via G.G. Lirutti, 106"
+190,20,178,Città/Paese/Località,bfQuickMode3486476,Text,Fontanafredda
+191,20,176,Provincia,bfQuickMode9844682,Text,Pordenone
+192,20,174,CAP,bfQuickMode9644238,Text,33074
+193,20,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+194,20,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+195,20,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,M
+196,20,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,M
+197,21,181,Nome,bfQuickMode2880762,Text,Cosimo
+198,21,180,Cognome,bfQuickMode9229721,Text,Galdi
+199,21,179,Email,bfQuickMode8584497,Text,cosimo.galdi@tiscali.it
+200,21,205,Telefono,bfQuickMode5612981,Text,335235493
+201,21,177,Via/Piazza,bfQuickMode3945746,Text,Via dell’industria 128
+202,21,178,Città/Paese/Località,bfQuickMode3486476,Text,Bellizzi
+203,21,176,Provincia,bfQuickMode9844682,Text,Salerno
+204,21,174,CAP,bfQuickMode9644238,Text,84092
+205,21,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+206,21,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+207,21,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,S
+208,21,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,S
+209,22,181,Nome,bfQuickMode2880762,Text,francesco
+210,22,180,Cognome,bfQuickMode9229721,Text,gianoncelli
+211,22,179,Email,bfQuickMode8584497,Text,info@falegnameriagianoncelli.it
+212,22,205,Telefono,bfQuickMode5612981,Text,3395944758
+213,22,177,Via/Piazza,bfQuickMode3945746,Text,via martiri della liberta 29
+214,22,178,Città/Paese/Località,bfQuickMode3486476,Text,tresivio
+215,22,176,Provincia,bfQuickMode9844682,Text,SO - SONDRIO
+216,22,174,CAP,bfQuickMode9644238,Text,23020
+217,22,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+218,22,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+219,22,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,giubbino
+220,22,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,S
+221,22,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,L
+222,22,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,XS
+223,22,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,L
+224,22,196,Taglia Giubbino Invernale,bfQuickMode6127837,Checkbox Group,S
+225,22,196,Taglia Giubbino Invernale,bfQuickMode6127837,Checkbox Group,L
+226,22,182,Note aggiuntive,bfQuickMode7103686,Textarea,"2 maglie estive :  1 mis S  e 1 mis L, 
+2 salopette estive : 1 mis XS , 1 mis L
+2 giubbini invernali .1 mis S , 1 mis L"
+227,23,181,Nome,bfQuickMode2880762,Text,RAFFAELE
+228,23,180,Cognome,bfQuickMode9229721,Text,MITA
+229,23,179,Email,bfQuickMode8584497,Text,lelemita@libero.it
+230,23,205,Telefono,bfQuickMode5612981,Text,3393090406
+231,23,177,Via/Piazza,bfQuickMode3945746,Text,via  molise 5
+232,23,178,Città/Paese/Località,bfQuickMode3486476,Text,FIRENZE
+233,23,176,Provincia,bfQuickMode9844682,Text,FI
+234,23,174,CAP,bfQuickMode9644238,Text,50145
+235,23,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+236,23,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,S
+237,24,181,Nome,bfQuickMode2880762,Text,Estelle
+238,24,180,Cognome,bfQuickMode9229721,Text,Campion
+239,24,179,Email,bfQuickMode8584497,Text,campionestelle@yahoo.fr
+240,24,205,Telefono,bfQuickMode5612981,Text,3386447791
+241,24,177,Via/Piazza,bfQuickMode3945746,Text,P.le Lugano 35
+242,24,178,Città/Paese/Località,bfQuickMode3486476,Text,Milano
+243,24,176,Provincia,bfQuickMode9844682,Text,MI
+244,24,174,CAP,bfQuickMode9644238,Text,20158
+245,24,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+246,24,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+247,24,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,M
+248,24,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,XL
+249,24,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,M
+250,24,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,XL
+251,24,182,Note aggiuntive,bfQuickMode7103686,Textarea,"2 maglie estive da uomo taglia XL
+2 salopette estive da uomo XL
+
+1 maglie estive da donna taglia M
+2 salopette estive da donna M
+
+Indirizzo di spedizione:
+Estelle Campion
+c/o Edigeo srl
+Via del Lauro 3
+20121 Milano"
+252,25,181,Nome,bfQuickMode2880762,Text,Giuseppe
+253,25,180,Cognome,bfQuickMode9229721,Text,Tedesco
+254,25,179,Email,bfQuickMode8584497,Text,alcom@alcomelettronica.com
+255,25,205,Telefono,bfQuickMode5612981,Text,3284203680
+256,25,177,Via/Piazza,bfQuickMode3945746,Text,via Mangioni 103
+257,25,178,Città/Paese/Località,bfQuickMode3486476,Text,PAGANI
+258,25,176,Provincia,bfQuickMode9844682,Text,SALERNO
+259,25,174,CAP,bfQuickMode9644238,Text,84016
+260,25,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+261,25,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+262,25,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,giubbino
+263,25,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,L
+264,25,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,L
+265,25,196,Taglia Giubbino Invernale,bfQuickMode6127837,Checkbox Group,L
+266,26,181,Nome,bfQuickMode2880762,Text,Alessandro
+267,26,180,Cognome,bfQuickMode9229721,Text,Benaglia
+268,26,179,Email,bfQuickMode8584497,Text,benagliando@yahoo.it
+269,26,205,Telefono,bfQuickMode5612981,Text,3202729217
+270,26,177,Via/Piazza,bfQuickMode3945746,Text,V.le Alcide de Gasperi 115
+271,26,178,Città/Paese/Località,bfQuickMode3486476,Text,Prato
+272,26,176,Provincia,bfQuickMode9844682,Text,PO
+273,26,174,CAP,bfQuickMode9644238,Text,59100
+274,26,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+275,26,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,giubbino
+276,26,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,M
+277,26,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,M
+278,27,181,Nome,bfQuickMode2880762,Text,Antonio
+279,27,180,Cognome,bfQuickMode9229721,Text,Lancia
+280,27,179,Email,bfQuickMode8584497,Text,lanciaantonio@libero.it
+281,27,205,Telefono,bfQuickMode5612981,Text,3285722328
+282,27,177,Via/Piazza,bfQuickMode3945746,Text,Via Santo stefano 29
+283,27,178,Città/Paese/Località,bfQuickMode3486476,Text,Veroli
+284,27,176,Provincia,bfQuickMode9844682,Text,Fr
+285,27,174,CAP,bfQuickMode9644238,Text,"03029"
+286,27,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+287,27,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+288,27,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,giubbino
+289,27,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,L
+290,27,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,M
+291,27,196,Taglia Giubbino Invernale,bfQuickMode6127837,Checkbox Group,L
+292,28,181,Nome,bfQuickMode2880762,Text,Antonio
+293,28,180,Cognome,bfQuickMode9229721,Text,Le Rose
+294,28,179,Email,bfQuickMode8584497,Text,antonioler@gmail.com
+295,28,205,Telefono,bfQuickMode5612981,Text,3475221810
+296,28,177,Via/Piazza,bfQuickMode3945746,Text,Via Tortona 14/150SD
+297,28,178,Città/Paese/Località,bfQuickMode3486476,Text,Genova
+298,28,176,Provincia,bfQuickMode9844682,Text,Genova
+299,28,174,CAP,bfQuickMode9644238,Text,16139
+300,28,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+301,28,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+302,28,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,L
+303,28,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,L
+304,29,181,Nome,bfQuickMode2880762,Text,Agostino
+305,29,180,Cognome,bfQuickMode9229721,Text,Bran
+306,29,179,Email,bfQuickMode8584497,Text,agobran@alice.it
+307,29,205,Telefono,bfQuickMode5612981,Text,3384995948
+308,29,177,Via/Piazza,bfQuickMode3945746,Text,"Via Ungaretti, 40"
+309,29,178,Città/Paese/Località,bfQuickMode3486476,Text,Roveredo in Piano
+310,29,176,Provincia,bfQuickMode9844682,Text,PN
+311,29,174,CAP,bfQuickMode9644238,Text,33080
+312,29,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+313,29,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,XL
+314,30,181,Nome,bfQuickMode2880762,Text,nicola
+315,30,180,Cognome,bfQuickMode9229721,Text,freti
+316,30,179,Email,bfQuickMode8584497,Text,n.freti@alice.it
+317,30,205,Telefono,bfQuickMode5612981,Text,3286877414
+318,30,177,Via/Piazza,bfQuickMode3945746,Text,via campone n.8
+319,30,178,Città/Paese/Località,bfQuickMode3486476,Text,endine gaiano
+320,30,176,Provincia,bfQuickMode9844682,Text,BG
+321,30,174,CAP,bfQuickMode9644238,Text,24060
+322,30,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+323,30,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+324,30,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,2XL
+325,30,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,2XL
+326,31,181,Nome,bfQuickMode2880762,Text,giorgio
+327,31,180,Cognome,bfQuickMode9229721,Text,puccitelli
+328,31,179,Email,bfQuickMode8584497,Text,giorgiopuccitelli@alice.it
+329,31,177,Via/Piazza,bfQuickMode3945746,Text,via san giuseppe 35
+330,31,178,Città/Paese/Località,bfQuickMode3486476,Text,cingoli
+331,31,176,Provincia,bfQuickMode9844682,Text,macerata
+332,31,174,CAP,bfQuickMode9644238,Text,62011
+333,31,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+334,31,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,L
+335,31,182,Note aggiuntive,bfQuickMode7103686,Textarea,una maglia estiva
+336,32,181,Nome,bfQuickMode2880762,Text,Arianna
+337,32,180,Cognome,bfQuickMode9229721,Text,Trappolini
+338,32,179,Email,bfQuickMode8584497,Text,giorgiopuccitelli@alice.it
+339,32,177,Via/Piazza,bfQuickMode3945746,Text,via san giuseppe 35
+340,32,178,Città/Paese/Località,bfQuickMode3486476,Text,cingoli
+341,32,176,Provincia,bfQuickMode9844682,Text,macerata
+342,32,174,CAP,bfQuickMode9644238,Text,62011
+343,32,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+344,32,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,M
+345,32,182,Note aggiuntive,bfQuickMode7103686,Textarea,maglia estiva donna
+346,33,181,Nome,bfQuickMode2880762,Text,mirko
+347,33,180,Cognome,bfQuickMode9229721,Text,avoledo
+348,33,179,Email,bfQuickMode8584497,Text,miravo71@alice.it
+349,33,205,Telefono,bfQuickMode5612981,Text,3707089187
+350,33,177,Via/Piazza,bfQuickMode3945746,Text,de finetti32
+351,33,178,Città/Paese/Località,bfQuickMode3486476,Text,trento
+352,33,176,Provincia,bfQuickMode9844682,Text,tn
+353,33,174,CAP,bfQuickMode9644238,Text,38123
+354,33,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+355,33,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+356,33,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,L
+357,33,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,XL
+358,33,182,Note aggiuntive,bfQuickMode7103686,Textarea,In caso di taglie non giuste (troppo strette o larghe) sarebbe possibile eventuale cambio? grazie
+359,34,181,Nome,bfQuickMode2880762,Text,Marco
+360,34,180,Cognome,bfQuickMode9229721,Text,Mascellani
+361,34,179,Email,bfQuickMode8584497,Text,mmascellani75@gmail.com
+362,34,205,Telefono,bfQuickMode5612981,Text,3479569975
+363,34,177,Via/Piazza,bfQuickMode3945746,Text,"Via N.Tommaseo, 20"
+364,34,178,Città/Paese/Località,bfQuickMode3486476,Text,Portomaggiore
+365,34,176,Provincia,bfQuickMode9844682,Text,Ferrara
+366,34,174,CAP,bfQuickMode9644238,Text,44015
+367,34,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+368,34,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,XL
+369,35,181,Nome,bfQuickMode2880762,Text,Alan
+370,35,180,Cognome,bfQuickMode9229721,Text,Muscetti
+371,35,179,Email,bfQuickMode8584497,Text,m.alan@Alice.it
+372,35,205,Telefono,bfQuickMode5612981,Text,3400874010
+373,35,177,Via/Piazza,bfQuickMode3945746,Text,"Via primo maggio, 2c"
+374,35,178,Città/Paese/Località,bfQuickMode3486476,Text,sondalo
+375,35,176,Provincia,bfQuickMode9844682,Text,so
+376,35,174,CAP,bfQuickMode9644238,Text,23035
+377,35,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,giubbino
+378,35,196,Taglia Giubbino Invernale,bfQuickMode6127837,Checkbox Group,S
+379,36,181,Nome,bfQuickMode2880762,Text,Sauro
+380,36,180,Cognome,bfQuickMode9229721,Text,Farroni
+381,36,179,Email,bfQuickMode8584497,Text,Sauro.farroni@tiscali.it
+382,36,205,Telefono,bfQuickMode5612981,Text,3396664221
+383,36,177,Via/Piazza,bfQuickMode3945746,Text,Bolis 14
+384,36,178,Città/Paese/Località,bfQuickMode3486476,Text,Lugo
+385,36,176,Provincia,bfQuickMode9844682,Text,Ravenna
+386,36,174,CAP,bfQuickMode9644238,Text,48023
+387,36,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+388,36,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+389,36,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,2XL
+390,36,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,2XL
+391,36,182,Note aggiuntive,bfQuickMode7103686,Textarea,"Maglia estiva taglia s
+Salopette estiva taglia s"
+392,37,181,Nome,bfQuickMode2880762,Text,Silvia
+393,37,180,Cognome,bfQuickMode9229721,Text,Missio
+394,37,179,Email,bfQuickMode8584497,Text,avv.missio@studiolegalemissio.it
+395,37,205,Telefono,bfQuickMode5612981,Text,"051452012"
+396,37,177,Via/Piazza,bfQuickMode3945746,Text,Via Fondè 10
+397,37,178,Città/Paese/Località,bfQuickMode3486476,Text,San Lazzaro di Savena 
+398,37,176,Provincia,bfQuickMode9844682,Text,Bologna
+399,37,174,CAP,bfQuickMode9644238,Text,40068
+400,37,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+401,37,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+402,37,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,giubbino
+403,37,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,XL
+404,37,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,L
+405,37,196,Taglia Giubbino Invernale,bfQuickMode6127837,Checkbox Group,XL
+406,38,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia
+407,38,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette
+408,38,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,giubbino
+409,38,186,Taglia maglia estiva,bfQuickMode1922722,Checkbox Group,L
+410,38,195,Taglia salopette estiva,bfQuickMode6127508,Checkbox Group,L
+411,38,196,Taglia Giubbino Invernale,bfQuickMode6127837,Checkbox Group,L
+412,39,1,Nome,bfQuickMode2880762,Text,CARLO
+413,39,2,Cognome,bfQuickMode9229721,Text,BEGHELLI
+414,39,3,Email,bfQuickMode8584497,Text,carlo.beghelli@tin.it
+415,39,4,Via/Piazza,bfQuickMode3945746,Text,via della Salute
+416,39,5,Città/Paese/Località,bfQuickMode3486476,Text,Bologna
+417,39,6,Provincia,bfQuickMode9844682,Text,Bo
+418,39,7,CAP,bfQuickMode9644238,Text,40132
+419,39,8,Numero di copie acquistate,bfQuickMode3097509,Select List,value1
+420,39,10,Metodo di pagamento,bfQuickMode4841021,Radio Group,bonifico
+625,62,458,Il tuo nome,nome,Text,Leuz
+626,62,500,La tua email,bfQuickMode1373336,Text,veronica@lifeintravel.it
+627,62,556,Tipo di percorso,percorso,Select List,Bikepacking
+628,62,253,Titolo,title,Text,frascghi
+629,62,236,Intro,intro,Textarea,fdgd
+630,62,483,Descrizione,bfQuickMode4416314,Textarea,fgdgsd
+631,62,689,Da non perdere,bfQuickMode305323,Textarea,dfgs
+632,62,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+633,62,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+634,63,458,Il tuo nome,nome,Text,Prova
+635,63,500,La tua email,bfQuickMode1373336,Text,info@lifeintravel.it
+636,63,556,Tipo di percorso,percorso,Select List,Bikepacking
+637,63,253,Titolo,title,Text,tre tre
+638,63,236,Intro,intro,Textarea,gbndfgnf
+639,63,483,Descrizione,bfQuickMode4416314,Textarea,gndcfgn
+640,63,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+641,63,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+642,64,458,Il tuo nome,nome,Text,newstienet
+643,64,500,La tua email,bfQuickMode1373336,Text,newstienet@outlook.com
+644,64,556,Tipo di percorso,percorso,Select List,Bikepacking
+645,64,253,Titolo,title,Text,newstienet
+646,64,236,Intro,intro,Textarea,"a hit freelancers swear by exercises — washing your face, putting on real garments and placing smartphone boundaries — and those recommendations increase to ingesting. dietary therapist and longtime paintings-from-homer wilma macdonald told huffpost that snacking right here and there's the largest mistake she sees new far flung workers make. she recommends setting up your day like all everyday working day, with a lunch wreck, a few smaller breaks and a focus at the most important meal: breakfast"
+647,64,483,Descrizione,bfQuickMode4416314,Textarea,"a hit freelancers swear by exercises — washing your face, putting on real garments and placing smartphone boundaries — and those recommendations increase to ingesting. dietary therapist and longtime paintings-from-homer wilma macdonald told huffpost that snacking right here and there's the largest mistake she sees new far flung workers make. she recommends setting up your day like all everyday working day, with a lunch wreck, a few smaller breaks and a focus at the most important meal: breakfast.
+
+https://www.newstienet.com"
+648,64,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+649,64,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+650,65,458,Il tuo nome,nome,Text,adriano peloso
+651,65,500,La tua email,bfQuickMode1373336,Text,adrianopeloso51@gmail.com
+652,65,556,Tipo di percorso,percorso,Select List,MTB
+653,65,253,Titolo,title,Text,Alpitpiano del Cansiglio (tambre   BL)
+654,65,236,Intro,intro,Textarea,"L'altipiano del Cansiglio  è un posto poco conosciuto ,ma stupendo con i sui prati circondati come un anello da un stupenda foresta (utilizzata in passato dalla Repubblica di Venezia per le sue navi).
+Una terrazza su tutta la pianura Veneta 
+Si puo raggingere da Vittorio Veneto o da Alpe di Alpago 
+Anello di 44 km con dislivelli di 1400 ,nessuna difficoltà tecnica ,consiglio sosta e pranzo al rifugio sul Monte Pizzoc   "
+655,65,483,Descrizione,bfQuickMode4416314,Textarea,"Due facili strade forestali ,quella del Taffarel e la Candaglia ,quest'ultima ha un fondo sterrato bianco liscio come un biliardo,entrambe pendenza quasi nulla.
+La strada della Candaglia parte vicino alla Loc Crocetta ed è adatta a tutti anche ai bimbi che vogliono fare MTB per le prime volte , immersa in un bella foresta,(chiusa alle auto)
+La strada del Taffarel parte da Campon con 3 km di salita asfaltata  e poi diventa una sterrata pianeggiate , se presa dall'altro lato (dalla strada asfaltata per Monte Pizzoc) è subito pianeggiante.
+Consiglio salita al Monte Pizzoc dove si vede un  panorama stupendo a 360 gradi .
+Ho affitato e-bike a Malga Filippon da dove parte il percorso ."
+656,65,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+657,65,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+658,66,458,Il tuo nome,nome,Text,bloglifenews
+659,66,500,La tua email,bfQuickMode1373336,Text,bloglifenews@outlook.com
+660,66,556,Tipo di percorso,percorso,Select List,Bikepacking
+661,66,253,Titolo,title,Text,bloglifenews
+662,66,236,Intro,intro,Textarea,"a hit freelancers swear by exercises — washing your face, putting on real garments and placing smartphone boundaries — and those recommendations increase to ingesting. dietary therapist and longtime paintings-from-homer wilma macdonald told huffpost that snacking right here and there's the largest mistake she sees new far flung workers make. she recommends setting up your day like all everyday working day, with a lunch wreck, a few smaller breaks and a focus at the most important meal: breakfast"
+663,66,483,Descrizione,bfQuickMode4416314,Textarea,"a hit freelancers swear by exercises — washing your face, putting on real garments and placing smartphone boundaries — and those recommendations increase to ingesting. dietary therapist and longtime paintings-from-homer wilma macdonald told huffpost that snacking right here and there's the largest mistake she sees new far flung workers make. she recommends setting up your day like all everyday working day, with a lunch wreck, a few smaller breaks and a focus at the most important meal: breakfast.
+
+https://www.bloglifenews.com"
+664,66,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+665,66,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+666,67,458,Il tuo nome,nome,Text,isontinoinbici
+667,67,500,La tua email,bfQuickMode1373336,Text,isontinoinbici@gmail.com
+668,67,556,Tipo di percorso,percorso,Select List,MTB
+669,67,253,Titolo,title,Text,Gorizia e i Colli urbani (da www.isontinoinbici.it)
+670,67,236,Intro,intro,Textarea,"Località attraversate: Gorizia, Piazza S. Antonio - Borgo Castello - Valico della Casa Rossa - Cimitero ebraico di Rozna Dolina - Colle del Mark - Bosco del Panovec - Rafut - Colle di Castagnavizza - Piazza Vittoria
+
+Descrizione dettagliata dell'itinerario su <a href=""http://www.isontinoinbici.it/ColliUrbani/mtb-gorizia-castello-castagnavizza-panovec.html"" target=""_blank"">www.isontinoinbici.it</a><br />
+<a href=""https://photos.app.goo.gl/dfSoS8wbrFMoatFY8"" target=""_blank"" />Galleria Fotografica/a"
+671,67,483,Descrizione,bfQuickMode4416314,Textarea,"Possiamo considerare questo itinerario come urbano in quanto risale i colli posti al centro o ai margini dei centri abitati di Gorizia e Nova Gorica. Interessanti il colle del Castello di Gorizia  e il colle del Santuario della Beata Vergine della Castagnavizza dal punto di vista storico, il colle del Mark per il panorama , il bosco e i rilievi del bosco del Panovec  e il parco di villa Lasciac  dal punto di vista botanico."
+672,67,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+673,67,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+674,68,458,Il tuo nome,nome,Text,isontinoinbici.it
+675,68,500,La tua email,bfQuickMode1373336,Text,isontinoinbici@gmail.com
+676,68,556,Tipo di percorso,percorso,Select List,MTB
+677,68,253,Titolo,title,Text,Monte Sabotino (da www.isontinoinbici.it)
+678,68,236,Intro,intro,Textarea,"Località attraversate: Gorizia, Parco dell'Isonzo - Piuma - Podsenica - Monte Sabotino - Eremo di S. Valentino - S. Mauro - Piuma - Parco dell'Isonzo
+
+Descrizione dettagliata dell'itinerario su <a href=""http://www.isontinoinbici.it/Sabotino/mtb-monte-sabotino-san-valentino-gorizia.html"" target=""_blank"">www.isontinoinbici.it</a>
+<a href=""https://photos.app.goo.gl/LoHczDgTxd97iKzz9"" target=""_blank"">Galleria Fotografica</a>"
+679,68,483,Descrizione,bfQuickMode4416314,Textarea,"L'ascesa al monte Sabotino, da qualsiasi parte la si voglia affrontare, è comunque una bella impresa (le pendenze sono molto pronunciate). La soddisfazione che però si proverà dopo tanta fatica sarà immensa, perché il Sabotino è un luogo straordinario. Il vastissimo panorama che spazia dalla valle del Vipacco, al Carso Isontino, alla pianura friulana, al mare Adriatico, al Collio, alla cerchia alpina, allo stretto corso dell'Isonzo e all'altopiano di Tarnova è qualcosa di unico.
+Tutto il monte è pregno dei ricordi lasciati dagli importanti avvenimenti storici che hanno segnato questi luoghi: le battaglie della I guerra mondiale, di cui rimangono le trincee e le gallerie cannoniere scavate dagli austro-ungarici (alcune percorribili con facilità in quanto attrezzate ed illuminate direttamente dalla luce del sole), e la cortina di ferro che passava proprio per la linea di vetta e di cui ne sono testimonianza le due casermette jugoslava e italiana e, fino a pochissimi anni fa, i reticolati ed il filo spinato.
+Testimone postumo delle vicende belliche del secondo conflitto mondiale, una sorta di dazio per la sconfitta subita, è la cosiddetta Strada di Osimo : una strada che collega tutt'oggi due località della Slovenia ma attraverso il territorio italiano. Molto interessante il sito dell'eremo cinquecentesco di S. Valentino. E per chi ama le fioriture, giugno è un mese eccezionale.
+L'itinerario transfrontaliero prevede lo sconfinamento dal valico agricolo di S. Valentino, che prima dell'ingresso della Slovenia nell'area Schengen poteva essere superato solo dai possessori di un particolare lasciapassare, percorre un tratto della Strada di Osimo, si arrampica fino alla strada panoramica slovena, raggiunge la vecchia casermetta jugoslava, sconfina in Italia, tocca la casermetta italiana, e l'eremo di S.Valentino e infine con entusiasmante discesa, meglio dire picchiata, raggiunge il Parco dell'Isonzo, punto di partenza di questo stupendo tracciato."
+680,68,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+681,68,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+682,69,458,Il tuo nome,nome,Text,isontinoinbici.it
+683,69,500,La tua email,bfQuickMode1373336,Text,isontinoinbici@gmail.com
+684,69,556,Tipo di percorso,percorso,Select List,MTB
+685,69,253,Titolo,title,Text,Vallone e Lago di Doberdò (da www.isontinoinbici.it)
+686,69,236,Intro,intro,Textarea,"Località attraversate: Devetachi - Cotici Inferiore - Marcottini - Doberdò del Lago - Casa Cadorna - Isceri - Berne - Miccoli - Palchisce - Visintini - Devetachi
+
+Descrizione dettagliata dell'itinerario su <a href=""http://www.isontinoinbici.it/Vallone/mtb-lago-doberdo-carso-vallone.html"" target=""_blank"">www.isontinoinbici.it</a>
+<a href=""https://photos.app.goo.gl/vVhLKH3LLwjrTabF9"" target=""_blank"">Galleria Fotografica</a>"
+687,69,483,Descrizione,bfQuickMode4416314,Textarea,"Questo itinerario percorre le pendici ed il fondo del Vallone, una depressione che divide il Carso isontino da quello sloveno e che collega, attraverso la statale 55, Gorizia a Monfalcone e Trieste. Sono molti gli spunti interessanti che troveremo lungo il percorso: la guerra di trincea durante il primo conflitto mondiale testimoniata dai pannelli del Museo all’Aperto della Grande Guerra sul Carso, le tracce dei primi insediamenti umani del castelliere preistorico del Castellazzo, i fenomeni carsici del lago di Doberdò . Ed infine, per chi ha la fortuna di visitare questi luoghi in autunno, le sgargianti sfumature che dal giallo al rosso colorano questi straordinari luoghi, capaci di ritagliarsi un capitolo importante in qualunque libro di storia, geografia e scienze."
+688,69,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+689,69,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+690,70,458,Il tuo nome,nome,Text,isontinoinbici.it
+691,70,500,La tua email,bfQuickMode1373336,Text,isontinoinbici@gmail.com
+692,70,556,Tipo di percorso,percorso,Select List,MTB
+693,70,253,Titolo,title,Text,Monte Trstelj (da www.isontinoinbici.it)
+694,70,236,Intro,intro,Textarea,"Località attraversate: Valico di Devetachi (Gorizia) - Cerje - M. Trstelj - Temnica - Novelo - Kostanjevica - Segeti - Lokvica - Valico di Devetachi
+
+Descrizione dettagliata dell'itinerario su <a href=""http://www.isontinoinbici.it/Trstelj/mtb-monte-trstelj-cerje-faiti.html"" target=""_blank"">www.isontinoinbici.it</a>
+<a href=""https://photos.app.goo.gl/aCBmHu6q8GDiZefE8"" target=""_blank"">Galleria Fotografica</a>"
+695,70,483,Descrizione,bfQuickMode4416314,Textarea,"L'itinerario si sviluppa completamente in territorio sloveno e percorre strade sterrate e sentieri del ciglione e dello stupendo altopiano carsico di Komen/Comeno. Tra le particolarità del percorso segnaliamo sicuramente i vastissimi panorami che spaziano dal Mare Adriatico alla Pianura Padana alle Alpi e che si susseguono come un'esposizione pittorica. Singolare il fatto che dal punto di partenza fino alla vetta del Trstelj, se si esclude la Torre di Miren/Merna , lungo il tracciato non si incontra alcun edificio (sono ben 13,4 km); la natura regna incontaminata e, specialmente nei primi chilometri, è facile incontrare qualche capriolo.
+Caratteristici e vivi sono i vari borghi dell'altopiano che si attraversano dopo la veloce discesa dal M. Trstelj e che hanno molto da raccontare riguardo le vicende della Prima Guerra Mondiale visto che si trovavano nelle immediate retrovie del fronte. A ricordo di quelle tristi vicende è stata realizzata la rete dei Sentieri della Pace sul Carso (Proti Miru Na Krasu) .
+Eccoci qui a descrivere ancora un'altro pezzo di terra dell'Isontino che non ha nulla da spartire con le altre aree descritte dagli altri itinerari. Qualcosa che rende veramente unico il nostro territorio."
+696,70,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+697,70,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+698,71,458,Il tuo nome,nome,Text,isontinoinbici.it
+699,71,500,La tua email,bfQuickMode1373336,Text,isontinoinbici@gmail.com
+700,71,556,Tipo di percorso,percorso,Select List,MTB
+701,71,253,Titolo,title,Text,Monte Korada (da www.isontinoinbici.it)
+702,71,236,Intro,intro,Textarea,"Località attraversate: Gorizia, piazza della Vittoria - valico di Salcano - Solkan - ciclabile sterrata dell'Isonzo - Plave - M.te Korada - Vrhovlje - Brestje - Kojsko - Valle del Versa - Uclanzi - Bucuie - Vallone dell'acqua - Gorizia
+
+Descrizione dettagliata dell'itinerario su <a href=""http://www.isontinoinbici.it/Korada/mtb-monte-korada-isonzo-brda.html"" target=""_blank"">www.isontinoinbici.it</a>
+<a href=""https://photos.app.goo.gl/ytXAM2unbvBtgcyh7"" target=""_blank"">Galleria  Fotografica</a>"
+703,71,483,Descrizione,bfQuickMode4416314,Textarea,"Itinerario lungo e faticoso ma molto vario, ricco ed estremamente panoramico. Si parte dal centro cittadino di Gorizia a 80 m sul livello del mare e si arriva in cima al M. Korada a 811 m di quota. I primi 16 km sono quasi pianeggianti e sfruttano la splendida pista sterrata (9 km) che corre parallela alle acque smeraldine del fiume Isonzo e alla storica Ferrovia Transalpina.
+Da Plave ci si inerpica per 7 km e 25 tornanti fino al rifugio e alla cima del M. Korada su cui poggia le sue fondamenta l'isolata chiesetta di Sveti Gemderca , in ambiente quasi montano. Durante l'avvicinamento alla vetta e la successiva bellissima discesa in equilibrio sul crinale ci accompagnano ampie distese prative perfettamente curate e spettacolari panorami a perdita d'occhio verso la pianura friulana , l'anfiteatro alpino e gli altipiani sloveni.
+L'ultima parte dell'itinerario percorre la lunga valle del Birsa (Versa) in ambiente tipicamente collinare dove le colture a vite e frutteto si susseguono senza soluzione di continuità . Interessante, dal punto di vista storico e geografico, è l'area attorno all'ex valico agricolo di Giasbana ove i cippi di confine separano i pregiati vigneti della Brda slovena da quelli del Collio italiano . E per finire non possiamo non rammentare le bellezze di Gorizia; le sue piazze , il suo castello , le sue chiese , i suoi palazzi e parchi fanno da cornice ai primi e ultimi chilometri di questo fantastico itinerario."
+704,71,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+705,71,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+706,72,458,Il tuo nome,nome,Text,isontinoinbici.it
+707,72,500,La tua email,bfQuickMode1373336,Text,isontinoinbici@gmail.com
+708,72,556,Tipo di percorso,percorso,Select List,MTB
+709,72,253,Titolo,title,Text,I vigneti di Zoran (da www.isontinoinbici.it)
+710,72,236,Intro,intro,Textarea,"I vigneti del triangolo Vrtojba-Bilje-Bukovica
+
+Descrizione dettagliata dell'itinerario su <a href=""http://www.isontinoinbici.it/VignetiZoran/mtb-vigneti-vrtojba-sempeter.html"" target=""_blank"">www.isontinoinbici.it</a>
+<a href=""https://photos.app.goo.gl/tn8o1YsKjfJSonT69"" target=""_blank"">Galleria Fotografica</a>"
+711,72,483,Descrizione,bfQuickMode4416314,Textarea,"Altro itinerario ad alta gradazione alcolica. Le valli e le colline nel triangolo con ai vertici i paesi di Vrtojba, Bilje e Bukovica (Nova Gorica, Slovenia) sono totalmente ricoperte da filari di vite; una sorta di Langhe in miniatura.
+Alcuni vigneti sono talmente ben curati dai loro proprietari che danno l’idea di essere dei giardini e non campi coltivati a vite.
+Durante il primo conflitto mondiale questi luoghi sono stati teatro di aspri combattimenti tra gli eserciti italiano e austro-ungarico per ben 14 mesi tra la fine del 1915 e l’inizio del 1917 (7a, 8a e 9a battaglia dell’Isonzo). Il paese di Vrtojba fu duramente colpito: centinaia di famiglie fuggite altrove, il 4% della popolazione morì, entrambe le chiese del paese distrutte. Subito dopo la Prima guerra mondiale l’area di Vrtojba era in territorio italiano; gli italiani chiamarono il paese Camposanto per la presenza di almeno 12 cimiteri di guerra. Nel 1928 le spoglie di almeno 3300 soldati vennero riesumate e portate nel cimitero centrale di Vrtojba. Nel 1938 le autorità italiane portarono le salme dei propri soldati nell’ossario di Oslavia.
+Oggi sono testimoni di quegli eventi i cartelli informativi in più lingue disseminati lungo il percorso del ""Pot Miru/Sentiero della Pace"" e il silenzioso cimitero di guerra nei pressi di Bilje, immerso tra i vigneti.
+L’itinerario qui presentato è solo una delle possibili proposte in quanto l’area collinare è attraversata da un reticolo di strade bianche, sterrate e tratturi solitamente in ottime condizioni ed in gran parte pedalabili.
+Vi è anche un percorso vita con 16 punti ginnici dotati di attrezzi. Come materiale da costruzioni sono state utilizzate anche le pietre tombali dei soldati le cui spoglie mortali sono state traslate nel cimitero centrale di Vrtojba.
+La bellezza di queste colline è tale che è stata immortalata in una delle scene del film ""Zoran, il mio nipote scemo"".
+A Bukovica è nato lo stimato pittore e incisore sloveno Anton Zoran Mušič."
+712,72,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+713,72,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+714,73,458,Il tuo nome,nome,Text,Daniele Lazzaretti 
+715,73,500,La tua email,bfQuickMode1373336,Text,danilazz60@gmail.com
+716,73,556,Tipo di percorso,percorso,Select List,Cicloturismo
+717,73,253,Titolo,title,Text,Bici nostalgia
+718,73,236,Intro,intro,Textarea,"Si tratta del diario del mio primo viaggio in bici effettuato nel 1975 all'età di 15 anni.  Ricostruito fedelmente a distanza di 45 anni e purtroppo non vi sono foto o altre tracce dell'epoca.
+"
+719,73,483,Descrizione,bfQuickMode4416314,Textarea,"Il primo viaggio di Daniele Lazzaretti da Roma a Magione (Lago Trasimeno, PG) in due giorni con tappa a Foligno e ritorno.  Un viaggio quasi preistorico, vista la situazione dell'epoca, nella quale, di fatto, non esistevano altri metodi che l'avventura alla cieca. Una bicicletta adattata, solo una cartina stradale consultata e non portata al seguito; inoltre la difficoltà di comunicare via telefono, data la costosità delle chiamate interurbane. A distanza di tanti anni, oggi ne ho quasi 61, rimane una delle maggiori soddisfazioni della mia vita. 
+"
+720,73,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+721,73,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+722,74,458,Il tuo nome,nome,Text,CRISTIAN
+723,74,500,La tua email,bfQuickMode1373336,Text,crima73@outlook.it
+724,74,556,Tipo di percorso,percorso,Select List,Cicloturismo
+725,74,253,Titolo,title,Text,giro turistico
+726,74,236,Intro,intro,Textarea,bellissimo giro
+727,74,483,Descrizione,bfQuickMode4416314,Textarea,giro abbastanza impegnativo si consiglia prudenza
+728,74,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+729,74,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+730,75,458,Il tuo nome,nome,Text,Enrico Maccarini
+731,75,500,La tua email,bfQuickMode1373336,Text,info@e-stelvio.it
+732,75,556,Tipo di percorso,percorso,Select List,Bikepacking
+733,75,253,Titolo,title,Text,"Da Bormio a Cortina, sulle strade delle olimpiadi."
+734,75,236,Intro,intro,Textarea,"Nel 2026 le alpi italiane ospiteranno le olimpiadi invernali. L'vento è sempre motivo di festa e per molti è anche l'occasione della vita per vedere coronato il proprio sogno e i propri sforzi.
+L'Alta Valtellina sarà protagonista della gara principe delle olimpiadi, al pari della maratone delle olimpiadi estive: la discesa libera sulla mitica STELVIO.
+Cinque amici, come i cinque cerchi, hanno deciso di unire la sede lombarda con quella veneta in un viaggio in bicicletta. Questa la loro avventura"
+735,75,483,Descrizione,bfQuickMode4416314,Textarea,"Si parte da Valdidentro, dall' e-bike center e-Stelvio. Qui sono pronte le 5 e-bike che accompagnerano i cinque amici attraverso tre regioni (Lombardia, Alto Adige e Veneto), tutte sedi di un evento olimpico.
+Mario, Dino, Leone, Marco e Aldo si conoscono da una vita. Tutti legati dalla passione per lo sport e l'arrivo dell'età pensionabile non ha certo diminuitito la loro passione.
+Strada, Gravel, MTB o e-bike, qualsiasi cosa abbia due ruote per loro è motivo di divertimento. 
+Alle ore 8 la brigata parte con un bikepacking studiato per 3 giorni di viaggio in autonomia alla volta di Merano. In mezzo il Passo dello Stelvio. Come non essere degli eroi sui tornati del 2758 metri più famosi del mondo. Anche farlo in e-bike ha il suo fascino e sicuramente i puristi storceranno un pò il naso, ma qui stiamo parlando di turismo e non di impresa, vale quindi la pena ridurre lo sforzo e godere del paesaggio che ci regala questo scorcio di paradiso.
+Discesa a Prato e subito ciclabile della Val Venosta in mezzo ai meleti con unico obiettivo la sosta alla birreria più famosa dell'Alto Adige: la Forst.
+Qui il viaggio volge al termine e a Merano si trova il meritato riposo in piscina vista la calura che contraddistingue la bellissima cittadina.
+Il mattino seguente si prende la direzione di Bolzano, con qualche difficoltà visto che la strada da percorrere non è proprio intuitiuva, ma con un buon senso dell'orientamento si è trovato il bandolo della matassa. La direzione diventa quindi quella della Strada dei Vini sino ad Ora, qui si prende la direzione Val di Fiemme dove possiamo incontrare Predazzo con i suoi trampolini del salto e il Lago di Tesero, sede delle gare di sci di fondo. La tappa si conclude a Moena, in attesa di affrontare i due passi che ci separano da Cortina: Pordoi e Falzarego.
+Il giorno successivo lasciato Canazei inizia l'ascesa al Pordoi dove è obbligata la sosta per visitare la terrazza delle Dolomiti. Successivamente si percorrono i tornati del passo Falzarego e da qui in discesa verso Cortina. 300 km in tutto, da fare con calma, facendosi aiutare dal motore delle e-bike, non senza comunque fatica. Lo scopo: ammirare il paesaggio che sarà protagonista dell'evento principe dello sport che torna sulle alpi dopo 20 anni."
+736,75,689,Da non perdere,bfQuickMode305323,Textarea,"Bormio e il suo centro storico, Passo dello Stelvio, Ciclabile della Val Venosta, le albicocche di Naturno, il giardino della birra Forst, le terme di Merano,il centro storico di Merano, la strada dei vini, lo stadio del salto a Predazzo, la fata delle dolomiti Moena, Passo del Pordoi e la terrazza delle Alpi, il centro di Cortina."
+737,75,695,Dove dormire,bfQuickMode262487,Textarea,"La sera prima della partenza a Valdidentro (5km da Bormio) si può soggiornare al residence Rosengarden, qui potete incontrare Dino, uno dei protagonisti del viaggio e può esservi utile per alcuni suggerimenti."
+738,75,700,Dove mangiare,bfQuickMode5166524,Textarea,Birreria Forst
+739,75,705,Link utili,bfQuickMode8986713,Textarea,"www.e-stelvio.it per il noleggio delle e-bike
+www.elmaviaggi.it per il servizio di rientro da Cortina a Bormio"
+740,75,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+741,75,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+742,76,458,Il tuo nome,nome,Text,antonello parini
+743,76,500,La tua email,bfQuickMode1373336,Text,antonello.parini@gmail.com
+744,76,556,Tipo di percorso,percorso,Select List,Cicloturismo
+745,76,253,Titolo,title,Text,"vorrei essere contattato dal vostro ufficio marketing per una collaborazione, la nostra società gestisce la parte media a bordo dei treni, nelle stazioni ferroviarie , negli aeroporti nelle metropolitane "
+746,76,236,Intro,intro,Textarea,"i miei contatti
++ 39 3356069696
+grazie "
+747,76,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+748,77,458,Il tuo nome,nome,Text,Laura Gavina
+749,77,500,La tua email,bfQuickMode1373336,Text,laurgavina@gmail.com
+750,77,556,Tipo di percorso,percorso,Select List,Cicloturismo
+751,77,253,Titolo,title,Text,OFFERTA DI FINANZIAMENTO
+752,77,236,Intro,intro,Textarea,Offerta di finanziamento non rimborsabile
+753,77,483,Descrizione,bfQuickMode4416314,Textarea,"Il Fondo Monetario Internazionale (FMI) offre aiuti finanziari non rimborsabili a qualsiasi persona fisica o giuridica residente in Francia, Belgio, Svizzera, Canada, Polinesia francese, Italia e Russia, Lussemburgo, Riunione, ecc. Strumento (NIF) e che mira a combinare gli aiuti a fondo perduto risultanti dal bilancio dell'UE con i prestiti delle istituzioni finanziarie.
+ Puoi beneficiare di un aiuto non rimborsabile che va da 5.000 euro fino a un'altezza di 500.000 €.
+
+ Si prega di contattare l'indirizzo email laurgavina@gmail.com"
+754,77,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+755,77,530,Conferma e accetta,bfQuickMode4692239,Checkbox Group,termini accettati
+756,78,181,Nome,bfQuickMode2880762,Text,Gian Carlo
+757,78,180,Cognome,bfQuickMode9229721,Text,Croci
+758,78,179,Email,bfQuickMode8584497,Text,giancarlocroci63@gmail.com
+759,78,205,Telefono,bfQuickMode5612981,Text,3492812983
+760,78,177,Via/Piazza,bfQuickMode3945746,Text,"Ibatt La Casa delle Batterie, Via Bernardino Luini N.537"
+761,78,178,Città/Paese/Località,bfQuickMode3486476,Text,Caronno Pertusella
+762,78,176,Provincia,bfQuickMode9844682,Text,Varese
+763,78,174,CAP,bfQuickMode9644238,Text,21042
+764,78,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia1
+765,78,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette1
+766,78,186,Taglia maglia estiva azzurra,bfQuickMode1922722,Checkbox Group,M
+767,78,195,Taglia salopette estiva nera,bfQuickMode6127508,Checkbox Group,M
+768,79,181,Nome,bfQuickMode2880762,Text,GIUSEPPE
+769,79,180,Cognome,bfQuickMode9229721,Text,FASANI
+770,79,179,Email,bfQuickMode8584497,Text,giuseppeerosgiovanni@gmail.com
+771,79,205,Telefono,bfQuickMode5612981,Text,3939235017
+772,79,177,Via/Piazza,bfQuickMode3945746,Text,VIA S.A.M. ZACCARIA
+773,79,178,Città/Paese/Località,bfQuickMode3486476,Text,MARCALLO CON CASONE
+774,79,176,Provincia,bfQuickMode9844682,Text,MILANO
+775,79,174,CAP,bfQuickMode9644238,Text,20010
+776,79,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia1
+777,79,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia2
+778,79,186,Taglia maglia estiva azzurra,bfQuickMode1922722,Checkbox Group,S
+779,79,196,Taglia maglia estiva verde,bfQuickMode6127837,Checkbox Group,S
+780,79,182,Note aggiuntive,bfQuickMode7103686,Textarea,"Buongiorno 
+cortesemente vorrei una maglietta estiva azzurra ed una verde entrambe in taglia S"
+781,80,181,Nome,bfQuickMode2880762,Text,MARILENA
+782,80,180,Cognome,bfQuickMode9229721,Text,GIGANTE
+783,80,179,Email,bfQuickMode8584497,Text,mari.giga67@gmail.com
+784,80,205,Telefono,bfQuickMode5612981,Text,3485631648
+785,80,177,Via/Piazza,bfQuickMode3945746,Text,via firenze 8
+786,80,178,Città/Paese/Località,bfQuickMode3486476,Text,Paderno Dugnano
+787,80,176,Provincia,bfQuickMode9844682,Text,milano
+788,80,174,CAP,bfQuickMode9644238,Text,20037
+789,80,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia2
+790,80,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette2
+791,80,182,Note aggiuntive,bfQuickMode7103686,Textarea,"Ciao, volevo ordinare la Divisa ""gravel""
+(maglia verde + salopette nera/verde)
+Misura M donna
+Grazie.
+"
+792,81,181,Nome,bfQuickMode2880762,Text,Estelle Campion
+793,81,180,Cognome,bfQuickMode9229721,Text,c/o Edigeo srl
+794,81,179,Email,bfQuickMode8584497,Text,campionestelle@yahoo.fr
+795,81,205,Telefono,bfQuickMode5612981,Text,3386447791
+796,81,177,Via/Piazza,bfQuickMode3945746,Text,Via del Lauro 3
+797,81,178,Città/Paese/Località,bfQuickMode3486476,Text,Milano
+798,81,176,Provincia,bfQuickMode9844682,Text,Milano
+799,81,174,CAP,bfQuickMode9644238,Text,20121
+800,81,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia2
+801,81,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette2
+802,81,196,Taglia maglia estiva verde,bfQuickMode6127837,Checkbox Group,S
+803,81,196,Taglia maglia estiva verde,bfQuickMode6127837,Checkbox Group,2XL
+804,81,1561,Taglia salopette estiva nera/verde,bfQuickMode95813,Checkbox Group,M
+805,81,1561,Taglia salopette estiva nera/verde,bfQuickMode95813,Checkbox Group,XL
+806,81,182,Note aggiuntive,bfQuickMode7103686,Textarea,"N. 2 maglia estiva verde: una S e una 2XL
+N. 2 salopette estiva nera/verde: una M e una XL"
+810,83,181,Nome,bfQuickMode2880762,Text,Claudio
+811,83,180,Cognome,bfQuickMode9229721,Text,Caparrelli
+812,83,179,Email,bfQuickMode8584497,Text,claudiokappa73@libero.it
+813,83,205,Telefono,bfQuickMode5612981,Text,3488853129
+814,83,177,Via/Piazza,bfQuickMode3945746,Text,Strada Sammartinese 31/B
+815,83,178,Città/Paese/Località,bfQuickMode3486476,Text,Viterbo
+816,83,176,Provincia,bfQuickMode9844682,Text,Viterbo
+817,83,174,CAP,bfQuickMode9644238,Text,"01100"
+818,83,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia2
+819,83,196,Taglia maglia estiva verde,bfQuickMode6127837,Checkbox Group,L
+820,84,181,Nome,bfQuickMode2880762,Text,Andrea
+821,84,180,Cognome,bfQuickMode9229721,Text,Viglione
+822,84,179,Email,bfQuickMode8584497,Text,andre.viglione@gmail.com
+823,84,205,Telefono,bfQuickMode5612981,Text,3398592803
+824,84,177,Via/Piazza,bfQuickMode3945746,Text,Viet n.11
+825,84,178,Città/Paese/Località,bfQuickMode3486476,Text,Roccaforte Mondovi'
+826,84,176,Provincia,bfQuickMode9844682,Text,Cuneo
+827,84,174,CAP,bfQuickMode9644238,Text,12088
+828,84,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia2
+829,84,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,salopette2
+830,84,196,Taglia maglia estiva verde,bfQuickMode6127837,Checkbox Group,L
+831,84,1561,Taglia salopette estiva nera/verde,bfQuickMode95813,Checkbox Group,M
+832,85,181,Nome,bfQuickMode2880762,Text,"#file_links[""C:\urls\wix.txt"",1,N]"
+833,85,180,Cognome,bfQuickMode9229721,Text,"#file_links[""C:\urls\wix.txt"",1,N]"
+834,85,179,Email,bfQuickMode8584497,Text,"#file_links[""C:\urls\wix.txt"",1,N]"
+835,85,205,Telefono,bfQuickMode5612981,Text,"#file_links[""C:\urls\wix.txt"",1,N]"
+836,85,177,Via/Piazza,bfQuickMode3945746,Text,"#file_links[""C:\urls\wix.txt"",1,N]"
+837,85,178,Città/Paese/Località,bfQuickMode3486476,Text,"#file_links[""C:\urls\wix.txt"",1,N]"
+838,85,176,Provincia,bfQuickMode9844682,Text,"#file_links[""C:\urls\wix.txt"",1,N]"
+839,85,174,CAP,bfQuickMode9644238,Text,"#file_links[""C:\urls\wix.txt"",1,N]"
+840,85,182,Note aggiuntive,bfQuickMode7103686,Textarea,"https://www.ouruniquefriendsnannyservices.com/profile/delphinegallery13082061/profile How to make money gambling on sports https://www.btyxcosmetics.com/profile/warnerhavenhill3392465/profile Bitstarz49 casino, РїРѕС‡РµРјСѓ РЅРµ Р·Р°С…РѕРґРёС‚ РІ bitstarz РєР°Р·РёРЅРѕ https://www.thevidayoga.com/profile/bobbiespears1995/profile Р‘РёС‚СЃС‚Р°СЂР· РєР°Р·РёРЅРѕ Р·РµСЂРєР°Р»Рѕ РѕС„РёС†РёР°Р»СЊРЅС‹Р№ СЃР°Р№С‚, Р±РёС‚СЃС‚Р°СЂР· РєР°Р·РёРЅРѕ Р·РµСЂРєР°Р»Рѕ РЅР° СЃРµРіРѕРґРЅСЏ https://www.ahwsharma.com/profile/rayfordreighley10066911/profile Bitstarz free chip 2019 https://www.vovinlonshin.com/profile/alphaheidkamp8432663/profile Blackjack match the dealer odds https://www.sydanco.com/profile/verniearrand15120770/profile Bitstarz 20 ilmaiskierroksia, bitstarz bonus senza deposito 20 Гјcretsiz dГ¶ndГјrme https://www.propempo.com/profile/irmabartlow1992/profile Best free ipad slot games https://www.gkhministries.com/profile/kieraalban966667/profile Casino real oviedo https://www.johariespindariin.com/profile/jesusasitterding2008/profile Quick hits casino free games https://www.parityrealestate.com/profile/mertiegalardi4142679/profile Top casino en ligne 2022 https://www.alionabirukova.com/profile/terresachiprean11522114/profile Bitstarz casino bono sin depГіsito 2021, bitstarz ingen innskuddsbonus for existing players https://www.eventsdolomites.org/profile/jacquesbodine7152283/profile Free americion slot machine games https://ab.foreveramber.net/profile/nadahofe2947858/profile Aladdin gold casino new player no deposit bonus 2022 https://www.freshvnv.com/profile/othanotari2703731/profile New bitcoin casino in boston https://www.peer-movie-tw.com/profile/fritzwindly1972/profile Sheldon adelson casino bankruptcies https://www.sasautodetailing.com/profile/shakitabradon11282923/profile Bitstarz casino 20 Р±РµСЃРїР»Р°С‚РЅС‹Рµ РІСЂР°С‰РµРЅРёСЏ, bitstarz casino bono sin depГіsito 2021 https://www.maryameducation.com/profile/daily-time-slot-calendar-template-1818/profile Daily time slot calendar template https://www.keshkreation.com/profile/raphaelpirillo2279060/profile Marriott jaco costa rica casino https://www.namisf.org/profile/camelliabresett16962538/profile Promo codes for bitstarz casino, bitstarz gratisspinn codes https://www.thenationaldbe.com/profile/ismaelkroschel18220512/profile Arts and crafts poker table"
+841,86,181,Nome,bfQuickMode2880762,Text,Marco
+842,86,180,Cognome,bfQuickMode9229721,Text,Garofalo
+843,86,179,Email,bfQuickMode8584497,Text,g.marco1966@libero.it
+844,86,205,Telefono,bfQuickMode5612981,Text,3316086185
+845,86,177,Via/Piazza,bfQuickMode3945746,Text,Via G.Puccini 4 
+846,86,178,Città/Paese/Località,bfQuickMode3486476,Text,Villanova 
+847,86,176,Provincia,bfQuickMode9844682,Text,Bologna
+848,86,174,CAP,bfQuickMode9644238,Text,40055
+849,86,194,Scegli i capi da ordinare,bfQuickMode7160901,Checkbox Group,maglia1
+850,86,186,Taglia maglia estiva azzurra,bfQuickMode1922722,Checkbox Group,XL

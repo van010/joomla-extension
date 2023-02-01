@@ -1,0 +1,13 @@
+﻿1,albums,view,10,"{""options"":[""public"",""member"",""friend"",""only_me"",""custom""]}",COM_EASYSOCIAL_PRIVACY_DESC_ALBUMS_VIEW
+2,core,view,10,"{""options"":[""public"",""member"",""friend"",""only_me""]}",COM_EASYSOCIAL_PRIVACY_DESC_CORE_VIEW
+3,followers,view,10,"{""options"":[""public"",""member"",""friend"",""custom""]}",COM_EASYSOCIAL_PRIVACY_DESC_FOLLOWERS_VIEW
+4,friends,view,10,"{""options"":[""public"",""member"",""friends_of_friend"",""friend"",""only_me"",""custom""]}",COM_EASYSOCIAL_PRIVACY_DESC_FRIENDS_VIEW
+5,friends,request,10,"{""options"":[""public"",""member"",""friends_of_friend""]}",COM_EASYSOCIAL_PRIVACY_DESC_FRIENDS_REQUEST
+6,photos,view,10,"{""options"":[""public"",""member"",""friend"",""only_me"",""custom""]}",COM_EASYSOCIAL_PRIVACY_DESC_PHOTOS_VIEW
+7,photos,tagme,30,"{""options"":[""friend"",""only_me"",""custom""]}",COM_EASYSOCIAL_PRIVACY_DESC_PHOTOS_TAGME
+8,photos,tag,30,"{""options"":[""friend"",""only_me"",""custom""]}",COM_EASYSOCIAL_PRIVACY_DESC_PHOTOS_TAG
+9,profiles,view,10,"{""options"":[""public"",""member"",""friend"",""custom""]}",COM_EASYSOCIAL_PRIVACY_DESC_PROFILES_VIEW
+10,profiles,search,10,"{""options"":[""public"",""member"",""friends_of_friend"",""friend""]}",COM_EASYSOCIAL_PRIVACY_DESC_PROFILES_SEARCH
+11,profiles,post.status,10,"{""options"":[""public"",""member"",""friend"",""only_me""]}",COM_EASYSOCIAL_PRIVACY_DESC_PROFILES_POST_STATUS
+12,profiles,post.message,10,"{""options"":[""public"",""member"",""friend"",""custom""]}",COM_EASYSOCIAL_PRIVACY_DESC_PROFILES_POST_MESSAGE
+13,story,view,10,"{""options"":[""public"",""member"",""friend"",""only_me"",""custom""]}",COM_EASYSOCIAL_PRIVACY_DESC_STORY_VIEW

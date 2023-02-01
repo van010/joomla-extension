@@ -1,0 +1,1047 @@
+﻿1,1,1,1,1,bfQuickMode2880762,Nome,Text,"","",1,"0","0","0","0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",2,"",Inserisci il tuo nome,"0",""
+2,1,1,2,1,bfQuickMode9229721,Cognome,Text,"","",1,"0","0",40,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"",Inserisci il tuo cognome,"0",""
+3,1,1,3,1,bfQuickMode8584497,Email,Text,"","",1,"0","0",80,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"",Inserisci la tua email,"0",""
+4,1,1,4,1,bfQuickMode3945746,Via/Piazza,Text,"","",1,"0","0",120,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+5,1,1,5,1,bfQuickMode3486476,Città/Paese/Località,Text,"","",1,"0","0",160,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+6,1,1,6,1,bfQuickMode9844682,Provincia,Text,"","",1,"0","0",200,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+7,1,1,7,1,bfQuickMode9644238,CAP,Text,"","",1,"0","0",240,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+8,1,1,8,1,bfQuickMode3097509,Numero di copie acquistate,Select List,"","",1,"0","0",280,"0",20,"0",20,"0","0","0",1,"0;1;value1
+0;2;value2
+0;3;value3
+0;4;value4
+0;5;value5
+0;di più - specificare nelle note;value6","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+9,1,1,10,1,bfQuickMode7103686,Note aggiuntive,Textarea,"","",1,"0","0",360,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+10,1,1,9,1,bfQuickMode4841021,Metodo di pagamento,Radio Group,"","",1,"0","0",320,"0",20,"0",20,"0","0","0","","1;Paypal;paypal
+0;Bonifico Bancario;bonifico","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+88,1,1,11,1,bfQuickMode4211542,Sei umano?,Captcha,"","","0","0","0",400,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+93,1,1,"0",1,bfFakeName,bfFakeTitle,"","","","0","0","0",440,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,41,"","0","0","0","0","0","0","0","","","0",""
+94,1,1,"0",1,bfFakeName2,bfFakeTitle2,"","","","0","0","0",480,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,23,"","0","0","0","0","0","0","0","","","0",""
+95,1,1,"0",1,bfFakeName3,bfFakeTitle3,"","","","0","0","0",520,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,40,"","0","0","0","0","0","0","0","","","0",""
+96,1,1,"0",1,bfFakeName4,bfFakeTitle4,"","","","0","0","0",560,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,38,"","0","0","0","0","0","0","0","","","0",""
+97,2,1,1,1,bfQuickMode2880762,Nome,Text,"","",1,"0","0","0","0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0",2,"",Inserisci il tuo nome,"0",""
+98,2,1,2,1,bfQuickMode9229721,Cognome,Text,"","",1,"0","0",40,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0",1,"",Inserisci il tuo cognome,"0",""
+99,2,1,3,1,bfQuickMode8584497,Email,Text,"","",1,"0","0",80,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0",1,"",Inserisci la tua email,"0",""
+100,2,1,4,1,bfQuickMode3945746,Numero di Telefono,Text,"","",1,"0","0",120,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+105,2,1,7,1,bfQuickMode7103686,Note aggiuntive,Textarea,"","",1,"0","0",240,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+109,2,1,8,1,bfQuickMode4211542,Sei umano?,Captcha,"","","0","0","0",280,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+128,2,1,5,1,bfQuickMode2975631,Numero di partecipanti,Select List,"","",1,"0","0",160,"0",20,"0",20,"0","0","0",1,"0;1;1
+0;2;2
+0;3;3
+0;4;4
+0;5;5
+0;di più, specificare nelle note;di più","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+133,2,1,6,1,bfQuickMode5861677,Parteciperò,Radio Group,"","",1,"0","0",200,"0",20,"0",20,"0","0","0","","1;da venerdì a domenica;venerdì-dpmenica
+0;da sabato a domenica;sabato-domenica
+0;solo sabato;solo sabato
+0;solo domenica;solo domenica","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+142,2,1,"0",1,bfFakeName,bfFakeTitle,"","","","0","0","0",320,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,41,"","0","0","0","0","0","0","0","","","0",""
+143,2,1,"0",1,bfFakeName2,bfFakeTitle2,"","","","0","0","0",360,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,23,"","0","0","0","0","0","0","0","","","0",""
+144,2,1,"0",1,bfFakeName3,bfFakeTitle3,"","","","0","0","0",400,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,40,"","0","0","0","0","0","0","0","","","0",""
+145,2,1,"0",1,bfFakeName4,bfFakeTitle4,"","","","0","0","0",440,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,38,"","0","0","0","0","0","0","0","","","0",""
+146,3,1,1,1,bfQuickMode2880762,Nome,Text,"","",1,"0","0","0","0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0",2,"",Inserisci il tuo nome,"0",""
+147,3,1,2,1,bfQuickMode9229721,Cognome,Text,"","",1,"0","0",40,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0",1,"",Inserisci il tuo cognome,"0",""
+148,3,1,3,1,bfQuickMode8584497,Email,Text,"","",1,"0","0",80,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0",1,"",Inserisci la tua email,"0",""
+149,3,1,4,1,bfQuickMode3945746,Via/Piazza,Text,"","",1,"0","0",120,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+150,3,1,5,1,bfQuickMode3486476,Città/Paese/Località,Text,"","",1,"0","0",160,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+151,3,1,6,1,bfQuickMode9844682,Provincia,Text,"","",1,"0","0",200,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+152,3,1,7,1,bfQuickMode9644238,CAP,Text,"","",1,"0","0",240,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+153,3,1,8,1,bfQuickMode3097509,Numero di magliette,Select List,"","",1,"0","0",280,"0",20,"0",20,"0","0","0",1,"0;1;value1
+0;2;value2
+0;3;value3
+0;4;value4
+0;5;value5
+0;di più - specificare nelle note;value6","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+154,3,1,11,1,bfQuickMode7103686,Note aggiuntive,Textarea,"","",1,"0","0",400,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+155,3,1,10,1,bfQuickMode4841021,Metodo di pagamento,Radio Group,"","",1,"0","0",360,"0",20,"0",20,"0","0","0","","1;Paypal;paypal
+0;Bonifico Bancario;bonifico","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+158,3,1,12,1,bfQuickMode4211542,Sei umano?,Captcha,"","","0","0","0",440,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+169,3,1,9,1,bfQuickMode1922722,Taglia,Checkbox Group,"","",1,"0","0",320,"0",20,"0",20,"0","0","0","","0;XS;XS
+0;S;S
+0;M;M
+0;L;L
+0XL;XL
+0;XXL;XXL","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+170,3,1,"0",1,bfFakeName,bfFakeTitle,"","","","0","0","0",480,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,41,"","0","0","0","0","0","0","0","","","0",""
+171,3,1,"0",1,bfFakeName2,bfFakeTitle2,"","","","0","0","0",520,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,23,"","0","0","0","0","0","0","0","","","0",""
+172,3,1,"0",1,bfFakeName3,bfFakeTitle3,"","","","0","0","0",560,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,40,"","0","0","0","0","0","0","0","","","0",""
+173,3,1,"0",1,bfFakeName4,bfFakeTitle4,"","","","0","0","0",600,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,38,"","0","0","0","0","0","0","0","","","0",""
+174,4,1,8,1,bfQuickMode9644238,CAP,Text,"","",1,"0","0",280,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+176,4,1,7,1,bfQuickMode9844682,Provincia,Text,"","",1,"0","0",240,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+177,4,1,5,1,bfQuickMode3945746,Via/Piazza,Text,"","",1,"0","0",160,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+178,4,1,6,1,bfQuickMode3486476,Città/Paese/Località,Text,"","",1,"0","0",200,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+179,4,1,3,1,bfQuickMode8584497,Email,Text,"","",1,"0","0",80,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0",1,"",Inserisci la tua email,"0",""
+180,4,1,2,1,bfQuickMode9229721,Cognome,Text,"","",1,"0","0",40,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0",1,"",Inserisci il tuo cognome,"0",""
+181,4,1,1,1,bfQuickMode2880762,Nome,Text,"","",1,"0","0","0","0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0",2,"",Inserisci il tuo nome,"0",""
+182,4,1,14,1,bfQuickMode7103686,Note aggiuntive,Textarea,"","",1,"0","0",520,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+184,4,1,15,1,bfQuickMode4211542,Sei umano?,Captcha,"","","0","0","0",560,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+186,4,1,10,1,bfQuickMode1922722,Taglia maglia estiva azzurra,Checkbox Group,"","",1,"0","0",360,"0",20,"0",20,"0","0","0","","0;XS;XS
+0;S;S
+0;M;M
+0;L;L
+0;XL;XL
+0;2XL;2XL
+0;3XL;3XL","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+194,4,1,9,1,bfQuickMode7160901,Scegli i capi da ordinare,Checkbox Group,"","",1,"0","0",320,"0",20,"0",20,"0","0","0","","0;Maglia estiva azzurra;maglia1
+0;Salopette estiva nera;salopette1
+0;Maglia estiva verde;maglia2
+0;Salopette estiva nero/verde;salopette2","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+195,4,1,11,1,bfQuickMode6127508,Taglia salopette estiva nera,Checkbox Group,"","",1,"0","0",400,"0",20,"0",20,"0","0","0","","0;XS;XS
+0;S;S
+0;M;M
+0;L;L
+0;XL;XL
+0;2XL;2XL
+0;3XL;3XL","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+196,4,1,12,1,bfQuickMode6127837,Taglia maglia estiva verde,Checkbox Group,"","",1,"0","0",440,"0",20,"0",20,"0","0","0","","0;XS;XS
+0;S;S
+0;M;M
+0;L;L
+0;XL;XL
+0;2XL;2XL
+0;3XL;3XL","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+205,4,1,4,1,bfQuickMode5612981,Telefono,Text,"","",1,"0","0",120,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+226,5,1,6,1,bfQuickMode2874854,Immagine di copertina,File Upload,"","","0","0","0",200,"0",20,"0",20,"0","0","0",{ff_uploads}//{date}/COVER,"jpg,jpeg,gif,png","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+236,5,1,8,1,intro,Intro,Textarea,"","",1,"0","0",280,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+253,5,1,4,1,title,Titolo,Text,"","",1,"0","0",120,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+258,6,1,3,1,bfQuickMode8290655,Assegna la domanda a,Select List,"","",1,"0","0",80,"0",20,"0",20,"0","0","0",1,"0;Tutto il team;Tutto il team
+0;Leo;leo
+0;Vero;vero
+0;Francesco;francesco
+0;Davide;davide","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+279,6,1,1,1,bfQuickMode6604241,Ciao,Text,"","",1,"0","0","0","0",20,"0",20,"0","0",1,"<?php $user = JFactory::getUser(); return ""$user->name""; ?>","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+280,6,1,4,1,bfQuickMode1939863,Fai la tua domanda,Textarea,"","",1,"0","0",120,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+313,6,1,2,1,bfQuickMode6285025,questo è  l'indirizzo a cui riceverai la risposta,Text,"","",1,"0","0",40,"0",20,"0",20,"0","0",1,"<?php $user = JFactory::getUser(); return ""$user->email""; ?>","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+362,6,1,"0",1,bfFakeName,bfFakeTitle,"","","","0","0","0",160,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,129,"","0","0","0","0","0","0","0","","","0",""
+363,6,1,"0",1,bfFakeName2,bfFakeTitle2,"","","","0","0","0",200,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,111,"","0","0","0","0","0","0","0","","","0",""
+364,6,1,"0",1,bfFakeName3,bfFakeTitle3,"","","","0","0","0",240,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,128,"","0","0","0","0","0","0","0","","","0",""
+365,6,1,"0",1,bfFakeName4,bfFakeTitle4,"","","","0","0","0",280,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,126,"","0","0","0","0","0","0","0","","","0",""
+458,5,1,1,1,nome,Il tuo nome,Text,"","",1,"0","0","0","0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+483,5,1,9,1,bfQuickMode4416314,Descrizione,Textarea,"","",1,"0","0",320,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+500,5,1,2,1,bfQuickMode1373336,La tua email,Text,"","",1,"0","0",40,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0",1,42,"",Inserisci un indirizzo email corretto,1,""
+530,5,1,15,1,bfQuickMode4692239,Conferma e accetta,Checkbox Group,"","",1,"0","0",560,"0",20,"0",20,"0","0","0","","0;Il materiale che sto per inviare riguarda il cicloturismo, i viaggi in bici o la mountain bike.;termini accettati
+0;Consento l'utilizzo del materiale inviato per la pubblicazione sul sito e sui canali social per promuovere lo stesso.;termini accettati
+","","0",8,"","0","0","0",16,"","0","0","0","0","0",1,1,"",Conferma e accetta i termini di invio,"0",""
+551,5,1,7,1,bfQuickMode7347667,Altre foto,File Upload,"","","0","0","0",240,"0",20,"0",20,"0","0","0",{ff_uploads}/{date}/FOTO,"zip,rar,pdf,doc,xls,ppt,jpg,jpeg,gif,png","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+556,5,1,3,1,percorso,Tipo di percorso,Select List,"","",1,"0","0",80,"0",20,"0",20,"0","0","0",1,"0;Cicloturismo classico;Cicloturismo
+0;Bikepacking;Bikepacking
+0;MTB;MTB
+0;Gravel;Gravel
+","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+609,5,1,16,1,bfQuickMode5633841,Recaptcha,ReCaptcha,"","","0","0","0",600,"0",20,"0",20,"0","0","0","","","","0","0","","0","0","0",16,"","0","0","0","0","0","0","0","","","0",""
+689,5,1,10,1,bfQuickMode305323,Da non perdere,Textarea,"","",1,"0","0",360,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+690,5,1,11,1,bfQuickMode8840678,Info utili,Textarea,"","",1,"0","0",400,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+695,5,1,12,1,bfQuickMode262487,Dove dormire,Textarea,"","",1,"0","0",440,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+700,5,1,13,1,bfQuickMode5166524,Dove mangiare,Textarea,"","",1,"0","0",480,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+705,5,1,14,1,bfQuickMode8986713,Link utili,Textarea,"","",1,"0","0",520,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+742,5,1,5,1,bfQuickMode320860,Traccia GPS,File Upload,"","","0","0","0",160,"0",20,"0",20,"0","0","0",{ff_uploads}/{date}/GPS,"zip,gpx,kml,kmz","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+838,9,1,1,1,ruota,Ruota,Select List,"","",1,"0","0","0","0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;20x1.95;1.586
+0;24x1.75 (bmx);1.872
+0;24x1.95 (bmx);1.904
+0;26x1.40;1.980
+0;26x1.50;1.995
+0;26x1.75;2.035
+0;26x2.00;2.075
+0;26x2.10;2.091
+0;26x2.25;2.115
+0;26x2.30;2.123
+0;26x2.35;2.131
+0;26x2.40;2.137
+0;26x2.50;2.155
+0;650x23;1.944
+0;650x25;1.952
+0;27x1;2.145
+0;27x1-1/4;2.161
+0;27x1-3/8;2.169
+0;27.5x1.50;2.074
+0;27.5x2.10;2.170
+0;27.5x2.20;2.186
+0;27.5x2.00;2.154
+0;27.5x2.25;2.194
+0;27.5x2.30;2.202
+0;27.5x2.35;2.210
+0;27.5x2.40;2.216
+0;27.5x2.50;2.234
+0;27.5x2.60;2.250
+0;27.5x2.80;2.281
+0;27.5x3.00;2.313
+0;700x20;2.086
+0;700x23;2.096
+0;700x25;2.105
+0;700x28;2.136
+0;700x30;2.146
+0;700x32;2.155
+0;700x35;2.168
+0;700x38;2.180
+0;700x40;2.200
+0;700x42;2.224
+0;700x44;2.235
+0;700x45;2.242
+0;700x47;2.268
+0;29x1.50;2.193
+0;29x2.00;2.273
+0;29x2.10;2.289
+0;29x2.20;2.305
+0;29x2.25;2.313
+0;29x2.30;2.321
+0;29x2.35;2.329
+0;29x2.40;2.335
+0;29x2.50;2.353
+0;29x2.60;2.369
+0;29x3.00;2.433","","0",8,"","0","0",2,16,"function ff_ruota_action(element, action)
+{
+ff_getElementByName('sviluppo').value =
+(Number(ff_getElementByName('corona').value) /
+Number(ff_getElementByName('pignone').value) *
+Number(ff_getElementByName('ruota').value)).toFixed(3) + ' m';
+}
+
+// ff_ruota_action","0","0",1,"0","0","0",1,"","","0",""
+839,9,1,2,1,corona,Corona,Select List,"","",1,"0","0",40,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;39;39
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52
+0;53;53","","0",8,"","0","0",2,16,"function ff_corona_action(element, action)
+{
+ff_getElementByName('sviluppo').value =
+(Number(ff_getElementByName('corona').value) /
+Number(ff_getElementByName('pignone').value) *
+Number(ff_getElementByName('ruota').value)).toFixed(3) + ' m';
+}
+// ff_corona_action","0","0",1,"0","0","0",1,"","","0",""
+840,9,1,4,1,sviluppo,Sviluppo metrico,Text,"","",1,"0","0",120,"0",20,"0",20,"0","0",1,"","","","0",8,"","0","0",2,16,"function ff_sviluppo_action(element,action)
+{
+ff_getElementByName('sviluppo').value = 0;
+{
+ff_getElementByName('sviluppo').value =
+(Number(ff_getElementByName('corona').value) +
+Number(ff_getElementByName('pignone').value) +
+Number(ff_getElementByName('ruota').value)).toFixed(3) + ' m';
+}
+}
+// ff_sviluppo_action","0","0","0","0","0","0",1,"","","0",""
+844,9,1,3,1,pignone,Pignone,Select List,"","",1,"0","0",80,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;9;9
+0;10;10
+0;11;11
+0;12;12
+0;13;13
+0;14;14
+0;15;15
+0;16;16
+0;17;17
+0;18;18
+0;19;19
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52","","0",8,"","0","0",2,16,"function ff_pignone_action(element, action)
+{
+ff_getElementByName('sviluppo').value =
+(Number(ff_getElementByName('corona').value) /
+Number(ff_getElementByName('pignone').value) *
+Number(ff_getElementByName('ruota').value)).toFixed(3) + ' m';
+}
+// ff_pignone_action","0","0",1,"0","0","0",1,"","","0",""
+991,9,1,9,1,corona_piccola,Piccola,Select List,"","",1,"0","0",320,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;39;39
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52
+0;53;53","","0",8,"","0","0",2,16,"function ff_corona_piccola_action(element, action)
+{
+ff_getElementByName('range').value =
+(Number(ff_getElementByName('corona_grande').value) /
+Number(ff_getElementByName('corona_piccola').value) *
+Number(ff_getElementByName('pignone_grande').value) /
+Number(ff_getElementByName('pignone_piccolo').value) *
+100).toFixed(1) + ' %';
+}
+// ff_corona_piccola_action","0","0",1,"0","0","0",1,"","","0",""
+992,9,1,11,1,pignone_piccolo,Piccolo,Select List,"","",1,"0","0",400,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;10;10
+0;11;11
+0;12;12
+0;13;13
+0;14;14
+0;15;15
+0;16;16
+0;17;17
+0;18;18
+0;19;19
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52","","0",8,"","0","0",2,16,"function ff_pignone_piccolo_action(element, action)
+{
+ff_getElementByName('range').value =
+(Number(ff_getElementByName('corona_grande').value) /
+Number(ff_getElementByName('corona_piccola').value) *
+Number(ff_getElementByName('pignone_grande').value) /
+Number(ff_getElementByName('pignone_piccolo').value) *
+100).toFixed(1) + ' %';
+}
+// ff_pignone_piccolo_action","0","0",1,"0","0","0",1,"","","0",""
+1041,9,1,10,1,corona_grande,Grande,Select List,"","",1,"0","0",360,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;39;39
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52
+0;53;53","","0",8,"","0","0",2,16,"function ff_corona_grande_action(element, action)
+{
+ff_getElementByName('range').value =
+(Number(ff_getElementByName('corona_grande').value) /
+Number(ff_getElementByName('corona_piccola').value) *
+Number(ff_getElementByName('pignone_grande').value) /
+Number(ff_getElementByName('pignone_piccolo').value) *
+100).toFixed(1) + ' %';
+}
+// ff_corona_grande_action","0","0",1,"0","0","0",1,"","","0",""
+1042,9,1,12,1,pignone_grande,Grande,Select List,"","",1,"0","0",440,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;10;10
+0;11;11
+0;12;12
+0;13;13
+0;14;14
+0;15;15
+0;16;16
+0;17;17
+0;18;18
+0;19;19
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52","","0",8,"","0","0",2,16,"function ff_pignone_grande_action(element, action)
+{
+ff_getElementByName('range').value =
+(Number(ff_getElementByName('corona_grande').value) /
+Number(ff_getElementByName('corona_piccola').value) *
+Number(ff_getElementByName('pignone_grande').value) /
+Number(ff_getElementByName('pignone_piccolo').value) *
+100).toFixed(1) + ' %';
+}
+// ff_pignone_grande_action","0","0",1,"0","0","0",1,"","","0",""
+1043,9,1,13,1,range,Range di rapporti,Text,"","",1,"0","0",480,"0",20,"0",20,"0","0",1,"","","","0",8,"","0","0",2,16,"function ff_range_action(element, action)
+{
+ff_getElementByName('range').value =
+(Number(ff_getElementByName('corona_grande').value) /
+Number(ff_getElementByName('corona_piccola').value) *
+Number(ff_getElementByName('pignone_grande').value) /
+Number(ff_getElementByName('pignone_piccolo').value) *
+100).toFixed(1) + ' %';
+}
+// ff_range_action","0","0","0","0","0","0",1,"","","0",""
+1156,9,1,5,1,guarnitura,Scegli la guarnitura,Select List,"","",1,"0","0",160,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;nulla
+0;Monocorona;monocorona
+0;Doppia o Tripla;doppia","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+1187,9,1,6,1,pignone_piccolo_mono,Piccolo,Select List,"","",1,"0","0",200,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;9;9
+0;10;10
+0;11;11
+0;12;12
+0;13;13
+0;14;14
+0;15;15
+0;16;16
+0;17;17
+0;18;18
+0;19;19
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52","","0",8,"","0","0",2,16,"function ff_pignone_piccolo_mono_action(element, action)
+{
+ff_getElementByName('range_mono').value =
+(Number(ff_getElementByName('pignone_grande_mono').value) /
+Number(ff_getElementByName('pignone_piccolo_mono').value) *
+100).toFixed(1) + ' %';
+}
+// ff_pignone_piccolo_mono_action","0","0",1,"0","0","0",1,"","","0",""
+1188,9,1,7,1,pignone_grande_mono,Grande,Select List,"","",1,"0","0",240,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;10;10
+0;11;11
+0;12;12
+0;13;13
+0;14;14
+0;15;15
+0;16;16
+0;17;17
+0;18;18
+0;19;19
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52","","0",8,"","0","0",2,16,"function ff_pignone_grande_mono_action(element, action)
+{
+ff_getElementByName('range_mono').value =
+(Number(ff_getElementByName('pignone_grande_mono').value) /
+Number(ff_getElementByName('pignone_piccolo_mono').value) *
+100).toFixed(1) + ' %';
+}
+// ff_pignone_grande_mono_action","0","0",1,"0","0","0",1,"","","0",""
+1197,9,1,8,1,range_mono,Range di rapporti,Text,"","",1,"0","0",280,"0",20,"0",20,"0","0",1,"","","","0",8,"","0","0",2,16,"function ff_range_mono_action(element, action)
+{
+ff_getElementByName('range_mono').value =
+(Number(ff_getElementByName('pignone_grande_mono').value) /
+Number(ff_getElementByName('pignone_piccolo_mono').value) *
+100).toFixed(1) + ' %';
+}
+// ff_range_mono_action","0","0","0","0","0","0",1,"","","0",""
+1237,9,1,15,1,velocita,Velocità,Text,"","",1,"0","0",560,"0",20,"0",20,"0","0",1,"","","","0",8,"","0","0",2,16,"function ff_velocita_action(element,action)
+{
+ff_getElementByName('velocita').value = 0;
+{
+ff_getElementByName('velocita').value =
+(Number(ff_getElementByName('corona').value) +
+Number(ff_getElementByName('pignone').value) +
+Number(ff_getElementByName('ruota').value)).toFixed(3) + ' m';
+}
+}
+// ff_velocita_action","0","0",1,"0","0","0",1,"","","0",""
+1242,9,1,14,1,cadenza,Cadenza,Select List,"","",1,"0","0",520,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;50;50
+0;60;60
+0;70;70
+0;80;80
+0;90;90
+0;100;100
+0;110;110
+0;120;120","","0",8,"","0","0",2,16,"function ff_cadenza_action(element, action)
+{
+ff_getElementByName('velocita').value =
+(Number(ff_getElementByName('cadenza').value) *
+Number(ff_getElementByName('corona').value) /
+Number(ff_getElementByName('pignone').value) *
+Number(ff_getElementByName('ruota').value)).toFixed(3) + ' km/h';
+}
+
+// ff_cadenza_action","0","0","0","0","0","0",1,"","","0",""
+1374,9,1,"0",1,bfFakeName,bfFakeTitle,"","","","0","0","0",600,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,129,"","0","0","0","0","0","0","0","","","0",""
+1375,9,1,"0",1,bfFakeName2,bfFakeTitle2,"","","","0","0","0",640,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,111,"","0","0","0","0","0","0","0","","","0",""
+1376,9,1,"0",1,bfFakeName3,bfFakeTitle3,"","","","0","0","0",680,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,128,"","0","0","0","0","0","0","0","","","0",""
+1377,9,1,"0",1,bfFakeName4,bfFakeTitle4,"","","","0","0","0",720,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,126,"","0","0","0","0","0","0","0","","","0",""
+1392,13,1,5,1,circonferenza,Circonferenza,Text,"","",1,"0","0",160,"0",20,"0",20,"0","0",1,"","","","0",8,"","0","0",2,16,"function ff_circonferenza_action(element, action)
+{
+ff_getElementByName('circonferenza').value =
+(Number(ff_getElementByName('raggio').value) *
+Number(ff_getElementByName('2pigreco').value)).toFixed(0) + ' mm';
+}
+
+// ff_circonferenza_action","0","0",1,"0","0","0",1,"","","0",""
+1402,13,1,3,1,raggio,Raggio della ruota,Text,"","",1,"0","0",80,"0",20,"0",20,"0","0","0","","","","0",8,"","0","0",2,16,"function ff_raggio_action(element, action)
+{
+ff_getElementByName('circonferenza').value =
+(Number(ff_getElementByName('raggio').value) *
+Number(ff_getElementByName('2pigreco').value)).toFixed(0) + ' mm';
+}
+
+// ff_raggio_action","0","0",1,"0","0","0",1,"","","0",""
+1403,13,1,4,1,2pigreco,PiGreco,Hidden Input,"","",1,"0","0",120,"0",20,"0",20,"0","0","0",6.2832,"","","0",8,"","0","0","0","0","","0","0","0","0","0","0",1,"","","0",""
+1432,13,1,1,1,ruota_bici,Ruota,Select List,"","",1,"0","0","0","0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;20x1.95;1.586
+0;24x1.75 (bmx);1.872
+0;24x1.95 (bmx);1.904
+0;26x1.40;1.980
+0;26x1.50;1.995
+0;26x1.75;2.035
+0;26x2.00;2.075
+0;26x2.10;2.091
+0;26x2.25;2.115
+0;26x2.30;2.123
+0;26x2.35;2.131
+0;26x2.40;2.137
+0;26x2.50;2.155
+0;650x23;1.944
+0;650x25;1.952
+0;27x1;2.145
+0;27x1-1/4;2.161
+0;27x1-3/8;2.169
+0;27.5x1.50;2.074
+0;27.5x2.10;2.170
+0;27.5x2.20;2.186
+0;27.5x2.00;2.154
+0;27.5x2.25;2.194
+0;27.5x2.30;2.202
+0;27.5x2.35;2.210
+0;27.5x2.40;2.216
+0;27.5x2.50;2.234
+0;27.5x2.60;2.250
+0;27.5x2.80;2.281
+0;27.5x3.00;2.313
+0;700x20;2.086
+0;700x23;2.096
+0;700x25;2.105
+0;700x28;2.136
+0;700x30;2.146
+0;700x32;2.155
+0;700x35;2.168
+0;700x38;2.180
+0;700x40;2.200
+0;700x42;2.224
+0;700x44;2.235
+0;700x45;2.242
+0;700x47;2.268
+0;29x1.50;2.193
+0;29x2.00;2.273
+0;29x2.10;2.289
+0;29x2.20;2.305
+0;29x2.25;2.313
+0;29x2.30;2.321
+0;29x2.35;2.329
+0;29x2.40;2.335
+0;29x2.50;2.353
+0;29x2.60;2.369
+0;29x3.00;2.433","","0",8,"","0","0",2,16,"function ff_ruota_bici_action(element, action)
+{
+ff_getElementByName('circonferenza_ruota').value =
+(Number(ff_getElementByName('ruota_bici').value) *
+Number(1000).toFixed(0)) + ' mm';
+}
+
+// ff_ruota_bici_action","0","0",1,"0","0","0",1,"","","0",""
+1437,13,1,2,1,circonferenza_ruota,Circonferenza,Text,"","",1,"0","0",40,"0",20,"0",20,"0","0",1,"","","","0",8,"","0","0",2,16,"function ff_circonferenza_ruota_action(element, action)
+{
+ff_getElementByName('circonferenza_ruota').value =
+(Number(ff_getElementByName('ruota_bici').value) *
+Number(1000).toFixed(0)) + ' mm';
+}
+
+// ff_ruota_bici_action","0","0",1,"0","0","0",1,"","","0",""
+1502,13,1,"0",1,bfFakeName,bfFakeTitle,"","","","0","0","0",200,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,129,"","0","0","0","0","0","0","0","","","0",""
+1503,13,1,"0",1,bfFakeName2,bfFakeTitle2,"","","","0","0","0",240,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,111,"","0","0","0","0","0","0","0","","","0",""
+1504,13,1,"0",1,bfFakeName3,bfFakeTitle3,"","","","0","0","0",280,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,128,"","0","0","0","0","0","0","0","","","0",""
+1505,13,1,"0",1,bfFakeName4,bfFakeTitle4,"","","","0","0","0",320,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,126,"","0","0","0","0","0","0","0","","","0",""
+1506,5,1,"0",1,bfFakeName,bfFakeTitle,"","","","0","0","0",640,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,129,"","0","0","0","0","0","0","0","","","0",""
+1507,5,1,"0",1,bfFakeName2,bfFakeTitle2,"","","","0","0","0",680,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,111,"","0","0","0","0","0","0","0","","","0",""
+1508,5,1,"0",1,bfFakeName3,bfFakeTitle3,"","","","0","0","0",720,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,128,"","0","0","0","0","0","0","0","","","0",""
+1509,5,1,"0",1,bfFakeName4,bfFakeTitle4,"","","","0","0","0",760,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,126,"","0","0","0","0","0","0","0","","","0",""
+1510,14,1,5,1,guarnitura,Scegli la guarnitura,Select List,"","",1,"0","0",160,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;nulla
+0;Monocorona;monocorona
+0;Doppia o Tripla;doppia","","0","0","","0","0","0","0","","0","0","0","0","0","0","0","","","0",""
+1511,14,1,13,1,range,Range di rapporti,Text,"","",1,"0","0",480,"0",20,"0",20,"0","0",1,"","","","0","0","","0","0",2,"0","function ff_range_action(element, action)
+{
+ff_getElementByName('range').value =
+(Number(ff_getElementByName('corona_grande').value) /
+Number(ff_getElementByName('corona_piccola').value) *
+Number(ff_getElementByName('pignone_grande').value) /
+Number(ff_getElementByName('pignone_piccolo').value) *
+100).toFixed(1) + ' %';
+}
+// ff_range_action","0","0","0","0","0","0","0","","","0",""
+1512,14,1,12,1,pignone_grande,Grande,Select List,"","",1,"0","0",440,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;10;10
+0;11;11
+0;12;12
+0;13;13
+0;14;14
+0;15;15
+0;16;16
+0;17;17
+0;18;18
+0;19;19
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52","","0","0","","0","0",2,"0","function ff_pignone_grande_action(element, action)
+{
+ff_getElementByName('range').value =
+(Number(ff_getElementByName('corona_grande').value) /
+Number(ff_getElementByName('corona_piccola').value) *
+Number(ff_getElementByName('pignone_grande').value) /
+Number(ff_getElementByName('pignone_piccolo').value) *
+100).toFixed(1) + ' %';
+}
+// ff_pignone_grande_action","0","0",1,"0","0","0","0","","","0",""
+1513,14,1,10,1,corona_grande,Grande,Select List,"","",1,"0","0",360,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;39;39
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52
+0;53;53","","0","0","","0","0",2,"0","function ff_corona_grande_action(element, action)
+{
+ff_getElementByName('range').value =
+(Number(ff_getElementByName('corona_grande').value) /
+Number(ff_getElementByName('corona_piccola').value) *
+Number(ff_getElementByName('pignone_grande').value) /
+Number(ff_getElementByName('pignone_piccolo').value) *
+100).toFixed(1) + ' %';
+}
+// ff_corona_grande_action","0","0",1,"0","0","0","0","","","0",""
+1514,14,1,1,1,ruota,Ruota,Select List,"","",1,"0","0","0","0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;20x1.95;1.586
+0;24x1.75 (bmx);1.872
+0;24x1.95 (bmx);1.904
+0;26x1.40;1.980
+0;26x1.50;1.995
+0;26x1.75;2.035
+0;26x2.00;2.075
+0;26x2.10;2.091
+0;26x2.25;2.115
+0;26x2.30;2.123
+0;26x2.35;2.131
+0;26x2.40;2.137
+0;26x2.50;2.155
+0;650x23;1.944
+0;650x25;1.952
+0;27x1;2.145
+0;27x1-1/4;2.161
+0;27x1-3/8;2.169
+0;27.5x1.50;2.074
+0;27.5x2.10;2.170
+0;27.5x2.20;2.186
+0;27.5x2.00;2.154
+0;27.5x2.25;2.194
+0;27.5x2.30;2.202
+0;27.5x2.35;2.210
+0;27.5x2.40;2.216
+0;27.5x2.50;2.234
+0;27.5x2.60;2.250
+0;27.5x2.80;2.281
+0;27.5x3.00;2.313
+0;700x20;2.086
+0;700x23;2.096
+0;700x25;2.105
+0;700x28;2.136
+0;700x30;2.146
+0;700x32;2.155
+0;700x35;2.168
+0;700x38;2.180
+0;700x40;2.200
+0;700x42;2.224
+0;700x44;2.235
+0;700x45;2.242
+0;700x47;2.268
+0;29x1.50;2.193
+0;29x2.00;2.273
+0;29x2.10;2.289
+0;29x2.20;2.305
+0;29x2.25;2.313
+0;29x2.30;2.321
+0;29x2.35;2.329
+0;29x2.40;2.335
+0;29x2.50;2.353
+0;29x2.60;2.369
+0;29x3.00;2.433","","0","0","","0","0",2,"0","function ff_ruota_action(element, action)
+{
+ff_getElementByName('sviluppo').value =
+(Number(ff_getElementByName('corona').value) /
+Number(ff_getElementByName('pignone').value) *
+Number(ff_getElementByName('ruota').value)).toFixed(3) + ' m';
+}
+
+// ff_ruota_action","0","0",1,"0","0","0","0","","","0",""
+1515,14,1,2,1,corona,Corona,Select List,"","",1,"0","0",40,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;39;39
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52
+0;53;53","","0","0","","0","0",2,"0","function ff_corona_action(element, action)
+{
+ff_getElementByName('sviluppo').value =
+(Number(ff_getElementByName('corona').value) /
+Number(ff_getElementByName('pignone').value) *
+Number(ff_getElementByName('ruota').value)).toFixed(3) + ' m';
+}
+// ff_corona_action","0","0",1,"0","0","0","0","","","0",""
+1516,14,1,4,1,sviluppo,Sviluppo metrico,Text,"","",1,"0","0",120,"0",20,"0",20,"0","0",1,"","","","0","0","","0","0",2,"0","function ff_sviluppo_action(element,action)
+{
+ff_getElementByName('sviluppo').value = 0;
+{
+ff_getElementByName('sviluppo').value =
+(Number(ff_getElementByName('corona').value) +
+Number(ff_getElementByName('pignone').value) +
+Number(ff_getElementByName('ruota').value)).toFixed(3) + ' m';
+}
+}
+// ff_sviluppo_action","0","0","0","0","0","0","0","","","0",""
+1517,14,1,11,1,pignone_piccolo,Piccolo,Select List,"","",1,"0","0",400,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;10;10
+0;11;11
+0;12;12
+0;13;13
+0;14;14
+0;15;15
+0;16;16
+0;17;17
+0;18;18
+0;19;19
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52","","0","0","","0","0",2,"0","function ff_pignone_piccolo_action(element, action)
+{
+ff_getElementByName('range').value =
+(Number(ff_getElementByName('corona_grande').value) /
+Number(ff_getElementByName('corona_piccola').value) *
+Number(ff_getElementByName('pignone_grande').value) /
+Number(ff_getElementByName('pignone_piccolo').value) *
+100).toFixed(1) + ' %';
+}
+// ff_pignone_piccolo_action","0","0",1,"0","0","0","0","","","0",""
+1518,14,1,9,1,corona_piccola,Piccola,Select List,"","",1,"0","0",320,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;39;39
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52
+0;53;53","","0","0","","0","0",2,"0","function ff_corona_piccola_action(element, action)
+{
+ff_getElementByName('range').value =
+(Number(ff_getElementByName('corona_grande').value) /
+Number(ff_getElementByName('corona_piccola').value) *
+Number(ff_getElementByName('pignone_grande').value) /
+Number(ff_getElementByName('pignone_piccolo').value) *
+100).toFixed(1) + ' %';
+}
+// ff_corona_piccola_action","0","0",1,"0","0","0","0","","","0",""
+1519,14,1,3,1,pignone,Pignone,Select List,"","",1,"0","0",80,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;9;9
+0;10;10
+0;11;11
+0;12;12
+0;13;13
+0;14;14
+0;15;15
+0;16;16
+0;17;17
+0;18;18
+0;19;19
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52","","0","0","","0","0",2,"0","function ff_pignone_action(element, action)
+{
+ff_getElementByName('sviluppo').value =
+(Number(ff_getElementByName('corona').value) /
+Number(ff_getElementByName('pignone').value) *
+Number(ff_getElementByName('ruota').value)).toFixed(3) + ' m';
+}
+// ff_pignone_action","0","0",1,"0","0","0","0","","","0",""
+1520,14,1,15,1,velocita,Velocità,Text,"","",1,"0","0",560,"0",20,"0",20,"0","0",1,"","","","0","0","","0","0",2,"0","function ff_velocita_action(element,action)
+{
+ff_getElementByName('velocita').value = 0;
+{
+ff_getElementByName('velocita').value =
+(Number(ff_getElementByName('corona').value) +
+Number(ff_getElementByName('pignone').value) +
+Number(ff_getElementByName('ruota').value)).toFixed(3) + ' m';
+}
+}
+// ff_velocita_action","0","0",1,"0","0","0","0","","","0",""
+1521,14,1,6,1,pignone_piccolo_mono,Piccolo,Select List,"","",1,"0","0",200,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;9;9
+0;10;10
+0;11;11
+0;12;12
+0;13;13
+0;14;14
+0;15;15
+0;16;16
+0;17;17
+0;18;18
+0;19;19
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52","","0","0","","0","0",2,"0","function ff_pignone_piccolo_mono_action(element, action)
+{
+ff_getElementByName('range_mono').value =
+(Number(ff_getElementByName('pignone_grande_mono').value) /
+Number(ff_getElementByName('pignone_piccolo_mono').value) *
+100).toFixed(1) + ' %';
+}
+// ff_pignone_piccolo_mono_action","0","0",1,"0","0","0","0","","","0",""
+1522,14,1,7,1,pignone_grande_mono,Grande,Select List,"","",1,"0","0",240,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;10;10
+0;11;11
+0;12;12
+0;13;13
+0;14;14
+0;15;15
+0;16;16
+0;17;17
+0;18;18
+0;19;19
+0;20;20
+0;22;22
+0;24;24
+0;26;26
+0;28;28
+0;30;30
+0;32;32
+0;34;34
+0;36;36
+0;38;38
+0;40;40
+0;42;42
+0;44;44
+0;46;46
+0;48;48
+0;50;50
+0;51;51
+0;52;52","","0","0","","0","0",2,"0","function ff_pignone_grande_mono_action(element, action)
+{
+ff_getElementByName('range_mono').value =
+(Number(ff_getElementByName('pignone_grande_mono').value) /
+Number(ff_getElementByName('pignone_piccolo_mono').value) *
+100).toFixed(1) + ' %';
+}
+// ff_pignone_grande_mono_action","0","0",1,"0","0","0","0","","","0",""
+1523,14,1,8,1,range_mono,Range di rapporti,Text,"","",1,"0","0",280,"0",20,"0",20,"0","0",1,"","","","0","0","","0","0",2,"0","function ff_range_mono_action(element, action)
+{
+ff_getElementByName('range_mono').value =
+(Number(ff_getElementByName('pignone_grande_mono').value) /
+Number(ff_getElementByName('pignone_piccolo_mono').value) *
+100).toFixed(1) + ' %';
+}
+// ff_range_mono_action","0","0","0","0","0","0","0","","","0",""
+1524,14,1,14,1,cadenza,Cadenza,Select List,"","",1,"0","0",520,"0",20,"0",20,"0","0","0",1,"0;scegli un valore;
+0;50;50
+0;60;60
+0;70;70
+0;80;80
+0;90;90
+0;100;100
+0;110;110
+0;120;120","","0","0","","0","0",2,"0","function ff_cadenza_action(element, action)
+{
+ff_getElementByName('velocita').value =
+(Number(ff_getElementByName('cadenza').value) *
+Number(ff_getElementByName('corona').value) /
+Number(ff_getElementByName('pignone').value) *
+Number(ff_getElementByName('ruota').value)).toFixed(3) + ' km/h';
+}
+
+// ff_cadenza_action","0","0","0","0","0","0","0","","","0",""
+1533,14,1,"0",1,bfFakeName,bfFakeTitle,"","","","0","0","0",600,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,129,"","0","0","0","0","0","0","0","","","0",""
+1534,14,1,"0",1,bfFakeName2,bfFakeTitle2,"","","","0","0","0",640,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,111,"","0","0","0","0","0","0","0","","","0",""
+1535,14,1,"0",1,bfFakeName3,bfFakeTitle3,"","","","0","0","0",680,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,128,"","0","0","0","0","0","0","0","","","0",""
+1536,14,1,"0",1,bfFakeName4,bfFakeTitle4,"","","","0","0","0",720,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,126,"","0","0","0","0","0","0","0","","","0",""
+1561,4,1,13,1,bfQuickMode95813,Taglia salopette estiva nera/verde,Checkbox Group,"","",1,"0","0",480,"0",20,"0",20,"0","0","0","","0;XS;XS
+0;S;S
+0;M;M
+0;L;L
+0;XL;XL
+0;2XL;2XL
+0;3XL;3XL","","0",8,"","0","0","0",16,"","0","0","0","0","0","0",1,"","","0",""
+1562,4,1,"0",1,bfFakeName,bfFakeTitle,"","","","0","0","0",600,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,129,"","0","0","0","0","0","0","0","","","0",""
+1563,4,1,"0",1,bfFakeName2,bfFakeTitle2,"","","","0","0","0",640,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,111,"","0","0","0","0","0","0","0","","","0",""
+1564,4,1,"0",1,bfFakeName3,bfFakeTitle3,"","","","0","0","0",680,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,128,"","0","0","0","0","0","0","0","","","0",""
+1565,4,1,"0",1,bfFakeName4,bfFakeTitle4,"","","","0","0","0",720,"0",20,"0",20,"0","0","0","","","","0","0","","0","0",1,126,"","0","0","0","0","0","0","0","","","0",""
