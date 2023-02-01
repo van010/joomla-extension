@@ -1,5 +1,0 @@
-﻿1,Community Builder,cbuilder,1.9,1,User management,starter,1,"[""automation"",""content""]","- Insert CB user fields in your emails
-- Filter your users based on CB fields",1.9,,ADDON
-2,K2 Content,k2,3.1,1,Content management,essential,1,"[""content""]",- Insert K2 items in your emails,3.1,"{""front"":{""value"":""all""}}",ADDON
-3,Article,article,6.13.2,1,Content management,starter,1,"[""content""]",- Insert Joomla articles in your emails<br/>- Insert the latest articles of a category in an automatic email,6.13.2,,CORE
-4,Create user,createuser,7.2.1,1,User management,starter,1,[],- Automatically creates a site user when an AcyMailing subscriber is created,7.2.1,,CORE
