@@ -3,10 +3,18 @@
  * $JA#COPYRIGHT$
  */
 
+use Joomla\Utilities\ArrayHelper;
+
+use function Symfony\Component\String\b;
+
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
-require_once(JPATH_SITE . '/components/com_content/helpers/route.php');
+if (version_compare(JVERSION, '4.0', '>=')){
+	require_once(JPATH_SITE . '/components/com_content/src/Service/Router.php');
+}else{
+	require_once(JPATH_SITE . '/components/com_content/helpers/route.php');
+}
 jimport('joomla.application.component.model');
 jimport('joomla.html.parameter');
 
@@ -117,19 +125,19 @@ class ModJASlideshow3
 			$path = JPATH_ROOT . "/modules/" . $modulename . "/admin/japrofile/config.xml";
 			$ini_file = JPATH_ROOT . "/modules/" . $modulename . "/profiles/" . $profilename . ".ini";
 			$config_content = "";
-			if (JFile::exists($ini_file)) {
-				$config_content = JFile::read($ini_file);
+			if (is_file($ini_file)) {
+				$config_content = json_decode(file_get_contents($ini_file));
 			}
 
 			if (empty($config_content)) {
 				$config_content = '';
 				$ini_file_in_temp = JPATH_SITE . '/templates/' . $mainframe->getTemplate() . '/html/' . $modulename . '/' . $profilename . ".ini";
-				if (JFile::exists($ini_file_in_temp)) {
-					$config_content = JFile::read($ini_file_in_temp);
+				if (is_file($ini_file_in_temp)) {
+					$config_content = json_decode(file_get_contents($ini_file_in_temp));
 				}
 			}
 
-			if (JFile::exists($path)) {
+			if (is_file($path)) {
 				$params_new = new JRegistry($config_content);
 			}
 		}
@@ -223,7 +231,7 @@ class ModJASlideshow3
 			$catids = $catsid;
 		}
 
-		JArrayHelper::toInteger($catids);
+		ArrayHelper::toInteger($catids);
 		if ($catids) {
 			if ($catids && count($catids) > 0) {
 				foreach ($catids as $k => $catid) {
@@ -541,7 +549,12 @@ class ModJASlideshow3
 		// Get the dbo
 		$db = JFactory::getDbo();
 		if (!class_exists("ContentModelArticles")) {
-			require_once JPATH_BASE . "/components/com_content/models/articles.php";
+			if (version_compare(JVERSION, '4.0', '>=')){
+				require_once JPATH_BASE . "/components/com_content/src/Model/ArticlesModel.php";
+			}else{
+				require_once JPATH_BASE . "/components/com_content/models/articles.php";
+			}
+			
 		}
 		// Get an instance of the generic articles model
 		//$model = JModel::getInstance('Articles', 'ContentModel', array('ignore_request' => true));
@@ -580,7 +593,7 @@ class ModJASlideshow3
 		$model->setState('filter.access', $access);
 		$model->setState('a.state', 1);
 		$categories = $params->get('source-articles-display_model-modcats-category', '');
-		JArrayHelper::toInteger($categories);
+		ArrayHelper::toInteger($categories);
 		if (count($categories) > 0 && $categories[0] > 0) {
 			if ($categories && $categories[0] > 0) {
 				$catids_new = $categories;
@@ -606,9 +619,9 @@ class ModJASlideshow3
 		$items = $model->getItems();
 
 		JPluginHelper::importPlugin('content');
-		$dispatcher = JDispatcher::getInstance();
 		$params = $mainframe->getParams('com_content');
-		$limitstart = JRequest::getVar('limitstart', 0, '', 'int');
+		$app = JFactory::getApplication()->input;
+		$limitstart = (int) $app->get('limitstart', 0);
 
 		if ($items) {
 

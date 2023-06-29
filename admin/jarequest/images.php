@@ -13,12 +13,20 @@
 defined('_JEXEC') or die( 'Restricted access' );
 
 class images{   
+
+	public $app = null;
+
+	public function __construct(){
+		$this->app = JFactory::getApplication()->input;
+	}
+
+
     /**
 	* Load images from folder and match them
 	*
 	*/
     public function loadImages(&$params) { 
-		$folder = JRequest::getString('path', '');		
+		$folder = $this->app->get('path', '');
 		$images = $this->getListImages($folder, $params);
 		
 		return $images;
@@ -36,10 +44,8 @@ class images{
 			return null;
 		}   
 		$params = (array)$params;
-		$orderby = JRequest::getString('orderby', 0);
-		$sort = JRequest::getString('sortby', 0);
-// 		$orderby = $params['source-images-orderby'];
-// 		$sort = $params['source-images-sort'];
+		$orderby = $this->app->get('orderby', 0);
+		$sort = $this->app->get('sortby', 0);
         $images = $this->readDirectory($folder, $orderby, $sort);
         $data = array();
 		$data['success'] = false;	
@@ -135,8 +141,8 @@ class images{
 	*/
     public function validData() {
 		$img = new stdClass;
-		$data = trim(JRequest::getVar('data', '', 'POST', 'STRING', JREQUEST_ALLOWRAW));		
-		$imgName = trim(JRequest::getString('imgname', ''));
+		$data = trim($this->app->get('data', ''));		
+		$imgName = trim($this->app->get('imgname', ''));
 		if(!empty($data)){
 			$check = 0; // data for image: 1 existed, 0 empty
 			$data = json_decode($data);			
@@ -174,12 +180,12 @@ class images{
 	*
 	*/
     public function updateData() { 		
-		$data = trim(JRequest::getVar('data', '', 'POST', 'STRING', JREQUEST_ALLOWRAW));
-		$title = JRequest::getString('title', '');
-		$link = JRequest::getString('link', '');
-		$description = JRequest::getVar('description', '', 'POST', 'STRING', JREQUEST_ALLOWRAW);		
-		$imgName = trim(JRequest::getString('imgname', ''));
-		$show = trim(JRequest::getString('show',true));
+		$data = trim($this->app->get('data', ''));
+		$title = $this->app->get('title', '');
+		$link = $this->app->get('link', '');
+		$description = $this->app->get('description', '', 'POST', 'STRING', JREQUEST_ALLOWRAW);		
+		$imgName = trim($this->app->get('imgname', ''));
+		$show = trim($this->app->get('show',true));
 		if($imgName==''){
 			if(!$data==''){
 				$data = array();
