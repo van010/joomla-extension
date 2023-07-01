@@ -2,38 +2,34 @@
  * $JA#COPYRIGHT$
  */
 
-var JAProfileConfig = new Class({
+var JAProfileConfig = function (options){
+
+	this.vars = Object.assign({
+		el: $(`#${options}`)
+	} || []);
 	
-	vars: {
-	},
-	
-	initialize: function(optionid){
+	this.init = function(){
 		var vars = this.vars;
 		vars.group = 'jaform';
-		vars.el = $(optionid);
 
 		if(vars.el){
-			vars.el.addEvent('change', function(){
+			vars.el.on('change', function(){
 				JAFileConfig.inst.changeProfile(this.value);
 			});
-
-			if(typeof jQuery != 'undefined' && this.compareVersions(jQuery.fn.jquery, '1.7.0')){
-				jQuery(vars.el).on('change', function(){
-					JAFileConfig.inst.changeProfile(this.value);
-				});
-			}
 		}
 		
-		var adminlist = $('module-sliders');
-		if(adminlist){
+		var adminlist = $('#module-sliders');
+		if(adminlist.length > 0){
 			adminlist = adminlist.getElement('ul.adminformlist');
 			if(adminlist){
-				new Element('li', {'class':'clearfix level2'}).inject(adminlist);
+				$('<li>', {
+					class: 'clearfix level2'
+				}).appendTo(adminlist);
 			}
 		}
-	},
+	};
 	
-	compareVersions: function(a, b) { 
+	this.compareVersions = function(a, b) {
 		var v1 = a.split('.');
 		var v2 = b.split('.');
 		var maxLen = Math.min(v1.length, v2.length);
@@ -44,24 +40,25 @@ var JAProfileConfig = new Class({
 			}
 		}
 		return 0;
-	},
+	};
 	
-	changeProfile: function(profile){
-		console.log('change profile ', profile);
-		if(profile == ''){
-			return;
-		}
-		
-		this.vars.active = profile;
+	this.changeProfile = function(profile_){
+		var profile = $(`#${profile_}`);
+		if (profile.length === 0) return;
+		var profile_name = profile.val();
+		console.log(`change profile: ${profile_name}`);
+
+		this.vars.active = profile_name;
+		console.log(this.vars.active);
 		this.fillData();
 		
 		if(typeof JADepend != 'undefined' && JADepend.inst){
 			JADepend.inst.update();
 		}
 		this.btnGroup();
-	},
+	};
 	
-	btnGroup: function (){
+	this.btnGroup =function (){
 		(function($) {
 			$(".btn-group input:checked").each(function()
 			{	
@@ -76,39 +73,44 @@ var JAProfileConfig = new Class({
 				}
 			});
 		})(jQuery);
-	},
+	};
 	
-	serializeArray: function(){
+	this.serializeArray = function(){
 		var vars = this.vars,
 			els = [],
 			allelms = document.adminForm.elements,
 			pname1 = vars.group + '\\[params\\]\\[.*\\]',
-			pname2 = vars.group + '\\[params\\]\\[.*\\]\\[\\]';
-			
-		for (var i = 0, il = allelms.length; i < il; i++){
+			pname2 = vars.group + '\\[params\\]\\[.*\\]\\[\\]',
+			il = allelms.length;
+
+		for (var i = 0; i < il; i++){
 		    var el = $(allelms[i]);
-			
-		    if (el.name && ( el.name.test(pname1) || el.name.test(pname2))){
-		    	els.push(el);
-		    }
+			var el_name = el.attr('name');
+
+			if (!el_name) continue;
+			if (el_name.match(pname1) || el_name.match(pname2)){
+				els.push(el);
+			}
 		}
 		
 		return els;
-	},
+	};
 
-	fillData: function (){
+	this.test = function (regex, params) {
+		// return ((typeof(regex) === 'regexp') ? regex : new RegExp('' + regex, params)).test(this);
+		return ((typeof regex === 'object' && regex instanceof RegExp) ? regex : new RegExp('' + regex, params)).test(this);
+	}
+
+	this.fillData = function (){
 		var vars = this.vars,
 			els = this.serializeArray(),
 			profile = JAFileConfig.profiles[vars.active];
-			
-		if(els.length == 0 || !profile){
-			return;
-		}
-		
-		els.each(function(el){
-			var name = this.getName(el),
+
+		if(els.length === 0 || !profile) return;
+
+		$.each(els, (idx, el) => {
+			var name = this.getName_(el),
 				values = (profile[name] != undefined) ? profile[name] : '';
-			
 			this.setValues(el, Array.from(values));
 
 			//J3.0 compatible
@@ -119,9 +121,9 @@ var JAProfileConfig = new Class({
 				}
 			}
 		}, this);
-	},
+	};
 	
-	valuesFrom: function(els){
+	this.valuesFrom = function(els){
 		var vals = [];
 		
 		((typeOf(els) == 'element' && els.get('tag') == 'select') ? $$([els]) : $$(els)).each(function(el){
@@ -134,49 +136,50 @@ var JAProfileConfig = new Class({
 		});
 		
 		return vals.flatten();
-	},
+	};
 	
-	setValues: function(el, vals){
-		if(el.get('tag') == 'select'){
+	this.setValues = function(el, vals){
+		if(el.attr('tag') === 'select'){
 			var selected = false;
-			for(var i = 0, il = el.options.length; i < il; i++){
-				var option = el.options[i];
+			var all_options = el[0].options;
+			for(var i = 0; i < all_options.length; i++){
+				var option = all_options[i];
 				option.selected = false;
-				if (vals.contains (option.value)) {
+				if (vals.includes(option.value)) {
 					option.selected = true;
 					selected = true;
 				}
 			}
 			
 			if(!selected){
-				el.options[0].selected = true;
+				all_options[0].selected = true;
 			}
 		}else {
-			if(el.type == 'checkbox' || el.type == 'radio'){
-				el.set('checked', vals.contains(el.value));
+			if(el.attr('type') === 'checkbox' || el.attr('type') === 'radio'){
+				el.attr('checked', vals.includes(el.value));
 			} else {
-				el.set('value', vals[0]);
+				el.attr('value', vals[0]);
 			}
 		}
-	},
+	};
 	
-	getName: function(el){
-		var matches = el.name.match(this.vars.group + '\\[params\\]\\[([^\\]]*)\\]');
+	this.getName_ = function(el){
+		var matches = el.attr('name').match(this.vars.group + '\\[params\\]\\[([^\\]]*)\\]');
 		if (matches){
 			return matches[1];
 		}
 		
 		return '';
-	},
+	};
 	
 	/****  Functions of Profile  ----------------------------------------------   ****/
-	deleteProfile: function(){
+	this.deleteProfile = function(){
 		if(confirm(JAFileConfig.langs.confirmDelete)){			
 			this.submitForm(JAFileConfig.mod_url + '?jaction=delete&profile=' + this.vars.active, {}, 'profile');
 		}		
 	},
 	
-	cloneProfile: function (){
+	this.cloneProfile = function (){
 		var nname = prompt(JAFileConfig.langs.enterName);
 		
 		if(nname){
@@ -190,18 +193,18 @@ var JAProfileConfig = new Class({
 			
 			this.submitForm(JAFileConfig.mod_url + '?jaction=duplicate&profile=' + nname + '&from=' + this.vars.active, {}, 'profile');
 		}
-	},
+	};
 	
-	saveProfile: function (task){
+	this.saveProfile = function (task){
 		/* Rebuild data */		
 		
 		if(task){
 			JAFileConfig.profiles[this.vars.active] = this.rebuildData();
 			this.submitForm(JAFileConfig.mod_url + '?jaction=save&profile=' + this.vars.active, JAFileConfig.profiles[this.vars.active], 'profile', task);
 		}
-	},
+	};
 	
-	submitForm: function(url, request, type, task){
+	this.submitForm = function(url, request, type, task){
 		if(JAFileConfig.run){
 			JAFileConfig.ajax.cancel();
 		}
@@ -274,7 +277,7 @@ var JAProfileConfig = new Class({
 		}).post(request);
 	},
 	
-	rebuildData: function (){
+	this.rebuildData = function (){
 		var els = this.serializeArray(),
 			json = {};
 			
@@ -287,6 +290,8 @@ var JAProfileConfig = new Class({
 		
 		return json;
 	}
-});
+
+	this.init();
+};
 
 var JAFileConfig = window.JAFileConfig || {};

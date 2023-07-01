@@ -18,12 +18,13 @@ $javersion = new JVersion;
 		'invalidName' => JText::_('PROFILE_NAME_NOT_EMPTY'),
 		'confirmDelete' => JText::_('CONFIRM_DELETE_PROFILE')
 	))?>;
+
+	var id_form_profiles = 'jformparams<?php echo str_replace('holder', '', $this->fieldname);?>';
 	
 	JAFileConfig.inst = null;
-
-	window.addEvent('load', function(){
-		JAFileConfig.inst = new JAProfileConfig('jformparams<?php echo str_replace('holder', '', $this->fieldname);?>');
-		JAFileConfig.inst.changeProfile($('jformparams<?php echo str_replace('holder', '', $this->fieldname);?>').value);
+	window.addEventListener('load', function () {
+		JAFileConfig.inst = new JAProfileConfig(id_form_profiles);
+		JAFileConfig.inst.changeProfile(id_form_profiles);
 	});
 </script>
 
@@ -98,7 +99,7 @@ endforeach;
 	<?php endif; ?>
 <script type="text/javascript">
 	// <![CDATA[ 
-	window.addEvent('load', function(){
+	window.addEventListener('load', function () {
 		Joomla.submitbutton = function(task){
 			if (task == 'module.cancel' || document.formvalidator.isValid(document.id('module-form'))) {	
 				if(task != 'module.cancel' && document.formvalidator.isValid(document.id('module-form'))){
