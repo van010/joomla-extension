@@ -2,216 +2,217 @@
  * $JA#COPYRIGHT$
  */
 
-var JADependForm = new Class({ 	
-	
-	initialize: function(){
-		this.depends = {};
-		this.controls = {};
-	},
-	
-	register: function(to, depend){
-		var controls = this.controls;
-		
-		if(!controls[to]){
+var JADependForm = function () {
+	var self = this;
+	self.initialized = false;
+	self.depends = {};
+	self.controls = {};
+
+	self.register = function (to, depend) {
+		var controls = self.controls;
+
+		if (!controls[to]) {
 			controls[to] = [];
-			
-			var inst = this;
-			if(typeof jQuery != 'undefined' && jQuery.fn.chosen){
-				jQuery(this.elmsFrom(to)).change(function(e){
-					inst.change(this);
-				});
-			}
-			this.elmsFrom(to).addEvent('change', function(e){
-				inst.change(this);
+
+			self.elmsFrom(to).on('change', function (e) {
+				self.change(this);
 			});
 		}
-		
-		if(controls[to].indexOf(depend) == -1){
+
+		if (controls[to].indexOf(depend) == -1) {
 			controls[to].push(depend);
 		}
-	},
-	
-	change: function(ctrlelm){
-		var controls = this.controls,
-			depends = this.depends,
+	};
+
+	self.compareVersions = function (a, b) {
+		var v1 = a.split('.');
+		var v2 = b.split('.');
+		var maxLen = Math.min(v1.length, v2.length);
+		for (var i = 0; i < maxLen; i++) {
+			var res = parseInt(v1[i]) - parseInt(v2[i]);
+			if (res != 0) {
+				return res;
+			}
+		}
+		return 0;
+	};
+
+	self.change = function (ctrlelm) {
+		var controls = self.controls,
+			depends = self.depends,
 			ctrls = controls[ctrlelm.name];
-			
-		if(!ctrls){
+
+		if (!ctrls) {
 			ctrls = controls[ctrlelm.name.substr(0, ctrlelm.name.length - 2)];
 		}
-		
-		if(!ctrls){
+
+		if (!ctrls) {
 			return false;
 		}
-		
-		ctrls.each(function(dpd){
+
+		for (var i = 0; i < ctrls.length; i++) {
+			var dpd = ctrls[i];
 			var showup = true;
-			
-			Object.each(depends[dpd], function(cvals, ctrl){
-				if(showup){
-					var celms = this.elmsFrom(ctrl);
-					showup = showup && celms.every(function(celm){ return !celm._disabled; });
-					if(showup){
-						showup = showup && this.valuesFrom(celms).some(function(val){ return cvals.contains(val); });
+
+			for (var ctrl in depends[dpd]) {
+				var cvals = depends[dpd][ctrl];
+
+				if (showup) {
+					var celms = self.elmsFrom(ctrl);
+					showup = showup && !self.closest(celms, '.control-group').data('disabled');
+					if (showup) {
+						showup = showup && self.valuesFrom(celms).some(function (val) {
+							return (cvals.indexOf(val) > -1 );
+						});
 					}
 				}
-			}, this);
-			
-			this.elmsFrom(dpd).each(function(delm){
-				if(showup){
-					this.enable(delm);
+			};
+
+			self.elmsFrom(dpd).each(function (i, delm) {
+				if (showup) {
+					self.enable(delm);
 				} else {
-					this.disable(delm);
+					self.disable(delm);
 				}
 			}, this);
-			
-			if(controls[dpd] && controls[dpd] != dpd){
-				this.elmsFrom(dpd)[0].fireEvent('change');
+
+			if (controls[dpd] && controls[dpd] != dpd) {
+				self.elmsFrom(dpd).trigger('change');
 			}
-			
-		}, this);
-	},
-	
-	add: function(control, info){
-		
-		var depends = this.depends,
+
+		};
+	};
+
+	self.add = function (control, info) {
+		var depends = self.depends,
 			name = info.group + '[' + control + ']';
-			
-		info = Object.append({
+
+		info = jQuery.extend({
 			group: 'params',
 			hiderow: true,
 			control: name
 		}, info);
-		
+
 		info.hiderow = !!info.hiderow;
-		
-		info.elms.split(',').each(function(el){
-			var elm = info.group +'[' + el.trim() + ']';
-			
+
+		var arr = info.elms.split(',');
+		for (var i = 0; i < arr.length; i++) {
+			var elm = info.group + '[' + arr[i].trim() + ']';
 			if (!depends[elm]) {
 				depends[elm] = {};
 			}
-			
+
 			if (!depends[elm][name]) {
 				depends[elm][name] = [];
 			}
-			
+
 			depends[elm][name].push(info.val);
-			
-			this.register(name, elm);
-			
-		}, this);
-	},
-	
-	start: function(){
-		$(document.adminForm).getElements('h4.block-head').each(function(el){
-			this.closest(el, 'li, div.control-group').addClass('segment')
-		}, this);
-		
-		$(document.adminForm).getElements('.hideanchor').each(function(el){
-			this.closest(el, 'li, div.control-group').addClass('hide');
+
+			self.register(name, elm);
+		}
+	};
+
+	self.start = function () {
+		jQuery('h4.block-head').each(function (i, el) {
+			self.closest(el, 'div.control-group').addClass('segment');
 		}, this);
 
-		this.update();
-	},
-	
-	update: function () {
-		Object.each(this.controls, function(ctrls, ctrl){
-			this.elmsFrom(ctrl).fireEvent('change');
+		jQuery('.hideanchor').each(function (i, el) {
+			var ctr = self.closest(el, '.control-group');
+			if (ctr.length) {
+				ctr.addClass('hide');
+			}
 		}, this);
-	},
-	
-	enable: function (el) {
-		el._disabled = false; //selector 'li' is J2.5 compactible
-		this.closest(el, '.adminformlist > li, div.control-group').setStyle('display', 'block');
-	},
-	
-	disable: function (el) {
-		el._disabled = true; //selector 'li' is J2.5 compactible
-		this.closest(el, '.adminformlist > li, div.control-group').setStyle('display', 'none');
-	},
-	
-	elmsFrom: function(name){
-		var el = document.adminForm[name];
-		if(!el){
-			el = document.adminForm[name + '[]'];
+
+		self.update();
+		self.initialized = true;
+	};
+
+	self.update = function () {
+		for (var k in self.controls) {
+			self.elmsFrom(k).trigger('change');
 		}
-		
-		//Mootools 1.4.5 compatible
-		return (typeOf(el) == 'element' && el.get('tag') == 'select') ? $$([el]) : $$(el);
-	},
-	
-	valuesFrom: function(els){
+	};
+
+	self.enable = function (el) {
+		var dur = self.initialized ? 300 : 0;
+		self.closest(el, '.control-group').show(dur).data('disabled', false);
+	};
+
+	self.disable = function (el) {
+		var dur = self.initialized ? 300 : 0;
+		self.closest(el, '.control-group').hide(dur).data('disabled', true);
+	};
+
+	self.elmsFrom = function (name) {
+		var multipe = name + '[]';
+		var elm = jQuery('[name="'+name+'"]');
+		if (!elm.length) {
+			elm = jQuery('[name="'+multipe+'"]');
+		}
+		return elm;
+	};
+
+	self.valuesFrom = function (els) {
 		var vals = [];
-		
-		((typeOf(els) == 'element' && els.get('tag') == 'select') ? $$([els]) : $$(els)).each(function(el){
-			var type = el.type,
-				value = (el.get('tag') == 'select') ? el.getSelected().map(function(opt){
-					return document.id(opt).get('value');
-				}) : ((type == 'radio' || type == 'checkbox') && !el.checked) ? null : el.get('value');
+		els.each(function(i, e) {
+			var el = jQuery(e),
+				val = el.val();
 
-			vals.include(Array.from(value));
+			if (!val) {
+				return;
+			}
+
+			if (el.is('select')) {
+				vals = Array.isArray(val) ? val : [val];
+			} else if((el.is(':radio') || el.is(':checkbox')) && el.is(':checked')){
+				vals.push(val);
+			}
 		});
-		
-		return vals.flatten();
-	},
-	
-	closest: function(elm, sel){
-		var parents = elm.getParents(sel),
-			cur = elm;
-			
-		while(cur){
-			if(parents.contains(cur)){
-				return cur;
+
+		return vals;
+	};
+
+	self.closest = function (elm, sel) {
+		return jQuery(elm).parents(sel);
+	};
+
+	self.segment = function (seg) {
+		if (jQuery('#'+seg).hasClass('close')) {
+			self.showseg(seg);
+		} else {
+			self.hideseg(seg);
+		}
+	};
+
+	self.showseg = function (seg) {
+
+		var segelm = jQuery('#' + seg),
+			snext = self.closest(segelm, '.control-group').next();
+		while (snext.length && !snext.hasClass('segment')) {
+			if (!snext.hasClass('hide') && !snext.data('disabled') ) {
+				snext.show(200);
 			}
-			
-			cur = cur.getParent();
+			snext = snext.next();
 		}
 
-		return null;
-	},
-	
-	segment: function(seg){
-		if($(seg).hasClass('close')){
-			this.showseg(seg);
-		} else {
-			this.hideseg(seg);
-		}
-	},
-	
-	showseg: function(seg){
-		
-		var segelm = $(seg),
-			snext = this.closest(segelm, 'li, div.control-group').getNext();
-		
-		while(snext && !snext.hasClass('segment')){
-			if(!snext.hasClass('hide')){
-				snext.setStyle('display', snext.retrieve('jdisplay') || '');
+		segelm.removeClass('close').addClass('open');
+	};
+
+	self.hideseg = function (seg) {
+		var segelm = jQuery('#' + seg),
+			snext = self.closest(segelm, '.control-group').next();
+
+		while (snext.length && !snext.hasClass('segment')) {
+			if (!snext.hasClass('hide') && !snext.data('disabled')) {
+				snext.hide(200);
 			}
-			snext = snext.getNext();
+			snext = snext.next();
 		}
-		
-		segelm.removeClass('close').addClass('open');  
-	},
-	
-	hideseg: function(seg){
-		var segelm = $(seg),
-			snext = this.closest(segelm, 'li, div.control-group').getNext();
-		
-		while(snext && !snext.hasClass('segment')){
-			if(!snext.hasClass('hide')){
-				snext.store('jdisplay', snext.getStyle('display')).setStyle('display', 'none');
-			}
-			snext = snext.getNext();
-		}
-		
-		segelm.removeClass('open').addClass('close');  
-	}
-});
+
+		segelm.removeClass('open').addClass('close');
+	};
+};
 
 var JADepend = window.JADepend || {};
-
 JADepend.inst = new JADependForm();
-window.addEvent('load', function() {
-	setTimeout(JADepend.inst.start.bind(JADepend.inst), 100);
-});

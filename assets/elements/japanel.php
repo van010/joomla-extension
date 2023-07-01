@@ -10,26 +10,22 @@ jimport('joomla.form.formfield');
 require_once(dirname(__FILE__).'/../behavior.php');
 class JFormFieldJapanel extends JFormField {
     protected $type = 'Japanel';
+    protected $asset_path = 'modules/mod_jaslideshow/assets/elements/';
     
     protected function getInput() {
-    	$func = (string) $this->element['function'];
-    	if(!$func) {
-    		$func = 'init';
-    	}
-    	
-    	if(method_exists($this, $func)) {
-    		call_user_func_array(array($this, $func), array());
-    	}
+        $this->init();
     	return null;
     }
     
     protected function init() {
     	$doc = JFactory::getDocument();
-        $path = JURI::root().$this->element['path'];
-        if (!version_compare(JVERSION, '3.4', 'lt') && !version_compare(JVERSION, '4', 'ge')){
+        $path = JURI::root() . $this->asset_path;
+
+        $doc->addScript($path.'japanel/depend.js');
+
+        if (!version_compare(JVERSION, '4', '>=')){
 			JHtml::_('behavior.framework', true);
 		}
-        $doc->addScript($path.'japanel/depend.js');
         if(version_compare(JVERSION, '3.0', 'lt')) {
         	JHTML::_('JABehavior.jquery');
         	//JHTML::_('JABehavior.jquerychosen', '.pane-slider select');
