@@ -26,8 +26,9 @@ class JFormFieldJapanel extends JFormField {
     protected function init() {
     	$doc = JFactory::getDocument();
         $path = JURI::root().$this->element['path'];
-        if (!version_compare(JVERSION, '3.4', 'lt')) // joomla 3.4.x not call mootools by default
-        	JHtml::_('behavior.framework', true);
+        if (!version_compare(JVERSION, '3.4', 'lt') && !version_compare(JVERSION, '4', 'ge')){
+			JHtml::_('behavior.framework', true);
+		}
         $doc->addScript($path.'japanel/depend.js');
         if(version_compare(JVERSION, '3.0', 'lt')) {
         	JHTML::_('JABehavior.jquery');

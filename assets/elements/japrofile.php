@@ -52,8 +52,12 @@ class JFormFieldJaprofile extends JFormField
 				$f->title = $fname;
 
 				$profiles[$fname] = $f;
-				
-				$params = new JRegistry(JFile::read($path . DIRECTORY_SEPARATOR . $fname . '.ini'));
+				$profile_path = $path . DIRECTORY_SEPARATOR . $fname . '.ini';
+
+				if (!is_file($profile_path)){
+					continue;
+				}
+				$params = new JRegistry(file_get_contents($profile_path));
 				$jsonData[$fname] = $params->toArray();
 			}
 		}

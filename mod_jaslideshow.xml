@@ -19,12 +19,12 @@
 	<description>
 		<![CDATA[
 		<div align="left">
-		<h1><img border='0' alt='JA Slidehow for Joomla! 2.5 & Joomla! 3.x' src='http://asset.joomlart.com/images/stories/extensions/drupal/jdec_slideshow.png?javer=1109270933' style='float: left'>JA Slideshow module for Joomla! 2.5 & Joomla! 3.3</h1>
+		<h1><img border='0' alt='JA Slidehow for Joomla! 3.X and 4.X' src='http://asset.joomlart.com/images/stories/extensions/drupal/jdec_slideshow.png?javer=1109270933' style='float: left'>JA Slideshow module for Joomla! 2.5 & Joomla! 3.3</h1>
 		<div style='font-weight: normal'>
 		<p><span style='color: #ff6600;'><strong>Features:</strong></span>
 		Display images from a folder or from articles. Includes auto-resized images, beautiful animation effects, and inline text-embeded descriptions.</p>
 		
-		<strong>JA Slideshow for Joomla! 2.5 & 3.3</strong> includes advanced functionality which allows to build slideshows from image folders - OR - directly from images included in articles. <br/>
+		<strong>JA Slideshow for Joomla! 3.X and 4.X</strong> includes advanced functionality which allows to build slideshows from image folders - OR - directly from images included in articles. <br/>
 It is one of our most requested and most versatile modules which can be found in over 30 JA templates.
 		<br/><br/>
 		<strong><span style='color: #ff0000;'>Usage Instructions:</span></strong><br />
@@ -78,13 +78,13 @@ It is one of our most requested and most versatile modules which can be found in
 					description="SOURCE_DESC">
 						<option value="articles">FROM_ARTICLES</option>
 						<option value="images">FROM_IMAGES_FOLDER</option>
-						<option value="com_k2">FROM_K2</option>
 				</field>
 				
 				<field 
 					name="source-articles-display_model" 
 					type="list"
-					default="0" 
+					default="0"
+					showon="source:articles"
 					label="DISPLAY_FEATURED_ARTICLES" 
 					description="DISPLAY_FEATURED_ARTICLES_DESC">
 						<option value="1">Show only featured articles</option>
@@ -94,7 +94,8 @@ It is one of our most requested and most versatile modules which can be found in
 
 				<field 
 					name="source-articles-display_model-modcats-category"
-					type="category" 
+					type="category"
+					showon="source:articles"
 					default=""
 					extension="com_content"
 					class="mselect"
@@ -108,25 +109,19 @@ It is one of our most requested and most versatile modules which can be found in
                     name="showvideos"
                     type="list"
                     default="0"
+					showon="source:articles"
                     label="DISPLAY_VIDEOS_ARTICLES"
                     description="DISPLAY_VIDEOS_ARTICLES_DESC">
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
                 </field>
-				<field name="k2catsid" 
-					type="k2category"
-					published="1"
-					class="mselect"
-					multiple="true"
-					default="" 
-					label="K2_CATEGORIES_SELECTION" 
-					description="K2_CATEGORIES_SELECTION_DESC" />
 
 				<field 
 					name="source-articles-sort_order_field" 
 					type="list"
 					default="created" 
-					label="SORT_ORDER_BY" 
+					label="SORT_ORDER_BY"
+					showon="source:articles"
 					description="SORT_ORDER_BY_DESC">
 						<option value="created">DATE</option>
 						<option value="ordering">ORDER</option>
@@ -136,7 +131,8 @@ It is one of our most requested and most versatile modules which can be found in
 					name="source-articles-sort_order"
 					type="list" 
 					default="DESC"
-					label="ASC_OR_DESC" 
+					label="ASC_OR_DESC"
+					showon="source:articles"
 					description="ASC_OR_DESC_DESC">
 						<option value="ASC">ASC</option>
 						<option value="DESC">DESC</option>
@@ -167,7 +163,8 @@ It is one of our most requested and most versatile modules which can be found in
 					type="list"
 					onchange="jaListImages();"
 					default="0"
-					label="SORT_TYPE" 
+					label="SORT_TYPE"
+					showon="source:images"
 					description="SORT_TYPE_DESC">
 						<option value="0">NAME</option>
 						<option value="1">TIME</option>
@@ -177,7 +174,7 @@ It is one of our most requested and most versatile modules which can be found in
 					type="list" 
 					onchange="jaListImages();"
 					default="0"
-					label="SORT_ORDER" 
+					label="SORT_ORDER" showon="source:images"
 					description="SORT_ORDER_DESC">
 						<option value="0">RANDOM</option>
 						<option value="1">ASCENDING</option>
@@ -190,6 +187,7 @@ It is one of our most requested and most versatile modules which can be found in
 					default="images/"
 					class="mselect"
 					onchange="jaListImages();"
+					showon="source:images"
 					label="IMAGE_FOLDER"
 					description="IMAGE_FOLDER_DESC" />
 				<field 
@@ -198,6 +196,7 @@ It is one of our most requested and most versatile modules which can be found in
 					updatedata="1"
 					filter="raw"
 					label="JA_GALLERY"
+					showon="source:images"
 					description="JA_GALLERY_DESC" />					
 				
 			</fieldset>
@@ -285,14 +284,6 @@ It is one of our most requested and most versatile modules which can be found in
 						</option>
 						<option for="source" value="images" hideRow="true">
 							source-images-orderby,source-images-sort,folder,description
-						</option>
-						<option for="source" value="com_k2" hideRow="true">
-							source-articles-display_model,
-							source-articles-display_model-modarts-with_keyword,
-							k2catsid,
-							source-articles-sort_order_field,
-							source-articles-sort_order,
-							source-articles-max_items
 						</option>
 				</field>
 			</fieldset>

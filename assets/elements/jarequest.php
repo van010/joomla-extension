@@ -14,8 +14,12 @@ class JFormFieldJarequest extends JFormField {
 		//remove request param lable
 		$doc = JFactory::getDocument();
 		$doc->addScriptDeclaration("$(window).addEvent('load', function(){jQuery('#jform_params_jarequest-lbl').parent().remove();});");
-		$task = JRequest::getString('jatask', '');
-		$jarequest = strtolower(JRequest::getString('jarequest'));
+
+		$app = JFactory::getApplication();
+        $input = $app->input;
+        $task = $input->getCmd('jatask');
+		$jarequest = strtolower($input->getcmd('jarequest'));
+		
 		//process
         if ($jarequest && $task) {			
 			

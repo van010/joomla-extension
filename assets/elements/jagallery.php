@@ -12,7 +12,9 @@ class JFormFieldJagallery extends JFormField {
     protected $type = 'Jagallery';
     
     protected function getInput() {
-		Jhtml::_('behavior.modal');		
+		if (!version_compare(JVERSION, '4', 'ge')){
+			JHtml::_('behavior.modal');
+		}		
 		Jhtml::_('stylesheet', JURI::root() . 'modules/' . $this->form->getValue('module') . '/assets/elements/jagallery/style.css');
 	
 		$jaGalleryId = $this->id ;
