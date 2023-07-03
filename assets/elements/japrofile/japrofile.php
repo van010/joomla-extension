@@ -100,11 +100,12 @@ endforeach;
 <script type="text/javascript">
 	// <![CDATA[ 
 	window.addEventListener('load', function () {
+		var module_form = $(document).find('form#module-form')[0];
 		Joomla.submitbutton = function(task){
-			if (task == 'module.cancel' || document.formvalidator.isValid(document.id('module-form'))) {	
-				if(task != 'module.cancel' && document.formvalidator.isValid(document.id('module-form'))){
+			if (task == 'module.cancel' || document.formvalidator.isValid(module_form)) {
+				if(task != 'module.cancel' && document.formvalidator.isValid(module_form)){
 					JAFileConfig.inst.saveProfile(task);
-				}else if(task == 'module.cancel' || document.formvalidator.isValid(document.id('module-form'))){
+				}else if(task == 'module.cancel' || document.formvalidator.isValid(module_form)){
 					Joomla.submitform(task, document.getElementById('module-form'));
 				}
 				if (self != top) {

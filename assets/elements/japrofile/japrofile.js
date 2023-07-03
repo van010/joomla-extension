@@ -4,6 +4,7 @@
 
 var JAProfileConfig = function (options){
 
+	var $ = jQuery;
 	this.vars = Object.assign({
 		el: $(`#${options}`)
 	} || []);
@@ -43,13 +44,12 @@ var JAProfileConfig = function (options){
 	};
 	
 	this.changeProfile = function(profile_){
+		if (profile_ === '') return;
 		var profile = $(`#${profile_}`);
-		if (profile.length === 0) return;
-		var profile_name = profile.val();
+		var profile_name = profile.length > 0 ? profile.val() : profile_;
 		console.log(`change profile: ${profile_name}`);
 
 		this.vars.active = profile_name;
-		console.log(this.vars.active);
 		this.fillData();
 		
 		if(typeof JADepend != 'undefined' && JADepend.inst){
@@ -105,13 +105,13 @@ var JAProfileConfig = function (options){
 		var vars = this.vars,
 			els = this.serializeArray(),
 			profile = JAFileConfig.profiles[vars.active];
-
 		if(els.length === 0 || !profile) return;
 
 		$.each(els, (idx, el) => {
-			var name = this.getName_(el),
-				values = (profile[name] != undefined) ? profile[name] : '';
-			this.setValues(el, Array.from(values));
+			const name = this.getName(el);
+			const values = (profile[name] != undefined) ? profile[name] : '';
+
+			this.setValuesToHtmlTag(el, values);
 
 			//J3.0 compatible
 			if(jQuery(el).next().hasClass('chzn-container') && typeof jQuery != 'undefined'){
@@ -123,25 +123,14 @@ var JAProfileConfig = function (options){
 		}, this);
 	};
 	
-	this.valuesFrom = function(els){
-		var vals = [];
-		
-		((typeOf(els) == 'element' && els.get('tag') == 'select') ? $$([els]) : $$(els)).each(function(el){
-			var type = el.type,
-				value = (el.get('tag') == 'select') ? el.getSelected().map(function(opt){
-					return document.id(opt).get('value');
-				}) : ((type == 'radio' || type == 'checkbox') && !el.checked) ? null : el.get('value');
+	this.setValuesToHtmlTag = function(el, vals){
+		const js_node = el[0];
+		const tag_name = js_node.localName
+		const tag_type = js_node.type;
 
-			vals.include(Array.from(value));
-		});
-		
-		return vals.flatten();
-	};
-	
-	this.setValues = function(el, vals){
-		if(el.attr('tag') === 'select'){
+		if(tag_name === 'select'){
 			var selected = false;
-			var all_options = el[0].options;
+			var all_options = js_node.options;
 			for(var i = 0; i < all_options.length; i++){
 				var option = all_options[i];
 				option.selected = false;
@@ -155,21 +144,37 @@ var JAProfileConfig = function (options){
 				all_options[0].selected = true;
 			}
 		}else {
-			if(el.attr('type') === 'checkbox' || el.attr('type') === 'radio'){
-				el.attr('checked', vals.includes(el.value));
+			if(tag_type === 'checkbox' || tag_type === 'radio'){
+				el.attr('checked', vals.includes(el.val()));
+				const curr_label = $(`label[for="${el.attr('id')}"]`);
+				// curr_label[0].className;
 			} else {
-				el.attr('value', vals[0]);
+				el.attr('value', vals);
 			}
 		}
 	};
 	
-	this.getName_ = function(el){
+	this.getName = function(el){
 		var matches = el.attr('name').match(this.vars.group + '\\[params\\]\\[([^\\]]*)\\]');
 		if (matches){
 			return matches[1];
 		}
 		
 		return '';
+	};
+
+	this.valuesFrom = function(els){
+		var vals = [];
+
+		((typeOf(els) == 'element' && els.get('tag') == 'select') ? $$([els]) : $$(els)).each(function(el){
+			var type = el.type,
+				value = (el.get('tag') == 'select') ? el.getSelected().map(function(opt){
+					return document.id(opt).get('value');
+				}) : ((type == 'radio' || type == 'checkbox') && !el.checked) ? null : el.get('value');
+
+			vals.include(Array.from(value));
+		});
+		return vals.flatten();
 	};
 	
 	/****  Functions of Profile  ----------------------------------------------   ****/
@@ -280,12 +285,11 @@ var JAProfileConfig = function (options){
 	this.rebuildData = function (){
 		var els = this.serializeArray(),
 			json = {};
-			
-		els.each(function(el){
-			var values = this.valuesFrom(el);
-			if(values.length){
-				json[this.getName(el)] = el.name.substr(-2) == '[]' ? values : values[0];
-			}
+		$.each(els, (idx, el_) => {
+			var el = $(el_);
+			// if(values.length){
+			// 	json[this.getName(el)] = el.name.substr(-2) == '[]' ? values : values[0];
+			// }
 		}, this);
 		
 		return json;
