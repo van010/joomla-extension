@@ -24,6 +24,9 @@ if (!class_exists("T3Common")) {
 	$t3_exists = true;
 }
 
+JHtml::_('JABehavior.jqueryeasing', true);
+echo '<script src="'.$path.'jquery.easing.1.3.js" type="text/javascript"></script>';
+
 $helper = ModJASlideshow3::getInstance();
 $tmpParams = $helper->loadConfig($params);
 $mainframe = JFactory::getApplication();
@@ -192,7 +195,7 @@ if( $source  == 'images' && !empty($list) ){
 	
 	window.jasliderInst = window.jasliderInst || [];
 	
-	window.addEvent('domready', function(){
+	window.addEventListener('DOMContentLoaded', function(){
 		if(typeof(tmpl_name) =='undefined'){
 		  cookie_path = "<?php echo $template_name."_direction"; ?>";
 		}
@@ -200,7 +203,8 @@ if( $source  == 'images' && !empty($list) ){
 		  cookie_path = tmpl_name+"_direction";
 		}
 		
-		Ja_direction = Cookie.read(cookie_path);
+		// Ja_direction = document.cookie;
+		Ja_direction = null;
 		if( Ja_direction == '' || Ja_direction == null){
 			Ja_direction = '<?php echo $direction; ?>';
 		}
@@ -225,29 +229,29 @@ if( $source  == 'images' && !empty($list) ){
 
 		}
 		
-		window.jasliderInst.push(new JASlider('ja-slide-<?php echo $module->id;?>', {
+		var options = {
 			slices: <?php echo $numberSlices; ?>,
 			boxCols: <?php echo $numberBoxCols; ?>,
 			boxRows: <?php echo $numberBoxRows; ?>,
-			
+
 			animation: '<?php echo $animation; ?>',
 			fbanim: '<?php echo $fbanimation; ?>',
 			direction: '<?php echo $moveDirection; ?>',
-			
+
 			interval: <?php echo $interval; ?>,
 			duration: <?php echo $duration; ?>,
-			transition: <?php echo $effect; ?>,
-			
+			transition: '<?php echo $effect; ?>',
+
 			repeat: '<?php echo $animationRepeat; ?>',
 			autoPlay: <?php echo $autoplay; ?>,
-			
+
 			mainWidth: <?php echo $mainWidth; ?>,
 			mainHeight: <?php echo $mainHeight; ?>,
-			
-			rtl:( typeof Ja_direction == 'string') ? Ja_direction : '',
-			
+
+			rtl: (typeof Ja_direction == 'string') ? Ja_direction : '',
+
 			startItem: <?php echo $startItem; ?>,
-			
+
 			thumbItems: <?php echo $showItem; ?>,
 			thumbType: '<?php echo $navigation; ?>',
 			thumbWidth: <?php echo $navWidth; ?>,
@@ -256,30 +260,32 @@ if( $source  == 'images' && !empty($list) ){
 			thumbOpacity: <?php echo $thumbOpacity; ?>,
 			thumbTrigger: 'click',
 			thumbOrientation: '<?php echo $navAlignment; ?>',
-			
-			
+
+
 			maskStyle: <?php echo $container; ?>,
-			maskWidth: <?php echo  $maskWidth; ?>,
-			maskHeigth:<?php echo  $maskHeigth; ?>,
+			maskWidth: <?php echo $maskWidth; ?>,
+			maskHeigth:<?php echo $maskHeigth; ?>,
 			maskOpacity: <?php echo $descOpacity; ?>,
 			maskAlign: Ja_maskAlign_<?php echo $module->id; ?>,
 			maskTransitionStyle: '<?php echo $tmpParams->get('masker-transition-style', 'opacity'); ?>',
-			maskTransition: <?php echo $tmpParams->get('marker-transition', 'Fx.Transitions.linear'); ?>,
-			
+			maskTransition: '<?php echo $tmpParams->get('marker-transition', 'linear'); ?>',
+
 			showDesc: '<?php echo $showDescription; ?>',
 			descTrigger: '<?php echo $showdescwhen; ?>',
-			
+
 			showControl: <?php echo $control; ?>,
 			edgemargin:<?php echo $edgemargin; ?>,
 			showNavBtn: true,
 			navBtnOpacity: <?php echo $overlapOpacity; ?>,
 			navBtnTrigger: 'click',
-			
+
 			showProgress: <?php echo $showProgressBar; ?>,
-			
-			urls:['<?php echo implode('\',\'', $urls); ?>'],
-			targets:['<?php echo implode('\',\'', $targets); ?>']
-		}));
+
+			urls: ['<?php echo implode('\',\'', $urls); ?>'],
+			targets: ['<?php echo implode('\',\'', $targets); ?>']
+		};
+				
+		window.jasliderInst.push(new JASlider('ja-slide-<?php echo $module->id;?>', options));
 	});
 </script>
 
@@ -306,7 +312,7 @@ if( $source  == 'images' && !empty($list) ){
 	var cur_template_name = '<?php echo $template_name; ?>';
 	window.jasliderInst = window.jasliderInst || [];
 	
-	window.addEvent('domready', function(){
+	document.addEventListener('DOMContentLoaded', function(){
 		var Ja_maskAlign_<?php echo $module->id; ?>= '<?php echo $maskAlignment; ?>';
 		if(typeof(tmpl_name) =='undefined'){
 			cookie_path = "<?php echo $template_name."_direction"; ?>";
