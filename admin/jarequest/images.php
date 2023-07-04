@@ -26,7 +26,7 @@ class images{
 	*
 	*/
     public function loadImages(&$params) { 
-		$folder = $this->app->get('path', '');
+		$folder = $this->app->get('path', '', 'RAW');
 		$images = $this->getListImages($folder, $params);
 		
 		return $images;
@@ -74,7 +74,7 @@ class images{
 	/**
      *
      * Get all image from resource
-     * @param strinh $folder folder path
+     * @param string $folder folder path
      * @param string $orderby
      * @param string $sort
      * @return array images
