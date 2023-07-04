@@ -1,0 +1,111 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+body {
+  background-image: url("@{t3-theme-image-path}/bg-body.gif");
+  background-repeat: repeat;
+}
+
+
+//
+// Header
+// ---------------------------------------------------------
+.footer-info a.logo-footer {
+  background-image: url("@{t3-theme-image-path}/logo-light.png");
+}
+
+
+
+//
+// Carousel
+// ---------------------------------------------------------
+.carousel-indicators li {
+  background-image: url("@{t3-theme-image-path}/button-carousel.png");
+}
+
+div.jai-map-wrap .jai-map-container .ja-marker-default {
+  background-image: url("@{t3-theme-image-path}/icon-marker-default.png") !important;
+}
+
+//
+// Easyblog
+// ---------------------------------------------------------
+#ezblog-menu .blog-navi li.toolbar-item,
+#ezblog-menu.narrow .blog-navi li.toolbar-item {
+  &:hover, &:focus, &:active,
+  &.item-active {
+    background: @brand-primary;
+  }
+} 
+
+body #comment-form #markItUpComment textarea,
+body #comment-form .inputbox, 
+#eblog-wrapper .tag-sort-order #filter-tags {
+  &:hover, &:focus, &:active {
+    border-color: @brand-primary;
+  }
+}
+
+#eblog-wrapper #section-comments .comment-body .form-row .label {
+  background-color: @brand-primary;
+}
+
+#ezblog-body .blog-read .blog-navi li a {
+  color: @brand-primary !important;
+  &:hover, &:focus, &:active {
+    color: @link-hover-color !important;
+  }
+}
+
+#ezblog-body .featured-a a span {
+  background-image: url("@{t3-theme-image-path}/featured-bullets.png");
+}
+
+#ezblog-body .featured-more {
+  background-image: url("@{t3-theme-image-path}/featured-more.png");
+}
+
+#ezblog-menu .blog-navi .user-form form .button {
+  background: @brand-primary !important;
+  &:hover, &:focus, &:active {
+    background: @link-hover-color !important;
+  }
+}
+
+#ezblog-menu .blog-navi .user-form form a {
+  color: @brand-primary !important;
+}
+
+#ezblog-menu .blog-navi .user-form form .input {
+  &:hover, &:focus, &:active {
+    border-color: @brand-primary;
+  }
+}
+
+#eblog-wrapper #bloggers-sorting input.button {
+  background: @brand-primary;
+  &:hover, &:focus, &:active {
+    background: @link-hover-color;
+  }
+}
+
+#ezblog-body .micro-quote .blog-quote .blog-title a {
+  color: @brand-primary !important;
+  &:hover, &:focus, &:active {
+    color: @link-hover-color !important;
+  }
+}
+
+#eblog-search .button-search {
+  background: @btn-primary-bg !important;
+  &:hover, &:focus, &:active {
+    background: @link-hover-color !important;
+  }
+}
+
+#eblog-search .search-input input {
+  &:hover, &:focus, &:active {
+    border-color: @brand-primary !important;
+  }
+}

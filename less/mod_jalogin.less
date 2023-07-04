@@ -1,0 +1,146 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Modify this for custom colors, font-sizes, etc
+
+// --------------------------------------------------
+// MODULE LOGIN
+// --------------------------------------------------
+
+ul.ja-login {
+  float: right;
+
+  > li {
+    margin-right: 1px;
+
+    > a {
+      background: @tpl-login-button;
+      border-radius: @border-radius-small;
+      color: @tpl-login-color;
+      display: block;
+      font-size: @t3-font-size-smaller;
+      font-weight: 700;
+      padding: 2px (@t3-global-padding / 2);
+      line-height: @line-height-computed;
+
+      &:hover, &.show {
+        background: @brand-primary;
+        color: @white;
+        text-decoration: none;
+      }
+
+      &.register-switch {
+        background: @tpl-highlight-button;
+        color: @white;
+
+        &:hover, &.show {
+          background: darken(@tpl-highlight-button, 10%);
+        }
+      }
+    }
+
+    #ja-user-login, 
+    #ja-user-register {
+      border-radius: 0 0 4px 4px;
+      border: none;
+      box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
+      left: auto;
+      right: 0;
+      min-width: 250px;
+      top: 30px;
+
+      label {
+        font-size: @t3-font-size-small;
+        color: @text-color;
+      }
+
+      input[type^="text"],
+      input[type^="password"],
+      input[type^="email"] {
+        margin-bottom: (@t3-global-margin / 2);
+      }
+
+      form > p {
+        color: @gray-light;
+        font-size: @t3-font-size-small;
+      }
+
+      &:after {
+        border-bottom: 5px solid @white;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        content: "";
+        right: 20px;
+        top: -5px;
+        position: absolute;
+      }
+
+    }
+
+    #ja-user-login {
+      @media screen and (max-width: @screen-xs-max)  {
+        right: -35px;
+      }
+
+      &:after {
+        @media screen and (max-width: @screen-xs-max)  {
+          right: 50px;
+        }
+      }
+
+      ul {
+        text-align: left;
+        
+        li a {
+          padding: 5px 0 !important;
+          font-size: @t3-font-size-smaller;
+          font-weight: bold;
+        }
+      }
+    }
+
+    #ja-user-register {
+      #recaptcha_area {
+        // Mobile
+        @media screen and (max-width: @screen-xs-max) {
+          max-width: 239px;
+        }
+      }
+    }
+
+    > #login-form {
+      > div {
+        display: inline-block;
+      }
+    }
+  }
+
+  #form-login-remember input[type="checkbox"] {
+    display: inline-block;   
+    height: auto;
+    margin-top: 3px;
+    vertical-align: top;
+    width: auto;
+  }
+
+  .btn {
+    background: @brand-primary;
+    border-radius: @border-radius-small;
+    color: @white;
+    font-size: @t3-font-size-smaller;
+    font-weight: 700;
+
+    &:hover {
+      background: @link-hover-color;
+    }
+  }
+
+  .logout-button .btn {
+    padding: (@t3-global-padding / 10) (@t3-global-padding / 4);
+    vertical-align: top;
+  }
+}

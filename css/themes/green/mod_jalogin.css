@@ -1,0 +1,115 @@
+ul.ja-login {
+  float: right;
+}
+ul.ja-login > li {
+  margin-right: 1px;
+}
+ul.ja-login > li > a {
+  background: #595959;
+  border-radius: 2px;
+  color: #c8c8c8;
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 10px;
+  line-height: 20px;
+}
+ul.ja-login > li > a:hover,
+ul.ja-login > li > a.show {
+  background: #93c548;
+  color: #ffffff;
+  text-decoration: none;
+}
+ul.ja-login > li > a.register-switch {
+  background: #ff8f46;
+  color: #ffffff;
+}
+ul.ja-login > li > a.register-switch:hover,
+ul.ja-login > li > a.register-switch.show {
+  background: #ff7013;
+}
+ul.ja-login > li #ja-user-login,
+ul.ja-login > li #ja-user-register {
+  border-radius: 0 0 4px 4px;
+  border: none;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
+  left: auto;
+  right: 0;
+  min-width: 250px;
+  top: 30px;
+}
+ul.ja-login > li #ja-user-login label,
+ul.ja-login > li #ja-user-register label {
+  font-size: 12px;
+  color: #777777;
+}
+ul.ja-login > li #ja-user-login input[type^="text"],
+ul.ja-login > li #ja-user-register input[type^="text"],
+ul.ja-login > li #ja-user-login input[type^="password"],
+ul.ja-login > li #ja-user-register input[type^="password"],
+ul.ja-login > li #ja-user-login input[type^="email"],
+ul.ja-login > li #ja-user-register input[type^="email"] {
+  margin-bottom: 10px;
+}
+ul.ja-login > li #ja-user-login form > p,
+ul.ja-login > li #ja-user-register form > p {
+  color: #999999;
+  font-size: 12px;
+}
+ul.ja-login > li #ja-user-login:after,
+ul.ja-login > li #ja-user-register:after {
+  border-bottom: 5px solid #ffffff;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  content: "";
+  right: 20px;
+  top: -5px;
+  position: absolute;
+}
+@media screen and (max-width: 767px) {
+  ul.ja-login > li #ja-user-login {
+    right: -35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  ul.ja-login > li #ja-user-login:after {
+    right: 50px;
+  }
+}
+ul.ja-login > li #ja-user-login ul {
+  text-align: left;
+}
+ul.ja-login > li #ja-user-login ul li a {
+  padding: 5px 0 !important;
+  font-size: 11px;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  ul.ja-login > li #ja-user-register #recaptcha_area {
+    max-width: 239px;
+  }
+}
+ul.ja-login > li > #login-form > div {
+  display: inline-block;
+}
+ul.ja-login #form-login-remember input[type="checkbox"] {
+  display: inline-block;
+  height: auto;
+  margin-top: 3px;
+  vertical-align: top;
+  width: auto;
+}
+ul.ja-login .btn {
+  background: #93c548;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+}
+ul.ja-login .btn:hover {
+  background: #6a922e;
+}
+ul.ja-login .logout-button .btn {
+  padding: 2px 5px;
+  vertical-align: top;
+}

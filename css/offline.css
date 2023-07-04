@@ -1,0 +1,273 @@
+body {
+  background: #fff;
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* LAYOUT
+----------------------------------------------------- */
+#frame {
+  text-align: center;
+  margin: 100px auto 0;
+  width: 440px;
+}
+
+#frame .offline-content {
+  background: #f9f9f9;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px #ddd;
+  text-align: left;
+}
+
+/* Logo */
+#frame h1 {
+  background: #555;
+  border-radius: 3px 3px 0 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+#frame img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#frame .offline-message {
+  border-bottom: 1px solid #eee;
+  color: #666;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+#frame .offline-message br {
+  display: none;
+}
+
+/* Form login */
+#form-login label {
+  color: #666;
+}
+
+#form-login fieldset {
+  border: none;
+  margin: 0;
+  padding: 20px;
+}
+
+#form-login #form-login-username,
+#form-login #form-login-password {
+  float: left;
+  margin: 0 0 20px 0;
+  width: 48%;
+}
+
+#form-login #form-login-password {
+  float: right;
+}
+
+#form-login #form-login-username label,
+#form-login #form-login-password label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+#form-login #form-login-remember {
+	clear: both;
+}
+
+#form-login .inputbox {
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 2px;
+  height: 30px;
+  line-height: normal;
+  padding: 0 10px;
+  width: 100%;
+}
+
+#form-login .inputbox:hover,
+#form-login .inputbox:active,
+#form-login .inputbox:focus {
+  border-color: #F2735A;
+}
+
+#form-login #form-login-remember .inputbox {
+  border: none;
+  height: auto;
+  padding: 0;
+  vertical-align: top;
+  width: auto;
+}
+
+#form-login #submit-buton label {
+  display: none;
+}
+
+#form-login #submit-buton .button {
+  background: #F2735A;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 8px 20px;
+  width: 100%;
+  transition: 0.2s;
+}
+
+#form-login #submit-buton .button:hover {
+  background: #EC3713;
+}
+
+#system-message {
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+#system-message dt {
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#system-message dt.error {
+  display: none;
+}
+
+
+#system-message dd {
+	margin-left: 0;
+}
+
+#system-message ul li {
+	list-style: none;
+}
+
+#system-message  > dd > ul {
+ background-position: 5px 5px;
+ padding: 5px 0;
+ border-radius: 4px;
+ font-weight: normal;
+ border-width: 3px;
+ border-style: solid;
+}
+
+#system-message dd.message ul,
+#system-message dd.error ul,
+#system-message dd.success ul,
+#system-message dd.info ul,
+#system-message dd.notice ul {
+ margin: 0;
+ padding: 0;
+}
+  
+#system-message dd.message ul li,
+#system-message dd.error ul li,
+#system-message dd.success ul li,
+#system-message dd.info ul li,
+#system-message dd.notice ul li {
+ background: none;
+ margin: 0 0 0 35px;
+ padding: 5px;
+ font-size: 13px;
+ font-weight: normal;
+ text-indent: 0;
+}
+
+#system-message  .alert.message ul  {
+ border-color: #EBCCD1;
+}
+
+#system-message  .warning.message ul ,
+#system-message  .notice.message ul,
+.alert-warning {
+	color: #C09853;
+	border: 1px solid #FCF8E3;
+	background: #FAEBCC url("../images/messages/ico-warning.gif") no-repeat 10px center;
+	padding: 5px;
+}
+  
+#system-message  .error.message ul,
+.alert-danger,
+.alert-error {
+	color: #B94A48;
+  	border: 1px solid #EBCCD1;
+	background: #F2DEDE url("../images/messages/ico-error.gif") no-repeat 10px center;
+	padding: #F2DEDE;
+}
+
+#system-message .success.message ul,
+.alert-success {
+  color: #468847;
+  border: 1px solid #D6E9C6;
+  background: #DFF0D8 url("../images/messages/ico-success.gif") no-repeat 10px center;
+  padding: 5px;
+}
+
+#system-message .success.message ul,
+.alert-message,
+.alert-info,
+.alert-notice {
+  color: #3a87ad;
+  border: 1px solid #BCE8F1;
+  background: #d9edf7 url("../images/messages/ico-info.gif") no-repeat 10px center;
+  padding: 5px;
+}
+
+.alert {
+  border-radius: 2px;
+  padding: 10px 10px 10px 45px;
+}
+
+.alert .close {
+  float: right;
+	cursor: pointer;
+}
+
+.alert h4,
+.alert p {
+	margin: 0;
+}
+
+/* RTL
+----------------------------------------------------- */
+
+
+html[dir="rtl"] #frame .offline-content  {
+  text-align: right;
+}
+
+html[dir="rtl"] #form-login #form-login-username {
+	float: right;
+}
+
+html[dir="rtl"] #form-login #form-login-password {
+	float: left;
+}
+
+html[dir="rtl"] #form-login #form-login-remember {
+	direction: rtl;
+}
+
+
+
+html[dir="rtl"] .alert {
+	background-position: 97% center;
+  padding: 10px 45px 10px 10px;
+	text-align: right;
+}
+
+html[dir="rtl"] .alert .close {
+  float: left;
+}

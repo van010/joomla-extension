@@ -1,0 +1,54 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+
+
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// ---------------------------------------------------------
+// HOME
+// ---------------------------------------------------------
+.home {
+
+  // Heading
+  h1 {
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: floor(@font-size-base * 1.5);
+    // Bigger font size on Tablet / Desktop
+    @media screen and (min-width: @screen-sm) {
+      font-size: floor(@font-size-base * 2.15);
+    }
+  }
+
+  // Home Jumbotron
+  .jumbotron {
+    background-color: transparent;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .t3-mainbody {
+    padding-top: @t3-global-padding;
+
+    .main-container {
+      border-top: none;
+    }
+  }
+
+  .t3-content {
+     @media screen and (max-width: @screen-xs-max) {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+
+
+// End Home Spotlight
+}

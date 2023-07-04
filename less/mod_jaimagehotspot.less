@@ -1,0 +1,94 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// --------------------------------------------------
+// MODULE JA IMAGEHOTSPOT 
+// --------------------------------------------------
+
+
+// Hotspot
+// -----------------
+
+.jai-map-wrap {
+
+  .jai-map-container {
+    display: block;
+    margin-bottom: @t3-global-margin;
+
+    > img {
+      width: 100%;
+    }
+
+    .point {
+      background-size: cover;
+      height: 15px;
+      width: 15px;
+    }
+
+    .ja-marker-default {
+      background: url("@{t3-image-path}/ico/icon-marker-default.png") no-repeat left top;
+    }
+  }
+
+  .cd-dropdown {
+    margin-bottom: @t3-global-margin;
+
+    > span {
+      background: #f0f0f0;
+      border-radius: 2px;
+      color: @link-color;
+      min-width: 180px;
+
+      &:after {
+        background: @brand-primary;
+      }
+    }
+
+    ul {
+      background: #e5e5e5;
+      border: 1px solid #ddd;
+      border-radius: 0 0 2px 2px;
+      min-width: 180px;
+
+      li span {
+        display: block;
+        
+        &:hover {
+          color: @brand-primary;
+        }
+      }
+    }
+
+    > span:after {
+      border-radius: 0 2px 2px 0;
+    }
+  }
+
+  .cd-active.cd-dropdown > span {
+    color: @link-color;
+  }
+}
+
+.jai-map-description {
+  h5 {
+    font-weight: 700;
+    font-size: 15px;
+    color: @gray-dark;
+  }
+
+  > a {
+    font-weight: bold;
+    font-size: 11px;
+  }
+}
+
+
+.jai-map-container .popover .x-close span {
+  text-indent: -9999em;
+}

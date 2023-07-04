@@ -1,0 +1,136 @@
+a {
+  color: #F2735A;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EC3713;
+  text-decoration: none;
+}
+
+body.page-error{
+  background: #fff;
+  color: #666;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+div#errorboxoutline {
+  position: relative;
+  text-align: center;
+}
+
+div.error {
+  color: #666;
+  margin: 150px auto 0;
+  min-height: 500px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 600px;
+}
+ 
+div.error h1 {
+  line-height: 280px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center; 
+}
+
+div.error h1 span {
+  display: inline-block;
+  color: #F2735A;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 280px;
+  font-weight: bold;
+  text-align: center;
+}
+
+div.error #errorboxbody {
+  color: #999;
+  font-size: 15px;
+}
+
+div.error #errorboxbody span {
+	display: block;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+div.error #errorboxbody a {
+  color: #F2735A;
+}
+
+div.error #errorboxbody a:hover,
+div.error #errorboxbody a:focus, 
+div.error #errorboxbody a:active {
+  color: #EC3713;
+  text-decoration: underline;
+}
+
+div.error .error-message h2 {
+  color: #505050;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 28px;
+  margin: 0 0 8px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+div.error .error-message h2:after {
+	background: #d6d6d6;	
+	content: "";
+	display: block;
+	height: 1px;
+	left: 5%;
+	margin-top: -1px;
+	position: absolute;
+	top: 50%;
+	width: 25%;
+}
+
+div.error .error-message h2:before {
+	background: #d6d6d6;	
+	content: "";
+	display: block;
+	height: 1px;
+	right: 5%;
+	margin-top: -1px;
+	position: absolute;
+	top: 50%;
+	width: 25%;
+}
+
+div.error-nav ul {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 15px 0 0 !important; 
+  padding: 0 !important;
+}
+
+div.error-nav ul li {
+  display: inline;
+  list-style: none;
+  line-height: 24px;
+}
+
+div.error-nav ul li:first-child {
+  border-left: 0;
+  margin-left: -10px;
+}
+
+div.error-nav ul li a {
+  padding: 0 5px;
+  color: #008dde;
+}
+
+div.error-nav ul li a:hover,
+div.error-nav ul li a:focus, 
+div.error-nav ul li a:active {
+  color: #EC3713;
+}

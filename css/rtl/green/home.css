@@ -1,0 +1,28 @@
+.home h1 {
+  line-height: 1;
+}
+.home h2 {
+  font-size: 19px;
+}
+@media screen and (min-width: 768px) {
+  .home h2 {
+    font-size: 27px;
+  }
+}
+.home .jumbotron {
+  background-color: transparent;
+  position: relative;
+  margin-bottom: 0;
+}
+.home .t3-mainbody {
+  padding-top: 20px;
+}
+.home .t3-mainbody .main-container {
+  border-top: none;
+}
+@media screen and (max-width: 767px) {
+  .home .t3-content {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}

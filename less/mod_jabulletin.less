@@ -1,0 +1,103 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// --------------------------------------------------
+// MODULE JA BULLETIN 
+// --------------------------------------------------
+
+#ja-bulletin  { 
+  ul li {
+    list-style: none;
+    border-bottom: none;
+    clear: both; 
+    padding: (@t3-global-padding / 2) 0;
+
+    > div {
+      line-height: 20px;
+      font-size: 11px;
+    }
+    
+    .creatdate {
+      color: @tpl-color-asside;
+      display: block;
+      line-height: normal;
+      margin-top: -2px;
+    }
+
+    span {
+      font-size: @t3-font-size-smaller;
+      padding-left: @t3-global-padding / 5;
+    }
+
+    > div > a.mostread {
+      font-weight: bold;
+      color: @tpl-sportlight-title-bg; 
+      display: block;
+      margin: 5px 0 0;
+      line-height: 18px;
+
+      &:hover, &:focus, &:active {
+        color: @link-color;
+        text-decoration: none;
+      }
+    }
+
+    img {
+      border-radius: 2px;
+      float: left;
+      position: inherit;
+      top: 0;
+    }
+
+    .readon {
+      display: block;
+      margin-top: 5px;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+//Last View
+#ja-bulletin {
+  .lastviews {
+    li {
+      background: @white;
+      border-radius: 2px;   
+      border: solid 1px @gray-lighter;
+      margin: 0;
+      padding: (@t3-global-padding / 4) @t3-global-padding / 2;
+      &:first-child {
+        padding-top: (@t3-global-padding / 4);
+      }
+
+      .creatdate,
+      .mostread {
+        display: inline-block;
+      }
+
+      a.mostread {
+        color: @link-color;
+        &:hover, &:focus, &:active { color: @link-hover-color;}
+      }
+
+      .creatdate {
+        border-right: solid 1px @gray-lighter; 
+        margin-right: 10px;
+        padding-right: 10px;
+      }
+
+      .lastviews-image {
+        display: inline;
+      }
+    } 
+  }
+}
