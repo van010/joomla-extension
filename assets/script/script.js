@@ -221,76 +221,79 @@ var JASlider = function (element, options) {
 		this.vars = vars;
 
 		//Description
-		// this.initMasker();
+		this.initMasker();
 
-		// //Get initial images
-		// if (options.animation === 'slice') {
-		// 	mainItems.css('display', 'none');
-		// 	vars.mainItems = imgItems;
-		// 	vars.curImg = vars.mainItems[vars.curIdx];
-		// 	vars.sliceImg = new Element('img', {
-		// 		'src': vars.curImg.src
-		// 	}).inject(new Element('div', {
-		// 		'class': 'ja-slide-sliceimg'
-		// 	}).inject(vars.mainFrame, 'top'));
+		/* // Get initial images
+		if (options.animation === 'slice') {
+			mainItems.css('display', 'none');
+			vars.mainItems = imgItems;
+			vars.curImg = vars.mainItems[vars.curIdx];
+			vars.sliceImg = new Element('img', {
+				'src': vars.curImg.src
+			}).inject(new Element('div', {
+				'class': 'ja-slide-sliceimg'
+			}).inject(vars.mainFrame, 'top'));
 
-		// 	var ofsParent = mainFrame.getOffsetParent() || mainWrap,
-		// 		opCoord = ofsParent.getCoordinates();
+			var ofsParent = mainFrame.getOffsetParent() || mainWrap,
+				opCoord = ofsParent.getCoordinates();
 
-		// 	//Set first background
-		// 	mainFrame.css({
-		// 		position: 'relative',
-		// 		left: (opCoord.width - options.mainWidth) / 2 - parseInt(ofsParent.css('padding-left')) - parseInt(ofsParent.css('border-left-width')),
-		// 		top: (opCoord.height - options.mainHeight) / 2 - parseInt(ofsParent.css('padding-top')) - parseInt(ofsParent.css('border-top-width')),
-		// 		overflow: 'hidden',
-		// 		display: 'block',
-		// 		width: options.mainWidth,
-		// 		height: options.mainHeight
-		// 	});
-		// }
+			//Set first background
+			mainFrame.css({
+				position: 'relative',
+				left: (opCoord.width - options.mainWidth) / 2 - parseInt(ofsParent.css('padding-left')) - parseInt(ofsParent.css('border-left-width')),
+				top: (opCoord.height - options.mainHeight) / 2 - parseInt(ofsParent.css('padding-top')) - parseInt(ofsParent.css('border-top-width')),
+				overflow: 'hidden',
+				display: 'block',
+				width: options.mainWidth,
+				height: options.mainHeight
+			});
+		} */
 
-		// if (options.animation == 'move') {
-		// 	vars.offset -= parseInt(mainFrame.css('margin-left'));
-		// 	if (isNaN(vars.offset)) {
-		// 		vars.offset = 0;
-		// 	}
+		if (options.animation == 'move') {
+			vars.offset -= parseInt(mainFrame.css('margin-left'));
+			if (isNaN(vars.offset)) {
+				vars.offset = 0;
+			}
 
-		// 	if (options.maskStyle) {
-		// 		mainItems[0].clone().inject(mainFrame);
-		// 		mainItems[vars.total - 1].clone().inject(mainFrame, 'top');
-		// 	}
+			if (options.maskStyle) {
+				mainItems[0].clone().inject(mainFrame);
+				mainItems[vars.total - 1].clone().inject(mainFrame, 'top');
+			}
+			
+			mainFrame.css(vars.modes[1], vars.size * (vars.total + 2));
 
-		// 	mainFrame.css(vars.modes[1], vars.size * (vars.total + 2));
+			// vars.fx = new Fx.Tween(mainFrame, Object.append(Object.clone(vars.fxop), {
+			// 	onComplete: this.animFinished.bind(this)
+			// })).set(vars.modes[0], -vars.curIdx * vars.size + vars.offset);
+			vars.fx = $(mainFrame).animate(Object.assign({}, vars.fxop, {
+				complete: this.animFinished()
+			})).css(vars.modes[0], -vars.curIdx * vars.size + vars.offset);
+		}
 
-		// 	vars.fx = new Fx.Tween(mainFrame, Object.append(Object.clone(vars.fxop), {
-		// 		onComplete: this.animFinished.bind(this)
-		// 	})).set(vars.modes[0], -vars.curIdx * vars.size + vars.offset);
-		// }
-
-		// if (options.animation === 'fade') {
-		// 	var fadeop = Object.assign({ ...vars.fxop },
-		// 		{
-		// 			property: 'opacity',
-		// 			onComplete: function (item) {
-		// 				if (item.css('opacity') === '1') {
-		// 					this.animFinished();
-		// 				}
-		// 			}.bind(this)
-		// 		});
-		// 	// .store('fx', new Fx.Tween(item, fadeop));
-		// 	$($.each(mainItems, function (idx, item) {
-		// 		$(item).css({
-		// 			position: 'absolute',
-		// 			top: 0,
-		// 			opacity: 0,
-		// 			zIndex: 1,
-		// 			visibility: 'visible'
-		// 		}).data('fx', $(item).animate(fadeop));
-		// 	})[vars.curIdx]).css({
-		// 		opacity: 2,
-		// 		zIndex: 5
-		// 	});
-		// }
+		/* if (options.animation === 'fade') {
+			var fadeop = Object.assign({ ...vars.fxop },
+				{
+					property: 'opacity',
+					onComplete: function (item) {
+						if (item.css('opacity') === '1') {
+							this.animFinished();
+						}
+					}.bind(this)
+				});
+			// .store('fx', new Fx.Tween(item, fadeop));
+			$($.each(mainItems, function (idx, item) {
+				$(item).css({
+					position: 'absolute',
+					top: 0,
+					opacity: 0,
+					zIndex: 1,
+					visibility: 'visible'
+				}).data('fx', $(item).animate(fadeop));
+			})[vars.curIdx]).css({
+				opacity: 2,
+				zIndex: 5
+			});
+		} */
 
 		// this.initMainItemAction();
 		// this.initMainCtrlButton();
@@ -305,6 +308,68 @@ var JASlider = function (element, options) {
 
 		// this.prepare(false, vars.curIdx);
 		// this.animFinished();
+	};
+
+	this.initMasker = function () {
+		const slider = this.vars.slider;
+		const maskDesc = slider.find('.maskDesc');
+
+		if (!maskDesc) {
+			return;
+		}
+
+		if (this.options.showDesc) {
+			maskDesc.css({
+				'display': 'block',
+				'position': 'absolute',
+				'width': this.options.maskWidth,
+				'height': this.options.maskHeigth,
+				'opacity': this.options.maskOpacity
+			});
+
+			if (this.options.animation === 'move' && this.options.maskStyle) {
+				//options.maskAlign = 'left';
+				this.options.maskTransitionStyle = 'opacity';
+			}
+
+			maskDesc.css(this.options.maskAlign, Math.max(0, this.vars.rearSize, this.options.edgemargin));
+
+			var descs = this.vars.desciptions || slider.find('.ja-slide-desc');
+			var property = this.options.maskTransitionStyle === 'opacity' ? 'opacity' : this.options.maskAlign;
+			var valueOn = property === 'opacity' ? this.options.maskOpacity : 1 + this.options.edgemargin;
+			var valueOff = property === 'opacity' ? 0.001 : (this.options.maskAlign === 'top' || this.options.maskAlign === 'bottom' 
+				? -this.options.maskHeigth : -this.options.maskWidth);
+
+
+			var maskDescFx = maskDesc.animate({
+				opacity: 0.5,
+			}, 400, this.options.maskTransition);
+
+			if (this.options.descTrigger === 'mouseover') {
+				$(maskDesc, this.vars.mainFrame).mouseenter(() => {
+					// this.showDescription.bind(this);
+					this.showDescription();
+				}).mouseleave(() => {
+					// this.hideDescription.bind(this);
+					this.hideDescription();
+				});
+
+				maskDescFx.attr(valueOff);
+			} else {
+				maskDesc.css('opacity', this.options.maskOpacity);
+			}
+
+			Object.assign(this.vars, {
+				maskValueOn: valueOn,
+				maskValueOff: valueOff,
+				maskDescFx: maskDescFx,
+				maskDesc: maskDesc,
+				desciptions: descs
+			});
+
+		} else {
+			maskDesc.css('display', 'none');
+		}
 	};
 
 	this.stop = function () {
@@ -564,7 +629,7 @@ var JASlider = function (element, options) {
 		//Trigger the afterChange callback
 		if (options.showDesc) {
 			this.swapDescription();
-
+console.log(options.descTrigger);
 			if (options.descTrigger === 'load') {
 				this.showDescription();
 			}
@@ -1048,77 +1113,15 @@ var JASlider = function (element, options) {
 		var vars = this.vars;
 
 		vars.maskDesc.find('.ja-slide-desc').remove();
-
-		if (typeOf(vars.desciptions[vars.curIdx]) === 'element') {
-			vars.desciptions[vars.curIdx].inject(vars.maskDesc);
-		}
-	};
-
-	this.initMasker = function () {
-		var options = this.options,
-			vars = this.vars,
-			slider = vars.slider,
-			maskDesc = slider.find('.maskDesc');
-
-		if (!maskDesc) {
-			return;
-		}
-		console.log();
-		return;
-		if (options.showDesc) {
-			maskDesc.css({
-				'display': 'block',
-				'position': 'absolute',
-				'width': options.maskWidth,
-				'height': options.maskHeigth,
-				'opacity': options.maskOpacity
-			});
-
-			if (options.animation === 'move' && options.maskStyle) {
-				//options.maskAlign = 'left';
-				options.maskTransitionStyle = 'opacity';
-			}
-
-			maskDesc.css(options.maskAlign, Math.max(0, vars.rearSize, options.edgemargin));
-
-			var descs = vars.desciptions || slider.find('.ja-slide-desc');
-			var property = options.maskTransitionStyle === 'opacity' ? 'opacity' : options.maskAlign;
-			var valueOn = property === 'opacity' ? options.maskOpacity : 1 + options.edgemargin;
-			var valueOff = property === 'opacity'
-				? 0.001
-				: (options.maskAlign === 'top' || options.maskAlign === 'bottom' ? -options.maskHeigth : -options.maskWidth);
-
-			// maskDescFx = new Fx.Tween(maskDesc, {
-			var maskDescFx = maskDesc.animate({
-				opacity: 0.5,
-			}, 400, options.maskTransition);
-
-			if (options.descTrigger === 'mouseover') {
-				$([maskDesc, vars.mainFrame]).mouseenter(function () {
-					this.showDescription.bind(this);
-				}).mouseleave(function () {
-					this.hideDescription.bind(this);
-				});
-
-				maskDescFx.set(valueOff);
-			} else {
-				maskDesc.css('opacity', options.maskOpacity);
-			}
-
-			Object.assign(vars, {
-				maskValueOn: valueOn,
-				maskValueOff: valueOff,
-				maskDescFx: maskDescFx,
-				maskDesc: maskDesc,
-				desciptions: descs
-			});
-
-		} else {
-			maskDesc.css('display', 'none');
+		const curr_desc = vars.desciptions[vars.curIdx];
+		if (curr_desc.length === 0) return;
+		if (curr_desc.nodeType === 1) {
+			$(vars.maskDesc).append(curr_desc);
 		}
 	};
 
 	this.initThumbAction = function () {
+		console.log('init thumb');
 		var options = this.options,
 			vars = this.vars;
 
@@ -1259,30 +1262,36 @@ var JASlider = function (element, options) {
 	};
 
 	this.initMainCtrlButton = function () {
-		var options = this.options,
+		const options = this.options,
 			vars = this.vars;
-		// var mainWrap = '.' + vars.mainWrap.attr('class').split(' ').join(', .');
-		var mainWrap = vars.mainWrap;
-		var mainCtrlBtns = $([mainWrap.find('.ja-slide-prev'), mainWrap.find('.ja-slide-next')]);
+		const parent_wrap = this.vars.slider;
+		const mainCtrlBtns = $([parent_wrap.find('.ja-slide-prev'), parent_wrap.find('.ja-slide-next')]);
 
 		if (options.showNavBtn) {
-			mainCtrlBtns.css({
-				'opacity': options.navBtnOpacity,
-				'width': options.direction === 'horizontal'
-					? Math.max(vars.rearSize - vars.mainItemSpace / 2, 0) : options.mainWidth,
-				'height': options.direction === 'horizontal'
-					? options.mainHeight : Math.max(0, vars.rearSize - vars.mainItemSpace / 2)
-			}).off('mouseenter').off('mouseleave').on({
-				mouseenter: function () {
-					this.css('opacity', options.navBtnOpacity / 2);
-				},
-				mouseleave: function () {
-					this.css('opacity', options.navBtnOpacity);
-				}
+			$.each(mainCtrlBtns, (idx, el_) => {
+				const btn_control = $(el_);
+				/* btn_control.css({
+					'opacity': options.navBtnOpacity,
+					'width': options.direction === 'horizontal'
+						? Math.max(vars.rearSize - vars.mainItemSpace / 2, 0) : options.mainWidth,
+					'height': options.direction === 'horizontal'
+						? options.mainHeight : Math.max(0, vars.rearSize - vars.mainItemSpace / 2)
+				}); */
+				btn_control.off('mouseenter').off('mouseleave').on({
+					mouseenter: function () {
+						$(this).css('opacity', options.navBtnOpacity / 2);
+					},
+					mouseleave: function () {
+						$(this).css('opacity', options.navBtnOpacity);
+					}
+				});
 			});
 
 		} else {
-			mainCtrlBtns.setStyle('display', 'none');
+			mainCtrlBtns.each((idx, el_) => {
+				const btn_control = $(el_);
+				btn_control.css('display', 'none');
+			})
 		}
 	};
 
@@ -1362,8 +1371,7 @@ var JASlider = function (element, options) {
 
 	this.initProgressBar = function () {
 		var options = this.options,
-			vars = this.vars,
-			progress = vars.slider.find('.ja-slide-progress');
+			progress = this.vars.slider.find('.ja-slide-progress');
 
 		if (!progress) {
 			options.showProgress = false;
@@ -1371,9 +1379,8 @@ var JASlider = function (element, options) {
 			return false;
 		}
 
-		// progressFx: new Fx.Tween(progress, {
 		if (options.showProgress) {
-			Object.assign(vars, {
+			Object.assign(this.vars, {
 				progressWidth: options.mainWidth,
 				progressFx: progress.animate( // new Fx.Tween
 					{ width: 20 }, (options.interval - options.duration), 'linear'

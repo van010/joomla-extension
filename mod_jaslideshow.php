@@ -25,6 +25,7 @@ if (!class_exists("T3Common")) {
 }
 
 JHtml::_('JABehavior.jqueryeasing', true);
+$path = JURI::root() . 'modules/mod_jaslideshow/assets/jquery/';
 echo '<script src="'.$path.'jquery.easing.1.3.js" type="text/javascript"></script>';
 
 $helper = ModJASlideshow3::getInstance();
@@ -91,7 +92,8 @@ $thumbOpacity = $tmpParams->get('itemOpacity', '0.8');
 $duration = $tmpParams->get('duration', 400);
 $autoplay = $tmpParams->get('autoplay', 0);
 $interval = $tmpParams->get('interval', 5000);
-$effect = $tmpParams->get('effect', 'Fx.Transitions.Quad.easeInOut');
+$effect = $tmpParams->get('effect', 'linear');
+$marker_transition = $tmpParams->get('marker-transition', 'linear');
 $animation = $tmpParams->get('animation', 'move');
 $fbanimation = $tmpParams->get('fallback_anim', 'fade');
 $moveDirection = $tmpParams->get('move_direction', 'horizontal');
@@ -101,9 +103,6 @@ $numberBoxRows = $tmpParams->get('number_box_rows', 4);
 $animationRepeat = $tmpParams->get('animationRepeat', "yes");
 $animationRepeat = ($animationRepeat == "yes") ? "true" : "false";
 
-if (!strpos($effect, "Transitions")) {
-	$effect = 'Fx.Transitions.' . $effect;
-}
 //Description
 $showDescription = $tmpParams->get('showdesc', '');
 $showdescwhen = $tmpParams->get('showdescwhen', 'always');
@@ -268,7 +267,7 @@ if( $source  == 'images' && !empty($list) ){
 			maskOpacity: <?php echo $descOpacity; ?>,
 			maskAlign: Ja_maskAlign_<?php echo $module->id; ?>,
 			maskTransitionStyle: '<?php echo $tmpParams->get('masker-transition-style', 'opacity'); ?>',
-			maskTransition: '<?php echo $tmpParams->get('marker-transition', 'linear'); ?>',
+			maskTransition: '<?php echo $marker_transition; ?>',
 
 			showDesc: '<?php echo $showDescription; ?>',
 			descTrigger: '<?php echo $showdescwhen; ?>',
@@ -320,7 +319,8 @@ if( $source  == 'images' && !empty($list) ){
 			cookie_path = tmpl_name+"_direction";
 		}
 		
-		Ja_direction = Cookie.read(cookie_path);
+		// Ja_direction = Cookie.read(cookie_path);
+		Ja_direction = null;
 		if( Ja_direction == '' || Ja_direction == null){
 			Ja_direction = '<?php echo $direction; ?>';
 		}
@@ -340,7 +340,7 @@ if( $source  == 'images' && !empty($list) ){
 			}
 		}
 
-		window.jasliderInst.push(new JASlider('ja-slide-articles-<?php echo $module->id;?>', {
+		const options = {
 			slices: <?php echo $numberSlices; ?>,
 			boxCols: <?php echo $numberBoxCols; ?>,
 			boxRows: <?php echo $numberBoxRows; ?>,
@@ -351,7 +351,7 @@ if( $source  == 'images' && !empty($list) ){
 			
 			interval: <?php echo $interval; ?>,
 			duration: <?php echo $duration; ?>,
-			transition: <?php echo $effect; ?>,
+			transition: '<?php echo $effect; ?>',
 			
 			repeat: '<?php echo $animationRepeat; ?>',
 			autoPlay: <?php echo $autoplay; ?>,
@@ -379,7 +379,7 @@ if( $source  == 'images' && !empty($list) ){
 			maskOpacity: <?php echo $descOpacity; ?>,
 			maskAlign: Ja_maskAlign_<?php echo $module->id; ?>,
 			maskTransitionStyle: '<?php echo $tmpParams->get('masker-transition-style', 'opacity'); ?>',
-			maskTransition: <?php echo $tmpParams->get('marker-transition', 'Fx.Transitions.linear'); ?>,
+			maskTransition: '<?php echo $marker_transition; ?>',
 			
 			showDesc: '<?php echo $showDescription; ?>',
 			descTrigger: '<?php echo $showdescwhen; ?>',
@@ -394,7 +394,8 @@ if( $source  == 'images' && !empty($list) ){
 			
 			urls:['<?php echo implode('\',\'', $urls); ?>'],
 			targets:['<?php echo implode('\',\'', $targets); ?>']
-		}));
+		};
+		window.jasliderInst.push(new JASlider('ja-slide-articles-<?php echo $module->id;?>', options));
 	});
 </script>
 <?php } ?>
