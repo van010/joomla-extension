@@ -298,7 +298,7 @@ var JASlider = function (element, options) {
 		// this.initMainItemAction();
 		// this.initMainCtrlButton();
 		// this.initThumbAction();
-		// this.initControlAction();
+		this.initControlAction();
 		// this.initHoverBehavior();
 		// this.initProgressBar();
 		// this.initLoader();
@@ -387,9 +387,10 @@ var JASlider = function (element, options) {
 			return false;
 		}
 
-		if (typeOf(vars.iframeItems[vars.curIdx]) != 'null') {
-			var datasrc = vars.iframeItems[vars.curIdx].getProperty('data-src');
-			vars.iframeItems[vars.curIdx].setProperties({
+		const curr_iframe = vars.iframeItems[vars.curIdx];
+		if (typeof curr_iframe !== 'undefined') {
+			var datasrc = curr_iframe.attr('data-src');
+			curr_iframe.prop({
 				'src': datasrc,
 				'alt': datasrc
 			});
@@ -426,31 +427,33 @@ var JASlider = function (element, options) {
 	};
 
 	this.start = function () {
-		var vars = this.vars;
-		clearTimeout(vars.timer);
-		vars.timer = setTimeout(this[this.vars.direct].bind(this), this.options.interval)
+		clearTimeout(this.vars.timer);
+		this.vars.timer = setTimeout(this[this.vars.direct].bind(this), this.options.interval)
 	};
 
-	this.imgload = function (img, idx) {
+	this.imgload = function (img_, idx) {
+		// img_ type of jQuery
+		const img = img_[0];
 		if (img.complete && img.naturalWidth !== undefined) {
 			this.load(idx);
 			return;
 		}
 
-		var blank = this.blank,
-			src = img.src,
-			callback = function () {
-				this.load(idx);
-			}.bind(this),
-			onload = function () {
-				if (this.src === blank) {
-					return;
-				}
+		const blank = this.blank;
+		const src = img.src;
 
-				setTimeout(callback);
-			};
+		const callback = function () {
+			this.load(idx);
+		}.bind(this);
 
-		img.addEvent('load', onload).addEvent('error', onload);
+		const onload = function () {
+			if (this.src === blank) {
+				return;
+			}
+			setTimeout(callback);
+		};
+
+		img_.on('load', onload).on('error', onload);
 
 		if (img.readyState || img.complete) {
 			img.src = blank;
@@ -459,9 +462,10 @@ var JASlider = function (element, options) {
 	};
 
 	this.load = function (idx) {
-		var vars = this.vars;
+		const vars = this.vars;
+		const next_item = $(vars.mainItems[idx]);
 
-		vars.mainItems[idx].store('loaded', 1);
+		next_item.data('loaded', 1);
 
 		if (vars.nextIdx == idx) {
 			if (vars.loaderFx) {
@@ -501,8 +505,7 @@ var JASlider = function (element, options) {
 		}
 
 		vars.nextIdx = idx;
-
-		if (curImg.get('loaded')) {
+		if (curImg.data('loaded')) {
 			if (idx == vars.curIdx) {
 				return false;
 			}
@@ -511,7 +514,7 @@ var JASlider = function (element, options) {
 		} else {
 			if (vars.loaderFx) {
 				vars.loader.css('display', 'block');
-				vars.loaderFx.start('opacity', 0.3);
+				$(this.vars.loaderFx).animate({opacity: .3}, 0);
 			}
 
 			this.imgload(curImg, idx);
@@ -526,9 +529,10 @@ var JASlider = function (element, options) {
 		if (vars.curIdx == idx) {
 			return false;
 		}
-		if (typeOf(vars.iframeItems[vars.curIdx]) != 'null') {
-			var datasrc = vars.iframeItems[vars.curIdx].getProperty('data-src');
-			vars.iframeItems[vars.curIdx].setProperties({
+
+		if (typeof vars.iframeItems[vars.curIdx] !== 'undefined') {
+			var datasrc = $(vars.iframeItems[vars.curIdx]).data('src');
+			$(vars.iframeItems[vars.curIdx]).prop({
 				'src': datasrc,
 				'alt': datasrc
 			});
@@ -541,18 +545,28 @@ var JASlider = function (element, options) {
 
 		if (vars.thumbMaskFx) {
 			if (idx <= vars.thumbStartIdx || idx >= vars.thumbStartIdx + options.thumbItems - 1) {
-				vars.thumbStartIdx = Math.max(0, Math.min(idx - options.thumbItems + 2, vars.total - options.thumbItems));
 
-				vars.thumbBoxFx.start(-vars.thumbStartIdx * vars.thumbStep);
-				if (vars.handleBoxFx) {
-					vars.handleBoxFx.start(-vars.thumbStartIdx * vars.thumbStep);
+				var thumb_box_anim_properties = {};
+				vars.thumbStartIdx = Math.max(0, Math.min(idx - options.thumbItems + 2, vars.total - options.thumbItems));
+				const thumb_box_duration = vars.thumbBoxFx.options.duration;
+				const thumb_box_transition = vars.thumbBoxFx.options.transition;
+
+				thumb_box_anim_properties[vars.thumbBoxFx.options.property] = -vars.thumbStartIdx * vars.thumbStep;
+				vars.thumbBoxFx.elem.animate(thumb_box_anim_properties, thumb_box_duration, thumb_box_transition);
+
+				if (vars.handleBoxFx.length > 0) {
+					vars.handleBoxFx.animate(thumb_box_anim_properties, thumb_box_duration, thumb_box_transition);
 				}
 			}
+			
+			vars.thumbMaskFx.elem.animate({
+				[vars.thumbMaskFx.options.property]: (idx - vars.thumbStartIdx) * vars.thumbStep - 2000
+			}, vars.thumbMaskFx.options.duration, vars.thumbMaskFx.options.transition);
 
-			vars.thumbMaskFx.start((idx - vars.thumbStartIdx) * vars.thumbStep - 2000);
-			vars.thumbItems.removeClass('active')[idx].addClass('active');
-			if (vars.handleItems.length) {
-				vars.handleItems.removeClass('active')[idx].addClass('active');
+			// vars.thumbMaskFx.start((idx - vars.thumbStartIdx) * vars.thumbStep - 2000);
+			$(vars.thumbItems).removeClass('active').eq(idx).addClass('active');
+			if ($(vars.handleItems).length > 0) {
+				$(vars.handleItems).removeClass('active').eq(idx).addClass('active');
 			}
 		}
 
@@ -569,8 +583,11 @@ var JASlider = function (element, options) {
 	this.move = function (force, idx) {
 		var vars = this.vars;
 		vars.curIdx = idx;
-		vars.mainFrame.setStyle(vars.modes[1], vars.size * (vars.total + 2));
-		vars.fx.start(vars.modes[0], -idx * vars.size + vars.offset);
+		vars.mainFrame.css(vars.modes[1], vars.size * (vars.total + 2));
+		// vars.fx.start(vars.modes[0], -idx * vars.size + vars.offset);
+		$(vars.fx).animate({
+			[vars.modes[0]]: -idx * vars.size + vars.offset
+		});
 	};
 
 	this.fade = function (force, idx) {
@@ -629,14 +646,14 @@ var JASlider = function (element, options) {
 		//Trigger the afterChange callback
 		if (options.showDesc) {
 			this.swapDescription();
-console.log(options.descTrigger);
+
 			if (options.descTrigger === 'load') {
 				this.showDescription();
 			}
 		}
 
 		if (options.urls) {
-			vars.mainFrame.setStyle('cursor', options.urls[vars.curIdx] ? 'pointer' : '');
+			vars.mainFrame.css('cursor', options.urls[vars.curIdx] ? 'pointer' : '');
 		}
 
 		if (!vars.stop && (options.autoPlay && (vars.curIdx < vars.total - 1 || options.repeat == 'true'))) {
@@ -644,6 +661,9 @@ console.log(options.descTrigger);
 
 			if (options.showProgress) {
 				vars.progressFx.start(vars.progressWidth);
+				$(this.vars.progressFx).css({
+					width: this.vars.progressWidth
+				}).animate({width: this.vars.progressWidth}, 'fast');
 			}
 		}
 	};
@@ -1148,13 +1168,26 @@ console.log(options.descTrigger);
 			// var	thumbMaskFx = new Fx.Tween(thumbMask, fxoptions);
 			// var thumbBoxFx = new Fx.Tween(thumbBox, fxoptions).set(-thumbStartIdx * thumbStep);
 
-			var thumbMaskFx = thumbMask.animate(
+			/* var thumbMaskFx = thumbMask.animate(
 				{ left: 40 }, fxoptions.duration, fxoptions.transition
-			);
+			); */
 			// var thumbBoxFx = thumbBox.animate(fxoptions).attr(-thumbStartIdx * thumbStep);
-			var thumbBoxFx = thumbBox.animate(
+			/* var thumbBoxFx = thumbBox.animate(
 				{ left: 40 }, fxoptions.duration, fxoptions.transition
-			);
+			); */
+			const thumbMaskFx = new $.Tween(thumbMask, fxoptions);
+			const thumbBoxFx = new $.Tween(thumbBox, fxoptions);
+
+			const property = `offset${this.upper_first_letter(fxoptions.property)}`;
+			// property top, offsetTop = -thumbStartIdx * thumbStep
+			var animationProperties = {};
+			animationProperties[fxoptions.property] = -thumbStartIdx * thumbStep;
+			thumbBox.animate(animationProperties, fxoptions.duration, fxoptions.transition);
+
+			/* thumbMask.animate(
+				{ left: 40 }, fxoptions.duration, fxoptions.transition
+			); */
+
 			var handleBoxFx = null;
 
 			if (handleItems.length) {
@@ -1242,21 +1275,18 @@ console.log(options.descTrigger);
 	};
 
 	this.initControlAction = function () {
-		var options = this.options,
-			slider = this.vars.slider,
-			controls = ['prev', 'play', 'stop', 'playback', 'next'],
-			btnarr;
+		const slider = this.vars.slider;
+		const controls = ['prev', 'play', 'stop', 'playback', 'next'];
 
 		for (var j = 0, jl = controls.length; j < jl; j++) {
 			if (this[controls[j]]) {
-				btnarr = slider.find('.ja-slide-' + controls[j]);
+				var btnarr = slider.find('.ja-slide-' + controls[j]);
+				if (btnarr.length === 0) return ;
 
-				for (var i = 0, il = btnarr.length; i < il; i++) {
-					$(btnarr[i]).on(options.navBtnTrigger, this[controls[j]].bind(this, true))
-						.on(options.navBtnTrigger, function () {
-							this.blur();
-						});
-				}
+				btnarr.on(this.options.navBtnTrigger, this[controls[j]].bind(this, true))
+				.on(this.options.navBtnTrigger, function () {
+					this.blur();
+				});
 			}
 		}
 	};
@@ -1407,5 +1437,10 @@ console.log(options.descTrigger);
 			}, 250)
 		});
 	};
+
+	this.upper_first_letter = function (str){
+		return str.charAt(0).toUpperCase() + str.slice(1);
+	}
+
 	this.initialize(this.element);
 }
