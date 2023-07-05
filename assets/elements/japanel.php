@@ -11,6 +11,7 @@ require_once(dirname(__FILE__).'/../behavior.php');
 class JFormFieldJapanel extends JFormField {
     protected $type = 'Japanel';
     protected $asset_path = 'modules/mod_jaslideshow/assets/elements/';
+
     
     protected function getInput() {
         $this->init();
@@ -21,7 +22,12 @@ class JFormFieldJapanel extends JFormField {
     	$doc = JFactory::getDocument();
         $path = JURI::root() . $this->asset_path;
 
+//        $doc->addScript(JURI::root().'modules/mod_jaslideshow/assets/jquery/mootools-core.js');
         $doc->addScript($path.'japanel/depend.js');
+
+		if (version_compare(JVERSION, '4', '>=')){
+			JHtml::_('JABehavior.jqueryeasing', true);
+		}
 
         if (!version_compare(JVERSION, '4', '>=')){
 			JHtml::_('behavior.framework', true);

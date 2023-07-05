@@ -262,12 +262,14 @@ var JASlider = function (element, options) {
 			
 			mainFrame.css(vars.modes[1], vars.size * (vars.total + 2));
 
-			// vars.fx = new Fx.Tween(mainFrame, Object.append(Object.clone(vars.fxop), {
-			// 	onComplete: this.animFinished.bind(this)
-			// })).set(vars.modes[0], -vars.curIdx * vars.size + vars.offset);
 			vars.fx = $(mainFrame).animate(Object.assign({}, vars.fxop, {
 				complete: this.animFinished()
 			})).css(vars.modes[0], -vars.curIdx * vars.size + vars.offset);
+
+			// vars.fx = new $.Tween(mainFrame, $.extend({}, vars.fxop, {
+			// 	// complete: this.animFinished.bind(this)
+			// }));
+			// mainFrame.animate({[vars.modes[0]]: -vars.curIdx * vars.size + vars.offset});
 		}
 
 		/* if (options.animation === 'fade') {
@@ -342,7 +344,7 @@ var JASlider = function (element, options) {
 
 
 			var maskDescFx = maskDesc.animate({
-				opacity: 0.5,
+				'opacity': this.options.maskOpacity
 			}, 400, this.options.maskTransition);
 
 			if (this.options.descTrigger === 'mouseover') {
@@ -519,6 +521,7 @@ var JASlider = function (element, options) {
 
 			this.imgload(curImg, idx);
 		}
+		this.animFinished();
 	};
 
 	this.run = function (force, idx) {

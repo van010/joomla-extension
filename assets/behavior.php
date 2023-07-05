@@ -28,7 +28,7 @@ if(!class_exists('JHtmlJABehavior')) {
 		 */
 		protected static $loaded = array();
 		
-		public static function isJoomla30() {
+		public static function greaterThanJoomla30() {
 			return version_compare(JVERSION, '3.0', 'ge');
 		}
 	
@@ -45,7 +45,7 @@ if(!class_exists('JHtmlJABehavior')) {
 		 */
 		public static function jquery($noConflict = true, $debug = null)
 		{
-			if(self::isJoomla30()) {
+			if(self::greaterThanJoomla30()) {
 				JHtml::_('jquery.framework', $noConflict, $debug);
 			} else {
 				self::jquery25($noConflict, $debug);
@@ -97,7 +97,7 @@ if(!class_exists('JHtmlJABehavior')) {
 		 */
 		public static function jqueryui(array $components = array('core'), $debug = null)
 		{
-			if(self::isJoomla30()) {
+			if(self::greaterThanJoomla30()) {
 				JHtml::_('jquery.ui', $components, $debug);
 			} else {
 				self::jqueryui25($components, $debug);
@@ -138,7 +138,7 @@ if(!class_exists('JHtmlJABehavior')) {
 		 */
 		public static function jquerychosen($selector = '.advandedSelect', $debug = null)
 		{
-			if(self::isJoomla30()) {
+			if(self::greaterThanJoomla30()) {
 				JHtml::_('formbehavior.chosen', $selector, $debug);
 			} else {
 				self::jquerychosen25($selector, $debug);
@@ -204,10 +204,14 @@ if(!class_exists('JHtmlJABehavior')) {
 				$config = JFactory::getConfig();
 				$debug  = (boolean) $config->get('debug');
 			}
+			$path = JURI::root() . 'modules/mod_jaslideshow/assets/jquery/';
+			$document = JFactory::getDocument();
+			$document->addScript($path.'jquery.easing.1.3.js');
+
+			// JHtml::_('script', JA_BEHAVIOR_URL.'jquery/jquery.easing.1.3.js');
+			// JHtml::script(Juri::base() . JA_BEHAVIOR_URL.'jquery/jquery.easing.1.3.js');
 	
-			JHtml::_('script', JA_BEHAVIOR_URL.'jquery/jquery.easing.1.3.js');
-	
-			return;
+			// return;
 		}
 		
 	}

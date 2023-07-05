@@ -22,7 +22,6 @@ function jaListImages() {
     const orderby = jQuery("#jform_params_source_images_orderby").val();
     const sortby = jQuery("#jform_params_source_images_sort").val();
     const query = "jarequest=images&path=" + folder_path + "&jatask=loadImages&orderby=" + orderby + "&sortby=" + sortby;
-    console.log(location.href);
 
     jQuery.ajax({
         url: location.href,

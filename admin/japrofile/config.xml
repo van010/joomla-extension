@@ -64,7 +64,7 @@
 				<field 
 					name="effect" 
 					type="list" 
-					default="Fx.Transitions.Quad.easeInOut"
+					default="linear"
 					label="ANIMATION_TRANSITION" 
 					description="ANIMATION_TRANSITION_DESC">
 						<option value="linear">Linear</option>
@@ -322,7 +322,7 @@
 				<field 
 					name="marker-transition" 
 					type="list" 
-					default="Fx.Transitions.linear"
+					default="linear"
 					label="MASK_TRANSITION" 
 					description="MASK_TRANSITION_DESC">
 						<option value="linear">Linear</option>

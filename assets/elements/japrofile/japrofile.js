@@ -162,20 +162,6 @@ var JAProfileConfig = function (options){
 		
 		return '';
 	};
-
-	this.valuesFrom = function(els){
-		var vals = [];
-
-		((typeOf(els) == 'element' && els.get('tag') == 'select') ? $$([els]) : $$(els)).each(function(el){
-			var type = el.type,
-				value = (el.get('tag') == 'select') ? el.getSelected().map(function(opt){
-					return document.id(opt).get('value');
-				}) : ((type == 'radio' || type == 'checkbox') && !el.checked) ? null : el.get('value');
-
-			vals.include(Array.from(value));
-		});
-		return vals.flatten();
-	};
 	
 	/****  Functions of Profile  ----------------------------------------------   ****/
 	this.deleteProfile = function(){
@@ -205,18 +191,50 @@ var JAProfileConfig = function (options){
 		
 		if(task){
 			JAFileConfig.profiles[this.vars.active] = this.rebuildData();
-			this.submitForm(JAFileConfig.mod_url + '?jaction=save&profile=' + this.vars.active, JAFileConfig.profiles[this.vars.active], 'profile', task);
+			this.submitForm(JAFileConfig.mod_url,
+				JAFileConfig.profiles[this.vars.active], this.vars.active,'profile', task);
 		}
 	};
 	
-	this.submitForm = function(url, request, type, task){
-		if(JAFileConfig.run){
+	this.submitForm = function(url, data, profile, type, task){
+		/*if(JAFileConfig.run){
 			JAFileConfig.ajax.cancel();
-		}
+		}*/
+
+		// index.php?option=com_ajax&module=jajlex_articles&method=fetch_data&mod_id=802&limit=7&offset=0&format=json&lang=it
+		const save_endpoint = `index.php?option=com_ajax&module=jaslideshow&method=save&format=json`;
+
+		const baseUrl = Joomla.getOptions('system.paths').root;
+		var encodedData = encodeURIComponent(JSON.stringify(data));
+		const url_params = {
+			option: 'com_ajax',
+			module: 'jaslideshow',
+			method: 'save_profile',
+			profile: profile,
+			source_data: encodedData,
+			// mod_id: mod_id,
+			format: 'json',
+		};
+
+		const params_string = new URLSearchParams(url_params).toString();
+		const query_string = baseUrl + '/index.php?' + params_string.replace(/%2C/g, ','); // Replace %2C with a comma
+		// const data_query = '&' + encodeURI('jform[params][' + data + ']');
 		
 		JAFileConfig.run = true;
+		console.log(data);
+		$.ajax({
+			method: 'post',
+			url: query_string,
+			// data: data_query,
+			dataType: 'json',
+			success: function (res) {
+				var obj = res || {};
+				console.log(`${obj.message} | ${obj.profile} | ${obj.type}`);
+				Joomla.submitform(task, document.getElementById('module-form') || document.getElementById('modules-form'));
+			}
+		})
     	
-		JAFileConfig.ajax = new Request.JSON({
+		/*JAFileConfig.ajax = new Request.JSON({
 			url: url, 
 			onComplete: function(result){
 				
@@ -279,20 +297,47 @@ var JAProfileConfig = function (options){
 					Joomla.submitform(task, document.getElementById('module-form') || document.getElementById('modules-form'));
 				}
 			}
-		}).post(request);
-	},
+		}).post(request);*/
+	};
 	
 	this.rebuildData = function (){
-		var els = this.serializeArray(),
-			json = {};
+		var els = this.serializeArray();
+		var json = {};
 		$.each(els, (idx, el_) => {
-			var el = $(el_);
-			// if(values.length){
-			// 	json[this.getName(el)] = el.name.substr(-2) == '[]' ? values : values[0];
-			// }
-		}, this);
+			const el = $(el_);
+			const value = this.getValueFrom(el);
+			if(Object.keys(value).length > 0){
+				var key = Object.keys(value)[0]
+				var val = value[key];
+				json[key] = val;
+			}
+		});
 		
 		return json;
+	}
+
+	this.getValueFrom = function (el) {
+		const js_el = el[0];
+		const tag_name = js_el.localName; // select, input,...
+		const tag_type = js_el.type; // select-one, text, radio, checkbox,..
+		const el_name = this.getName(el);
+		var obj_value = {};
+
+		if (js_el.nodeType === 1){
+			if (tag_name === 'select'){
+				obj_value[el_name] = el.val();
+				return obj_value;
+			}
+			if (tag_type === 'text'){
+				obj_value[el_name] = el.val();
+				return obj_value;
+			}
+			if ((tag_type === 'radio' || tag_type === 'checkbox') && js_el.checked){
+				obj_value[el_name] = el.val();
+				return obj_value;
+			}
+		}
+		return obj_value;
 	}
 
 	this.init();
