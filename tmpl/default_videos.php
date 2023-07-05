@@ -1,13 +1,12 @@
 <?php
+
 /**
  * $JA#COPYRIGHT$
  */
 defined('_JEXEC') or die('Restricted access');
 ?>
-<div
-	class="ja-slidewrap<?php echo $skin_name; ?><?php echo $params->get('moduleclass_sfx'); ?> ja-<?php echo $source; ?>"
-	id="ja-slide-articles-<?php echo $module->id; ?>" style="visibility:hidden">
-	<div class="ja-slide-main-wrap<?php echo($navAlignment == 'vertical_left' ? ' ja-slide-right' : '') ?>">
+<div class="ja-slidewrap<?php echo $skin_name; ?><?php echo $params->get('moduleclass_sfx'); ?> ja-<?php echo $source; ?>" id="ja-slide-articles-<?php echo $module->id; ?>" style="visibility:hidden">
+	<div class="ja-slide-main-wrap<?php echo ($navAlignment == 'vertical_left' ? ' ja-slide-right' : '') ?>">
 		<div class="ja-slide-mask"></div>
 		<div class="ja-slide-main">
 			<?php foreach ($list as $k => $item) : ?>
@@ -39,14 +38,14 @@ defined('_JEXEC') or die('Restricted access');
 		<div class="ja-slide-descs">
 			<?php foreach ($list as $item) : ?>
 				<div class="ja-slide-desc">
-					<a <?php echo $target; ?>  href="<?php echo $item->link; ?>">
+					<a <?php echo $target; ?> href="<?php echo $item->link; ?>">
 						<span><?php echo $helper->trimString($item->title, $titleMaxChars); ?></span>
 					</a>
 					<?php echo $helper->trimString($item->introtext, $descMaxChars, $includeTags); ?>
-					<?php if ($showDescription == 'desc' && $readmoretext != ''): ?>
-					<a <?php echo $target; ?> class="readon readmore" href="<?php echo $item->link; ?>">
-						<?php echo $readmoretext; ?>
-					</a>
+					<?php if ($showDescription == 'desc' && $readmoretext != '') : ?>
+						<a <?php echo $target; ?> class="readon readmore" href="<?php echo $item->link; ?>">
+							<?php echo $readmoretext; ?>
+						</a>
 					<?php endif; ?>
 				</div>
 			<?php endforeach; ?>
@@ -74,9 +73,9 @@ defined('_JEXEC') or die('Restricted access');
 							<?php if ($navShowDate) : ?>
 								<span class="ja-createdate clearfix">
 									<?php echo JTEXT::_("POSTED_DATE") . "&nbsp;	" . JHTML::_('date', $item->date, JText::_('DATE_FORMAT_LC4')); ?>
-								 </span>
+								</span>
 							<?php endif; ?>
-							<?php if ($navShowdesc): ?>
+							<?php if ($navShowdesc) : ?>
 								<?php echo $helper->trimString(strip_tags($item->introtext), $navDescmaxlength); ?>
 							<?php endif; ?>
 						</div>
@@ -101,7 +100,7 @@ defined('_JEXEC') or die('Restricted access');
 			<div class="ja-slide-thumbs">
 				<?php foreach ($list as $key => $item) : ?>
 					<div class="ja-slide-thumb">
-						<span><?php echo($key + 1); ?></span>
+						<span><?php echo ($key + 1); ?></span>
 					</div>
 				<?php endforeach; ?>
 			</div>
@@ -127,13 +126,13 @@ defined('_JEXEC') or die('Restricted access');
 		</p>
 	<?php endif ?>
 
-	<?php if ($control): ?>
+	<?php if ($control) : ?>
 		<div class="ja-slide-buttons clearfix">
 			<span class="ja-slide-prev">&laquo; <?php echo JText::_('PREVIOUS'); ?></span>
 			<span class="ja-slide-playback">&lsaquo; <?php echo JText::_('PLAYBACK'); ?></span>
 			<span class="ja-slide-stop"><?php echo JText::_('STOP'); ?></span>
 			<span class="ja-slide-play"><?php echo JText::_('PLAY'); ?> &rsaquo;</span>
-			<span class="ja-slide-next"><?php echo JText::_('NEXT'); ?>  &raquo;</span>
+			<span class="ja-slide-next"><?php echo JText::_('NEXT'); ?> &raquo;</span>
 		</div>
 	<?php endif; ?>
 
