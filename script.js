@@ -171,19 +171,15 @@
 		
 		initialize: function(){
 			if(window.jasliderInst && window.jasliderInst.length && !JASliderSupport.inited){
-				console.log(jQuery(window.jasliderInst));
-				jQuery(window.jasliderInst).each(function(inst){
-					inst.lastRZWidth = false;
-					console.log(inst);
-					inst._ooptions = Object.clone(inst.options);
-				});
+				window.jasliderInst[0].lastRZWidth = false;
+				window.jasliderInst[0]._ooptions = Object.assign({}, window.jasliderInst[0].options);
 				
-				
-				window.addEventListener('resize', function(){
+				window.addEventListener('resize', () => {
 					clearTimeout(JASliderSupport.sid);
 					JASliderSupport.sid = setTimeout(JASliderSupport.resize, 100);
-				}).addEventListener('orientationchange', function(){
-					widnow.fireEvent('resize');
+				});
+				window.addEventListener('orientationchange', () => {
+					window.fireEvent('resize');
 				});
 				
 				JASliderSupport.resize();
@@ -192,74 +188,72 @@
 			}
 		},
 		resize: function(){
-			window.jasliderInst.each(function(instance){
+			const instance = window.jasliderInst[0];
+			var ooptions = instance._ooptions,
+			options = instance.options,
+			vars = instance.vars,
+			ratio = vars.slider.css('width', '').width() / ooptions.mainWidth,
+			nwidth = Math.floor(ooptions.mainWidth * ratio),
+			nheight = Math.floor(ooptions.mainHeight * ratio),
+			ntwidth = Math.floor(ooptions.thumbWidth * ratio),
+			ntheight = Math.floor(ooptions.thumbHeight * ratio);
 
-				var ooptions = instance._ooptions,
-				options = instance.options,
-				vars = instance.vars,
-				ratio = vars.slider.setStyle('width', '').getWidth() / ooptions.mainWidth,
-				nwidth = Math.floor(ooptions.mainWidth * ratio),
-				nheight = Math.floor(ooptions.mainHeight * ratio),
-				ntwidth = Math.floor(ooptions.thumbWidth * ratio),
-				ntheight = Math.floor(ooptions.thumbHeight * ratio);
+			if(instance.lastRZWidth != nwidth){
+				JASliderSupport.rzTimeout = (/iphone|ipod|ipad|android|ie|blackberry|fennec/).test(navigator.userAgent.toLowerCase()) ? 300 : 100;
+				instance.lastRZWidth = nwidth;
 
-				if(instance.lastRZWidth != nwidth){
-					JASliderSupport.rzTimeout = (/iphone|ipod|ipad|android|ie|blackberry|fennec/).test(navigator.userAgent.toLowerCase()) ? 300 : 100;
-					instance.lastRZWidth = nwidth;
+				options.mainWidth = nwidth;
+				options.mainHeight = nheight;
+				options.mainWidth = nwidth;
+				options.thumbWidth = ntwidth;
+				options.thumbHeight = ntheight;
+				options.maskWidth = Math.floor(ooptions.maskWidth * ratio);
+				options.maskHeigth = Math.floor(ooptions.maskHeigth * ratio);
 
-					options.mainWidth = nwidth;
-					options.mainHeight = nheight;
-					options.mainWidth = nwidth;
-					options.thumbWidth = ntwidth;
-					options.thumbHeight = ntheight;
-					options.maskWidth = Math.floor(ooptions.maskWidth * ratio);
-					options.maskHeigth = Math.floor(ooptions.maskHeigth * ratio);
+				vars.mainWrap.css({
+					'width': nwidth,
+					'height': nheight
+				});
 
-					vars.mainWrap.setStyles({
+				vars.mainFrame.css({
+					'width': nwidth,
+					'height': nheight
+				});
+
+				if(options.animation == 'move'){
+					vars.mainFrame.find('.ja-slide-item').css({
 						'width': nwidth,
 						'height': nheight
 					});
 
-					vars.mainFrame.setStyles({
-						'width': nwidth,
-						'height': nheight
-					});
+					const mainItem = $(vars.mainItems[0]);
+					const mainItemSpace = options.maskStyle ? 10 : 0,
+						isHorz = (options.direction == 'horizontal'),
+						mainItemSize = isHorz ? (mainItem.width() + parseInt(mainItem.css('margin-left')) + parseInt(mainItem.css('margin-right'))) 
+						: (mainItem.height() + parseInt(mainItem.css('margin-top')) + parseInt(mainItem.css('margin-bottom'))),
+						rearSize = Math.ceil(((isHorz ? vars.mainWrap.width() : vars.mainWrap.height()) - mainItemSize) / 2);
 
-					if(options.animation == 'move'){
+					vars.size = mainItemSize;
+					vars.offset = (options.maskStyle ? (rearSize - mainItemSize + mainItemSpace / 2) : 0) - (options.rtl ? mainItemSpace : 0);
 
-						vars.mainFrame.getElements('.ja-slide-item').setStyles({
-							'width': nwidth,
-							'height': nheight
-						});
-
-						var mainItem = vars.mainItems[0],
-							mainItemSpace = options.maskStyle ? 10 : 0,
-							isHorz = (options.direction == 'horizontal'),
-							mainItemSize = isHorz ? (mainItem.getWidth() + mainItem.getStyle('margin-left').toInt() + mainItem.getStyle('margin-right').toInt()) : (mainItem.getHeight() + mainItem.getStyle('margin-top').toInt() + mainItem.getStyle('margin-bottom').toInt()),
-							rearSize = Math.ceil(((isHorz ? vars.mainWrap.getWidth() : vars.mainWrap.getHeight()) - mainItemSize) / 2);
-
-						vars.size = mainItemSize;
-						vars.offset = (options.maskStyle ? (rearSize - mainItemSize + mainItemSpace / 2) : 0) - (options.rtl ? mainItemSpace : 0);
-
-						vars.mainFrame.setStyle(vars.modes[1], vars.size * (vars.total + 2));
-						vars.fx.set(vars.modes[0], -vars.curIdx * vars.size + vars.offset);
-						
-					} else {
-						
-						vars.mainItems.setStyles({
-							'width': nwidth,
-							'height': nheight
-						});
-					}
-
-					instance.initMasker();
-					instance.initThumbAction();
-					instance.initMainCtrlButton();
-					instance.initProgressBar();
+					vars.mainFrame.css(vars.modes[1], vars.size * (vars.total + 2));
+					vars.fx.attr(vars.modes[0], -vars.curIdx * vars.size + vars.offset);
+					
 				} else {
-					JASliderSupport.rzTimeout *= 2;
+					
+					vars.mainItems.css({
+						'width': nwidth,
+						'height': nheight
+					});
 				}
-			});
+
+				instance.initMasker();
+				instance.initThumbAction();
+				instance.initMainCtrlButton();
+				instance.initProgressBar();
+			} else {
+				JASliderSupport.rzTimeout *= 2;
+			}
 
 			clearTimeout(JASliderSupport.sid);
 			JASliderSupport.sid = setTimeout(JASliderSupport.resize, JASliderSupport.rzTimeout);
