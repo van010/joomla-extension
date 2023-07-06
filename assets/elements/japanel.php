@@ -22,7 +22,6 @@ class JFormFieldJapanel extends JFormField {
     	$doc = JFactory::getDocument();
         $path = JURI::root() . $this->asset_path;
 
-//        $doc->addScript(JURI::root().'modules/mod_jaslideshow/assets/jquery/mootools-core.js');
         $doc->addScript($path.'japanel/depend.js');
 
 		if (version_compare(JVERSION, '4', '>=')){

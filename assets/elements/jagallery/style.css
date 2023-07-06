@@ -24,3 +24,41 @@
 	border: 1px solid #000;
 	margin-right: 5px;
 }
+
+div#ja-modal-overlay {
+	position: fixed;
+	background-color: #000;
+	left: 0px;
+	top: 0px;
+}
+
+/* div#ja-modal-overlay[aria-hidden=true] {
+	display: none;
+} */
+
+div#ja-modal-window {
+	position: absolute;
+	background-color: aliceblue;
+	text-align: left;
+	overflow: visible;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+div#ja-modal-window[aria-hidden=false] {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 20px;
+	max-width: 90%;
+	z-index: 9999;
+}
+
+@media (max-width: 768px) {
+	div#ja-modal-window[aria-hidden=false] {
+	  width: 90%;
+	}
+  }

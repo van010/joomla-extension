@@ -4,6 +4,10 @@ var autoUpdate = options.auto_update;
 const gallery_id = jQuery(`#${options.gallery_id}`);
 
 jQuery(document).ready(function () {
+
+    // init modal
+    init_modal();
+
     jQuery("#jaGetImages").click(function () {
         jaListImages();
     });
@@ -85,7 +89,7 @@ function jaupdateImages(images, boxID) {
             data += `${options.text_show}<input style=\'margin:0 auto;\' type=\'checkbox\' value=\'` + images[i].image + "\' " + showImage + " onchange=\'showImage(this)\' />";
             data += "</span>";
             data += "<span onclick=\'jaFormpopup(\"#img-element-data-form\", " + i + ", \"" + images[i].image + "\");";
-            data += `return false;\' class=\'img-btn\' style=\'float: right; text-align: center; display: block; cursor: pointer;\'>${options.text_edit}</span>`;
+            data += `return false;\' class=\'img-btn\' style=\'float: right; text-align: center; display: block; cursor: pointer;\'><b>${options.text_edit}</b></span>`;
             data += "</div>";
         }
         data += "<div id=\'img-element-data-form\' style=\'display: none;\'></div>";
@@ -116,16 +120,14 @@ function showImage(el) {
 function jaFormpopup(el, key, imgname) {
     var form = jadataForm(key, imgname);
     jQuery(el).append(form);
-    SqueezeBox.open($("img-element-data-form-" + key), {
-        handler: "adopt",
-        size: {
-            x: 800,
-            y: 290
-        }
-    });
+    const curr_data_form = $(`#img-element-data-form-${key}`);
+    
+    
+    modal_handling(curr_data_form);
+
     //update data for image form
-    var data = jQuery(`#${options.gallery_id}`).val();
-    var jaimg = new Object();
+    const data = jQuery(`#${options.gallery_id}`).val();
+    const jaimg = new Object();
     jaimg.title = "";
     jaimg.link = "";
     jaimg.description = "";
@@ -143,15 +145,123 @@ function jaFormpopup(el, key, imgname) {
     });
 }
 
+function modal_handling(curr_data_form){
+    const over_lay = $('div#ja-modal-overlay');
+    open_modal(over_lay, curr_data_form);
+    modal_content_handling(curr_data_form);
+    // detect window click
+    // $(window).on('click', destroy_modal_overlay);
+    $(over_lay).on('click', destroy_modal_overlay);
+    esc_close_modal();
+}
+
+function modal_content_handling(img_data_form){
+    const box_window = $('div#ja-modal-window');
+    if (box_window.children().length > 0){
+        box_window.empty();
+    }
+    img_data_form.appendTo(box_window);
+}
+
+function open_modal(form, curr_data_form){
+    (function ($){
+        const over_lay = $('div#ja-modal-overlay');
+        const box_window = $('div#ja-modal-window');
+        const window_size = {
+            width: window.innerWidth,
+            height: window.innerHeight
+        };
+
+        box_window.attr('aria-hidden', false);
+        over_lay.attr('aria-hidden', false);
+        
+        box_window.css({display: 'block'});
+        over_lay.css({display: 'block'});
+
+        over_lay.animate({
+            opacity: .7,
+            width: `${window_size.width}px`,
+            height: `${window_size.height}px`,
+        }, 400, 'easeInCubic');
+
+        box_window.animate({
+            opacity: 1,
+        }, 600, 'easeInCubic');
+
+        // stop scroll when overlay popup
+        $('body', 'html').css({'overflow': 'hidden'});
+
+    })(jQuery)
+}
+
+function destroy_modal_overlay(){
+    (function ($){
+        const over_lay = $('div#ja-modal-overlay');
+        const box_window = $('div#ja-modal-window');
+        
+        over_lay.attr('aria-hidden', true);
+        box_window.attr('aria-hidden', true);
+
+        over_lay.fadeOut(400, 'easeOutQuart', function(){
+            over_lay.css({
+                opacity: 0,
+                'z-index': 65555,
+                display: 'none'
+            });
+        })
+        box_window.fadeOut(400, 'easeOutQuart', function (){
+            box_window.css({
+                opacity: 0,
+                'z-index': 65555,
+                display: 'none'
+            })
+        })
+
+        // start scroll when overlay destroy
+        $('body', 'html').css({'overflow': 'auto'});
+    })(jQuery)
+}
+
+function esc_close_modal(){
+    document.addEventListener('keydown', function (event){
+        if (event.key.toLocaleLowerCase() === 'escape' || event.key === 27){
+            destroy_modal_overlay();
+        }
+    })
+}
+
+
+function init_modal(){
+    (function ($){
+        $('<div>', {
+            id: 'ja-modal-overlay',
+            'aria-hidden': true,
+            tabindex: -1,
+            style: "z-index: 65555, opacity: 0;"
+                
+        }).appendTo($('body'));
+        $('<div>', {
+            id: 'ja-modal-window',
+            class: 'shadow',
+            role: 'window',
+            'aria-hidden': true,
+            style: 'z-index:'
+        }).appendTo($('body'));
+
+
+    })(jQuery)
+}
+
 function jaCloseImgForm(key) {
-    SqueezeBox.close($("img-element-data-form-" + key));
+    destroy_modal_overlay();
 }
 
 function jaUpdateImgData(key, imgname) {
-    var title = jQuery("#img-element-data-form-" + key).find("#imgtitle").val();
-    var link = jQuery("#img-element-data-form-" + key).find("#imglink").val();
-    var description = jQuery("#img-element-data-form-" + key).find("#imgdescription").val();
-    var data = jQuery.parseJSON(jQuery(`#${options.gallery_id}`).val());
+    const img_data_form = $(`#img-element-data-form-${key}`);
+    const title = img_data_form.find("#imgtitle").val();
+    const link = img_data_form.find("#imglink").val();
+    const description = img_data_form.find("#imgdescription").val();
+    const data = jQuery.parseJSON(jQuery(`#${options.gallery_id}`).val());
 
     if (!data) { data = []; }
 
@@ -187,6 +297,7 @@ function jaUpdateImgData(key, imgname) {
     }
 
     jQuery(`#${options.gallery_id}`).val(JSON.stringify(data));
+    alert(`Updated successfully: ${imgname}`);
 
     jaCloseImgForm(key);
 }
@@ -198,6 +309,10 @@ function jadataForm(key, imgname) {
     html += "<div id=\'img-element-data-form-" + key + "\' class=\'img-element-data-form\'>";
     html += "<fieldset class=\'panelform\' >";
     html += "<ul>";
+    html += "<li>";
+    html += `<label>Image</label>`;
+    html += `<p><b>${imgname}</b></p>`;
+    html += "</li>";
     html += "<li>";
     html += `<label>${options.text_title}</label>`;
     html += "<input type=\'text\' name=\'imgtitle\' id=\'imgtitle\' value=\'\' size=\'50\' />";

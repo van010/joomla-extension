@@ -10,6 +10,8 @@
  * ------------------------------------------------------------------------
  */
 
+use Symfony\Component\VarDumper\Cloner\Data;
+
 defined('_JEXEC') or die( 'Restricted access' );
 
 class images{   
@@ -141,8 +143,8 @@ class images{
 	*/
     public function validData() {
 		$img = new stdClass;
-		$data = trim($this->app->get('data', ''));		
-		$imgName = trim($this->app->get('imgname', ''));
+		$data = trim($this->app->get('data', '', 'RAW'));
+		$imgName = trim($this->app->get('imgname', '', 'RAW'));
 		if(!empty($data)){
 			$check = 0; // data for image: 1 existed, 0 empty
 			$data = json_decode($data);			
