@@ -1246,22 +1246,23 @@ var JASlider = function (element, options) {
 				'opacity': options.thumbOpacity
 			});
 
+			const self = this;
 			handleItems.each(function (idx, item) {
-				$(item).on(options.thumbTrigger, function () {
-					this.prepare(true, idx);
-				}.bind(this));
-			}, this)
+				$(item).on(options.thumbTrigger, function() {
+					self.prepare(true, idx);
+				});
+			});
 
-			handleBox.bind('mousewheel DOMMouseScroll', function (event) {
+			handleBox.bind('mousewheel DOMMouseScroll', function (event) {		
 				if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-					event.stop();
-					this.next(true);
+					event.preventDefault();
+					self.next(true);
 				}
 				else {
-					event.stop();
-					this.prev(true);
+					event.preventDefault();
+					self.prev(true);
 				}
-			}, this);
+			});
 
 			Object.assign(vars, {
 				thumbStartIdx: thumbStartIdx,
