@@ -229,7 +229,11 @@ var JAProfileConfig = function (options){
 			dataType: 'json',
 			success: function (res) {
 				var obj = res || {};
-				console.log(`${obj.message} | ${obj.profile} | ${obj.type}`);
+				if (res.error){
+					console.log(`Error: ${res.error}`);
+				}else{
+					console.log(`${obj.message} | ${obj.profile} | ${obj.type}`);
+				}
 				Joomla.submitform(task, document.getElementById('module-form') || document.getElementById('modules-form'));
 			}
 		})

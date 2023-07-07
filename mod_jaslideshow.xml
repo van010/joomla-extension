@@ -51,6 +51,7 @@ It is one of our most requested and most versatile modules which can be found in
 	<files>
 		<filename module="mod_jaslideshow">index.html</filename>
 		<filename module="mod_jaslideshow">mod_jaslideshow.php</filename>
+		<filename module="mod_jaslideshow">helper.php</filename>
 		<folder>helpers</folder>		
 		<folder>assets</folder>
 		<folder>tmpl</folder>
