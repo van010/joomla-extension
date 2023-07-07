@@ -1,0 +1,27 @@
+
+backend:
+The way to load scripts in backend:
+load from mod-abc.xml:
++ <field type="name_custom_type" path="modules/mod-abc/assets/elements/" />
++ create a file: modules/mod-abc/assets/elements/name_custom_type.php
+	declare in name_custom_type.php:
+		class JFormFieldName_custom_type extends JFormField{
+			protected $type 'name_custom_type';
+			function getInput() {
+				$html = '<p>test</p>';
+				echo $html;
+				return $html;
+			}
+			function handle_abc() {
+				// [0] => modules/mod_jaslideshow/assets/elements/
+				$this->element['path'];
+				// http://localhost/dev/j4-templates/j4-t3-biz/modules/mod_jaslideshow/assets/elements/
+				$path = JURI::root().$this->element['path'];
+
+				return 1;
+			}
+		}
+
+
+window.addEvent('load'
+	=> window.addEventListener('load'
