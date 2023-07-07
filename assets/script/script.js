@@ -272,7 +272,7 @@ var JASlider = function (element, options) {
 			// mainFrame.animate({[vars.modes[0]]: -vars.curIdx * vars.size + vars.offset});
 		}
 
-		/* if (options.animation === 'fade') {
+		if (options.animation === 'fade') {
 			var fadeop = Object.assign({ ...vars.fxop },
 				{
 					property: 'opacity',
@@ -282,7 +282,6 @@ var JASlider = function (element, options) {
 						}
 					}.bind(this)
 				});
-			// .store('fx', new Fx.Tween(item, fadeop));
 			$($.each(mainItems, function (idx, item) {
 				$(item).css({
 					position: 'absolute',
@@ -292,10 +291,10 @@ var JASlider = function (element, options) {
 					visibility: 'visible'
 				}).data('fx', $(item).animate(fadeop));
 			})[vars.curIdx]).css({
-				opacity: 2,
-				zIndex: 5
+				opacity: 1,
+				zIndex: 10
 			});
-		} */
+		}
 
 		// this.initMainItemAction();
 		// this.initMainCtrlButton();
@@ -598,11 +597,11 @@ var JASlider = function (element, options) {
 			vars = this.vars;
 
 		if (idx != vars.curIdx) {
-			var itemOff = vars.mainItems[vars.curIdx],
-				itemOn = vars.mainItems[idx];
+			const itemOff = $(vars.mainItems[vars.curIdx]);
+			const itemOn = $(vars.mainItems[idx]);
 
-			itemOff.setStyle('zIndex', 1).retrieve('fx').start(0);
-			itemOn.setStyle('zIndex', 10).retrieve('fx').start(1);
+			$(itemOff).css('z-index', 1).animate({ opacity: 0 }, this.options.duration, this.options.transition);
+			$(itemOn).css('z-index', 10).animate({ opacity: 1 }, this.options.duration, this.options.transition);
 		}
 
 		vars.curIdx = idx;
