@@ -298,12 +298,12 @@ var JASlider = function (element, options) {
 				zIndex: 10
 			});
 		}
-		
+
 		this.initMainItemAction();
-		// this.initMainCtrlButton();
-		// this.initThumbAction();
+		this.initMainCtrlButton();
+		this.initThumbAction();
 		this.initControlAction();
-		// this.initHoverBehavior();
+		this.initHoverBehavior();
 		// this.initProgressBar();
 		// this.initLoader();
 
@@ -1408,21 +1408,20 @@ var JASlider = function (element, options) {
 			slider = vars.slider,
 			buttons = [],
 			controls = ['prev', 'play', 'stop', 'playback', 'next'];
+			
+		$.each(controls, function(index, value) {
+			buttons.push.apply(buttons, $('.ja-slide-' + value).toArray());
+		});
+		  
+		buttons.push.apply(buttons, $(vars.handleItems).toArray());
 
-		for (var j = 0, jl = controls.length; j < jl; j++) {
-			Object.assign(buttons, new Array(slider.find('.ja-slide-' + controls[j])));
-		}
-
-		Object.assign(buttons, new Array(vars.handleItems))
-
-		$(buttons).on({
-			'mouseenter': function () {
+		$(buttons).on('mouseenter mouseleave', (e) => {
+			if (e.type === 'mouseenter'){
 				$(this).addClass('hover');
-			},
-			'mouseleave': function () {
+			}else if(e.type === 'mouseleave'){
 				$(this).removeClass('hover');
 			}
-		});
+		})
 	};
 
 	this.initProgressBar = function () {
