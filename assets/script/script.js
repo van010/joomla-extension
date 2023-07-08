@@ -223,19 +223,22 @@ var JASlider = function (element, options) {
 		//Description
 		this.initMasker();
 
-		/* // Get initial images
+		// Get initial images
 		if (options.animation === 'slice') {
 			mainItems.css('display', 'none');
 			vars.mainItems = imgItems;
 			vars.curImg = vars.mainItems[vars.curIdx];
-			vars.sliceImg = new Element('img', {
-				'src': vars.curImg.src
-			}).inject(new Element('div', {
-				'class': 'ja-slide-sliceimg'
-			}).inject(vars.mainFrame, 'top'));
 
-			var ofsParent = mainFrame.getOffsetParent() || mainWrap,
-				opCoord = ofsParent.getCoordinates();
+			vars.sliceImg = $('<img>', {
+				src: vars.curImg.src
+			});
+
+			const div_slice_img = $('<div>', {
+				class: 'ja-slide-sliceimg'
+			}).prependTo(vars.mainFrame).append(vars.sliceImg);
+
+			const ofsParent = mainFrame.offsetParent() || mainWrap;
+			const opCoord = ofsParent.offset();
 
 			//Set first background
 			mainFrame.css({
@@ -247,7 +250,7 @@ var JASlider = function (element, options) {
 				width: options.mainWidth,
 				height: options.mainHeight
 			});
-		} */
+		}
 
 		if (options.animation == 'move') {
 			vars.offset -= parseInt(mainFrame.css('margin-left'));
@@ -307,8 +310,8 @@ var JASlider = function (element, options) {
 		// vars.direct = 'next';
 		// slider.css('visibility', 'visible');
 
-		// this.prepare(false, vars.curIdx);
-		// this.animFinished();
+		this.prepare(false, vars.curIdx);
+		this.animFinished();
 	};
 
 	this.initMasker = function () {
@@ -434,7 +437,7 @@ var JASlider = function (element, options) {
 
 	this.imgload = function (img_, idx) {
 		// img_ type of jQuery
-		const img = img_[0];
+		const img = img_[0] == undefined ? img_ : img_[0];
 		if (img.complete && img.naturalWidth !== undefined) {
 			this.load(idx);
 			return;
@@ -454,7 +457,9 @@ var JASlider = function (element, options) {
 			setTimeout(callback);
 		};
 
-		img_.on('load', onload).on('error', onload);
+		if (typeof img_ === 'undefined') return;
+
+		$(img_).on('load', onload).on('error', onload);
 
 		if (img.readyState || img.complete) {
 			img.src = blank;
@@ -506,7 +511,8 @@ var JASlider = function (element, options) {
 		}
 
 		vars.nextIdx = idx;
-		if (curImg.data('loaded')) {
+		
+		if ($(curImg).data('loaded')) {
 			if (idx == vars.curIdx) {
 				return false;
 			}
@@ -619,8 +625,8 @@ var JASlider = function (element, options) {
 		vars.curImg = vars.mainItems[vars.curIdx];
 
 		// Remove any slices & boxs from last transition
-		container.getChildren('.ja-slice').destroy();
-		container.getChildren('.ja-box').destroy();
+		container.find('.ja-slice').remove();
+		container.find('.ja-box').remove();
 
 		//Generate random effect
 		var effect = options.effects[Math.floor(Math.random() * (options.effects.length))];
@@ -630,7 +636,7 @@ var JASlider = function (element, options) {
 
 		//Run effects
 		var effects = effect.split('-'),
-			callfun = 'anim' + effects[0].capitalize();
+			callfun = 'anim' + this.upper_first_letter(effects[0]);
 
 		if (this[callfun]) {
 
@@ -675,24 +681,20 @@ var JASlider = function (element, options) {
 			vars = this.vars,
 			container = vars.mainFrame;
 
-		return new Element('div', {
-			'class': 'ja-slice',
-			'styles': {
-				display: 'block',
-				position: 'absolute',
-				left: 0,
-				width: options.mainWidth,
-				height: options.mainHeight,
-				opacity: 0,
-				zIndex: 10
-			}
-		}).adopt(new Element('img', {
-			'src': img.src,
-			'styles': {
-				width: options.mainWidth,
-				height: options.mainHeight
-			}
-		})).inject(container);
+		return $('<div>', {
+			class: 'ja-slice',
+			display: 'block',
+			position: 'absolute',
+			left: 0,
+			width: options.mainWidth,
+			height: options.mainHeight,
+			opacity: 0,
+			'z-index': 10
+		}).append($('<img>',{
+			src: img.src,
+			width: options.mainWidth,
+			height: options.mainHeight
+		})).appendTo(container);
 	};
 
 	this.createSlices = function (img, height, opacity) {
@@ -705,27 +707,24 @@ var JASlider = function (element, options) {
 		for (var i = 0; i < options.slices; i++) {
 			var sliceWidth = i == options.slices - 1 ? (options.mainWidth - width * i) : width;
 
-			slices.push(new Element('div', {
-				'class': 'ja-slice',
-				'styles': {
-					position: 'absolute',
-					left: i * width,
-					width: sliceWidth,
-					height: height,
-					opacity: opacity,
-					zIndex: 10
-				}
-			}).adopt(new Element('img', {
-				'src': img.src,
-				'styles': {
-					left: -(i * width),
-					width: options.mainWidth,
-					height: options.mainHeight
-				}
-			})));
+			slices.push($('<div>', {
+				class: 'ja-slice',
+				position: 'absolute',
+				left: i * width,
+				width: sliceWidth,
+				height: height,
+				opacity: opacity,
+				zIndex: 10
+			}).append($('<img>', {
+				src: img.src,
+				left: -(i * width),
+				width: options.mainWidth,
+				height: options.mainHeight
+			}))
+			);
 		}
 
-		container.adopt(slices);
+		container.append(slices);
 
 		return slices;
 	};
@@ -746,30 +745,24 @@ var JASlider = function (element, options) {
 			for (var cols = 0; cols < options.boxCols; cols++) {
 				bwidth = cols == options.boxCols - 1 ? options.mainWidth - width * cols : width;
 
-				boxes.push(new Element('div', {
-					'class': 'ja-box',
-					'styles': {
-						position: 'absolute',
-						opacity: opacity,
-						left: width * cols,
-						top: height * rows,
-						width: bwidth,
-						height: bheight,
-						zIndex: 10
-					}
-				}).adopt(new Element('img', {
-					'src': img.src,
-					'styles': {
-						left: -(width * cols),
-						top: -(height * rows),
-						width: options.mainWidth,
-						height: options.mainHeight
-					}
-				})));
+				boxes.push($('<div>').addClass('ja-box').css({
+					position: 'absolute',
+					opacity: opacity,
+					left: width * cols,
+					top: height * rows,
+					width: bwidth,
+					height: bheight,
+					zIndex: 10
+				  }).append($('<img>').attr('src', img.src).css({
+					left: -(width * cols),
+					top: -(height * rows),
+					width: options.mainWidth,
+					height: options.mainHeight
+				  })));
 			}
 		}
 
-		container.adopt(boxes);
+		container.append(boxes);
 
 		return boxes;
 	};
@@ -788,25 +781,21 @@ var JASlider = function (element, options) {
 			left = Math.round((options.mainWidth - size) / 2);
 			top = Math.round((options.mainHeight - size) / 2);
 
-			elm = new Element('div', {
-				'class': 'ja-box',
-				'styles': {
-					position: 'absolute',
-					opacity: opacity,
-					left: left,
-					top: top,
-					width: size,
-					height: size,
-					zIndex: 10
-				}
-			}).adopt(new Element('img', {
-				'src': img.src,
-				'styles': {
-					left: -left,
-					top: -top,
-					width: options.mainWidth,
-					height: options.mainHeight
-				}
+			elm = $('<div>', {
+				class: 'ja-box',
+				position: 'absolute',
+				opacity: opacity,
+				left: left,
+				top: top,
+				width: size,
+				height: size,
+				zIndex: 10
+			}).append($('<img>', {
+				src: img.src,
+				left: -left,
+				top: -top,
+				width: options.mainWidth,
+				height: options.mainHeight
 			}));
 
 			this.css3(elm, {
@@ -837,91 +826,115 @@ var JASlider = function (element, options) {
 		}
 
 		//set the background
-		vars.sliceImg.set('src', effects[3] == 'inv' ? vars.curImg.src : oldImg.src);
+		vars.sliceImg.attr('src', effects[3] == 'inv' ? vars.curImg.src : oldImg.src);
 
-		var slices = this.createSlices(img, height, opacity),
-			styleOn = { height: options.mainHeight - height, opacity: 1 - opacity / 2 },
+		var slices = this.createSlices(img, height, opacity);
+		var styleOn = { height: options.mainHeight - height, opacity: 1 - opacity / 2 },
 			last = slices.length - 1,
 			timeBuff = 100;
 
-		// by default, animate is sequence from left to right
-		if (effects[2] == 'left') {		// reverse the direction, so animation is sequence from right to left
-			slices = slices.reverse();
-		} else if (effects[2] == 'random') {	// so randomly
-			this.shuffle(slices);
+		switch(effects[2]){
+			// by default, animate is sequence from left to right
+			case 'left': // reverse the direction, so animation is sequence from right to lef
+				slices = slices.reverse();
+				break;
+			case 'random': // so randomly
+				this.shuffle(slices);
+				break;
+			case 'center':
+				var center = (last) / 2;
+				$(slices).each((i, slice_) => {
+					const slice = $(slice_);
+					if (slice.length === 0) return true;
+					var fxop = vars.fxop,
+						delay = Math.abs(center - i) * 100;
+
+					if (i == last) {
+						fxop = {...vars.fxop};
+						fxop.onComplete = this.animFinished();
+					}
+
+					setTimeout(function () {
+						slice.animate(styleOn, fxop.duration, fxop.transition);
+					}, delay);
+
+				}, this);
+				break;
+			default:
+				break;
 		}
 
-		if (effects[3] == 'offset') {										//have offset style - we will not animate height, so set it to fullheight, we animate 'top' or 'bottom' property
-			var property = effects[1] == 'up' ? 'top' : 'bottom';
-
-			delete styleOn.height;
-			styleOn[property] = 0;
-
-			$$(slices).setStyle(property, '250px').setStyle('height', options.mainHeight);
-		} else if (effects[1] == 'updown') {
-			for (var k = 0, kl = slices.length; k < kl; k++) {
-				$(slices[k]).setStyle((k & 1) == 0 ? 'top' : 'bottom', '0px');
-			}
-		} else if (effects[1] == 'down') {
-			$$(slices).setStyle('top', '0px');
-		} else if (effects[1] == 'up') {
-			$$(slices).setStyle('bottom', '0px');
-		}
-
-		if (effects[3] == 'wider') {
-			slices.each(function (slice, i) {
-				var fxop = vars.fxop,
-					orgWidth = slice.getWidth();
-
-				slice.setStyles({
-					'width': 0,
-					'height': options.mainHeight
-				});
-
-				if (i == last) {
-					fxop = Object.clone(vars.fxop);
-					fxop.onComplete = this.animFinished.bind(this);
+		switch (effects[1]) {
+			case 'updown':
+				for (var k = 0, kl = slices.length; k < kl; k++) {
+					$(slices[k]).css((k & 1) == 0 ? 'top' : 'bottom', '0px');
 				}
+				break;
+			case 'down':
+				$(slices).css('top', '0px');
+				break;
+			case 'up':
+				$(slices).css('bottom', '0px');
+				break;
+			default:
+				break;
+		}
 
-				setTimeout(function () {
-					new Fx.Morph(slice, fxop).start({
-						width: orgWidth,
-						opacity: 1
+		switch (effects[3]){
+			case 'wider':
+				$(slices).each((i, slice_) => {
+					const slice = $(slice_);
+					if (slice.length === 0) return true;
+					var fxop = vars.fxop,
+						orgWidth = slice.width();
+	
+					slice.css({
+						'width': 0,
+						'height': options.mainHeight
 					});
-				}, timeBuff);
+	
+					if (i == last) {
+						fxop = {...vars.fxop};
+						fxop.onComplete = this.animFinished();
+					}
+	
+					setTimeout(function () {
+						$(slice).animate({
+							width: orgWidth,
+							opacity: 1
+						}, fxop.duration, fxop.transition);
+					}, timeBuff);
+	
+					timeBuff += vars.sliceTime;
+				}, this);
+				break;
+			case 'offset': // have offset style - we will not animate height, so set it to fullheight, we animate 'top' or 'bottom' property
+				var property = effects[1] == 'up' ? 'top' : 'bottom';
+				delete styleOn.height;
+				styleOn[property] = 0;
 
-				timeBuff += vars.sliceTime;
-			}, this);
-		} else if (effects[2] == 'center') {
-			var center = (last) / 2;
-			slices.each(function (slice, i) {
-				var fxop = vars.fxop,
-					delay = Math.abs(center - i) * 100;
-
-				if (i == last) {
-					fxop = Object.clone(vars.fxop);
-					fxop.onComplete = this.animFinished.bind(this);
-				}
-
-				setTimeout(function () {
-					new Fx.Morph(slice, fxop).start(styleOn);
-				}, delay);
-
-			}, this);
-		} else {
-			slices.each(function (slice, i) {
-				var fxop = vars.fxop;
-				if (i == last) {
-					fxop = Object.clone(vars.fxop);
-					fxop.onComplete = this.animFinished.bind(this);
-				}
-
-				setTimeout(function () {
-					new Fx.Morph(slice, fxop).start(styleOn);
-				}, timeBuff);
-
-				timeBuff += vars.sliceTime;
-			}, this);
+				$(slices).css({
+					[property]: '250px',
+					height: options.mainHeight
+				});
+				break;
+			default:
+				$(slices).each((i, slice_) => {
+					const slice = $(slice_);
+					if (slice.length === 0) return true;
+					var fxop = vars.fxop;
+					if (i == last) {
+						fxop = {...vars.fxop};
+						fxop.onComplete = this.animFinished();
+					}
+	
+					setTimeout(function () {
+						slice.animate(styleOn, fxop.duration, fxop.transition);
+					}, timeBuff);
+	
+					timeBuff += vars.sliceTime;
+				}, this);
+				break;
 		}
 	};
 
@@ -937,7 +950,7 @@ var JASlider = function (element, options) {
 			opacity = 1;
 		}
 
-		vars.sliceImg.set('src', effects[3] == 'jelly' ? curImg.src : oldImg.src);
+		vars.sliceImg.attr('src', effects[3] == 'jelly' ? curImg.src : oldImg.src);
 
 		var boxes = this.createBoxes(img, opacity),
 			last = options.boxCols * options.boxRows - 1,
@@ -950,16 +963,21 @@ var JASlider = function (element, options) {
 				height = Math.round(options.mainHeight / options.boxRows),
 				boxTime = boxTime / 3;
 
-			this.shuffle(boxes).each(function (box) {
-				var fxop = vars.fxop,
-					styleOn = box.getStyles('top', 'left');
+			$(this.shuffle(boxes)).each((idx, box_) => {
+				const box = $(box_);
+				if (box.length === 0) return true;
+				var fxop = vars.fxop;
+				var styleOn = {
+					top: box.css('top'),
+					left: box.css('left')
+				};
 
 				if (i == last) {
-					fxop = Object.clone(vars.fxop);
-					fxop.onComplete = this.animFinished.bind(this);
+					fxop = {...vars.fxop};
+					fxop.onComplete = this.animFinished();
 				}
 
-				box.setStyles({
+				box.css({
 					top: Math.round(Math.random() * options.boxRows / 2) * height,
 					left: Math.round(Math.random() * options.boxCols / 2) * width
 				});
@@ -967,7 +985,7 @@ var JASlider = function (element, options) {
 				styleOn['opacity'] = 1;
 
 				setTimeout(function () {
-					new Fx.Morph(box, fxop).start(styleOn);
+					$(box).animate(styleOn, fxop.duration, fxop.transition);
 				}, timeBuff);
 
 				timeBuff += boxTime;
@@ -976,15 +994,17 @@ var JASlider = function (element, options) {
 		} else if (effects[1] == 'random') {
 			boxTime = boxTime / 3;
 
-			this.shuffle(boxes).each(function (box) {
+			$(this.shuffle(boxes)).each((idx, box_) => {
+				const box = $(box_);
+				if (box.length === 0) return true;
 				var fxop = vars.fxop;
 				if (i == last) {
-					fxop = Object.clone(vars.fxop);
-					fxop.onComplete = this.animFinished.bind(this);
+					fxop = {...vars.fxop};
+					fxop.onComplete = this.animFinished();
 				}
 
 				setTimeout(function () {
-					new Fx.Morph(box, fxop).start({ opacity: 1 });
+					$(box).animate({opacity: 1}, fxop.duration, fxop.transition);
 				}, timeBuff);
 
 				timeBuff += boxTime;
@@ -1002,7 +1022,8 @@ var JASlider = function (element, options) {
 				boxes = boxes.reverse();
 			}
 
-			boxes.each(function (box) {
+			$(boxes).each((idx, box) => {
+				if ($(box).length === 0) return true;
 				arr2d[rowIndex][colIndex] = box;
 				colIndex++;
 				if (colIndex == options.boxCols) {
@@ -1013,7 +1034,7 @@ var JASlider = function (element, options) {
 			});
 
 			// Run animation
-			var slider = this;
+			var self = this;
 			for (var cols = 0; cols < (options.boxCols * 2); cols++) {
 				var prevCol = cols;
 				for (var rows = 0; rows < options.boxRows; rows++) {
@@ -1021,17 +1042,17 @@ var JASlider = function (element, options) {
 
 						(function (row, col, time, i) {
 							var box = $(arr2d[row][col]),
-								w = box.getWidth(),
-								h = box.getHeight(),
+								w = box.width(),
+								h = box.height(),
 								fxop = vars.fxop;
 
 							if (i == last) {
-								fxop = Object.clone(vars.fxop);
-								fxop.onComplete = slider.animFinished.bind(slider);
+								fxop = {...vars.fxop};
+								fxop.onComplete = self.animFinished();
 							}
 
 							if (effects[3] == 'grow') {
-								box.setStyles({
+								box.css({
 									width: 0,
 									height: 0
 								});
@@ -1041,7 +1062,7 @@ var JASlider = function (element, options) {
 							}
 
 							setTimeout(function () {
-								new Fx.Morph(box, fxop).start({ opacity: 1 - opacity, width: w, height: h });
+								$(box).animate({ opacity: 1 - opacity, width: w, height: h }, fxop.duration, fxop.transition);
 							}, time);
 
 						})(rows, prevCol, timeBuff, i);
@@ -1064,13 +1085,13 @@ var JASlider = function (element, options) {
 			img = oldImg;
 		}
 
-		vars.sliceImg.set('src', effects[3] == 'inv' ? curImg.src : oldImg.src);
+		vars.sliceImg.attr('src', effects[3] == 'inv' ? curImg.src : oldImg.src);
 
 		var slice = this.createSlice(img),
-			fxop = Object.clone(vars.fxop),
+			fxop = {...vars.fxop},
 			mapOn = { left: 'left', right: 'right', up: 'top', down: 'bottom' },
 			mapOff = { left: 'right', right: 'left', up: 'bottom', down: 'top' },
-			value = ['left', 'right'].contains(effects[2]) ? options.mainWidth : options.mainHeight,
+			value = ['left', 'right'].includes(effects[2]) ? options.mainWidth : options.mainHeight,
 			styleOn = { opacity: 1 },
 			styleOff = { opacity: 0.5 };
 
@@ -1088,11 +1109,11 @@ var JASlider = function (element, options) {
 			styleOff[mapOff[effects[2]]] = '';
 		}
 
-		slice.setStyles(styleOff);
+		slice.css(styleOff);
 
-		fxop.onComplete = this.animFinished.bind(this);
+		fxop.onComplete = this.animFinished();
 
-		new Fx.Morph(slice, fxop).start(styleOn);
+		$(slice).animate(styleOn, fxop.duration, fxop.transition);
 	};
 
 	this.shuffle = function (arr) {
@@ -1114,7 +1135,7 @@ var JASlider = function (element, options) {
 			css[prop] = props[prop];
 		}
 
-		elms.setStyles(css);
+		elms.css(css);
 
 		return elms;
 	};
