@@ -298,8 +298,8 @@ var JASlider = function (element, options) {
 				zIndex: 10
 			});
 		}
-
-		// this.initMainItemAction();
+		
+		this.initMainItemAction();
 		// this.initMainCtrlButton();
 		// this.initThumbAction();
 		this.initControlAction();
@@ -459,9 +459,8 @@ var JASlider = function (element, options) {
 			setTimeout(callback);
 		};
 
-		if (typeof img_ === 'undefined') return;
-
-		$(img_).on('load', onload).on('error', onload);
+		if (typeof img_ === 'undefined' || img.length === 0) return;
+		$(img).on('load', onload).on('error', onload);
 
 		if (img.readyState || img.complete) {
 			img.src = blank;
@@ -1399,7 +1398,8 @@ var JASlider = function (element, options) {
 
 				return false;
 			};
-			Object.assign(vars.mainItems, [vars.mainFrame[0], vars.maskDesc[0]]).on('click', handle);
+			// Object.assign(vars.mainItems, [vars.mainFrame[0], vars.maskDesc[0]]).on('click', handle);
+			$([vars.mainFrame, vars.maskDesc].concat(Array.from(vars.mainItems))).on('click', handle);
 		}
 	};
 
