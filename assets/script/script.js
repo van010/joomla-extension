@@ -307,7 +307,7 @@ var JASlider = function (element, options) {
 		// this.initProgressBar();
 		// this.initLoader();
 
-		// vars.direct = 'next';
+		vars.direct = 'next';
 		// slider.css('visibility', 'visible');
 
 		this.prepare(false, vars.curIdx);
@@ -432,7 +432,9 @@ var JASlider = function (element, options) {
 
 	this.start = function () {
 		clearTimeout(this.vars.timer);
-		this.vars.timer = setTimeout(this[this.vars.direct].bind(this), this.options.interval)
+		this.vars.timer = setTimeout(() => {
+			this[this.vars.direct]();
+		}, this.options.interval);
 	};
 
 	this.imgload = function (img_, idx) {
