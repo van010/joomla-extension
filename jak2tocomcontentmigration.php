@@ -10,10 +10,14 @@
  * ------------------------------------------------------------------------
  */
 
+use Akeeba\AdminTools\Admin\View\Scans\Raw;
+
 defined('_JEXEC') or die;
 
 jimport('joomla.filesystem.folder');
 jimport('joomla.filesystem.file');
+
+require_once(__DIR__ . '/helpers/migrator.php');
 
 /**
  *
@@ -42,8 +46,18 @@ class PlgSystemJak2tocomcontentmigration extends JPlugin
 		$reload = true;
 		$lang->load($extension, $base_dir, $language_tag, $reload);
 	}
-	//article.importk2
 
+	public static function onAjaxjak2tocomcontentmigration(){
+		$input = JFactory::getApplication()->input;
+		$task = $input->get('jatask');
+		$articleId = $input->get('articleId');
+		$articleTitle = urldecode($input->get('articleTitle', '', 'RAW'));
+		
+		if ($task !== 'fetchJoomlaAttachment') return ['code' => 404, 'message' => 'No task to do.'];
+
+		$data = JADataMigrator::fetchJoomlaAttachment($articleId, $articleTitle);
+		return $data;
+	}
 
 	public function onAfterInitialise()
 	{
@@ -51,10 +65,12 @@ class PlgSystemJak2tocomcontentmigration extends JPlugin
 		//only override Joomla core for some cases to ensure that other extensions still work properly with Joomla Content component
 		$app = JFactory::getApplication();
 		$input = $app->input;
+		$task = $input->get('task');
 
 		//list articles
 		if ($app->isAdmin() && $input->get('option') == 'com_content' && $input->get('view') == 'articles') {
-			if($input->get('task') == 'article.importk2' || $input->get('task') == 'article.importk2extra' || $input->get('task') == 'article.recontent') {
+			$taskList = ['article.importk2', 'article.importk2extra', 'article.recontent', 'article.importk2Batch', 'article.importAllAjax'];
+			if(in_array($task, $taskList)) {
 				$syncParams = JComponentHelper::getParams('com_content')->get('sync', NULL);
 				if ($syncParams == false) {
 					//if user have not configured sync profile
@@ -66,44 +82,36 @@ class PlgSystemJak2tocomcontentmigration extends JPlugin
 				} else {
 					require_once($this->pathMigrate.'/migrator.php');
 					$jamigrator = new JADataMigrator();
-					if ($input->get('task') == 'article.importk2'){
-						$jamigrator->extra_type = "k2";
-						$jamigrator->migrate();
-					}elseif ($input->get('task') == 'article.importk2extra'){
-						$jamigrator->extra_type = "extra";
-						$jamigrator->migrate();
-					}else{
-						$jamigrator->recontent();
+					switch ($task){
+						case 'article.importk2':
+							$jamigrator->extra_type = "k2";
+							$jamigrator->migrate();
+							break;
+						case 'article.importk2extra':
+							$jamigrator->extra_type = "extra";
+							$jamigrator->migrate();
+							break;
+						case 'article.recontent';
+							$jamigrator->recontent();
+							break;
+						default:
+							break;
 					}
 				}
 				$app->close();
 			}
 		}
+		$this->add_uncategorised_to_tbl_jcat();
 	}
 	
 	public function onAfterRoute() {
-		$app = JFactory::getApplication();
-		$input = $app->input;
-		// check if we really in k2 page and view the items.
-// 		if ($app->isSite() && $input->get('option') == 'com_k2' && $input->get('view') == 'item' && $input->get('id')) {
-// 			$db = JFactory::getDBO();
-// 			$id = substr($input->get('id'), 0, strspn($input->get('id'), "0123456789"));
-// 			$syncParams = JComponentHelper::getParams('com_content')->get('merged', NULL);
-// 			$itemID = $syncParams->itemID;
-// 			$query = $db->getQuery(true);
-// 			$query->select('id')
-// 			->from($db->quoteName('#__k2_items'))
-// 			->where('published=1 AND trash=0 AND access=1 AND id='.$id);
-// 			
-// 			$db->setQuery($query);
-// 			$exists = $db->loadColumn();
-// 			$db->freeResult();
-// 			// check if the items delete or unpublished and the item already merged.
-// 			if (empty($exists) && isset($itemID->{$id})) {
-// 				$link = JRoute::_('index.php?option=com_content&view=article&id='.$itemID->{$id});
-// 				$app->redirect(html_entity_decode($link));
-// 			}
-// 		}
+		// to do
+		$doc = JFactory::getDocument();
+		$jsFile = JPATH_ROOT . '/plugins/system/jak2tocomcontentmigration/assets/js/jak2migrate.js';
+		if (is_file($jsFile)){
+			JHtml::_('jquery.framework');
+			$doc->addScript(JUri::root() . 'plugins/system/jak2tocomcontentmigration/assets/js/jak2migrate.js');
+		}
 	}
 
 	/**
@@ -486,6 +494,55 @@ class PlgSystemJak2tocomcontentmigration extends JPlugin
 					$db->execute();
 				}
 			}
+		}
+	}
+
+	function add_uncategorised_to_tbl_jcat(){
+		$db = JFactory::getDbo();
+		$query = $db->getQuery(true);
+		
+		// check if the site already has uncategorised row in tbl `#__categories`
+		$query->select('id')
+			->from('`#__categories`')
+			->where('`path` = "uncategorised"')
+			->where('`extension` = "com_content"');
+		$db->setQuery($query);
+		$unCat = $db->loadResult();
+		if (!empty($unCat)) return ;
+
+		/* $query->select('user_id')
+			->from($db->quoteName('#__user_usergroup_map'))
+			->where($db->quoteName('group_id') .' IN(8, 16, 16)');
+		$db->setQuery($query);
+		$adminUser = $db->loadResult(); */
+		
+		// inserting an uncategorised row into #__categories
+		$data = [
+			'id' => $db->quote('NULL'), 
+			'asset_id' => 27, 
+			'path' => $db->quote('uncategorised'), 
+			'extension' => $db->quote('com_content'), 
+			'title' => $db->quote('Uncategorised'), 
+			'alias' => $db->quote('uncategorised'), 
+			'published' => 1, 
+			'access' => 1, 
+			'params' => $db->quote('{"category_layout":"","image":""}'), 
+			'metadata' => $db->quote('{"author":"","robots":""}'), 
+			// 'created_user_id' => $db->quote($adminUser), // default = 0
+			'created_time' => $db->quote(date('Y-m-d H:i:s')), 
+			// 'modified_user_id' => $db->quote($adminUser), // default = 0
+			'modified_time' => $db->quote(date('Y-m-d H:i:s')),
+			'language' => $db->quote('*')
+		];
+		$query->clear();
+		$query->insert('`#__categories`')
+			->columns(array_keys($data))
+			->values(implode(',', array_values($data)));
+		try{
+			$db->setQuery($query);
+			$db->execute();
+		}catch(Exception $e){
+			echo "An error occurred: " . $e->getMessage();
 		}
 	}
 }
