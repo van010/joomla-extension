@@ -1,5 +1,7 @@
 <?php 
 
+defined('_JEXEC') or die;
+
 class convertK2ExtraFieldValue{
 
     function convertExtraField()

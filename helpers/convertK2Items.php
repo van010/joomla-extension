@@ -1,10 +1,13 @@
 <?php
 
+defined('_JEXEC') or die;
+
 class convertK2Items{
 
 	public function mainBatch(){
 		$migrator = new JADataMigrator();
 		$catid = $migrator->getMigratedItems('category');
+		
 		if (!count($catid)) return array();
 
 		$catid = array_unique($catid);
@@ -26,10 +29,10 @@ class convertK2Items{
 			$query->setLimit($batchSize, $start);
 			$db->setQuery($query);
 			$k2Items = $db->loadObjectList();
+
+			if (empty($k2Items)) break;
 			
-			if (empty($k2Items)){
-				break;
-			}
+			// $start += count($k2Items);
 
 			$numItems = (int) $this->_convertK2Items($k2Items);
 			if ($numItems){
@@ -43,7 +46,7 @@ class convertK2Items{
      * 
      * @return boolean|int The number of items or False if there no items
      */
-    private function _convertK2Items($data)
+    public function _convertK2Items($data)
 	{
         $migrator = new JADataMigrator();
 		$k2items = $data;
@@ -51,7 +54,7 @@ class convertK2Items{
 		if (!$numItems) {
 			return 0;
 		}
-		$qi_q = 'INSERT INTO #__content_meta (id, content_id, meta_key, meta_value , encoded) VALUES ';
+		$qi_q = 'INSERT INTO `#__content_meta` (id, content_id, meta_key, meta_value , encoded) VALUES ';
 		$qi_v = array();
 		$count = 0;
 
