@@ -18,6 +18,7 @@ jimport('joomla.filesystem.folder');
 jimport('joomla.filesystem.file');
 
 require_once(__DIR__ . '/helpers/migrator.php');
+require_once(__DIR__ . '/helpers/convertAttach.php');
 
 /**
  *
@@ -55,7 +56,7 @@ class PlgSystemJak2tocomcontentmigration extends JPlugin
 		
 		if ($task !== 'fetchJoomlaAttachment') return ['code' => 404, 'message' => 'No task to do.'];
 
-		$data = JADataMigrator::fetchJoomlaAttachment($articleId, $articleTitle);
+		$data = convertK2Attch::fetchJoomlaAttachment($articleId, $articleTitle);
 		return $data;
 	}
 
@@ -69,7 +70,7 @@ class PlgSystemJak2tocomcontentmigration extends JPlugin
 
 		//list articles
 		if ($app->isAdmin() && $input->get('option') == 'com_content' && $input->get('view') == 'articles') {
-			$taskList = ['article.importk2', 'article.importk2extra', 'article.recontent', 'article.importk2Batch', 'article.importAllAjax'];
+			$taskList = ['article.importk2', 'article.importk2extra', 'article.recontent', 'article.importk2Batch', 'article.importAllAjax', 'article.recontentItems'];
 			if(in_array($task, $taskList)) {
 				$syncParams = JComponentHelper::getParams('com_content')->get('sync', NULL);
 				if ($syncParams == false) {
@@ -93,6 +94,9 @@ class PlgSystemJak2tocomcontentmigration extends JPlugin
 							break;
 						case 'article.recontent';
 							$jamigrator->recontent();
+							break;
+						case 'article.recontentItems';
+							$jamigrator->recontent_k2_items();
 							break;
 						default:
 							break;

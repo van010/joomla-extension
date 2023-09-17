@@ -18,6 +18,7 @@ jimport('joomla.filesystem.folder');
 require_once __DIR__ . '/convertK2Items.php';
 require_once __DIR__ . '/convertK2Extrafields.php';
 require_once __DIR__ . '/assignJFieldsToCategories.php';
+require_once __DIR__ . '/convertAttach.php';
 
 ini_set('memory_limit', '2024M');
 
@@ -38,6 +39,8 @@ class JADataMigrator
 	{
 		$this->db = JFactory::getDBO();
 		$this->path = JPATH_ROOT . '/plugins/system/jacontenttype/models/types/';
+		$convertAttch = new convertK2Attch();
+		$convertAttch->createJaAttchTbl();
 	}
 
 	public function recontent()
@@ -125,6 +128,18 @@ class JADataMigrator
 		JADataMigrator::printr(JADataMigrator::refresh());
 		// End flush
 		ob_end_flush();
+	}
+
+	public function recontent_k2_items(){
+		if (ob_get_level() == 0) ob_start();
+		JADataMigrator::printr('recontent K2 items only');
+		$db = JFactory::getDbo();
+		$query = $db->getQuery(true);
+		$query->select('*')
+			->from('`#__associations`')
+			->where('context = "ja_migration.item"');
+		$db->setQuery($query);
+		$items = $db->loadObjectList();
 	}
 
 	public function errorCheck()
@@ -295,39 +310,6 @@ class JADataMigrator
 		JADataMigrator::printr(JADataMigrator::refresh());
 		// End flush
 		ob_end_flush();
-	}
-
-	public static function fetchJoomlaAttachment($articleId, $articleTitle){
-		$db = JFactory::getDbo();
-		$query = $db->getQuery(true);
-		$query->select('id')
-			->from('`#__associations`')
-			->where('`key` = ' . $db->quote($articleId))
-			->where('`context` = ' . $db->quote('ja_migration.item'));
-		$db->setQuery($query);
-		$k2Id = $db->loadResult();
-		
-		if (empty($k2Id)) return ['code' => 404, 'message' => "No k2 item associated with a joomla article id: $articleId"];
-
-		$query->clear();
-		$query->select('att.*')
-			->from('`#__k2_attachments` as att')
-			->where('att.itemID = ' . $db->quote($k2Id));
-		$db->setQuery($query);
-		$rows = $db->loadObjectList();
-
-		if (empty($rows)) return ['code' => 404, 'message' => 'no attachment found'];
-
-		$html = '';
-		foreach ($rows as $row)
-		{
-			$hash = version_compare(JVERSION, '3.0', 'ge') ? JApplication::getHash($row->id) : JUtility::getHash($row->id);
-			$row->link = JRoute::_('index.php?option=com_k2&view=item&task=download&id='.$row->id.'_'.$hash);
-			$html .= '<div class="dropdown button-pdf joomla-article-attachment">
-						<a class="btn  btn-primary pdf-button" href="'.$row->link.'" target="_self">'.JText::_('MVIEW_PDF').'</a>
-						</div>';
-		}
-		return ['data' => $html, 'message' => 'success', 'code' => 200];
 	}
 
 	/**
