@@ -2,10 +2,14 @@
 
 defined('_JEXEC') or die;
 
+require_once __DIR__ . '/convertAttach.php';
+
 class convertK2Items{
 
 	public function mainBatch(){
 		$migrator = new JADataMigrator();
+		$migrateAttach = new convertK2Attch();
+
 		$catid = $migrator->getMigratedItems('category');
 		
 		if (!count($catid)) return array();
@@ -38,6 +42,8 @@ class convertK2Items{
 			if ($numItems){
 				JADataMigrator::printr(JText::sprintf('JA_K2TOCONTENT_ITEMS_DONE', $numItems));
 			}
+			$migrateAttach->main();
+
 			sleep(1);
 		}
 	}

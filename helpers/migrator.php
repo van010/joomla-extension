@@ -112,6 +112,10 @@ class JADataMigrator
 				JFactory::getApplication()->enqueueMessage($e, 'error');
 			}
 		}
+
+		$convertAttch = new convertK2Attch();
+		$convertAttch->recontentAttach();
+
 		if ($extrafields) JADataMigrator::printr(JText::sprintf('JA_K2TOCONTENT_EXFIELDS_DONE', $extrafields));
 		$query = $this->db->getQuery(true);
 		$query->delete($this->db->quoteName('#__associations'));

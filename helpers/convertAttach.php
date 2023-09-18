@@ -4,9 +4,29 @@ defined('_JEXEC') or die;
 
 class convertK2Attch{
     
-    public function __construct() {
+    public function main() {
         // todo
+		$this->getJArticleAssocAttach();
     }
+
+	public function recontentAttach(){
+		$db = JFactory::getDbo();
+		$query = $db->getQuery(true);
+		$query->select('id')
+			->from('`#__ja_attach_ref`');
+		$db->setQuery($query);
+		$jAttach = $db->loadColum();
+		
+		if (empty($jAttach)) return;
+
+		$query->clear();
+		$query->delete('``#__ja_attach_ref')
+			->where('`id` IN(' .implode(',', $jAttach).')');
+		$db->setQuery($query);
+		if ($db->execute()){
+			JADataMigrator::printr('Remove attachment migrated: ' . count($jAttach));
+		}
+	}
 
     public function createJaAttchTbl(){
         $tblName = 'ja_attach_ref';
@@ -39,7 +59,69 @@ class convertK2Attch{
         }
     }
 
-    public function getK2Assoc(){}
+    public function getJArticleAssocAttach(){
+		$db = JFactory::getDbo();
+		$query = $db->getQuery(true);
+		$query->select('ass.`key` as j_id, att.*')
+			->from('`#__associations` AS ass')
+			->join('INNER', '`#__k2_attachments` as att ON att.itemID = ass.id')
+			->where('`context` = ' . $db->quote('ja_migration.item'));
+		$db->setQuery($query);
+		$jArticle_assoc_attach = $db->loadAssocList();
+		
+		if (empty($jArticle_assoc_attach)) return;
+
+		// check assoc in table `#__ja_attach_ref` before inserting
+		$query->clear();
+		$query->select('j_id')
+			->from('`#__ja_attach_ref`');
+		$db->setQuery($query);
+		$j_id_assoc_attach = $db->loadColumn();
+		
+		if (!empty($j_id_assoc_attach)){
+			foreach($jArticle_assoc_attach as $k => $att){
+				if (in_array($att['j_id'], $j_id_assoc_attach)){
+					unset($jArticle_assoc_attach[$k]);
+				}
+			}
+		}
+
+		if (empty($jArticle_assoc_attach)) return;
+
+		// prepare attachments data
+		$attachData = [];
+		foreach($jArticle_assoc_attach as $k => $att){
+			$attachData[] = 'NULL, ' . $db->quote($att['j_id']) . ',' . 
+				$db->quote($att['itemID']) . ',' . $db->quote($att['id']) . ',' .
+				$db->quote($att['filename']) . ',' . $db->quote($att['title']) . ',' .
+				$db->quote($att['titleAttribute']) . ',' . $db->quote($att['hits']) . ',' .
+				$db->quote(date('Y-m-d H:i:s'));
+		}
+		
+		if (empty($attachData)){
+			echo 'No attachment to import.';
+			return;
+		}
+
+		// insert into `#__ja_attach_ref`
+		$columns = '`id`, `j_id`, `k2_id`, `attch_id`, `filename`, `title`, `titleAttribute`, `hit`, `migrated_at`';
+		$query->clear();
+		$query->insert('`#__ja_attach_ref`')
+			->columns(explode(', ', $columns))
+			->values($attachData);
+		try{
+			$db->setQuery($query);
+			if ($db->execute()){
+				JADataMigrator::printr('Migrated: ' . count($attachData) . ' k2 attachments into Jooml Article');
+				/* $first_id_inserted = $db->insertid();
+				for($i=0; $i<count($attachData); $i++){
+				} */
+			}
+			
+		}catch (RuntimeException $e){
+			echo '<pre>'. print_r($e, true) .'</pre>';die();
+		}
+	}
 
     public static function fetchJoomlaAttachment($articleId, $articleTitle){
 		$db = JFactory::getDbo();
@@ -72,6 +154,10 @@ class convertK2Attch{
 						</div>';
 		}
 		return ['data' => $html, 'message' => 'success', 'code' => 200];
+	}
+
+	public static function downloadAttachment(){
+		// todo
 	}
 
 }
