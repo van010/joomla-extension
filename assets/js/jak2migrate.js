@@ -35,17 +35,17 @@
     }
 
     function fetch_data(articleId, articleTitle){
-        const baseUrl = Joomla.getOptions('system.paths').baseFull;
+        const baseUrl = Joomla.getOptions('system.paths').base;
         const urlParams = {
             option: 'com_ajax',
             plugin: 'jak2tocomcontentmigration',
             format: 'json',
+            jatask: 'fetchJoomlaAttachment',
             articleId: articleId,
             articleTitle: encodeURIComponent(articleTitle),
-            jatask: 'fetchJoomlaAttachment',
         };
         const paramsString = new URLSearchParams(urlParams).toString();
-        const queryString = baseUrl + 'index.php?' + paramsString.replace(/%2C/g, ',');
+        const queryString = baseUrl + '/index.php?' + paramsString.replace(/%2C/g, ',');
         $.ajax({
             url: queryString,
             type: 'json',
@@ -55,6 +55,7 @@
                     console.log(data_.message);
                 }else{
                     $('#ja-attachment-response').html(data_.data);
+                    $('#ja-attachment-response').css('display', 'inline-block');
                 }
             }
         })

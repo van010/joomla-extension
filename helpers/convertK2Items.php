@@ -42,7 +42,7 @@ class convertK2Items{
 			if ($numItems){
 				JADataMigrator::printr(JText::sprintf('JA_K2TOCONTENT_ITEMS_DONE', $numItems));
 			}
-			$migrateAttach->main();
+			$migrateAttach->migrateAttachment();
 
 			sleep(1);
 		}

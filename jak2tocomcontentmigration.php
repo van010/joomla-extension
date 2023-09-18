@@ -53,11 +53,21 @@ class PlgSystemJak2tocomcontentmigration extends JPlugin
 		$task = $input->get('jatask');
 		$articleId = $input->get('articleId');
 		$articleTitle = urldecode($input->get('articleTitle', '', 'RAW'));
+		$tasks = ['fetchJoomlaAttachment', 'downloadAttachment'];
 		
-		if ($task !== 'fetchJoomlaAttachment') return ['code' => 404, 'message' => 'No task to do.'];
+		if (!in_array($task, $tasks)) return ['code' => 404, 'message' => 'No task to do.'];
 
-		$data = convertK2Attch::fetchJoomlaAttachment($articleId, $articleTitle);
-		return $data;
+		switch ($task){
+			case 'fetchJoomlaAttachment':
+				$data = convertK2Attch::fetchJoomlaAttachment($articleId, $articleTitle);
+				return $data;
+			case 'downloadAttachment':
+				$convertAttch = new convertK2Attch();
+				$convertAttch->downloadAttachment();
+				break;				
+			default:
+				break;
+		}
 	}
 
 	public function onAfterInitialise()

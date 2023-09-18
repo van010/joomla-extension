@@ -1,14 +1,17 @@
-<?php 
+<?php
+
+use Joomla\CMS\Uri\Uri;
 
 defined('_JEXEC') or die;
 
 class convertK2Attch{
-    
-    public function main() {
-        // todo
-		$this->getJArticleAssocAttach();
-    }
 
+	/**
+	 * delete attachment information associates with joomla article
+	 * when recontent
+	 * 
+	 * @return void
+	 */
 	public function recontentAttach(){
 		$db = JFactory::getDbo();
 		$query = $db->getQuery(true);
@@ -28,6 +31,12 @@ class convertK2Attch{
 		}
 	}
 
+	/**
+	 * create tbl `#__ja_attach_ref` to store k2 attachments infor 
+	 * and joomla article id
+	 * 
+	 * @return void
+	 */
     public function createJaAttchTbl(){
         $tblName = 'ja_attach_ref';
         $db = JFactory::getDbo();
@@ -59,7 +68,12 @@ class convertK2Attch{
         }
     }
 
-    public function getJArticleAssocAttach(){
+	/**
+	 * main migrate k2 attachments into joomla
+	 * 
+	 * @return void
+	 */
+    public function migrateAttachment(){
 		$db = JFactory::getDbo();
 		$query = $db->getQuery(true);
 		$query->select('ass.`key` as j_id, att.*')
@@ -123,6 +137,14 @@ class convertK2Attch{
 		}
 	}
 
+	/**
+	 * render a 'download pdf' button to a single article page
+	 * 
+	 * @param int $articleId
+	 * @param string $articleTitle
+	 * 
+	 * @return array|mixed
+	 */
     public static function fetchJoomlaAttachment($articleId, $articleTitle){
 		$db = JFactory::getDbo();
 		$query = $db->getQuery(true);
@@ -148,18 +170,91 @@ class convertK2Attch{
 		foreach ($rows as $row)
 		{
 			$hash = version_compare(JVERSION, '3.0', 'ge') ? JApplication::getHash($row->id) : JUtility::getHash($row->id);
-			$row->link = JRoute::_('index.php?option=com_k2&view=item&task=download&id='.$row->id.'_'.$hash);
+			// $row->link = JRoute::_('index.php?option=com_k2&view=item&task=download&id='.$row->id.'_'.$hash);
+			// parse link
+			$urlParams = [
+				'option' => 'com_ajax',
+				'plugin' => 'jak2tocomcontentmigration',
+				'jatask' => 'downloadAttachment',
+				'format' => 'json',
+				'id' => $row->id.'_'.$hash,
+			];
+
+			$urlDownload = JUri::root(true) . '/index.php?' . http_build_query($urlParams);
+			$row->link = new Uri(JRoute::_($urlDownload));
 			$html .= '<div class="dropdown button-pdf joomla-article-attachment">
-						<a class="btn  btn-primary pdf-button" href="'.$row->link.'" target="_self">'.JText::_('MVIEW_PDF').'</a>
+						<a class="btn btn-primary pdf-button ja-download-btn" href="'.$row->link.'" target="_self">'.JText::_('MVIEW_PDF').'</a>
 						</div>';
 		}
 		return ['data' => $html, 'message' => 'success', 'code' => 200];
 	}
 
+	/**
+	 * download pdf file, base download was processed by ja, source still in /media/k2/attachments/
+	 * need to migrate source into /media/jadownload/attachments/ in next phase
+	 * 
+	 * @return void|array
+	 */
 	public static function downloadAttachment(){
-		// todo
+		$input = JFactory::getApplication()->input;
+		$id = $input->get('id', '', 'RAW');
+		
+		if (empty($id)) return;
+
+		$check = explode('_', $id)[1];
+		$attachId = explode('_', $id)[0];
+		$hash = version_compare(JVERSION, '3.0', 'ge') ? JApplication::getHash($attachId) : JUtility::getHash($attachId);
+		if ($check != $hash){
+			echo 'K2 attachment not found.';
+			return;
+		}
+
+		$attachInfo = self::loadAttachments($attachId);
+		if (empty($attachInfo)){
+			echo 'K2 attachment not found!';
+			return;
+		}
+
+		$path_to_attach = JPATH_ROOT . '/media/k2/attachments/';
+		$file = $path_to_attach . $attachInfo->filename;
+		if (!is_file($file)){
+			echo 'File not found: ' . $attachInfo->filename;
+			return;
+		}
+		
+		$len = filesize($file);
+		$filename = basename($file);
+		$type = filetype($file);
+		
+		ob_end_clean();
+		header('Content-Type: ' . $type);
+		header('Content-Disposition: attachment; filename='.$filename.';');
+		header('Content-Transfer-Encoding: binary');
+		header('Pragma: public');
+		header('Expires: 0');
+		header('Content-Length: ' . $len . ';');
+		set_time_limit(0);
+		readfile($file);
+
+		return ['message' => 'Download success.', 'code' => 200];
 	}
 
+	/**
+	 * get attachment information associate with current joomla article
+	 * 
+	 * @param int $id
+	 * 
+	 * @return object first object of attachment information
+	 */
+	public static function loadAttachments($id){
+		$db = JFactory::getDbo();
+		$query = $db->getQuery(true);
+		$query->select('*')
+			->from('`#__ja_attach_ref`')
+			->where('`attch_id` = ' . $db->quote($id));
+		$db->setQuery($query);
+		return $db->loadObjectList()[0];
+	}
 }
 
 ?>
