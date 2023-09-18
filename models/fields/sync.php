@@ -86,15 +86,6 @@ class JFormFieldSync extends JFormField
 						<p>&nbsp;</p>
 						<p>'.JText::_('JA_REDIRECT_INFO').'</p>
 					</div>
-
-					<div class="control-label">
-						<label id="jform_jabatchsize-lbl" for="jform_jabatchsize" class="hasTooltip" title="" data-original-title="">
-							'.JText::_('Batch Size: ').'
-						</label>
-					</div>
-					<div class="controls">
-						<input type="text" id="jform_jabatchsize" name="'.$this->name.'[jabatchsize]" value="500">
-					</div>
 				</div>';
 		echo $html;
 	}

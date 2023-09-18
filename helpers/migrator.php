@@ -156,7 +156,7 @@ class JADataMigrator
 		$items = $this->db->loadObjectList();
 		if (!empty($items)) {
 			$error['item_empty'] = $items;
-			$error['table_name'] = '#__k2_items';
+			$error['item_table'] = '#__k2_items';
 		}
 
 		$sql = 'SELECT id FROM #__k2_categories WHERE name = ""';
@@ -164,7 +164,7 @@ class JADataMigrator
 		$items = $this->db->loadObjectList();
 		if (!empty($items)) {
 			$error['category_empty'] = $items;
-			$error['table_name'] = '#__k2_categories';
+			$error['categories_table'] = '#__k2_categories';
 		}
 
 		$sql = 'SELECT id FROM #__k2_tags WHERE name = ""';
@@ -172,7 +172,7 @@ class JADataMigrator
 		$items = $this->db->loadObjectList();
 		if (!empty($items)) {
 			$error['tag_empty'] = $items;
-			$error['table_name'] = '#__k2_tags';
+			$error['tags_table'] = '#__k2_tags';
 		}
 
 		$sql = 'SELECT id FROM #__tags ORDER BY id DESC LIMIT 1';
@@ -254,13 +254,12 @@ class JADataMigrator
 		if (!empty($error)) {
 			foreach ($error as $k => $er) {
 				if (!empty($er)) {
-					echo $k !== 'table_name' ? JText::_('JAK2_MIGRATE_ERROR_' . strtoupper($k)):'';
+					echo JText::_('JAK2_MIGRATE_ERROR_' . strtoupper($k));
 					echo '<br/>';
 					foreach ($er as $ek => $ev) {
 						echo 'ID:';
 						echo $ev->id;
 						echo '<br/>';
-						echo empty($error['table_name']) ?: JText::_('JAK2_MIGRATE_ERROR_TABLE_NAME') . ': ' . $error['table_name'];
 					}
 					echo '<br/>';
 				}
