@@ -18,16 +18,16 @@ class convertK2Attch{
 		$query->select('id')
 			->from('`#__ja_attach_ref`');
 		$db->setQuery($query);
-		$jAttach = $db->loadColum();
+		$jAttach = $db->loadColumn();
 		
 		if (empty($jAttach)) return;
 
 		$query->clear();
-		$query->delete('``#__ja_attach_ref')
+		$query->delete('`#__ja_attach_ref`')
 			->where('`id` IN(' .implode(',', $jAttach).')');
 		$db->setQuery($query);
 		if ($db->execute()){
-			JADataMigrator::printr('Remove attachment migrated: ' . count($jAttach));
+			JADataMigrator::printr('K2 migrated attachments remove: ' . count($jAttach));
 		}
 	}
 
@@ -126,7 +126,7 @@ class convertK2Attch{
 		try{
 			$db->setQuery($query);
 			if ($db->execute()){
-				JADataMigrator::printr('Migrated: ' . count($attachData) . ' k2 attachments into Jooml Article');
+				JADataMigrator::printr('K2 attachments: ' . count($attachData));
 				/* $first_id_inserted = $db->insertid();
 				for($i=0; $i<count($attachData); $i++){
 				} */
