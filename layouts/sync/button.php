@@ -24,6 +24,13 @@ JHtml::_('behavior.core');
     <li><a href="#" data-toggle="modal" onclick="jQuery( '#ja-migrator-modal' ).modal('show'); jQuery(document.adminForm).attr('target', 'ja-migrator-form'); Joomla.submitbutton('article.importk2'); return true;"><?php echo JText::_('JAK2_MIGRATION_IMPORT_CONTENT'); ?></a></li>
     <li><a href="#" data-toggle="modal" onclick="jQuery( '#ja-migrator-modal' ).modal('show'); jQuery(document.adminForm).attr('target', 'ja-migrator-form'); Joomla.submitbutton('article.importk2extra'); return true;"><?php echo JText::_('JAK2_MIGRATION_IMPORT_CONTENT_EXTRA'); ?></a></li>
     <li role="separator" class="divider"></li>
+    <li>
+      <a href="#" data-toggle="modal" 
+        onclick="jQuery( '#ja-migrator-modal' ).modal('show'); jQuery(document.adminForm).attr('target', 'ja-migrator-form'); Joomla.submitbutton('article.recontentItems'); return true;">
+        <?php echo JText::_('Recontent items only'); ?>
+      </a>
+    </li>
+    <li role="separator" class="divider"></li>
     <li><a href="#" data-toggle="modal" onclick="jQuery( '#ja-migrator-modal' ).modal('show'); jQuery(document.adminForm).attr('target', 'ja-migrator-form'); Joomla.submitbutton('article.recontent'); return true;"><?php echo JText::_('JAK2_MIGRATION_RESET_CONTENT'); ?></a></li>
   </ul>
 </div>
